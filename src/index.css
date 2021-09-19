@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
+
 * { 
   margin: 0; 
   padding: 0; 
@@ -5,17 +7,20 @@
 }
 
 .nav-bar { 
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  background: rgb(97,185,151);
-  background: linear-gradient(0deg, rgb(60, 104, 87) 0%, rgba(54,53,52,1) 37%);  
+  background: rgba(131, 216, 164, 0.5); 
+  background: linear-gradient(0deg, rgba(131, 216, 164, 0.5) 0%, rgba(54,53,52,0.7223472472555768) 29%);    
 
 }
 
 .nav-bar img { 
   height: 80px;
+  margin-left: 20px;
 }
 
 .nav-links { 
@@ -25,25 +30,72 @@
 .nav-links a { 
   margin: 10px;
   padding: 5px;
-  border-right: 2px solid white;
-  font-size: 1.3rem;
+  text-shadow: 1px 2px 1px black;
+  font-size: 1.7rem;
   color: white;
-  font-family: monospace;
-  font-weight: 700;
+  font-family: 'Gluten', cursive;
+  font-weight: 600;
   
 }
 
 .nav-links a:hover { 
-  color:rgb(49, 153, 144);
-  border-right: none;
-  border-bottom: 2px solid white; 
+  color:rgba(109,214,149,1);
   cursor: pointer;
-  transition: 1s ease;
+  transition: .7s ease;
 }
 
+.socials-twitter { 
+  margin: 20px;
+}
 
 .socials-twitter:hover { 
   color:rgb(53, 132, 206);
   transition: .4s ease;
   cursor: pointer;
+}
+
+/*Landing page*/
+
+.landing-body { 
+  background-image: url(./images/background-home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.landing-pet img { 
+  width: 500px; 
+}
+
+.landing-pet { 
+  position: relative;
+}
+
+.landing-text-balloon { 
+  position: absolute;
+  left: -380px;
+  top: -100px;
+  border-radius: 16px 16px 16px 16px;
+  box-shadow: 6px 6px rgba(0, 0 , 0, 0.1);
+  padding: 25px;
+}
+
+.grass { 
+  background-color: rgba(131, 216, 164, 0.3); 
+}
+
+.landing-title { 
+  font-family: 'Gluten', cursive;
+  font-size: 4rem;
+}
+
+.landing-text { 
+  max-width: 300px;
+  font-size: 1.5rem;
+  font-family: 'Gluten', cursive;
 }
