@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React, { useState } from 'react'; 
 
 import NavBar from "./components/NavBar";
 import Landing from "./components/Landing";
@@ -13,12 +13,27 @@ import bear from './images/bear.png'
 
 function App() {
 
-  const petzArray = [bird, cat, bull, racoon, dragon, bear]
+  const petzArray = 
+
+  [
+    {
+      img: bird,
+      type: "grass"
+    },
+    {
+      img: dragon,
+      type: "fire"
+    },
+    {
+      img: bear,
+      type: "ice"
+    }
+  ]
 
   return (
         <div className="App">
-          <NavBar petzArray = {petzArray}/>
-          <Landing petzArray = {petzArray}/>
+          <NavBar petzArray = {petzArray[1]}/>
+          <Landing petzArray = {petzArray[1]}/>
         </div>
   );
 }

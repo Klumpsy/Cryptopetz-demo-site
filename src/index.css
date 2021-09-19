@@ -89,6 +89,10 @@
   background-color: rgba(131, 216, 164, 0.3); 
 }
 
+.fire { 
+  background-color: rgba(207, 109, 96, 0.3); 
+}
+
 .landing-title { 
   font-family: 'Gluten', cursive;
   font-size: 4rem;

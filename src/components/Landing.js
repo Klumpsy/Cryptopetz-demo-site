@@ -4,8 +4,8 @@ const Landing = ({petzArray}) => {
     return (
         <div className = "landing-body">
             <div className = "landing-pet">
-                <img src={petzArray[0]}/>
-                <span className ="landing-text-balloon grass">
+                <img src={petzArray.img}/>
+                <span className ="landing-text-balloon fire">
                     <h1 className="landing-title">Hi there!</h1>
                     <p className ="landing-text">Welcome to the Cryptopetz project! CryptoPetz The Game - is a tournament-style online role-playing 
                        game (RPG) where you can collect and enhance your own CryptoPet.<br/><br/>

@@ -5,7 +5,7 @@ const NavBar = ({petzArray}) => {
 
     return (
         <div className = "nav-bar">
-            <a href="/Landing"><img src={petzArray[Math.floor(Math.random() * petzArray.length)]} alt="CryptoPet"/></a>
+            <a href="/Landing"><img src={petzArray.img} alt="CryptoPet"/></a>
             <div className = "nav-links">
                 <a Link to="/GameInfo">Game Info</a>
                 <a Link to="/Metrics">Metrics</a>
