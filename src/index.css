@@ -13,13 +13,13 @@
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  background: rgba(131, 216, 164, 0.5); 
-  background: linear-gradient(0deg, rgba(131, 216, 164, 0.5) 0%, rgba(54,53,52,0.7223472472555768) 29%);    
+  background: rgba(24, 24, 24, 0.5); 
+  background: linear-gradient(0deg, rgba(20, 20, 20, 0.5) 0%, rgba(54,53,52,0.7223472472555768) 29%);    
 
 }
 
 .nav-bar img { 
-  height: 80px;
+  height: 150px;
   margin-left: 20px;
 }
 
@@ -35,11 +35,12 @@
   color: white;
   font-family: 'Gluten', cursive;
   font-weight: 600;
+  text-decoration: none;
   
 }
 
 .nav-links a:hover { 
-  color:rgba(109,214,149,1);
+  color:rgb(81, 82, 81);
   cursor: pointer;
   transition: .7s ease;
 }
@@ -56,20 +57,56 @@
 
 /*Landing page*/
 
-.landing-body { 
-  background-image: url(./images/background-home.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.landing-wrapper { 
+  height: 100vh;
+  width: 100vw; 
+  background-color: rgba(17, 16, 16, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.landing-body { 
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
+}
+
+.shadow-box { 
+  box-shadow: 2px 2px 2px black;
+  height: 2px;
+}
+
+.body-grass { 
+  background-image: url(./images/grass.jpg);
+}
+
+.body-fire { 
+  background-image: url(./images/lava.jpg);
+}
+
+.body-ice { 
+  background-image: url(./images/ice.jpg);
+}
+
+.body-lightning { 
+  background-image: url(./images/storm.jpg);
+}
+
+.body-water { 
+  background-image: url(./images/water.jpg);
+}
+
+.body-dojo { 
+  background-image: url(./images/dojo.jpg);
 }
 
 .landing-pet img { 
-  width: 500px; 
+  width: 800px; 
 }
 
 .landing-pet { 
@@ -78,19 +115,12 @@
 
 .landing-text-balloon { 
   position: absolute;
-  left: -380px;
-  top: -100px;
+  background-color: rgba(250, 249, 249, 0.6); 
+  left: -220px;
+  top: -50px;
   border-radius: 16px 16px 16px 16px;
-  box-shadow: 6px 6px rgba(0, 0 , 0, 0.1);
+  box-shadow: 6px 6px rgba(22, 22, 22, 0.3);
   padding: 25px;
-}
-
-.grass { 
-  background-color: rgba(131, 216, 164, 0.3); 
-}
-
-.fire { 
-  background-color: rgba(207, 109, 96, 0.3); 
 }
 
 .landing-title { 
@@ -102,4 +132,24 @@
   max-width: 300px;
   font-size: 1.5rem;
   font-family: 'Gluten', cursive;
+}
+
+.footer { 
+  position: absolute;
+  bottom: 0; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: rgba(24, 24, 24, 0.5); 
+  background: linear-gradient(0deg, rgba(20, 20, 20, 0.5) 0%, rgba(54,53,52,0.7223472472555768) 29%);    
+}
+
+.credits { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
