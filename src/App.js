@@ -62,9 +62,11 @@ const petzArray =
 function App() {
 
   const [count, setCount] = useState(0)
+  const [countFooter, setCountFooter] = useState(0)
 
   useEffect(() => { 
     setCount(Math.floor(Math.random() * petzArray.length))
+    setCountFooter(Math.floor(Math.random() * petzArray.length));
   })
 
 
@@ -72,7 +74,7 @@ function App() {
         <div className="App">
           <NavBar petzArray = {petzArray[count]}/>
           <Landing petzArray = {petzArray[count]}/>
-          <Footer/>
+          <Footer petzArray = {petzArray[countFooter]}/>
         </div>
   );
 }
