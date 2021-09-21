@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react'; 
+import {Route, Link} from 'react-router-dom';
 
 import NavBar from "./components/NavBar";
+import GameInfo from './components/GameInfo';
+import Metrics from './components/Metrics';
+import Petz from './components/Petz';
+import Updates from './components/Updates'
+import Team from './components/Team'
 import Landing from "./components/Landing";
 import Footer from "./components/Footer";
 import './index.css';
@@ -14,6 +20,7 @@ import seal from './images/seal.png'
 import firebear from './images/firebear.png'
 import ninja from './images/ninja.png'
 
+//Petz Object Array info for image display on pages 
 const petzArray = 
 
 [
@@ -73,7 +80,12 @@ function App() {
   return (
         <div className="App">
           <NavBar petzArray = {petzArray[count]}/>
-          <Landing petzArray = {petzArray[count]}/>
+          <Route exact path="/"><Landing petzArray = {petzArray[count]}/></Route>
+          <Route exact path="/GameInfo"><GameInfo/></Route>
+          <Route exact path="/Metrics"><Metrics/></Route>
+          <Route exact path="/Updates"><Updates/></Route>
+          <Route exact path="/Team"><Team/></Route>
+          <Route exact path="/Petz"><Petz/></Route>
           <Footer petzArray = {petzArray[countFooter]}/>
         </div>
   );

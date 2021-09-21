@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar = ({petzArray}) => { 
 
     return (
         <div className = "nav-bar">
-            <a href="/Landing"><img src={petzArray.img} alt="CryptoPet"/></a>
+            <a><Link to="/"><img src={petzArray.img} alt="CryptoPet"/></Link></a>
             <div className = "nav-links">
-                <a href="/GameInfo">Game Info</a>
-                <a href="/Metrics">Metrics</a>
-                <a href="/Updates">Updates</a>
-                <a href="/Team">Team</a>
-                <a href="/Petz">Petz</a>
+                <a><Link to="/GameInfo">Game Info</Link></a>
+                <a><Link to="/Metrics">Metrics</Link></a>
+                <a><Link to="/Updates">Updates</Link></a>
+                <a><Link to="/Team">Team</Link></a>
+                <a><Link to="/Petz">Petz</Link></a>
             </div>
             <div className = "socials">
                 <a><i className="socials-twitter fa fab fa-twitter fa-3x"></i></a>
