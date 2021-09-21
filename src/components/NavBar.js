@@ -5,7 +5,7 @@ const NavBar = ({petzArray}) => {
 
     return (
         <div className = "nav-bar">
-            <a><Link to="/"><img src={petzArray.img} alt="CryptoPet"/></Link></a>
+            <li><Link to="/"><img src={petzArray.img} alt="CryptoPet"/></Link></li>
             <div className = "nav-links">
                 <a><Link to="/GameInfo">Game Info</Link></a>
                 <a><Link to="/Metrics">Metrics</Link></a>

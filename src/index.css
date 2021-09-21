@@ -4,7 +4,9 @@
   margin: 0; 
   padding: 0; 
   box-sizing: border-box;
+  font-family: 'Gluten', cursive;
 }
+
 
 /*Navigation menu */ 
 .nav-bar { 
@@ -34,7 +36,6 @@
   text-shadow: 1px 2px 1px black;
   font-size: 1.7rem;
   color: white;
-  font-family: 'Gluten', cursive;
   font-weight: 600;
   text-decoration: none;
   
@@ -58,7 +59,7 @@
 
 /*Landing page*/
 
-.landing-wrapper { 
+.page-wrapper { 
   height: 100vh;
   width: 100vw; 
   background-color: rgba(17, 16, 16, 0.6);
@@ -125,14 +126,141 @@
 }
 
 .landing-title { 
-  font-family: 'Gluten', cursive;
   font-size: 4rem;
 }
 
 .landing-text { 
   max-width: 300px;
   font-size: 1.5rem;
-  font-family: 'Gluten', cursive;
+}
+
+/*Game Info Page*/
+
+.game-info-background { 
+  background-image: url("./images/mountain-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.game-info-background h1 { 
+  margin-top: 120rem;
+  font-size: 6rem;
+  color: white;
+}
+
+.game-info-wrapper { 
+  width: 100vw;
+  height: 100vh; 
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.game-intro { 
+  margin: 4rem;
+  text-align: center;
+  max-width: 800px;
+  color: white;
+}
+
+.attribute-layout{ 
+  display: flex;
+  justify-content: center;
+}
+
+.roadmap-layout { 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.roadmap-layout img { 
+  max-width: 1000px;
+  border-radius: 16px;
+}
+
+.attribute-info { 
+  color: white;
+}
+
+.attribute-info-roadmap { 
+  max-width: 800px;
+  margin-bottom: 3rem;
+}
+
+.attribute-info h2 { 
+  color: rgba(223, 160, 59, 0.6);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.attribute-layout div { 
+  max-width: 600px;
+  margin: 50px;
+}
+
+table { 
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(32,32,32, .3);
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.table-header th{ 
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.table-very-common { 
+  background-color: rgba(162, 167, 157, 0.6);
+}
+.table-common { 
+  background-color: rgba(216, 224, 216, 0.6);
+}
+.table-uncommon { 
+  background-color: rgba(154, 214, 154, 0.6);
+}
+.table-scarce { 
+  background-color: rgba(130, 185, 130, 0.6);
+}
+.table-rare { 
+  background-color: rgba(151, 180, 235, 0.6);
+}
+.table-epic { 
+  background-color: rgba(130, 22, 192, 0.6);
+}
+.table-extremely-rare { 
+  background-color: rgba(158, 92, 158, 0.6);
+}
+.table-ultra-rare { 
+  background-color: rgba(207, 184, 80, 0.6);
+}
+.table-legendary{ 
+  background-color: rgba(223, 160, 59, 0.6);
+}
+
+td { 
+  padding: 8px;
+  text-align: center;
+}
+
+.petz-row { 
+  box-shadow: rgba(70, 68, 64, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.4) 0px 18px 36px -18px inset;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0  2rem 0;
+}
+
+.petz-row img { 
+  max-height: 200px;
 }
 
 /*Footer */ 
@@ -144,7 +272,6 @@
   justify-content: center;
   align-items: center;
   height: 100px;
-  font-family: 'Gluten', cursive;
   background: rgba(24, 24, 24, 0.5); 
   background: linear-gradient(0deg, rgba(20, 20, 20, 0.5) 0%, rgba(54,53,52,0.7223472472555768) 29%);    
 }

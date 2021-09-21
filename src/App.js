@@ -74,14 +74,14 @@ function App() {
   useEffect(() => { 
     setCount(Math.floor(Math.random() * petzArray.length))
     setCountFooter(Math.floor(Math.random() * petzArray.length));
-  })
+  },[])
 
 
   return (
         <div className="App">
           <NavBar petzArray = {petzArray[count]}/>
           <Route exact path="/"><Landing petzArray = {petzArray[count]}/></Route>
-          <Route exact path="/GameInfo"><GameInfo/></Route>
+          <Route exact path="/GameInfo"><GameInfo petzArray = {petzArray}/></Route>
           <Route exact path="/Metrics"><Metrics/></Route>
           <Route exact path="/Updates"><Updates/></Route>
           <Route exact path="/Team"><Team/></Route>
