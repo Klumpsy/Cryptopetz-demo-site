@@ -14,7 +14,7 @@ const NavBar = ({petzArray}) => {
                 <a><Link to="/Petz">Petz</Link></a>
             </div>
             <div className = "socials">
-                <a><i className="socials-twitter fa fab fa-twitter fa-3x"></i></a>
+                <a href="https://twitter.com/CryptoPetz_CNFT" target = "_blank"><i className="socials-twitter fa fab fa-twitter fa-3x"></i></a>
                 <a><i className="socials-discord fab fa fa-discord fa-3x"></i></a>
             </div>
         </div>

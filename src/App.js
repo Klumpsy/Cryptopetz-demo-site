@@ -28,8 +28,23 @@ import squid from './images/petzImages/squid.png';
 import light from './images/petzImages/light.png'; 
 import owl from './images/petzImages/owl.png';
 
+import fireEgg from "./images/eggs/Fire_Egg_REV1.png";
+import fairyEgg from "./images/eggs/Fairy_Egg_REV1.png";
+import electricEgg from "./images/eggs/Electric_Egg_REV1.png";
+import grassEgg from "./images/eggs/Grass_Egg_REV1.png";
+import iceEgg from "./images/eggs/Ice_Egg_REV1.png";
+import lavaEgg from "./images/eggs/Lava_Egg_REV1.png";
+import legendaryEgg from "./images/eggs/Legendary_Egg_REV1.png";
+import metalEgg from "./images/eggs/Metal_Egg_REV1.png";
+import normalEgg from "./images/eggs/Normal_Egg_REV1.png";
+import shadowEgg from "./images/eggs/Shadow_Egg_REV1.png";
+import soundEgg from "./images/eggs/Sound_Egg_REV1.png";
+import waterEgg from "./images/eggs/Water_Egg_REV1.png";
 
 //Petz Object Array info for image display on pages 
+const eggArray = [fireEgg, fairyEgg, electricEgg, grassEgg, iceEgg, lavaEgg, legendaryEgg, metalEgg, normalEgg, shadowEgg,
+                  soundEgg, waterEgg];
+
 const allPetzArray = [mouse, icebird, dragon, bear, stormApe, seal, firebear, ninja, bull, racoon, chick, pony, shark, 
                       squid, light, owl];
 const petzArray = 
@@ -87,12 +102,11 @@ function App() {
     setCountFooter(Math.floor(Math.random() * petzArray.length));
   },[])
 
-
   return (
         <div className="App">
           <NavBar petzArray = {petzArray[count]}/>
           <Route exact path="/"><Landing petzArray = {petzArray[count]}/></Route>
-          <Route exact path="/GameInfo"><GameInfo allPetzArray = {allPetzArray}/></Route>
+          <Route exact path="/GameInfo"><GameInfo allPetzArray = {allPetzArray} eggArray = {eggArray}/></Route>
           <Route exact path="/Metrics"><Metrics/></Route>
           <Route exact path="/Updates"><Updates/></Route>
           <Route exact path="/Team"><Team/></Route>

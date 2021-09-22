@@ -19,7 +19,7 @@ import specialAttackGold from '../images/tokens/Special_Attack_Gold.png';
 import specialAttackSilver from '../images/tokens/Special_Attack_Silver.png';
 import specialAttackBronze from '../images/tokens/Special_Attack_Bronze.png';
 
-const GameInfo = ({ allPetzArray }) => { 
+const GameInfo = ({ allPetzArray, eggArray }) => { 
 
     const attributes = [<Health/>, <Attack/>, <Defense/>, <AttackvsDefense/>, <Stamina/>, <SpeedAndDexterity/>];
     const tokenArray = [attackToken, abilityToken, defenseToken, healthToken, speedToken, staminaToken, dexterityToken,
@@ -99,13 +99,13 @@ const GameInfo = ({ allPetzArray }) => {
                                 <td>2</td>
                                 <td>1</td>
                             </tr>
-                                <tr className="table-rare">
+                            <tr className="table-rare">
                                 <td>Rare</td>
                                 <td>5-6</td>
                                 <td>2</td>
                                 <td>2</td>
                             </tr>
-                                <tr className="table-epic">
+                            <tr className="table-epic">
                                 <td>Epic</td>
                                 <td>6-7</td>
                                 <td>2</td>
@@ -198,7 +198,7 @@ const GameInfo = ({ allPetzArray }) => {
                            Gold tokens are very hard to come by. Participating in our discord, entering tournaments and 
                            playing matches are all things you can do to increase your chances of getting gold tokens.</p>
                     </div>
-                    <div className ="petz-row">
+                    <div className ="petz-row token-row">
                     <img src={tokenArray[6]}/>
                     <img src={tokenArray[5]}/>
                     <img src={tokenArray[4]}/>
@@ -228,8 +228,8 @@ const GameInfo = ({ allPetzArray }) => {
                     <img src={tokenArray[9]}/>
                     </div>
                 </div>
-                <div className ="roadmap-layout">
-                    <div className="attribute-info attribute-info-roadmap">
+                <div className ="attribute-layout">
+                    <div className="attribute-info">
                         <h2>What happens if I collect an egg during the pre-sale?</h2>
                         <p>You’re lucky! Every person who has collected an egg during the pre-sale will be able to redeem it 
                            during the Epoch 2 pre-sale. Doing so, you will gain access to an exclusive CryptoPet that 
@@ -240,12 +240,23 @@ const GameInfo = ({ allPetzArray }) => {
                            CryptoPet. 
                         </p>
                     </div>
-                    <div className ="petz-row egg-row">
-                    <img src={tokenArray[7]}/>
-                    <img src={tokenArray[8]}/>
-                    <img src={tokenArray[9]}/>
+                    <div>
+                            <img src={eggArray[5]}/>
                     </div>
                 </div>   
+                <div className ="petz-row egg-row">
+                    <img src={eggArray[0]}/>
+                    <img src={eggArray[1]}/>
+                    <img src={eggArray[2]}/>
+                    <img src={eggArray[3]}/>
+                    <img src={eggArray[4]}/>
+                    <img src={eggArray[6]}/>
+                    <img src={eggArray[7]}/>
+                    <img src={eggArray[8]}/>
+                    <img src={eggArray[9]}/>
+                    <img src={eggArray[10]}/>
+                    <img src={eggArray[11]}/>
+                </div>
             </div>
         </div>
     )
