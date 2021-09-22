@@ -11,16 +11,27 @@ import Landing from "./components/Landing";
 import Footer from "./components/Footer";
 import './index.css';
 
-import mouse from './images/mouse.png' 
-import icebird from './images/icebird.png'
-import dragon from './images/dragon.png' 
-import bear from './images/bear.png'
-import stormApe from './images/storm-ape.png'
-import seal from './images/seal.png'
-import firebear from './images/firebear.png'
-import ninja from './images/ninja.png'
+import mouse from './images/petzImages/mouse.png' 
+import icebird from './images/petzImages/icebird.png'
+import dragon from './images/petzImages/dragon.png' 
+import bear from './images/petzImages/bear.png'
+import stormApe from './images/petzImages/storm-ape.png'
+import seal from './images/petzImages/seal.png'
+import firebear from './images/petzImages/firebear.png'
+import ninja from './images/petzImages/ninja.png'
+import bull from './images/petzImages/bull.png';
+import racoon from './images/petzImages/racoon.png'; 
+import chick from './images/petzImages/chick.png';
+import pony from './images/petzImages/pony.png'; 
+import shark from './images/petzImages/shark.png'; 
+import squid from './images/petzImages/squid.png'; 
+import light from './images/petzImages/light.png'; 
+import owl from './images/petzImages/owl.png';
+
 
 //Petz Object Array info for image display on pages 
+const allPetzArray = [mouse, icebird, dragon, bear, stormApe, seal, firebear, ninja, bull, racoon, chick, pony, shark, 
+                      squid, light, owl];
 const petzArray = 
 
 [
@@ -81,7 +92,7 @@ function App() {
         <div className="App">
           <NavBar petzArray = {petzArray[count]}/>
           <Route exact path="/"><Landing petzArray = {petzArray[count]}/></Route>
-          <Route exact path="/GameInfo"><GameInfo petzArray = {petzArray}/></Route>
+          <Route exact path="/GameInfo"><GameInfo allPetzArray = {allPetzArray}/></Route>
           <Route exact path="/Metrics"><Metrics/></Route>
           <Route exact path="/Updates"><Updates/></Route>
           <Route exact path="/Team"><Team/></Route>

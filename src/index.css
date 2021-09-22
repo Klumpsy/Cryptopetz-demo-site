@@ -16,8 +16,8 @@
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  background: rgba(24, 24, 24, 0.5); 
-  background: linear-gradient(0deg, rgba(20, 20, 20, 0.5) 0%, rgba(54,53,52,0.7223472472555768) 29%);    
+  background: rgba(24, 24, 24, 0.6); 
+  background: linear-gradient(0deg, rgba(20, 20, 20, 0.7) 0%, rgba(54,53,52,0.9223472472555768) 29%);    
 
 }
 
@@ -310,7 +310,10 @@ td {
   margin-bottom: 10rem;
 }
 
+/* Metrics page */ 
+
 /*Footer */ 
+
 .footer { 
   position: absolute;
   bottom: 0; 
@@ -319,8 +322,8 @@ td {
   justify-content: center;
   align-items: center;
   height: 100px;
-  background: rgba(24, 24, 24, 0.5); 
-  background: linear-gradient(0deg, rgba(20, 20, 20, 0.5) 0%, rgba(54,53,52,0.7223472472555768) 29%);    
+  background: rgba(24, 24, 24, 0.7); 
+  background: linear-gradient(0deg, rgba(20, 20, 20, 0.8) 0%, rgba(54,53,52,0.9223472472555768) 29%);    
 }
 
 .footer img { 

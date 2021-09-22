@@ -19,7 +19,7 @@ import specialAttackGold from '../images/tokens/Special_Attack_Gold.png';
 import specialAttackSilver from '../images/tokens/Special_Attack_Silver.png';
 import specialAttackBronze from '../images/tokens/Special_Attack_Bronze.png';
 
-const GameInfo = ({ petzArray }) => { 
+const GameInfo = ({ allPetzArray }) => { 
 
     const attributes = [<Health/>, <Attack/>, <Defense/>, <AttackvsDefense/>, <Stamina/>, <SpeedAndDexterity/>];
     const tokenArray = [attackToken, abilityToken, defenseToken, healthToken, speedToken, staminaToken, dexterityToken,
@@ -133,13 +133,13 @@ const GameInfo = ({ petzArray }) => {
                     </div>
                 </div>
                 <div className ="petz-row">
-                    <img src={petzArray[0].img}/>
-                    <img src={petzArray[1].img}/>
-                    <img src={petzArray[2].img}/>
-                    <img src={petzArray[3].img}/>
-                    <img src={petzArray[4].img}/>
-                    <img src={petzArray[5].img}/>
-                    <img src={petzArray[6].img}/>
+                    <img src={allPetzArray[8]}/>
+                    <img src={allPetzArray[9]}/>
+                    <img src={allPetzArray[10]}/>
+                    <img src={allPetzArray[11]}/>
+                    <img src={allPetzArray[12]}/>
+                    <img src={allPetzArray[13]}/>
+                    <img src={allPetzArray[14]}/>
                 </div>
                 <div className ="game-intro">
                     <h2>CryptoPetz Characteristics</h2>
@@ -162,13 +162,13 @@ const GameInfo = ({ petzArray }) => {
                     <i className= {"arrow arrow-right fa fas fa-arrow-circle-right fa-4x"} onClick = {nextSlide}></i>
                 </div>
                 <div className ="petz-row">
-                    <img src={petzArray[7].img}/>
-                    <img src={petzArray[6].img}/>
-                    <img src={petzArray[5].img}/>
-                    <img src={petzArray[4].img}/>
-                    <img src={petzArray[3].img}/>
-                    <img src={petzArray[2].img}/>
-                    <img src={petzArray[1].img}/>
+                    <img src={allPetzArray[7]}/>
+                    <img src={allPetzArray[6]}/>
+                    <img src={allPetzArray[5]}/>
+                    <img src={allPetzArray[4]}/>
+                    <img src={allPetzArray[3]}/>
+                    <img src={allPetzArray[2]}/>
+                    <img src={allPetzArray[1]}/>
                 </div>
                 <div className ="roadmap-layout">
                     <div className="attribute-info attribute-info-roadmap">
