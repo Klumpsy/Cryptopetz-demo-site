@@ -1,6 +1,41 @@
-import roadmap from '../images/roadmap.jpg'
+import React, { useState} from 'react';
+import roadmap from '../images/roadmap.jpg';
+
+import Health from '../components/Health';
+import Attack from '../components/Attack';
+import Defense from './Defense';
+import AttackvsDefense from '../components/AttackvsDefense';
+import Stamina from '../components/Stamina';
+import SpeedAndDexterity from '../components/SpeedAndDexterity';
+
+import attackToken from '../images/tokens/Attack_Gold.png';
+import abilityToken from '../images/tokens/Ability_Gold.png';
+import defenseToken from '../images/tokens/Defense_Gold.png';
+import healthToken from '../images/tokens/Health_Gold.png';
+import speedToken from '../images/tokens/Speed_Gold.png';
+import staminaToken from '../images/tokens/Stamina_Gold.png';
+import dexterityToken from '../images/tokens/Dexterity_Gold.png';
+import specialAttackGold from '../images/tokens/Special_Attack_Gold.png';
+import specialAttackSilver from '../images/tokens/Special_Attack_Silver.png';
+import specialAttackBronze from '../images/tokens/Special_Attack_Bronze.png';
 
 const GameInfo = ({ petzArray }) => { 
+
+    const attributes = [<Health/>, <Attack/>, <Defense/>, <AttackvsDefense/>, <Stamina/>, <SpeedAndDexterity/>];
+    const tokenArray = [attackToken, abilityToken, defenseToken, healthToken, speedToken, staminaToken, dexterityToken,
+                        specialAttackBronze, specialAttackSilver, specialAttackGold];
+
+    const [currentAttribute, setCurrentAttribute] = useState(0);
+    const length = attributes.length
+
+    const nextSlide = () => { 
+        setCurrentAttribute(currentAttribute === length -1 ? 0 : currentAttribute + 1)
+    }
+
+    const previousSlide = () => { 
+        setCurrentAttribute(currentAttribute === 0 ? length -1 : currentAttribute - 1)
+    }
+
     return (
         <div className = "game-info-background">
             <div className = "page-wrapper game-info-wrapper">
@@ -113,60 +148,18 @@ const GameInfo = ({ petzArray }) => {
                        If you have any ideas of feedback please feel free and contact us via Twitter or Discord! 
                     </p>
                 </div>
-                <div className ="attribute-layout">
-                    <div>
-                        <table>
-                            <tr className="table-header">
-                                <th>Rarity</th>
-                                <th>Health</th>   
-                            </tr>
-                            <tr className="table-very-common">
-                                <td>Very Common</td>
-                                <td>40-80</td>
-                            </tr>
-                            <tr className="table-common">
-                                <td>Common</td>
-                                <td>50-90</td>
-                            </tr>
-                            <tr className="table-uncommon">
-                                <td>Uncommon</td>
-                                <td>60-100</td>
-                            </tr>
-                            <tr className="table-scarce">
-                                <td>Scarce</td>
-                                <td>70-110</td>
-                            </tr>
-                                <tr className="table-rare">
-                                <td>Rare</td>
-                                <td>80-120</td>
-                            </tr>
-                                <tr className="table-epic">
-                                <td>Epic</td>
-                                <td>90-130</td>
-                            </tr>
-                            <tr className="table-extremely-rare">
-                                <td>Extremely Rare</td>
-                                <td>100-140</td>
-                            </tr>
-                            <tr className="table-ultra-rare">
-                                <td>Ultra Rare</td>
-                                <td>110-150</td>
-                            </tr>
-                            <tr className="table-legendary">
-                                <td>Legendary</td>
-                                <td>130-160</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div className="attribute-info">
-                        <h2>Health (HP)</h2>
-                        <p>
-                        The CryptoPet’z health is correlated to the rarity of the CryptoPet. 
-                        As the rarity increases, the HP increases. HP fluctuates between 2 values as shown in the table. <br/><br/>
-                        For example, to acquire a CryptoPet of rarity Common with a HP of 80 is much harder than 
-                        acquiring the same rarity CryptoPet with an HP of 60. The same goes for all other rarity levels.
-                        </p>
-                    </div>
+                <div className = "attributes-container" id="attributes"> 
+                    <i className= "arrow arrow-left fa fas fa-arrow-circle-left fa-4x" onClick ={previousSlide}></i>
+                        {
+                            attributes.map((attribute, index) => { 
+                            return (
+                                <div className ={index === currentAttribute ? 'project active': 'project'} key={index}>
+                                    {index === currentAttribute ? attribute : ""}
+                                </div>
+                            )
+                        })
+                    }
+                    <i className= {"arrow arrow-right fa fas fa-arrow-circle-right fa-4x"} onClick = {nextSlide}></i>
                 </div>
                 <div className ="petz-row">
                     <img src={petzArray[7].img}/>
@@ -192,6 +185,67 @@ const GameInfo = ({ petzArray }) => {
                         <img src={roadmap}/>
                     </div>
                 </div>
+                <div className ="roadmap-layout">
+                    <div className="attribute-info attribute-info-roadmap">
+                        <h2>What kind of token can I add to my CryptoPet?</h2>
+                        <p>The token you combine with your CryptoPet will depend on your CryptoPet’z available slots. 
+                           For example, if you were able to collect an Epic CryptoPet then you will have an attribute slot 
+                           ranging between 6 and 7, 2 ability slots and 2 special attack slots. Therefore, 
+                           you can only merge a total of 10-11 tokens with your CryptoPetz. Token rarity ranges between: 
+                           Bronze, Silver and Gold. <br/><br/>
+                           
+                           All three can be bought through the store, however, 
+                           Gold tokens are very hard to come by. Participating in our discord, entering tournaments and 
+                           playing matches are all things you can do to increase your chances of getting gold tokens.</p>
+                    </div>
+                    <div className ="petz-row">
+                    <img src={tokenArray[6]}/>
+                    <img src={tokenArray[5]}/>
+                    <img src={tokenArray[4]}/>
+                    <img src={tokenArray[3]}/>
+                    <img src={tokenArray[2]}/>
+                    <img src={tokenArray[1]}/>
+                    <img src={tokenArray[0]}/>
+                    </div>
+                </div>
+                <div className ="roadmap-layout">
+                    <div className="attribute-info attribute-info-roadmap">
+                        <h2>What are special attack tokens?</h2>
+                        <p>In order to win the match, you need to defeat your opponent. 
+                           To do so, you must attack them and deplete all their CryptoPet’z health to 0. 
+                           Every CryptoPet can do a normal attack, however, if you really want the advantage, 
+                           you will make sure to add special attacks to your CryptoPet. For example, 
+                           I can add an attack called “Hyperbeam” that has an attack power of 60 which could be better 
+                           than my basic attacks. <br/><br/>
+                           
+                           Special attack tokens are categorized per type; Fire, Ice, Sound, Grass, Normal, Psychic, Dark, 
+                           Ground, Water, Electric and Poison. The attack tokens must correspond with your CryptoPet’z 
+                           type otherwise it will be useless.</p>
+                    </div>
+                    <div className ="petz-row">
+                    <img src={tokenArray[7]}/>
+                    <img src={tokenArray[8]}/>
+                    <img src={tokenArray[9]}/>
+                    </div>
+                </div>
+                <div className ="roadmap-layout">
+                    <div className="attribute-info attribute-info-roadmap">
+                        <h2>What happens if I collect an egg during the pre-sale?</h2>
+                        <p>You’re lucky! Every person who has collected an egg during the pre-sale will be able to redeem it 
+                           during the Epoch 2 pre-sale. Doing so, you will gain access to an exclusive CryptoPet that 
+                           cannot be obtained by a pre-sale. The CryptoPet will be related to the type of egg that you’ve 
+                           collected. <br/><br/>
+                           
+                           For example, if you collected a Legendary Egg, you will receive an exclusive Epoch 2 legendary 
+                           CryptoPet. 
+                        </p>
+                    </div>
+                    <div className ="petz-row egg-row">
+                    <img src={tokenArray[7]}/>
+                    <img src={tokenArray[8]}/>
+                    <img src={tokenArray[9]}/>
+                    </div>
+                </div>   
             </div>
         </div>
     )

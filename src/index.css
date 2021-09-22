@@ -145,9 +145,43 @@
 }
 
 .game-info-background h1 { 
-  margin-top: 120rem;
+  margin-top: 280rem;
   font-size: 6rem;
   color: white;
+}
+
+.project { 
+  opacity: 0; 
+  transition: 1s ease-in-out;
+}
+
+.project.active { 
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+.attributes-container { 
+  position: relative;
+  margin-bottom: 7rem;
+}
+.arrow { 
+  position: absolute;
+  bottom: -60px;
+  color: rgba(214, 138, 16, 0.6);
+}
+
+.arrow:hover { 
+  cursor: pointer;
+  transition: .4s ease-in-out;
+  transform: scale(0.95);
+  color: rgba(250, 194, 104, 0.6);
+}
+
+.arrow-left { 
+  left: 200px;
+}
+
+.arrow-right { 
+  right: 200px;
 }
 
 .game-info-wrapper { 
@@ -177,6 +211,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
 }
 
 .roadmap-layout img { 
@@ -225,25 +260,33 @@ table {
   background-color: rgba(216, 224, 216, 0.6);
 }
 .table-uncommon { 
-  background-color: rgba(154, 214, 154, 0.6);
-}
-.table-scarce { 
   background-color: rgba(130, 185, 130, 0.6);
 }
-.table-rare { 
+.table-scarce { 
   background-color: rgba(151, 180, 235, 0.6);
+}
+.table-rare { 
+  background-color: rgba(79, 119, 194, 0.6);
 }
 .table-epic { 
   background-color: rgba(130, 22, 192, 0.6);
 }
 .table-extremely-rare { 
-  background-color: rgba(158, 92, 158, 0.6);
+  background-color: rgba(192, 128, 192, 0.6);
 }
 .table-ultra-rare { 
-  background-color: rgba(207, 184, 80, 0.6);
+  background-color: rgba(212, 199, 120, 0.6);
 }
 .table-legendary{ 
-  background-color: rgba(223, 160, 59, 0.6);
+  background-color: rgba(214, 138, 16, 0.6);
+}
+
+.table-even { 
+  background-color: rgba(94, 144, 156, 0.6);
+}
+
+.table-odd { 
+  background-color: rgba(91, 223, 172, 0.6);
 }
 
 td { 
@@ -252,15 +295,19 @@ td {
 }
 
 .petz-row { 
-  box-shadow: rgba(70, 68, 64, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.4) 0px 18px 36px -18px inset;
+  box-shadow: -5px -5px 30px 5px rgb(204, 181, 78), 5px 5px 30px 5px rgb(99, 200, 141);
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 2rem 0  2rem 0;
+  margin: 4rem 0  4rem 0;
 }
 
 .petz-row img { 
   max-height: 200px;
+}
+
+.egg-row { 
+  margin-bottom: 10rem;
 }
 
 /*Footer */ 
