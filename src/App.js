@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'; 
 import {Route, Link} from 'react-router-dom';
 
+import LoadingScreen from './components/LoadingScreen';
 import NavBar from "./components/NavBar";
 import GameInfo from './components/GameInfo';
 import Metrics from './components/Metrics';
@@ -94,6 +95,14 @@ const petzArray =
 
 function App() {
 
+  //Loading page check
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => { 
+      setTimeout(() => setLoading(false), 12000)
+  }, []);
+
+  //Generate random petz to display 
   const [count, setCount] = useState(0)
   const [countFooter, setCountFooter] = useState(0)
 
@@ -103,6 +112,8 @@ function App() {
   },[])
 
   return (
+    <>
+    {loading ? <LoadingScreen/> :
         <div className="App">
           <NavBar petzArray = {petzArray[count]}/>
           <Route exact path="/"><Landing petzArray = {petzArray[count]}/></Route>
@@ -113,6 +124,8 @@ function App() {
           <Route exact path="/Petz"><Petz/></Route>
           <Footer petzArray = {petzArray[countFooter]}/>
         </div>
+    }
+    </>
   );
 }
 

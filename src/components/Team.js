@@ -4,21 +4,21 @@ import bob from "../images/Bob-team.png";
 import justin from "../images/Justin-team.png"
 import jake from "../images/Jake-team.png"
 
-import dragon from "../images/petzImages/dragon.png";
-import light from "../images/petzImages/light.png";
-import stormApe from "../images/petzImages/storm-ape.png";
-import racoon from "../images/petzImages/racoon.png"
-import icebird from "../images/petzImages/icebird.png"
+import bear from "../images/petzImages/bear.png";
+import cactus from "../images/petzImages/cactus.png";
+import psychicCow from "../images/petzImages/psychicCow.png";
+import bulb from "../images/petzImages/bulb.png"
+import combatSheep from "../images/petzImages/combatSheep.png"
 
 const Team = () => { 
     return (
         <div className = "team-info-background">
-            <div className = "page-wrapper game-info-wrapper">
+            <div className = "page-wrapper game-info-wrapper team-wrapper">
                 <h1>Team</h1>
                 <div className = "team-member-container">
                     <div className = "team-member-image">
                         <img src ={nick} />
-                        <img className = "team-member-pet" src ={dragon}/>
+                        <img className = "team-member-pet" src ={bear}/>
                     </div>
                     <div className ="team-member-text">
                         <h2>Nick (Hemsketsmelvet)</h2>
@@ -41,14 +41,14 @@ const Team = () => {
                     </div>
                     <div className = "team-member-image">
                         <img src ={dom} />
-                        <img className = "team-member-pet" src ={light}/>
+                        <img className = "team-member-pet" src ={cactus}/>
                     </div>
                     
                 </div>
                 <div className = "team-member-container">
                     <div className = "team-member-image">
                         <img src ={bob} />
-                        <img className = "team-member-pet" src ={stormApe}/>
+                        <img className = "team-member-pet" src ={combatSheep}/>
                     </div>
                     <div className ="team-member-text">
                         <h2>Bob (MajikCat)</h2>
@@ -73,13 +73,13 @@ const Team = () => {
                     </div>
                     <div className = "team-member-image">
                         <img src ={justin} />
-                        <img className = "team-member-pet" src ={racoon}/>
+                        <img className = "team-member-pet" src ={psychicCow}/>
                     </div>
                 </div>
-                <div className = "team-member-container">
-                <div className = "team-member-image">
+                <div className = "team-member-container team-last-container">
+                <div className = "team-member-image ">
                         <img src ={jake} />
-                        <img className = "team-member-pet" src ={icebird}/>
+                        <img className = "team-member-pet" src ={bulb}/>
                     </div>
                     <div className ="team-member-text">
                         <h2>Jake (jshear)</h2>
