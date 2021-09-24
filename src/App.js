@@ -119,7 +119,7 @@ function App() {
           <Route exact path="/"><Landing petzArray = {petzArray[count]}/></Route>
           <Route exact path="/GameInfo"><GameInfo allPetzArray = {allPetzArray} eggArray = {eggArray}/></Route>
           <Route exact path="/Metrics"><Metrics/></Route>
-          <Route exact path="/Updates"><Updates/></Route>
+          <Route exact path="/Updates"><Updates allPetzArray = {allPetzArray}/></Route>
           <Route exact path="/Team"><Team/></Route>
           <Route exact path="/Petz"><Petz/></Route>
           <Footer petzArray = {petzArray[countFooter]}/>

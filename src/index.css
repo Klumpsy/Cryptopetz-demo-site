@@ -328,6 +328,54 @@ td {
 
 /* Metrics page */ 
 
+/* Updates page */ 
+.updates-background { 
+  background-image: url("./images/skyBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.update-page-wrapper { 
+  height: 100vh;
+  width: 100vw; 
+  background-color: rgba(17, 16, 16, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.update-container { 
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  max-width: 1000px;
+  background: rgba(24, 24, 24, 0.6); 
+  background: linear-gradient(0deg, rgba(20, 20, 20, 0.5) 0%, rgba(54,53,52,0.7223472472555768) 29%);
+  border-radius: 16px;
+  padding: 10px; 
+  color: rgb(207, 195, 195);
+  margin-bottom: 3rem;
+}
+
+.update-petz-image { 
+  position: absolute;
+  max-width: 200px;
+  right: 0;
+  top: -80px;
+}
+
+.update-container h2 { 
+  color: rgb(137, 200, 137);
+  margin-bottom: 20px;
+}
+
+.emph { 
+  color: rgb(137, 200, 137);
+}
+
 /* Team page */ 
 .team-info-background { 
   background-image: url("./images/team-background.jpg");
