@@ -27,19 +27,14 @@
   margin-left: 20px;
 }
 
-.nav-links { 
-  margin: 5px;
-}
-
 .nav-links a { 
-  margin: 10px;
+  margin: 5px;
   padding: 5px;
   text-shadow: 1px 2px 1px black;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   color: white;
   font-weight: 600;
   text-decoration: none;
-  
 }
 
 .nav-links a:hover { 
@@ -64,9 +59,9 @@
 
 /*Landing page*/
 
-.page-wrapper { 
-  height: 100vh;
-  width: 100vw; 
+.landing-page-wrapper { 
+  width: 100%;
+  min-height: 100vh; 
   background-color: rgba(17, 16, 16, 0.6);
   display: flex;
   justify-content: center;
@@ -74,7 +69,6 @@
 }
 
 .landing-body { 
-  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -137,6 +131,86 @@
   font-size: 1.5rem;
 }
 
+/*Story Time Page*/ 
+.story-background { 
+  perspective: 1000px;
+}
+
+.story-wrapper { 
+  width: 100%; 
+  min-height: 100vh;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+  background-color: rgba(17, 16, 16, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-container { 
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 16, 16, 0.3);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-container { 
+  justify-content: start;
+}
+
+.book-container h1 { 
+  font-size: 4rem;
+  color:rgb(53, 50, 46)
+}
+
+.book-container h2 { 
+  font-size: 2rem;
+  color:rgb(53, 50, 46)
+}
+
+.book-arrow { 
+  margin: 4rem;
+}
+
+.book-arrow:hover { 
+  cursor: pointer;
+  color: rgb(158, 142, 52);
+  transition: 1s ease;
+}
+
+.book-page { 
+  background-image: url("./images/oldPaper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px; 
+  width: 450px;  
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.page-active { 
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.page { 
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.book-cover { 
+  background-image: url("./images/bookCover.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 /*Game Info Page*/
 
 .game-info-background { 
@@ -147,8 +221,18 @@
   background-attachment: fixed;
 }
 
+.game-info-wrapper { 
+  width: 100vw; 
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+  background-color: rgba(17, 16, 16, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .game-info-wrapper h1 { 
-  margin-top: 280rem;
   font-size: 6rem;
   color: white;
 }
@@ -186,15 +270,6 @@
 
 .arrow-right { 
   right: 200px;
-}
-
-.game-info-wrapper { 
-  width: 100vw;
-  height: 100vh; 
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
 }
 
 .game-intro { 
@@ -338,8 +413,9 @@ td {
 }
 
 .update-page-wrapper { 
-  height: 100vh;
   width: 100vw; 
+  padding-top: 12rem;
+  padding-bottom: 8rem;
   background-color: rgba(17, 16, 16, 0.6);
   display: flex;
   justify-content: center;
@@ -357,7 +433,10 @@ td {
   border-radius: 16px;
   padding: 10px; 
   color: rgb(207, 195, 195);
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  box-shadow: rgba(224, 221, 221, 0.733) 0px 1px 2px, rgba(189, 185, 185, 0.07) 0px 2px 4px, 
+              rgba(238, 234, 234, 0.07) 0px 4px 8px, rgba(235, 231, 231, 0.07) 0px 8px 16px, 
+              rgba(224, 220, 220, 0.07) 0px 16px 32px, rgba(216, 211, 211, 0.07) 0px 32px 64px;
 }
 
 .update-petz-image { 
@@ -376,6 +455,26 @@ td {
   color: rgb(137, 200, 137);
 }
 
+.list-updates-container { 
+  display: flex; 
+  justify-content: space-between;
+  margin-top: 1rem;
+  border-top: 2px solid rgb(111, 117, 111);
+}
+
+.list-update { 
+  max-width: 350px;
+  padding: 15px;
+}
+
+.list-update h3 { 
+  color: rgba(119, 184, 245, 0.9);
+}
+
+.list-update a { 
+  color: rgba(246, 219, 39, 0.6);
+}
+
 /* Team page */ 
 .team-info-background { 
   background-image: url("./images/team-background.jpg");
@@ -386,11 +485,14 @@ td {
 }
 
 .team-wrapper { 
-  padding-bottom: 10rem;
-}
-
-.team-wrapper h1 {
-    margin-top: 70rem;
+  width: 100vw; 
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+  background-color: rgba(17, 16, 16, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .team-member-container { 
@@ -402,6 +504,9 @@ td {
   padding: 10px; 
   color: rgb(207, 195, 195);
   margin-bottom: 1rem;
+  box-shadow: rgba(224, 221, 221, 0.733) 0px 1px 2px, rgba(189, 185, 185, 0.07) 0px 2px 4px, 
+              rgba(238, 234, 234, 0.07) 0px 4px 8px, rgba(235, 231, 231, 0.07) 0px 8px 16px, 
+              rgba(224, 220, 220, 0.07) 0px 16px 32px, rgba(216, 211, 211, 0.07) 0px 32px 64px;
 }
 
 .team-member-container img { 
@@ -426,10 +531,86 @@ td {
   bottom: 10px;
 }
 
+/*Petz Page*/ 
+
+.petz-wrapper { 
+  width: 100vw; 
+  min-height: 100vh;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+  background-color: rgba(17, 16, 16, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.petz-wrapper-banner { 
+  position: absolute; 
+  top: 0;
+  box-shadow: -5px -5px 30px 5px rgb(204, 181, 78), 5px 5px 30px 5px rgb(99, 200, 141);
+
+}
+
+/*Stake Pool*/ 
+.stake-pool-background { 
+  background-image: url("./images/stakepoolbackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.stake-pool-wrapper { 
+  width: 100vw; 
+  min-height: 100vh;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+  background-color: rgba(17, 16, 16, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stake-pool-info-box { 
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  background: rgba(24, 24, 24, 0.6); 
+  background: linear-gradient(0deg, rgba(20, 20, 20, 0.5) 0%, rgba(54,53,52,0.7223472472555768) 29%);
+  border-radius: 16px;
+  padding: 10px; 
+  color: rgb(207, 195, 195);
+  margin-bottom: 1rem;
+  box-shadow: rgba(224, 221, 221, 0.733) 0px 1px 2px, rgba(189, 185, 185, 0.07) 0px 2px 4px,
+              rgba(238, 234, 234, 0.07) 0px 4px 8px, rgba(235, 231, 231, 0.07) 0px 8px 16px,
+              rgba(224, 220, 220, 0.07) 0px 16px 32px, rgba(216, 211, 211, 0.07) 0px 32px 64px;
+}
+
+.stake-pool-info-box h2 { 
+  margin-bottom: 2rem;
+  color:rgb(99, 200, 141);
+}
+
+.stake-pool-metrics { 
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.stake-pool-metrics a {
+  color:rgb(65, 155, 216);
+  margin-top: 1rem;
+}
+.stake-pool-metrics a:hover {
+  cursor: pointer;
+}
+
 /*Footer */ 
 
 .footer { 
-  position: absolute;
+  position: fixed;
   bottom: 0; 
   width: 100%;
   display: flex;

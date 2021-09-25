@@ -6,7 +6,7 @@ const Landing = ({petzArray}) => {
     
         
             <div className = {`landing-body ${petzArray.background}`}>
-                <div className="page-wrapper">
+                <div className="landing-page-wrapper">
                     <div className = "landing-pet">
                         <img src={petzArray.img}/>
                         <span className ="landing-text-balloon">

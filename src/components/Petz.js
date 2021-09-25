@@ -1,8 +1,11 @@
+import allpetz from "../images/allpetz.jpg";
 
 const Petz = () => { 
     return (
         <div>
-            <h1>Petz</h1>
+            <div className ="petz-wrapper">
+                 <img className = "petz-wrapper-banner" src= {allpetz}/>
+            </div>
         </div>
     )
 }

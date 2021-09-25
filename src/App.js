@@ -3,12 +3,14 @@ import {Route, Link} from 'react-router-dom';
 
 import LoadingScreen from './components/LoadingScreen';
 import NavBar from "./components/NavBar";
+import StoryTime from "./components/StoryTime";
 import GameInfo from './components/GameInfo';
 import Metrics from './components/Metrics';
 import Petz from './components/Petz';
 import Updates from './components/Updates'
 import Team from './components/Team'
 import Landing from "./components/Landing";
+import StakePool from "./components/StakePool"
 import Footer from "./components/Footer";
 import './index.css';
 
@@ -117,11 +119,13 @@ function App() {
         <div className="App">
           <NavBar petzArray = {petzArray[count]}/>
           <Route exact path="/"><Landing petzArray = {petzArray[count]}/></Route>
+          <Route exact path="/StoryTime"><StoryTime/></Route>
           <Route exact path="/GameInfo"><GameInfo allPetzArray = {allPetzArray} eggArray = {eggArray}/></Route>
           <Route exact path="/Metrics"><Metrics/></Route>
           <Route exact path="/Updates"><Updates allPetzArray = {allPetzArray}/></Route>
           <Route exact path="/Team"><Team/></Route>
           <Route exact path="/Petz"><Petz/></Route>
+          <Route exact path="/StakePool"><StakePool/></Route>
           <Footer petzArray = {petzArray[countFooter]}/>
         </div>
     }
