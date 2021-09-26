@@ -5,10 +5,11 @@ import PageOne from "./storyPages/PageOne"
 import EggShardLaboratory from "./storyPages/EggShardLaboratory"
 import EggShardLaboratoryTwo from "./storyPages/EggShardLaboratoryTwo"
 import EggShardLaboratoryThree from "./storyPages/EggShardLaboratoryThree"
+import Backcover from "./storyPages/Backcover";
 
 const StoryTime = () => { 
 
-    const pages = [<Cover/>, <PageOne/>, <EggShardLaboratory/>, <EggShardLaboratoryTwo/>, <EggShardLaboratoryThree/>];
+    const pages = [<Cover/>, <PageOne/>, <EggShardLaboratory/>, <EggShardLaboratoryTwo/>, <EggShardLaboratoryThree/>, <Backcover/>];
 
     const [currentPage, setCurrentPage] = useState(0);
     const length = pages.length
@@ -23,7 +24,7 @@ const StoryTime = () => {
     return (
         <div className ="story-background">
             <div className = "story-wrapper">
-                <i className= "book-arrow book-arrow-left fa fas fa-arrow-circle-left fa-4x" onClick ={previousPage}></i>
+                <i className= {currentPage === 0 ? "" : "book-arrow book-arrow-left fa fas fa-arrow-circle-left fa-4x"} onClick ={previousPage}></i>
                         {
                             pages.map((page, index) => { 
                             return (
@@ -33,7 +34,7 @@ const StoryTime = () => {
                             )
                         })
                     }
-                <i className= {"book-arrow book-arrow-right fa fas fa-arrow-circle-right fa-4x"} onClick = {nextPage}></i>
+                <i className= {currentPage === (pages.length -1) ? "" : "book-arrow book-arrow-right fa fas fa-arrow-circle-right fa-4x"} onClick = {nextPage}></i>
             </div>
         </div>
     )

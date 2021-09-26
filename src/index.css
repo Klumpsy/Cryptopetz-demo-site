@@ -133,7 +133,11 @@
 
 /*Story Time Page*/ 
 .story-background { 
-  perspective: 1000px;
+  background-image: url("./images/egglab.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .story-wrapper { 
@@ -192,6 +196,7 @@
 
 .book-arrow { 
   margin: 4rem;
+  color:rgb(99, 200, 141)
 }
 
 .book-arrow:hover { 
@@ -208,7 +213,7 @@
   height: 750px; 
   width: 450px;  
   border-radius: 16px;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: rgba(243, 240, 240, 0.19) 0px 10px 20px, rgba(219, 214, 214, 0.23) 0px 6px 6px;
 }
 
 .page-active { 
@@ -420,6 +425,144 @@ td {
 }
 
 /* Metrics page */ 
+.metrics-background { 
+  background-image: url("./images/skyBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.metrics-wrapper { 
+  width: 100vw; 
+  min-height: 100vh;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+  background-color: rgba(17, 16, 16, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.petz-type-container { 
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.petz-type { 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  width: 250px;
+  height: 150px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 5px 2px rgba(10, 10, 10, 0.7);
+  margin: 50px;
+ 
+}
+
+.emblem { 
+  position: absolute; 
+  max-width: 100px;
+  top:-50px;
+  right: -40px;
+}
+
+.metric-pet { 
+  position: absolute; 
+  max-width: 150px;
+  top:-100px;
+  left: -60px;
+}
+
+.petz-type h3 { 
+  font-size: 3rem;
+}
+
+.petz-type a { 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 0px 0px 14px 14px;
+  background-color: black;
+  color: white;
+}
+
+.petz-type a:hover { 
+  cursor: pointer;
+  background-color:rgba(20, 20, 20, 0.7);
+  transition: .6s ease-in-out;
+}
+
+.fire { 
+  background: rgb(221,55,55);
+  background: radial-gradient(circle, rgba(221,55,55,1) 0%, rgba(236,103,62,1) 66%, rgba(252,218,70,1) 100%); 
+}
+
+.water { 
+  background: rgb(55,103,221);
+  background: radial-gradient(circle, rgba(55,103,221,1) 0%, rgba(62,166,236,1) 66%, rgba(70,252,225,1) 100%); 
+}
+
+.electric { 
+  background: rgb(218,199,42);
+  background: radial-gradient(circle, rgba(218,199,42,1) 0%, rgba(250,247,71,1) 66%, rgba(255,246,136,1) 100%); 
+}
+
+.grass { 
+  background: rgb(23,119,31);
+  background: radial-gradient(circle, rgba(23,119,31,1) 0%, rgba(70,163,83,1) 66%, rgba(74,186,87,1) 100%); 
+}
+
+.ice { 
+  background: rgb(24,232,220);
+  background: radial-gradient(circle, rgba(24,232,220,1) 0%, rgba(104,181,191,1) 66%, rgba(116,217,204,1) 100%); 
+}
+
+.combat { 
+  background: rgb(150,83,23);
+  background: radial-gradient(circle, rgba(150,83,23,1) 0%, rgba(194,124,63,1) 66%, rgba(167,119,90,1) 100%); 
+}
+
+.poison { 
+  background: rgb(124,23,150);
+  background: radial-gradient(circle, rgba(124,23,150,1) 0%, rgba(150,63,194,1) 66%, rgba(145,95,163,1) 100%); 
+}
+
+.earth { 
+  background: rgb(153,102,53);
+  background: radial-gradient(circle, rgba(153,102,53,1) 0%, rgba(194,135,63,1) 66%, rgba(163,128,95,1) 100%); 
+}
+
+.flying { 
+  background: rgb(78,209,155);
+  background: radial-gradient(circle, rgba(78,209,155,1) 0%, rgba(89,200,177,1) 66%, rgba(64,175,154,1) 100%); 
+}
+
+.psychic { 
+  background: rgb(204,12,215);
+  background: radial-gradient(circle, rgba(204,12,215,1) 0%, rgba(200,89,187,1) 66%, rgba(186,101,181,1) 100%); 
+}
+
+.insect { 
+  background: rgb(71,215,12);
+  background: radial-gradient(circle, rgba(71,215,12,1) 0%, rgba(124,186,61,1) 66%, rgba(144,186,101,1) 100%); 
+}
+
+.spirit { 
+  background: rgb(67,1,113);
+  background: radial-gradient(circle, rgba(67,1,113,1) 0%, rgba(158,61,186,1) 66%, rgba(105,63,121,1) 100%); 
+}
 
 /* Updates page */ 
 .updates-background { 
@@ -627,8 +770,19 @@ td {
   color:rgb(65, 155, 216);
   margin-top: 1rem;
 }
+
+.stake-pool-metrics img { 
+  max-width: 400px;
+  margin: 10px;
+}
+
 .stake-pool-metrics a:hover {
   cursor: pointer;
+}
+
+.staking-percentage { 
+  display: flex;
+  flex-direction: row;
 }
 
 /*Footer */ 
