@@ -158,8 +158,26 @@
   align-items: center;
 }
 
+.book-container img { 
+  max-width: 90%;
+  margin-top: 2rem;
+}
+
+.image-border-book { 
+  border: 2px solid black;
+}
+
 .page-container { 
   justify-content: start;
+}
+
+.page-title { 
+  margin-top: 2rem;
+  margin-bottom: 2rem; 
+}
+
+.page-paragraph { 
+  margin: 10px;
 }
 
 .book-container h1 { 
@@ -511,6 +529,12 @@ td {
 
 .team-member-container img { 
   border-radius: 16px;
+}
+
+.intro-text {
+  max-width: 600px;
+  margin: 2rem;
+  color: white;
 }
 
 .team-member-text { 

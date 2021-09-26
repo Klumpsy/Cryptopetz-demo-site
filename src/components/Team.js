@@ -14,7 +14,13 @@ const Team = () => {
     return (
         <div className = "team-info-background">
             <div className = "page-wrapper game-info-wrapper team-wrapper">
-                <h1>Team</h1>
+                <h1>You, Yeah You!</h1>
+                <p className="intro-text">
+                    We are one big community and your feedback is important to us.
+                    So far, you have all participated in giving feedback and making us 100% better already. 
+                    We would like to thank you and we truly appreciate your patience and help! 
+                    Let’s build and grow this piece of Cardano together.
+                </p>
                 <div className = "team-member-container">
                     <div className = "team-member-image">
                         <img src ={nick} />

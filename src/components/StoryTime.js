@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 
 import Cover from "./storyPages/Cover"
 import PageOne from "./storyPages/PageOne"
+import EggShardLaboratory from "./storyPages/EggShardLaboratory"
+import EggShardLaboratoryTwo from "./storyPages/EggShardLaboratoryTwo"
+import EggShardLaboratoryThree from "./storyPages/EggShardLaboratoryThree"
 
 const StoryTime = () => { 
 
-    const pages = [<Cover/>, <PageOne/>];
+    const pages = [<Cover/>, <PageOne/>, <EggShardLaboratory/>, <EggShardLaboratoryTwo/>, <EggShardLaboratoryThree/>];
 
     const [currentPage, setCurrentPage] = useState(0);
     const length = pages.length
