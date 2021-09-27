@@ -233,7 +233,6 @@
   background-size: cover;
 }
 
-
 /*Game Info Page*/
 
 .game-info-background { 
@@ -426,7 +425,7 @@ td {
 
 /* Metrics page */ 
 .metrics-background { 
-  background-image: url("./images/skyBackground.jpg");
+  background-image: url("./images/egglab.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -466,7 +465,6 @@ td {
   border-radius: 16px;
   box-shadow: 0px 0px 5px 2px rgba(10, 10, 10, 0.7);
   margin: 50px;
- 
 }
 
 .emblem { 
@@ -493,9 +491,10 @@ td {
   justify-content: center;
   align-items: center;
   height: 40px;
-  border-radius: 0px 0px 14px 14px;
+  border-radius: 0px 0px 13px 13px;
   background-color: black;
   color: white;
+  text-decoration: none;
 }
 
 .petz-type a:hover { 
@@ -530,13 +529,13 @@ td {
 }
 
 .combat { 
-  background: rgb(150,83,23);
-  background: radial-gradient(circle, rgba(150,83,23,1) 0%, rgba(194,124,63,1) 66%, rgba(167,119,90,1) 100%); 
+  background: rgb(203,116,44);
+  background: radial-gradient(circle, rgba(203,116,44,1) 17%, rgba(201,134,94,1) 63%, rgba(222,179,131,1) 100%);  
 }
 
 .poison { 
-  background: rgb(124,23,150);
-  background: radial-gradient(circle, rgba(124,23,150,1) 0%, rgba(150,63,194,1) 66%, rgba(145,95,163,1) 100%); 
+  background: rgb(187,150,213);
+  background: radial-gradient(circle, rgba(187,150,213,1) 0%, rgba(158,61,186,1) 66%, rgba(158,114,175,1) 100%);  
 }
 
 .earth { 
@@ -550,8 +549,8 @@ td {
 }
 
 .psychic { 
-  background: rgb(204,12,215);
-  background: radial-gradient(circle, rgba(204,12,215,1) 0%, rgba(200,89,187,1) 66%, rgba(186,101,181,1) 100%); 
+   background: rgb(223,15,254);
+background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17%, rgba(189,68,133,1) 63%, rgba(157,31,115,1) 100%);  
 }
 
 .insect { 
@@ -560,8 +559,117 @@ td {
 }
 
 .spirit { 
-  background: rgb(67,1,113);
-  background: radial-gradient(circle, rgba(67,1,113,1) 0%, rgba(158,61,186,1) 66%, rgba(105,63,121,1) 100%); 
+  background: rgb(71,35,97);
+  background: radial-gradient(circle, rgba(71,35,97,1) 0%, rgba(68,22,82,1) 66%, rgba(62,3,85,1) 100%); 
+}
+
+.drake { 
+  background: rgb(168,15,254);
+  background: radial-gradient(circle, rgba(168,15,254,1) 0%, rgba(166,29,236,1) 17%, rgba(161,68,189,1) 63%, rgba(150,31,157,1) 100%);  
+}
+
+.shadow { 
+  color: white;
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 17%, rgba(37,29,38,1) 63%, rgba(74,69,72,1) 100%);  
+}
+
+.metal { 
+  background: rgb(110,105,105);
+  background: radial-gradient(circle, rgba(110,105,105,1) 17%, rgba(126,125,126,1) 63%, rgba(140,140,140,1) 100%); 
+}
+
+.fae { 
+  background: rgb(231,111,191);
+  background: radial-gradient(circle, rgba(231,111,191,1) 17%, rgba(224,110,178,1) 63%, rgba(207,101,178,1) 100%); 
+}
+
+.fae { 
+  background: rgb(231,111,191);
+  background: radial-gradient(circle, rgba(231,111,191,1) 17%, rgba(224,110,178,1) 63%, rgba(207,101,178,1) 100%); 
+}
+
+.lava { 
+  background: rgb(184,54,54);
+  background: radial-gradient(circle, rgba(184,54,54,1) 17%, rgba(184,36,72,1) 63%, rgba(177,57,67,1) 100%); 
+}
+
+.sound { 
+  background: rgb(140,217,207);
+  background: radial-gradient(circle, rgba(140,217,207,1) 17%, rgba(146,227,222,1) 63%, rgba(186,217,213,1) 100%); 
+}
+
+/* Individual type metric pages */
+.metric-type-page-wrapper { 
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-emblem {
+  position: absolute;
+  max-width: 800px;
+  top: -30px;
+  right: -100px;
+}
+
+.background-pet { 
+  position: absolute;
+  max-width: 700px; 
+  bottom: -60px; 
+  left: -100px;
+}
+
+.metric-radar-chart { 
+  max-width: 400px;
+}
+
+.metric-container { 
+  display: flex;
+  padding: 5px;
+  background-color: white;
+  border: 5px solid black;
+}
+
+.metric-container img { 
+  margin: 5px
+}
+
+.metric-type-overlay { 
+  position: relative;
+  width: 100vw;
+  height: 100vh; 
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+  background-color: rgba(17, 16, 16, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.metric-type-overlay h1 { 
+  font-size: 6rem;
+  color: white;
+}
+
+.metric-back-button { 
+  position: absolute;
+  top: 8rem;
+  left: 2rem;
+  background-color: black;
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.metric-back-button:hover { 
+  background-color: rgb(46, 44, 44);
 }
 
 /* Updates page */ 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'; 
 import {Route, Link} from 'react-router-dom';
 
+//Main site Pages and routing
 import LoadingScreen from './components/LoadingScreen';
 import NavBar from "./components/NavBar";
 import StoryTime from "./components/StoryTime";
@@ -8,20 +9,29 @@ import GameInfo from './components/GameInfo';
 import Metrics from './components/Metrics';
 import Petz from './components/Petz';
 import Updates from './components/Updates'
-import Team from './components/Team'
+import Team from './components/Team';
 import Landing from "./components/Landing";
 import StakePool from "./components/StakePool"
 import Footer from "./components/Footer";
 import './index.css';
 
-import mouse from './images/petzImages/mouse.png' 
-import icebird from './images/petzImages/icebird.png'
-import dragon from './images/petzImages/dragon.png' 
-import bear from './images/petzImages/bear.png'
-import stormApe from './images/petzImages/storm-ape.png'
-import seal from './images/petzImages/seal.png'
-import firebear from './images/petzImages/firebear.png'
-import ninja from './images/petzImages/ninja.png'
+//Metric pages routed from Metrics main page
+import Fire from "./components/typeMetricPages/Fire";
+import Water from "./components/typeMetricPages/Water";
+import Electric from "./components/typeMetricPages/Electric";
+import Grass from "./components/typeMetricPages/Grass";
+import Ice from "./components/typeMetricPages/Ice";
+import Combat from "./components/typeMetricPages/Combat";
+
+//Import images for main page and Home logo
+import mouse from './images/petzImages/mouse.png';
+import icebird from './images/petzImages/icebird.png';
+import dragon from './images/petzImages/dragon.png';
+import bear from './images/petzImages/bear.png';
+import stormApe from './images/petzImages/storm-ape.png';
+import seal from './images/petzImages/seal.png';
+import firebear from './images/petzImages/firebear.png';
+import ninja from './images/petzImages/ninja.png';
 import bull from './images/petzImages/bull.png';
 import racoon from './images/petzImages/racoon.png'; 
 import chick from './images/petzImages/chick.png';
@@ -31,6 +41,7 @@ import squid from './images/petzImages/squid.png';
 import light from './images/petzImages/light.png'; 
 import owl from './images/petzImages/owl.png';
 
+//Egg images 
 import fireEgg from "./images/eggs/Fire_Egg_REV1.png";
 import fairyEgg from "./images/eggs/Fairy_Egg_REV1.png";
 import electricEgg from "./images/eggs/Electric_Egg_REV1.png";
@@ -126,6 +137,12 @@ function App() {
           <Route exact path="/Team"><Team/></Route>
           <Route exact path="/Petz"><Petz/></Route>
           <Route exact path="/StakePool"><StakePool/></Route>
+          <Route exact path="/Fire"><Fire/></Route>
+          <Route exact path="/Water"><Water/></Route>
+          <Route exact path="/Electric"><Electric/></Route>
+          <Route exact path="/Grass"><Grass/></Route>
+          <Route exact path="/Ice"><Ice/></Route>
+          <Route exact path="/Combat"><Combat/></Route>
           <Footer petzArray = {petzArray[countFooter]}/>
         </div>
     }
