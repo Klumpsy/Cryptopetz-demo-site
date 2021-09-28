@@ -16,14 +16,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 80px;
   background: rgba(24, 24, 24, 0.6); 
   background: linear-gradient(0deg, rgba(20, 20, 20, 0.7) 0%, rgba(54,53,52,0.9223472472555768) 29%);    
-
 }
 
 .nav-bar img { 
-  height: 150px;
+  height: 130px;
   margin-left: 20px;
 }
 
@@ -47,6 +46,10 @@
   margin: 20px;
 }
 
+.socials-discord { 
+  margin-right: 20px;
+}
+
 .socials a { 
   color: black;
 }
@@ -57,18 +60,82 @@
   cursor: pointer;
 }
 
+.socials-discord:hover { 
+  color:rgb(139, 19, 204);
+  transition: .4s ease;
+  cursor: pointer;
+}
+
+/*Mobile menu*/ 
+.mobile-menu-close { 
+  transform: translateX(-1200px);
+}
+
+.mobile-menu-open { 
+  transform: translateX(0px);
+}
+
+.mobile-menu { 
+  transition: .6s ease-in-out;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  top: 5.2rem;
+  display: flex;
+  flex-direction: column;
+  background: rgba(24, 24, 24, 0.6); 
+  background: linear-gradient(0deg, rgba(20, 20, 20, 0.7) 0%, rgba(54,53,52,0.9223472472555768) 29%);
+}
+
+.mobile-menu a { 
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 2rem;
+}
+
+.hamburger-button { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  color: rgb(84, 99, 105)
+}
+
+
+@media only screen and (max-width: 800px) { 
+  .nav-bar img { 
+    height: 80px;
+    margin-left: 10px;
+  }
+
+  .socials-twitter { 
+    margin: 15px;
+  }
+  
+  .socials-discord { 
+    margin-right: 5px;
+  }
+}
+
 /*Landing page*/
 
 .landing-page-wrapper { 
   width: 100%;
   min-height: 100vh; 
-  background-color: rgba(17, 16, 16, 0.6);
+  background-color: rgba(17, 16, 16, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .landing-body { 
+  background-image: url("./images/allpetz.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,49 +144,18 @@
   overflow: hidden;
 }
 
-.shadow-box { 
-  box-shadow: 2px 2px 2px black;
-  height: 2px;
-}
-
-.body-grass { 
-  background-image: url(./images/grass.jpg);
-}
-
-.body-fire { 
-  background-image: url(./images/lava.jpg);
-}
-
-.body-ice { 
-  background-image: url(./images/ice.jpg);
-}
-
-.body-lightning { 
-  background-image: url(./images/storm.jpg);
-}
-
-.body-water { 
-  background-image: url(./images/water.jpg);
-}
-
-.body-dojo { 
-  background-image: url(./images/dojo.jpg);
-}
-
-.landing-pet img { 
-  width: 800px; 
-}
-
 .landing-pet { 
   display: flex;
-  flex-direction: row-reverse;
+  width: 100%;
 }
 
 .landing-text-balloon { 
-  background-color: rgba(250, 249, 249, 0.6); 
+  background-color: rgba(24, 23, 23, 0.8); 
   border-radius: 16px 16px 16px 16px;
   box-shadow: 6px 6px rgba(22, 22, 22, 0.3);
   padding: 25px;
+  color: white;
+  margin: 3rem;
 }
 
 .landing-title { 
@@ -234,7 +270,6 @@
 }
 
 /*Game Info Page*/
-
 .game-info-background { 
   background-image: url("./images/mountain-background.jpg");
   background-position: center;
@@ -807,7 +842,6 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 }
 
 /*Petz Page*/ 
-
 .petz-wrapper { 
   width: 100vw; 
   min-height: 100vh;
@@ -902,7 +936,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 80px;
   background: rgba(24, 24, 24, 0.6); 
   background: linear-gradient(0deg, rgba(20, 20, 20, 0.7) 0%, rgba(54,53,52,0.9223472472555768) 29%);    
 }

@@ -1,0 +1,32 @@
+import { Link } from 'react-router-dom';
+
+import flyingEmblem from "..//../images/typeEmblems/Flying_Emblem.png"
+import flyingPet from "..//../images/petzImages/flying.png";
+import flyingMetricsAtt from "..//../images/radarCharts/Flying_Att.jpg"
+import flyingMetricsDef from "..//../images/radarCharts/Flying_Def.jpg"
+
+
+const Flying = () => { 
+    return (
+        <div className = "metric-type-page-wrapper flying">
+            <img className = "background-emblem" src={flyingEmblem}/>
+            <img className = "background-pet" src={flyingPet}/>
+            <div className = "metric-type-overlay">
+                <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
+                <h1>Flying</h1>
+                <div className="metric-container">
+                    <div>
+                        <h3>Attack</h3>
+                        <img className = "metric-radar-chart" src={flyingMetricsAtt}/>
+                    </div>
+                    <div>
+                        <h3>Defence</h3>
+                        <img className = "metric-radar-chart" src={flyingMetricsDef}/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Flying;  

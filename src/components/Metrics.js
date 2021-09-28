@@ -83,73 +83,73 @@ const Metrics = () => {
                     </div>
                     <div className ="petz-type poison">
                         <h3>Poison</h3>
-                        <a>Poison Metrics</a>
+                        <a><Link to="/Poison">Poison Metrics</Link></a>
                         <img className="emblem" src={poisonEmblem}/>
                         <img className="metric-pet"src={poisonPet}/>
                     </div>
                     <div className ="petz-type earth">
                         <h3>Earth</h3>
-                        <a>Earth Metrics</a>
+                        <a><Link to="/Earth">Earth Metrics</Link></a>
                         <img className="emblem" src={earthEmblem}/>
                         <img className="metric-pet"src={earthPet}/>
                     </div>
                     <div className ="petz-type flying">
                         <h3>Flying</h3>
-                        <a>Flying Metrics</a>
+                        <a><Link to="/Flying">Flying Metrics</Link></a>
                         <img className="emblem" src={flyingEmblem}/>
                         <img className="metric-pet"src={flyingPet}/>
                     </div>
                     <div className ="petz-type psychic">
                         <h3>Psychic</h3>
-                        <a>Psychic Metrics</a>
+                        <a><Link to="/Psychic">Psychic Metrics</Link></a>
                         <img className="emblem" src={psychicEmblem}/>
                         <img className="metric-pet"src={psychicPet}/>
                     </div>
                     <div className ="petz-type insect">
                         <h3>Insect</h3>
-                        <a>Insect Metrics</a>
+                        <a><Link to="/Insect">Insect Metrics</Link></a>
                         <img className="emblem" src={insectEmblem}/>
                         <img className="metric-pet"src={insectPet}/>
                     </div>
                     <div className ="petz-type spirit">
                         <h3>Spirit</h3>
-                        <a>Spirit Metrics</a>
+                        <a><Link to="/Spirit">Spirit Metrics</Link></a>
                         <img className="emblem" src={spiritEmblem}/>
                         <img className="metric-pet"src={spiritPet}/>
                     </div>
                     <div className ="petz-type drake">
                         <h3>Drake</h3>
-                        <a>Drake Metrics</a>
+                        <a><Link to="/Drake">Drake Metrics</Link></a>
                         <img className="emblem" src={drakeEmblem}/>
                         <img className="metric-pet"src={drakePet}/>
                     </div>
                     <div className ="petz-type shadow">
                         <h3>Shadow</h3>
-                        <a>Shadow Metrics</a>
+                        <a><Link to="/Shadow">Shadow Metrics</Link></a>
                         <img className="emblem" src={shadowEmblem}/>
                         <img className="metric-pet"src={shadowPet}/>
                     </div>
                     <div className ="petz-type metal">
                         <h3>Metal</h3>
-                        <a>Metal Metrics</a>
+                        <a><Link to="/Metal">Metal Metrics</Link></a>
                         <img className="emblem" src={metalEmblem}/>
                         <img className="metric-pet"src={metalPet}/>
                     </div>
                     <div className ="petz-type fae">
                         <h3>Fae</h3>
-                        <a>Fae Metrics</a>
+                        <a><Link to="/Fae">Fae Metrics</Link></a>
                         <img className="emblem" src={faeEmblem}/>
                         <img className="metric-pet"src={faePet}/>
                     </div>
                     <div className ="petz-type lava">
                         <h3>Lava</h3>
-                        <a>Lava Metrics</a>
+                        <a><Link to="/Lava">Lava Metrics</Link></a>
                         <img className="emblem" src={lavaEmblem}/>
                         <img className="metric-pet"src={lavaPet}/>
                     </div>
                     <div className ="petz-type sound">
                         <h3>Sound</h3>
-                        <a>Sound Metrics</a>
+                        <a><Link to="/Sound">Sound Metrics</Link></a>
                         <img className="emblem" src={soundEmblem}/>
                         <img className="metric-pet"src={soundPet}/>
                     </div>

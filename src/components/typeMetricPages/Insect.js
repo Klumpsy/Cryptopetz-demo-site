@@ -1,0 +1,32 @@
+import { Link } from 'react-router-dom';
+
+import insectEmblem from "..//../images/typeEmblems/Insect_Emblem.png"
+import insectPet from "..//../images/petzImages/insect.png";
+import insectMetricsAtt from "..//../images/radarCharts/Insect_Att.jpg"
+import insectMetricsDef from "..//../images/radarCharts/Insect_Def.jpg"
+
+
+const Insect = () => { 
+    return (
+        <div className = "metric-type-page-wrapper insect">
+            <img className = "background-emblem" src={insectEmblem}/>
+            <img className = "background-pet" src={insectPet}/>
+            <div className = "metric-type-overlay">
+                <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
+                <h1>Insect</h1>
+                <div className="metric-container">
+                    <div>
+                        <h3>Attack</h3>
+                        <img className = "metric-radar-chart" src={insectMetricsAtt}/>
+                    </div>
+                    <div>
+                        <h3>Defence</h3>
+                        <img className = "metric-radar-chart" src={insectMetricsDef}/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Insect;  

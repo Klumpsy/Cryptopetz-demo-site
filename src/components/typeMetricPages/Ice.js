@@ -15,8 +15,14 @@ const Ice = () => {
                 <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
                 <h1>Ice</h1>
                 <div className="metric-container">
-                <img className = "metric-radar-chart" src={iceMetricsAtt}/>
-                <img className = "metric-radar-chart" src={iceMetricsDef}/>
+                    <div>
+                        <h3>Attack</h3>
+                        <img className = "metric-radar-chart" src={iceMetricsAtt}/>
+                    </div>
+                    <div>
+                        <h3>Defence</h3>
+                        <img className = "metric-radar-chart" src={iceMetricsDef}/>
+                    </div>
                 </div>
             </div>
         </div>

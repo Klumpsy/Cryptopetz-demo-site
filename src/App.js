@@ -22,6 +22,18 @@ import Electric from "./components/typeMetricPages/Electric";
 import Grass from "./components/typeMetricPages/Grass";
 import Ice from "./components/typeMetricPages/Ice";
 import Combat from "./components/typeMetricPages/Combat";
+import Poison from './components/typeMetricPages/Poison';
+import Earth from './components/typeMetricPages/Earth';
+import Flying from './components/typeMetricPages/Flying';
+import Spirit from "./components/typeMetricPages/Spirit";
+import Insect from "./components/typeMetricPages/Insect";
+import Psychic from "./components/typeMetricPages/Psychic"; 
+import Drake from "./components/typeMetricPages/Drake";
+import Shadow from "./components/typeMetricPages/Shadow"; 
+import Metal from "./components/typeMetricPages/Metal";
+import Fae from "./components/typeMetricPages/Fae"; 
+import Lava from "./components/typeMetricPages/Lava"; 
+import Sound from "./components/typeMetricPages/Sound"; 
 
 //Import images for main page and Home logo
 import mouse from './images/petzImages/mouse.png';
@@ -108,6 +120,13 @@ const petzArray =
 
 function App() {
 
+  //Check width
+  const [width, setWidth] = useState(window.innerWidth); 
+
+  useEffect(() => { 
+    window.addEventListener('resize', () => setWidth(window.innerWidth)); 
+  }, []);
+
   //Loading page check
   const [loading, setLoading] = useState(true)
 
@@ -128,7 +147,7 @@ function App() {
     <>
     {loading ? <LoadingScreen/> :
         <div className="App">
-          <NavBar petzArray = {petzArray[count]}/>
+          <NavBar petzArray = {petzArray[count]} width={width}/>
           <Route exact path="/"><Landing petzArray = {petzArray[count]}/></Route>
           <Route exact path="/StoryTime"><StoryTime/></Route>
           <Route exact path="/GameInfo"><GameInfo allPetzArray = {allPetzArray} eggArray = {eggArray}/></Route>
@@ -137,12 +156,26 @@ function App() {
           <Route exact path="/Team"><Team/></Route>
           <Route exact path="/Petz"><Petz/></Route>
           <Route exact path="/StakePool"><StakePool/></Route>
+
+
           <Route exact path="/Fire"><Fire/></Route>
           <Route exact path="/Water"><Water/></Route>
           <Route exact path="/Electric"><Electric/></Route>
           <Route exact path="/Grass"><Grass/></Route>
           <Route exact path="/Ice"><Ice/></Route>
           <Route exact path="/Combat"><Combat/></Route>
+          <Route exact path="/Poison"><Poison/></Route>
+          <Route exact path="/Earth"><Earth/></Route>
+          <Route exact path="/Flying"><Flying/></Route>
+          <Route exact path="/Psychic"><Psychic/></Route>
+          <Route exact path="/Insect"><Insect/></Route>
+          <Route exact path="/Spirit"><Spirit/></Route>
+          <Route exact path="/Drake"><Drake/></Route>
+          <Route exact path="/Shadow"><Shadow/></Route>
+          <Route exact path="/Metal"><Metal/></Route>
+          <Route exact path="/Fae"><Fae/></Route>
+          <Route exact path="/Lava"><Lava/></Route>
+          <Route exact path="/Sound"><Sound/></Route>
           <Footer petzArray = {petzArray[countFooter]}/>
         </div>
     }
