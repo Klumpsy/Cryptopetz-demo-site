@@ -107,7 +107,6 @@
   color: rgb(84, 99, 105)
 }
 
-
 @media only screen and (max-width: 800px) { 
   .nav-bar img { 
     height: 80px;
@@ -842,23 +841,131 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 }
 
 /*Petz Page*/ 
+.petz-container { 
+  position: relative;
+}
+
+.petz-search-input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: absolute;
+  top: 100px;
+}
+
+.petz-search-input input { 
+  text-align: center;
+  width: 40%;
+  height: 30px;
+  border-radius: 16px;
+  background-color: rgba(184, 182, 182, 0.5);
+  color:rgb(134, 226, 165);
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 1px solid black;
+}
+
 .petz-wrapper { 
-  width: 100vw; 
+  max-width: 100%; 
   min-height: 100vh;
   padding-top: 12rem;
   padding-bottom: 8rem;
-  background-color: rgba(17, 16, 16, 0.6);
+  background-color: rgba(20, 20, 20, 0.9);
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
-.petz-wrapper-banner { 
-  position: absolute; 
-  top: 0;
-  box-shadow: -5px -5px 30px 5px rgb(204, 181, 78), 5px 5px 30px 5px rgb(99, 200, 141);
+.pet-card { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(10, 10, 10, 0.7); 
+  width: 250px;
+  height: 300px;
+  margin: 5px;
+  border-radius: 16px;
+  padding: 5px;
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgb(61, 59, 59);
+}
 
+.pet-card img { 
+  width: 200px;
+}
+
+.Fire { 
+  border: 3px solid rgb(233, 176, 69); 
+}
+
+.Water { 
+ border: 3px solid rgb(91, 91, 167); 
+}
+
+.Electric { 
+ border: 3px solid rgb(192, 192, 72);
+}
+
+.Grass { 
+ border: 3px solid rgb(57, 90, 57);
+}
+
+.Ice { 
+ border: 3px solid rgb(24,232,220);
+}
+
+.Combat { 
+ border: 3px solid rgb(203,116,44);
+}
+
+.Poison { 
+ border: 3px solid rgb(187,150,213);
+}
+
+.Earth { 
+ border: 3px solid rgb(131, 104, 80);
+}
+
+.Flying { 
+ border: 3px solid rgb(78,209,155);
+}
+
+.Psychic { 
+border: 3px solid rgb(223,15,254);
+}
+
+.Insect { 
+border: 3px solid rgb(71,215,12);
+}
+
+.Spirit { 
+border: 3px solid rgb(71,35,97);
+}
+
+.Drake { 
+border: 3px solid rgb(140, 46, 194);
+}
+
+.Shadow { 
+ border:3px solid rgb(0, 0, 0);
+}
+
+.Metal { 
+border: 3px solid rgb(110,105,105);
+}
+
+.Fae { 
+border: 3px solid rgb(231,111,191);
+}
+
+.Lava { 
+border: 3px solid rgb(184,54,54);
+}
+
+.Sound { 
+border: 3px solid rgb(129, 151, 148);
 }
 
 /*Stake Pool*/ 
