@@ -1,8 +1,8 @@
 {
   "name": "cryptopetz",
   "version": "0.1.0",
+  "proxy": " https://cryptopetz.info/api/petz/metadata/",
   "private": true,
-  "proxy": "https://cryptopetz.info/api/petz/metadata",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",

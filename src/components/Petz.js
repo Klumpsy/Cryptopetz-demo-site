@@ -1,9 +1,11 @@
-import allpetz from "../images/allpetz.jpg";
 import React, {useState, useEffect} from 'react'; 
 import axios from 'axios';
 
 const Petz = () => { 
     const [petz, setPetz] = useState([]); 
+    const [searchMenu, setSearchMenu] = useState(false);
+    
+    const [checked, setChecked] = useState(false);
 
     useEffect(()=> {
         try{
@@ -27,17 +29,32 @@ const Petz = () => {
             petzArray.push(value);
         }
 
+    checked ? console.log(petzArray.filter(checkFire)) : console.log("No filter"); 
+
+    function checkFire(pet) { 
+        if (pet.data.types["Fire"]) { 
+            return
+        }
+    }
+
     return (
         
             <div className ="petz-container">  
-                <div className="petz-search-input">
-                    <input placeholder="Search pet by Type, Rarity or ID..."/>
+                <div className="petz-search-container">
+                    <button id="petz-search-button" onClick={() => setSearchMenu(!searchMenu)} >Search</button>
+                    <div className= {searchMenu ? "search-menu-active" : "search-menu-hidden"}>
+                        <div className = "check-for-type">
+                            <div className ="type-box"><label>Fire</label><input type="checkbox" checked={checked} onChange={() => setChecked(!checked)} /></div>
+                            <div className ="type-box"><label>Water</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Grass</label><input type="checkbox"/></div>
+                        </div>
+                    </div>
                 </div>
                 <div className ="petz-wrapper" >
                 {petzArray.map(pet => ( 
-                    <div className= {`pet-card ${pet.data.types[0]}`} pet-card key={pet.name}>
+                    <div className= {`pet-card ${pet.data.types[0]}`} key={pet.name}>
                         <h4>{pet.name}</h4>
-                        <img src= {`https://cryptopetz.info${pet.image}`}/>
+                        <img src= {`https://cryptopetz.info${pet.thumbnail}`}/>
                         <div>
                             <p>Gen: {pet.data.generation}</p>
                             <p>Type: {pet.data.types}</p>
