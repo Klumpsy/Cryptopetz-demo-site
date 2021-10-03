@@ -148,7 +148,7 @@ function App() {
     {loading ? <LoadingScreen/> :
         <div className="App">
           <NavBar petzArray = {petzArray[count]} width={width}/>
-          <Route exact path="/Cryptopetz-demo-site"><Landing petzArray = {petzArray[count]}/></Route>
+          <Route exact path="/Landing"><Landing petzArray = {petzArray[count]}/></Route>
           <Route exact path="/StoryTime"><StoryTime/></Route>
           <Route exact path="/GameInfo"><GameInfo allPetzArray = {allPetzArray} eggArray = {eggArray}/></Route>
           <Route exact path="/Metrics"><Metrics/></Route>

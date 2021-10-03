@@ -9,7 +9,7 @@ const NavBar = ({petzArray, width}) => {
         <>
         {width < 1200 ?
             <div className = "nav-bar nav-mobile">
-            <li><Link to="/Cryptopetz-demo-site/"><img src={petzArray.img} alt="CryptoPet"/></Link></li>
+            <li><Link to="/Landing"><img src={petzArray.img} alt="CryptoPet"/></Link></li>
             <div className = {openMobile ? "mobile-menu mobile-menu-open" : "mobile-menu mobile-menu-close" }>
                 <a><Link to="/StoryTime">Story Time</Link></a>
                 <a><Link to="/GameInfo">Game Info</Link></a>
@@ -27,7 +27,7 @@ const NavBar = ({petzArray, width}) => {
         </div>
         :
         <div className = "nav-bar">
-            <li><Link to="/"><img src={petzArray.img} alt="CryptoPet"/></Link></li>
+            <a><Link to="/Landing"><img src={petzArray.img} alt="CryptoPet"/></Link></a>
             <div className = "nav-links">
                 <a><Link to="/StoryTime">Story Time</Link></a>
                 <a><Link to="/GameInfo">Game Info</Link></a>
