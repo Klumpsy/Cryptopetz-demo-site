@@ -45,12 +45,14 @@ const Metrics = () => {
         <div className ="metrics-background">
             <div className="metrics-wrapper">
                 <div className = "petz-type-container">
-                    <div className ="petz-type fire">
-                        <h3>Fire</h3>
-                        <a><Link to="/Fire">Fire Metrics</Link></a>
-                        <img className="emblem" src={fireEmblem}/>
-                        <img className="metric-pet"src={firePet}/>
-                    </div>
+                    <Link to="/Fire">
+                        <div className ="petz-type fire">
+                            <h3>Fire</h3>
+                            <p>Fire Metrics</p>
+                            <img className="emblem" src={fireEmblem}/>
+                            <img className="metric-pet"src={firePet}/>
+                        </div>
+                    </Link>
                     <div className ="petz-type water">
                         <h3>Water</h3>
                         <a><Link to="/Water">Water Metrics</Link></a>

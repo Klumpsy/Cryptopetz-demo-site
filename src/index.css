@@ -7,7 +7,6 @@
   font-family: 'Gluten', cursive;
 }
 
-
 /*Navigation menu */ 
 .nav-bar { 
   position: fixed;
@@ -17,8 +16,8 @@
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  background: rgba(24, 24, 24, 0.6); 
-  background: linear-gradient(0deg, rgba(20, 20, 20, 0.7) 0%, rgba(54,53,52,0.9223472472555768) 29%);    
+  background: rgba(214, 213, 213, 0.6); 
+  background: linear-gradient(0deg, rgba(206, 202, 202, 0.7) 0%, rgba(187, 187, 187, 0.922) 29%);    
 }
 
 .nav-bar img { 
@@ -29,15 +28,15 @@
 .nav-links a { 
   margin: 5px;
   padding: 5px;
-  text-shadow: 1px 2px 1px black;
+  text-shadow: 1px 2px 1px rgb(235, 228, 228);
   font-size: 1.4rem;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: 600;
   text-decoration: none;
 }
 
 .nav-links a:hover { 
-  color:rgb(81, 82, 81);
+  color:rgb(112, 112, 110);
   cursor: pointer;
   transition: .7s ease;
 }
@@ -127,7 +126,7 @@
 .landing-page-wrapper { 
   width: 100%;
   min-height: 100vh; 
-  background-color: rgba(17, 16, 16, 0.1);
+  background-color: rgba(187, 175, 175, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,7 +280,7 @@
   width: 100vw; 
   padding-top: 12rem;
   padding-bottom: 8rem;
-  background-color: rgba(17, 16, 16, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,7 +289,7 @@
 
 .game-info-wrapper h1 { 
   font-size: 6rem;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .project { 
@@ -368,7 +367,7 @@
 }
 
 .attribute-info h2 { 
-  color: rgba(223, 160, 59, 0.6);
+  color: rgb(231, 154, 30);
   margin-bottom: 2rem;
   font-size: 2.5rem;
 }
@@ -487,7 +486,7 @@ td {
   align-items: center;
 }
 
-.petz-type { 
+.petz-type {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -499,6 +498,10 @@ td {
   border-radius: 16px;
   box-shadow: 0px 0px 5px 2px rgba(10, 10, 10, 0.7);
   margin: 50px;
+}
+
+.petz-type Link { 
+ text-decoration: none;
 }
 
 .emblem { 
@@ -519,21 +522,15 @@ td {
   font-size: 3rem;
 }
 
-.petz-type a { 
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  border-radius: 0px 0px 13px 13px;
-  background-color: black;
-  color: white;
-  text-decoration: none;
+.petz-type p { 
+  color: black;
+  font-size: 1.3rem;
 }
 
-.petz-type a:hover { 
+.petz-type:hover { 
   cursor: pointer;
-  background-color:rgba(20, 20, 20, 0.7);
+  transform: scale(1.10);
+  box-shadow: 0px 0px 20px 10px rgb(160, 159, 159);
   transition: .6s ease-in-out;
 }
 
@@ -1093,8 +1090,8 @@ border: 3px solid rgb(129, 151, 148);
   justify-content: center;
   align-items: center;
   height: 80px;
-  background: rgba(24, 24, 24, 0.6); 
-  background: linear-gradient(0deg, rgba(20, 20, 20, 0.7) 0%, rgba(54,53,52,0.9223472472555768) 29%);    
+  background: rgba(214, 213, 213, 0.6); 
+  background: linear-gradient(0deg, rgba(206, 202, 202, 0.7) 0%, rgba(187, 187, 187, 0.922) 29%);    
 }
 
 .footer img { 
@@ -1106,7 +1103,7 @@ border: 3px solid rgb(129, 151, 148);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 /* Loading screen */

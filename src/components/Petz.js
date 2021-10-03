@@ -5,8 +5,6 @@ const Petz = () => {
     const [petz, setPetz] = useState([]); 
     const [searchMenu, setSearchMenu] = useState(false);
     
-    const [checked, setChecked] = useState(false);
-
     useEffect(()=> {
         try{
             async function fetchData() { 
@@ -43,7 +41,7 @@ const Petz = () => {
                         </div>
                         <div className = "check-for-type">
                             <h3>Filter by Rarity</h3>
-                            <div className ="type-box"><label>Legendary</label><input type="checkbox" checked={checked} onChange={() => setChecked(!checked)} /></div>
+                            <div className ="type-box"><label>Legendary</label><input type="checkbox"/></div>
                             <div className ="type-box"><label>Ultra Rare</label><input type="checkbox"/></div>
                             <div className ="type-box"><label>Extremely Rare</label><input type="checkbox"/></div>
                         </div>
