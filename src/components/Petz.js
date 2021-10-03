@@ -29,14 +29,6 @@ const Petz = () => {
             petzArray.push(value);
         }
 
-    checked ? console.log(petzArray.filter(checkFire)) : console.log("No filter"); 
-
-    function checkFire(pet) { 
-        if (pet.data.types["Fire"]) { 
-            return
-        }
-    }
-
     return (
         
             <div className ="petz-container">  
@@ -44,15 +36,22 @@ const Petz = () => {
                     <button id="petz-search-button" onClick={() => setSearchMenu(!searchMenu)} >Search</button>
                     <div className= {searchMenu ? "search-menu-active" : "search-menu-hidden"}>
                         <div className = "check-for-type">
-                            <div className ="type-box"><label>Fire</label><input type="checkbox" checked={checked} onChange={() => setChecked(!checked)} /></div>
+                            <h3>Filter by Type</h3>
+                            <div className ="type-box"><label>Fire</label><input type="checkbox"/></div>
                             <div className ="type-box"><label>Water</label><input type="checkbox"/></div>
                             <div className ="type-box"><label>Grass</label><input type="checkbox"/></div>
+                        </div>
+                        <div className = "check-for-type">
+                            <h3>Filter by Rarity</h3>
+                            <div className ="type-box"><label>Legendary</label><input type="checkbox" checked={checked} onChange={() => setChecked(!checked)} /></div>
+                            <div className ="type-box"><label>Ultra Rare</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Extremely Rare</label><input type="checkbox"/></div>
                         </div>
                     </div>
                 </div>
                 <div className ="petz-wrapper" >
-                {petzArray.map(pet => ( 
-                    <div className= {`pet-card ${pet.data.types[0]}`} key={pet.name}>
+                {petzArray.map((pet, index) => ( 
+                    <div className= {`pet-card ${pet.data.types[0]}`} key={index}>
                         <h4>{pet.name}</h4>
                         <img src= {`https://cryptopetz.info${pet.thumbnail}`}/>
                         <div>
