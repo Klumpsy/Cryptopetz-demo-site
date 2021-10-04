@@ -18,7 +18,7 @@ import shadowEmblem from "../images/typeEmblems/Shadow_Emblem.png";
 import metalEmblem from "../images/typeEmblems/Metal_Emblem.png";
 import faeEmblem from "../images/typeEmblems/Fae_Emblem.png";
 import lavaEmblem from "../images/typeEmblems/Lava_Emblem.png";
-import soundEmblem from "../images/typeEmblems/Normal_Emblem.png";
+import soundEmblem from "../images/typeEmblems/Sound_Emblem.png";
 
 //Petz Images 
 import firePet from "..//images/petzImages/fire.png";
@@ -41,120 +41,133 @@ import lavaPet from "..//images/petzImages/lava.png";
 import soundPet from "..//images/petzImages/sound.png";
 
 const Metrics = () => { 
+
+    const petzObject = 
+    [
+        {
+            title: "Fire",
+            type: "fire",
+            emblem: fireEmblem,
+            petImg: firePet
+        },
+        {
+            title: "Water",
+            type: "water",
+            emblem: waterEmblem,
+            petImg: waterPet
+        },
+        {
+            title: "Electric",
+            type: "electric",
+            emblem: electricEmblem,
+            petImg: electricPet
+        },
+        {
+            title: "Grass",
+            type: "grass",
+            emblem: grassEmblem,
+            petImg: grassPet
+        },
+        {
+            title: "Ice",
+            type: "ice",
+            emblem: iceEmblem,
+            petImg: icePet
+        },
+        {
+            title: "Earth",
+            type: "earth",
+            emblem: earthEmblem,
+            petImg: earthPet
+        },
+        {
+            title: "Drake",
+            type: "drake",
+            emblem: drakeEmblem,
+            petImg: drakePet
+        },
+        {
+            title: "Shadow",
+            type: "shadow",
+            emblem: shadowEmblem,
+            petImg: shadowPet
+        },
+        {
+            title: "Insect",
+            type: "insect",
+            emblem: insectEmblem,
+            petImg: insectPet
+        },
+        {
+            title: "Metal",
+            type: "metal",
+            emblem: metalEmblem,
+            petImg: metalPet
+        },
+        {
+            title: "Lava",
+            type: "lava",
+            emblem: lavaEmblem,
+            petImg: lavaPet
+        },
+        {
+            title: "Poison",
+            type: "poison",
+            emblem: poisonEmblem,
+            petImg: poisonPet
+        },
+        {
+            title: "Fae",
+            type: "fae",
+            emblem: faeEmblem,
+            petImg: faePet
+        },
+        {
+            title: "Psychic",
+            type: "psychic",
+            emblem: psychicEmblem,
+            petImg: psychicPet
+        },
+        {
+            title: "Flying",
+            type: "flying",
+            emblem: flyingEmblem,
+            petImg: flyingPet
+        },
+        {
+            title: "sound",
+            type: "sound",
+            emblem: soundEmblem,
+            petImg: soundPet
+        },
+        {
+            title: "Spirit",
+            type: "spirit",
+            emblem: spiritEmblem,
+            petImg: spiritPet
+        },
+        {
+            title: "Combat",
+            type: "combat",
+            emblem: combatEmblem,
+            petImg: combatPet
+        }
+    ]
+
     return (
         <div className ="metrics-background">
             <div className="metrics-wrapper">
                 <div className = "petz-type-container">
-                    <Link to="/Fire">
-                        <div className ="petz-type fire">
-                            <h3>Fire</h3>
-                            <p>Fire Metrics</p>
-                            <img className="emblem" src={fireEmblem}/>
-                            <img className="metric-pet"src={firePet}/>
-                        </div>
-                    </Link>
-                    <div className ="petz-type water">
-                        <h3>Water</h3>
-                        <a><Link to="/Water">Water Metrics</Link></a>
-                        <img className="emblem" src={waterEmblem}/>
-                        <img className="metric-pet"src={waterPet}/>
-                    </div>
-                    <div className ="petz-type electric">
-                        <h3>Electric</h3>
-                        <a><Link to="/Electric">Electric Metrics</Link></a>
-                        <img className="emblem" src={electricEmblem}/>
-                        <img className="metric-pet"src={electricPet}/>
-                    </div>
-                    <div className ="petz-type grass">
-                        <h3>Grass</h3>
-                        <a><Link to="/Grass">Grass Metrics</Link></a>
-                        <img className="emblem" src={grassEmblem}/>
-                        <img className="metric-pet"src={grassPet}/>
-                    </div>
-                    <div className ="petz-type ice">
-                        <h3>Ice</h3>
-                        <a><Link to="/Ice">Ice Metrics</Link></a>
-                        <img className="emblem" src={iceEmblem}/>
-                        <img className="metric-pet"src={icePet}/>
-                    </div>
-                    <div className ="petz-type combat">
-                        <h3>Combat</h3>
-                        <a><Link to="/Combat">Combat Metrics</Link></a>
-                        <img className="emblem" src={combatEmblem}/>
-                        <img className="metric-pet"src={combatPet}/>
-                    </div>
-                    <div className ="petz-type poison">
-                        <h3>Poison</h3>
-                        <a><Link to="/Poison">Poison Metrics</Link></a>
-                        <img className="emblem" src={poisonEmblem}/>
-                        <img className="metric-pet"src={poisonPet}/>
-                    </div>
-                    <div className ="petz-type earth">
-                        <h3>Earth</h3>
-                        <a><Link to="/Earth">Earth Metrics</Link></a>
-                        <img className="emblem" src={earthEmblem}/>
-                        <img className="metric-pet"src={earthPet}/>
-                    </div>
-                    <div className ="petz-type flying">
-                        <h3>Flying</h3>
-                        <a><Link to="/Flying">Flying Metrics</Link></a>
-                        <img className="emblem" src={flyingEmblem}/>
-                        <img className="metric-pet"src={flyingPet}/>
-                    </div>
-                    <div className ="petz-type psychic">
-                        <h3>Psychic</h3>
-                        <a><Link to="/Psychic">Psychic Metrics</Link></a>
-                        <img className="emblem" src={psychicEmblem}/>
-                        <img className="metric-pet"src={psychicPet}/>
-                    </div>
-                    <div className ="petz-type insect">
-                        <h3>Insect</h3>
-                        <a><Link to="/Insect">Insect Metrics</Link></a>
-                        <img className="emblem" src={insectEmblem}/>
-                        <img className="metric-pet"src={insectPet}/>
-                    </div>
-                    <div className ="petz-type spirit">
-                        <h3>Spirit</h3>
-                        <a><Link to="/Spirit">Spirit Metrics</Link></a>
-                        <img className="emblem" src={spiritEmblem}/>
-                        <img className="metric-pet"src={spiritPet}/>
-                    </div>
-                    <div className ="petz-type drake">
-                        <h3>Drake</h3>
-                        <a><Link to="/Drake">Drake Metrics</Link></a>
-                        <img className="emblem" src={drakeEmblem}/>
-                        <img className="metric-pet"src={drakePet}/>
-                    </div>
-                    <div className ="petz-type shadow">
-                        <h3>Shadow</h3>
-                        <a><Link to="/Shadow">Shadow Metrics</Link></a>
-                        <img className="emblem" src={shadowEmblem}/>
-                        <img className="metric-pet"src={shadowPet}/>
-                    </div>
-                    <div className ="petz-type metal">
-                        <h3>Metal</h3>
-                        <a><Link to="/Metal">Metal Metrics</Link></a>
-                        <img className="emblem" src={metalEmblem}/>
-                        <img className="metric-pet"src={metalPet}/>
-                    </div>
-                    <div className ="petz-type fae">
-                        <h3>Fae</h3>
-                        <a><Link to="/Fae">Fae Metrics</Link></a>
-                        <img className="emblem" src={faeEmblem}/>
-                        <img className="metric-pet"src={faePet}/>
-                    </div>
-                    <div className ="petz-type lava">
-                        <h3>Lava</h3>
-                        <a><Link to="/Lava">Lava Metrics</Link></a>
-                        <img className="emblem" src={lavaEmblem}/>
-                        <img className="metric-pet"src={lavaPet}/>
-                    </div>
-                    <div className ="petz-type sound">
-                        <h3>Sound</h3>
-                        <a><Link to="/Sound">Sound Metrics</Link></a>
-                        <img className="emblem" src={soundEmblem}/>
-                        <img className="metric-pet"src={soundPet}/>
-                    </div>
+                    {petzObject.map((pet, index)=> ( 
+                      <Link className = "link-text" to={"/" + pet.type}>
+                         <div className = {"petz-type " + pet.type}>
+                             <h3>{pet.title}</h3>
+                             <p>Metrics</p>
+                             <img className="emblem" src={pet.emblem}/>
+                             <img className="metric-pet"src={pet.petImg}/>
+                         </div>
+                     </Link>
+                    ))}
                 </div>
             </div>
         </div>

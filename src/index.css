@@ -500,8 +500,9 @@ td {
   margin: 50px;
 }
 
-.petz-type Link { 
- text-decoration: none;
+.link-text { 
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 .emblem { 
