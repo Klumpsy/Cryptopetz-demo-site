@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Cryptopetz-demo-site/static/css/main.f707bf5b.chunk.css",
-    "main.js": "/Cryptopetz-demo-site/static/js/main.062a9962.chunk.js",
-    "main.js.map": "/Cryptopetz-demo-site/static/js/main.062a9962.chunk.js.map",
+    "main.css": "/Cryptopetz-demo-site/static/css/main.ae5ec8c4.chunk.css",
+    "main.js": "/Cryptopetz-demo-site/static/js/main.bc7cf0f8.chunk.js",
+    "main.js.map": "/Cryptopetz-demo-site/static/js/main.bc7cf0f8.chunk.js.map",
     "runtime-main.js": "/Cryptopetz-demo-site/static/js/runtime-main.e6bba3a7.js",
     "runtime-main.js.map": "/Cryptopetz-demo-site/static/js/runtime-main.e6bba3a7.js.map",
     "static/css/2.7be46f92.chunk.css": "/Cryptopetz-demo-site/static/css/2.7be46f92.chunk.css",
-    "static/js/2.437d3d4a.chunk.js": "/Cryptopetz-demo-site/static/js/2.437d3d4a.chunk.js",
-    "static/js/2.437d3d4a.chunk.js.map": "/Cryptopetz-demo-site/static/js/2.437d3d4a.chunk.js.map",
+    "static/js/2.366d05b8.chunk.js": "/Cryptopetz-demo-site/static/js/2.366d05b8.chunk.js",
+    "static/js/2.366d05b8.chunk.js.map": "/Cryptopetz-demo-site/static/js/2.366d05b8.chunk.js.map",
     "index.html": "/Cryptopetz-demo-site/index.html",
     "static/css/2.7be46f92.chunk.css.map": "/Cryptopetz-demo-site/static/css/2.7be46f92.chunk.css.map",
-    "static/css/main.f707bf5b.chunk.css.map": "/Cryptopetz-demo-site/static/css/main.f707bf5b.chunk.css.map",
-    "static/js/2.437d3d4a.chunk.js.LICENSE.txt": "/Cryptopetz-demo-site/static/js/2.437d3d4a.chunk.js.LICENSE.txt",
+    "static/css/main.ae5ec8c4.chunk.css.map": "/Cryptopetz-demo-site/static/css/main.ae5ec8c4.chunk.css.map",
+    "static/js/2.366d05b8.chunk.js.LICENSE.txt": "/Cryptopetz-demo-site/static/js/2.366d05b8.chunk.js.LICENSE.txt",
     "static/media/Ability_Gold.997c460d.png": "/Cryptopetz-demo-site/static/media/Ability_Gold.997c460d.png",
     "static/media/Attack_Gold.491f6de5.png": "/Cryptopetz-demo-site/static/media/Attack_Gold.491f6de5.png",
     "static/media/Bob-team.748e3bcf.png": "/Cryptopetz-demo-site/static/media/Bob-team.748e3bcf.png",
@@ -67,7 +67,6 @@
     "static/media/Metal_Emblem.c090de02.png": "/Cryptopetz-demo-site/static/media/Metal_Emblem.c090de02.png",
     "static/media/Nick-team.7bc3abb9.png": "/Cryptopetz-demo-site/static/media/Nick-team.7bc3abb9.png",
     "static/media/Normal_Egg_REV1.7988fadb.png": "/Cryptopetz-demo-site/static/media/Normal_Egg_REV1.7988fadb.png",
-    "static/media/Normal_Emblem.512a5d03.png": "/Cryptopetz-demo-site/static/media/Normal_Emblem.512a5d03.png",
     "static/media/Poison_Att.efa554f8.jpg": "/Cryptopetz-demo-site/static/media/Poison_Att.efa554f8.jpg",
     "static/media/Poison_Def.a91f9a90.jpg": "/Cryptopetz-demo-site/static/media/Poison_Def.a91f9a90.jpg",
     "static/media/Poison_Emblem.bd5b1c00.png": "/Cryptopetz-demo-site/static/media/Poison_Emblem.bd5b1c00.png",
@@ -81,6 +80,7 @@
     "static/media/Sound_Att.721ba370.jpg": "/Cryptopetz-demo-site/static/media/Sound_Att.721ba370.jpg",
     "static/media/Sound_Def.bdddd541.jpg": "/Cryptopetz-demo-site/static/media/Sound_Def.bdddd541.jpg",
     "static/media/Sound_Egg_REV1.cfb36a51.png": "/Cryptopetz-demo-site/static/media/Sound_Egg_REV1.cfb36a51.png",
+    "static/media/Sound_Emblem.1c4c5b1f.png": "/Cryptopetz-demo-site/static/media/Sound_Emblem.1c4c5b1f.png",
     "static/media/Special_Attack_Bronze.853f17b5.png": "/Cryptopetz-demo-site/static/media/Special_Attack_Bronze.853f17b5.png",
     "static/media/Special_Attack_Gold.46d1ca58.png": "/Cryptopetz-demo-site/static/media/Special_Attack_Gold.46d1ca58.png",
     "static/media/Special_Attack_Silver.cea6ed09.png": "/Cryptopetz-demo-site/static/media/Special_Attack_Silver.cea6ed09.png",
@@ -148,8 +148,8 @@
   "entrypoints": [
     "static/js/runtime-main.e6bba3a7.js",
     "static/css/2.7be46f92.chunk.css",
-    "static/js/2.437d3d4a.chunk.js",
-    "static/css/main.f707bf5b.chunk.css",
-    "static/js/main.062a9962.chunk.js"
+    "static/js/2.366d05b8.chunk.js",
+    "static/css/main.ae5ec8c4.chunk.css",
+    "static/js/main.bc7cf0f8.chunk.js"
   ]
 }
