@@ -9,12 +9,12 @@ import drakeMetricsDef from "..//../images/radarCharts/Drake_Def.jpg";
 const Drake = () => { 
     return (
         <div className = "metric-type-page-wrapper drake">
-            <img className = "background-emblem" src={drakeEmblem}/>
-            <img className = "background-pet" src={drakePet}/>
             <div className = "metric-type-overlay">
                 <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
                 <h1>Drake</h1>
                 <div className="metric-container">
+                    <img className = "background-emblem" src={drakeEmblem}/>
+                    <img className = "background-pet" src={drakePet}/>
                     <div>
                         <h3>Attack</h3>
                         <img className = "metric-radar-chart" src={drakeMetricsAtt}/>

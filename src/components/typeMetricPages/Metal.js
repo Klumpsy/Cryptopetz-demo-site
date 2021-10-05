@@ -9,12 +9,12 @@ import metalMetricsDef from "..//../images/radarCharts/Metal_Def.jpg";
 const Metal = () => { 
     return (
         <div className = "metric-type-page-wrapper metal">
-            <img className = "background-emblem" src={metalEmblem}/>
-            <img className = "background-pet" src={metalPet}/>
             <div className = "metric-type-overlay">
                 <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
                 <h1>Metal</h1>
                 <div className="metric-container">
+                    <img className = "background-emblem" src={metalEmblem}/>
+                    <img className = "background-pet" src={metalPet}/>
                     <div>
                         <h3>Attack</h3>
                         <img className = "metric-radar-chart" src={metalMetricsAtt}/>

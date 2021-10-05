@@ -24,17 +24,20 @@ const StoryTime = () => {
     return (
         <div className ="story-background">
             <div className = "story-wrapper">
-                <i className= {currentPage === 0 ? "" : "book-arrow book-arrow-left fa fas fa-arrow-circle-left fa-4x"} onClick ={previousPage}></i>
-                        {
-                            pages.map((page, index) => { 
-                            return (
-                                <div className ={index === currentPage ? 'page-active': 'page'} key={index}>
-                                    {index === currentPage ? page : ""}
-                                </div>
-                            )
-                        })
-                    }
-                <i className= {currentPage === (pages.length -1) ? "" : "book-arrow book-arrow-right fa fas fa-arrow-circle-right fa-4x"} onClick = {nextPage}></i>
+               
+                        <div className ="arrow-holder">
+                        <i className= {currentPage === 0 ? "" : "book-arrow book-arrow-left fa fas fa-arrow-circle-left fa-4x"} onClick ={previousPage}></i>
+                            {
+                                pages.map((page, index) => {
+                                return (
+                                    <div className ={index === currentPage ? 'page-active': 'page'} key={index}>
+                                        {index === currentPage ? page : ""}
+                                    </div>
+                                )
+                            })
+                        }
+                        <i className= {currentPage === (pages.length -1) ? "" : "book-arrow book-arrow-right fa fas fa-arrow-circle-right fa-4x"} onClick = {nextPage}></i>
+                        </div>
             </div>
         </div>
     )

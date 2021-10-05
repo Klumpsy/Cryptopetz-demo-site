@@ -9,12 +9,12 @@ import iceMetricsDef from "..//../images/radarCharts/Ice_Def.jpg"
 const Ice = () => { 
     return (
         <div className = "metric-type-page-wrapper ice">
-            <img className = "background-emblem" src={iceEmblem}/>
-            <img className = "background-pet" src={icePet}/>
             <div className = "metric-type-overlay">
                 <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
                 <h1>Ice</h1>
                 <div className="metric-container">
+                    <img className = "background-emblem" src={iceEmblem}/>
+                    <img className = "background-pet" src={icePet}/>
                     <div>
                         <h3>Attack</h3>
                         <img className = "metric-radar-chart" src={iceMetricsAtt}/>

@@ -9,12 +9,12 @@ import psychicMetricsDef from "..//../images/radarCharts/Psychic_Def.jpg"
 const Psychic = () => { 
     return (
         <div className = "metric-type-page-wrapper psychic">
-            <img className = "background-emblem" src={psychicEmblem}/>
-            <img className = "background-pet" src={psychicPet}/>
             <div className = "metric-type-overlay">
                 <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
                 <h1>Psychic</h1>
                 <div className="metric-container">
+                    <img className = "background-emblem" src={psychicEmblem}/>
+                    <img className = "background-pet" src={psychicPet}/>
                     <div>
                         <h3>Attack</h3>
                         <img className = "metric-radar-chart" src={psychicMetricsAtt}/>

@@ -9,12 +9,12 @@ import flyingMetricsDef from "..//../images/radarCharts/Flying_Def.jpg"
 const Flying = () => { 
     return (
         <div className = "metric-type-page-wrapper flying">
-            <img className = "background-emblem" src={flyingEmblem}/>
-            <img className = "background-pet" src={flyingPet}/>
             <div className = "metric-type-overlay">
                 <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
                 <h1>Flying</h1>
                 <div className="metric-container">
+                    <img className = "background-emblem" src={flyingEmblem}/>
+                    <img className = "background-pet" src={flyingPet}/>
                     <div>
                         <h3>Attack</h3>
                         <img className = "metric-radar-chart" src={flyingMetricsAtt}/>

@@ -9,12 +9,12 @@ import shadowMetricsDef from "..//../images/radarCharts/Shadow_Def.jpg";
 const Shadow = () => { 
     return (
         <div className = "metric-type-page-wrapper shadow">
-            <img className = "background-emblem" src={shadowEmblem}/>
-            <img className = "background-pet" src={shadowPet}/>
             <div className = "metric-type-overlay">
                 <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
                 <h1>Shadow</h1>
                 <div className="metric-container">
+                    <img className = "background-emblem" src={shadowEmblem}/>
+                    <img className = "background-pet" src={shadowPet}/>
                     <div>
                         <h3>Attack</h3>
                         <img className = "metric-radar-chart" src={shadowMetricsAtt}/>

@@ -8,12 +8,12 @@ import fireMetricsDef from "..//../images/radarCharts/Fire_Def.jpg";
 const Fire = () => { 
     return (
         <div className = "metric-type-page-wrapper fire">
-            <img className = "background-emblem" src={fireEmblem}/>
-            <img className = "background-pet" src={firePet}/>
             <div className = "metric-type-overlay">
                 <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
                 <h1>Fire</h1>
                 <div className="metric-container">
+                    <img className = "background-emblem" src={fireEmblem}/>
+                    <img className = "background-pet" src={firePet}/>
                     <div>
                         <h3>Attack</h3>
                         <img className = "metric-radar-chart" src={fireMetricsAtt}/>

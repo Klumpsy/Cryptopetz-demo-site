@@ -9,12 +9,12 @@ import insectMetricsDef from "..//../images/radarCharts/Insect_Def.jpg"
 const Insect = () => { 
     return (
         <div className = "metric-type-page-wrapper insect">
-            <img className = "background-emblem" src={insectEmblem}/>
-            <img className = "background-pet" src={insectPet}/>
             <div className = "metric-type-overlay">
                 <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
                 <h1>Insect</h1>
                 <div className="metric-container">
+                    <img className = "background-emblem" src={insectEmblem}/>
+                    <img className = "background-pet" src={insectPet}/>
                     <div>
                         <h3>Attack</h3>
                         <img className = "metric-radar-chart" src={insectMetricsAtt}/>

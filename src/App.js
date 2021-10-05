@@ -120,6 +120,13 @@ const petzArray =
 
 function App() {
 
+  //Light/Dark mode 
+  const [mode, setMode] = useState(true); 
+
+  const changeMode = () => { 
+    setMode(!mode); 
+  }
+
   //Check width
   const [width, setWidth] = useState(window.innerWidth); 
 
@@ -147,7 +154,7 @@ function App() {
     <>
     {loading ? <LoadingScreen/> :
         <div className="App">
-          <NavBar petzArray = {petzArray[count]} width={width}/>
+          <NavBar petzArray = {petzArray[count]} width={width} mode={mode} changeMode ={changeMode}/>
           <Route exact path="/Cryptopetz-demo-site"><Landing petzArray = {petzArray[count]}/></Route>
           <Route exact path="/StoryTime"><StoryTime/></Route>
           <Route exact path="/GameInfo"><GameInfo allPetzArray = {allPetzArray} eggArray = {eggArray}/></Route>
@@ -176,7 +183,7 @@ function App() {
           <Route exact path="/Fae"><Fae/></Route>
           <Route exact path="/Lava"><Lava/></Route>
           <Route exact path="/Sound"><Sound/></Route>
-          <Footer petzArray = {petzArray[countFooter]}/>
+          <Footer petzArray = {petzArray[countFooter]} mode={mode}/>
         </div>
     }
     </>

@@ -9,12 +9,12 @@ import combatMetricsDef from "..//../images/radarCharts/Combat_Def.jpg";
 const Combat = () => { 
     return (
         <div className = "metric-type-page-wrapper combat">
-            <img className = "background-emblem" src={combatEmblem}/>
-            <img className = "background-pet" src={combatPet}/>
             <div className = "metric-type-overlay">
                 <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
                 <h1>Combat</h1>
                 <div className="metric-container">
+                    <img className = "background-emblem" src={combatEmblem}/>
+                    <img className = "background-pet" src={combatPet}/> 
                     <div>
                         <h3>Attack</h3>
                         <img className = "metric-radar-chart" src={combatMetricsAtt}/>

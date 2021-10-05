@@ -9,12 +9,12 @@ import earthMetricsDef from "..//../images/radarCharts/Earth_Def.jpg"
 const Earth = () => { 
     return (
         <div className = "metric-type-page-wrapper earth">
-            <img className = "background-emblem" src={earthEmblem}/>
-            <img className = "background-pet" src={earthPet}/>
             <div className = "metric-type-overlay">
                 <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
                 <h1>Earth</h1>
                 <div className="metric-container">
+                    <img className = "background-emblem" src={earthEmblem}/>
+                    <img className = "background-pet" src={earthPet}/>
                     <div>
                         <h3>Attack</h3>
                         <img className = "metric-radar-chart" src={earthMetricsAtt}/>

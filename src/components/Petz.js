@@ -21,12 +21,11 @@ const Petz = () => {
      
     }, []);
 
-   const petzArray = [];
+    const petzArray = [];
 
     for (let[key, value] of Object.entries(petz)) { 
             petzArray.push(value);
         }
-
     return (
         
             <div className ="petz-container">  
@@ -35,7 +34,7 @@ const Petz = () => {
                     <div className= {searchMenu ? "search-menu-active" : "search-menu-hidden"}>
                         <div className = "check-for-type">
                             <h3>Filter by Type</h3>
-                            <div className ="type-box"><label>Fire</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Fire</label><input type="checkbox" /></div>
                             <div className ="type-box"><label>Water</label><input type="checkbox"/></div>
                             <div className ="type-box"><label>Grass</label><input type="checkbox"/></div>
                         </div>

@@ -9,12 +9,12 @@ import spiritMetricsDef from "..//../images/radarCharts/Spirit_Def.jpg"
 const Spirit = () => { 
     return (
         <div className = "metric-type-page-wrapper spirit">
-            <img className = "background-emblem" src={spiritEmblem}/>
-            <img className = "background-pet" src={spiritPet}/>
             <div className = "metric-type-overlay">
                 <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
                 <h1>Spirit</h1>
                 <div className="metric-container">
+                    <img className = "background-emblem" src={spiritEmblem}/>
+                    <img className = "background-pet" src={spiritPet}/>
                     <div>
                         <h3>Attack</h3>
                         <img className = "metric-radar-chart" src={spiritMetricsAtt}/>

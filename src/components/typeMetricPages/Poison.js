@@ -9,12 +9,12 @@ import poisonMetricsDef from "..//../images/radarCharts/Poison_Def.jpg"
 const Poison = () => { 
     return (
         <div className = "metric-type-page-wrapper poison">
-            <img className = "background-emblem" src={poisonEmblem}/>
-            <img className = "background-pet" src={poisonPet}/>
             <div className = "metric-type-overlay">
                 <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
                 <h1>Poison</h1>
                 <div className="metric-container">
+                    <img className = "background-emblem" src={poisonEmblem}/>
+                    <img className = "background-pet" src={poisonPet}/>
                     <div>
                         <h3>Attack</h3>
                         <img className = "metric-radar-chart" src={poisonMetricsAtt}/>

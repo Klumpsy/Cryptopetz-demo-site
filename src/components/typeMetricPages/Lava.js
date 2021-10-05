@@ -9,12 +9,12 @@ import lavaMetricsDef from "..//../images/radarCharts/Lava_Defense.jpg";
 const Lava = () => { 
     return (
         <div className = "metric-type-page-wrapper lava">
-            <img className = "background-emblem" src={lavaEmblem}/>
-            <img className = "background-pet" src={lavaPet}/>
             <div className = "metric-type-overlay">
                 <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
                 <h1>Lava</h1>
                 <div className="metric-container">
+                    <img className = "background-emblem" src={lavaEmblem}/>
+                    <img className = "background-pet" src={lavaPet}/>
                     <div>
                         <h3>Attack</h3>
                         <img className = "metric-radar-chart" src={lavaMetricsAtt}/>
