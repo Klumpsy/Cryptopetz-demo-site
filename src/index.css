@@ -219,6 +219,10 @@ input:checked + .slider:before {
 }
 
 /*Landing page*/
+.landing-container {
+  height: 100%;
+  overflow-x: hidden;
+}
 .landing-page-wrapper { 
   width: 100%;
   min-height: 100vh; 
@@ -226,6 +230,7 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .landing-body-one { 
@@ -264,35 +269,37 @@ input:checked + .slider:before {
 
 #cloud1 { 
   position: absolute; 
-  top:-40px;
+  top:-120px;
   z-index: 10;
+  width: 300px;
 }
 
 #cloud2 { 
   position: absolute; 
-  top:-50px;
+  top:-150px;
   left: -20px;
   z-index: 10;
+  width: 400px;
 }
-
 
 #cloud3 { 
   position: absolute; 
-  top:-60px;
+  top:-120px;
   left: 8rem;
   z-index: 10;
+  width: 260px;
 }
 
 #cloud4 { 
   position: absolute; 
-  top:-60px;
-  left: 44rem;
+  top:-80px;
+  left: 40rem;
   z-index: 10;
 }
 
 #cloud5 { 
   position: absolute; 
-  top:-60px;
+  top:-100px;
   left: 32rem;
   z-index: 10;
 }
@@ -309,6 +316,7 @@ input:checked + .slider:before {
   top:-65px;
   left: 18rem;
   z-index: 10;
+  width: 500px;
 }
 
 #cloud8{ 
@@ -334,6 +342,83 @@ input:checked + .slider:before {
   top:-89px;
   left: 87rem;
   z-index: 10;
+}
+
+#cloud12 { 
+  position: absolute; 
+  bottom: 100px;
+  left: 100rem;
+  z-index: 10;
+  width: 550px;
+}
+
+#cloud13 { 
+  position: absolute; 
+  top: 100px;
+  left: 100rem;
+  z-index: 10;
+  width: 400px;
+}
+
+.landing-body-three {
+  position: relative;
+  background-image: url("./images/landing/Sky.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#meadow-ground { 
+  position: absolute; 
+  top: 0px;
+  width: 100%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#flying-pet-one, #flying-pet-two, #flying-pet-three { 
+  width: 200px;
+  position: absolute;
+}
+
+#flying-pet-one { 
+  right: 100px;
+}
+
+#flying-pet-two { 
+  right: 100px;
+  bottom: 200px;
+}
+
+#flying-pet-three { 
+  right: 200px;
+  bottom: 100px;
+}
+
+#meadow-pet-one { 
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  width: 200px;
+  position:absolute;
+  top: 200px;
 }
 
 /*Story Time Page*/ 
