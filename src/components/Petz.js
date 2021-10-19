@@ -5,20 +5,15 @@ const Petz = () => {
     const [petz, setPetz] = useState([]); 
     const [searchMenu, setSearchMenu] = useState(false);
     
-    useEffect(()=> {
-        try{
-            async function fetchData() { 
-                const request = await axios.get("/all");
-                setPetz(request.data)
-                return request;
-            }
-    
-            fetchData();
-        }
-        catch(err) {
-            return err => console.log(err)
-        }
-     
+    useEffect(() => { 
+        axios.get("https://cryptopetz.info/api/petz/metadata/all")
+        .then(res => {
+            console.log(res);  
+            setPetz(res); 
+        })
+        .catch(err => { 
+            console.log(err)
+        });
     }, []);
 
     const petzArray = [];
@@ -46,19 +41,19 @@ const Petz = () => {
                         </div>
                     </div>
                 </div>
-                <div className ="petz-wrapper" >
+                {/* <div className ="petz-wrapper" >
                 {petzArray.map((pet, index) => ( 
-                    <div className= {`pet-card ${pet.data.types[0]}`} key={index}>
-                        <h4>{pet.name}</h4>
+                    <div className= "pet-card" key={index}>
+                        <h4></h4>
                         <img src= {`https://cryptopetz.info${pet.thumbnail}`}/>
                         <div>
-                            <p>Gen: {pet.data.generation}</p>
-                            <p>Type: {pet.data.types}</p>
-                            <p>Rarity: {pet.data.rarity}</p>
+                            <p>Gen:</p>
+                            <p>Type:</p>
+                            <p>Rarity:</p>
                         </div>
                     </div>
                 ))}
-                </div>
+                </div> */}
             </div>
                
     )

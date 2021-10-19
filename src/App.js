@@ -134,12 +134,6 @@ function App() {
     window.addEventListener('resize', () => setWidth(window.innerWidth)); 
   }, []);
 
-  //Loading page check
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => { 
-      setTimeout(() => setLoading(false), 12000)
-  }, []);
 
   //Generate random petz to display 
   const [count, setCount] = useState(0)
@@ -152,7 +146,6 @@ function App() {
 
   return (
     <>
-    {loading ? <LoadingScreen/> :
         <div className="App">
           <NavBar petzArray = {petzArray[count]} width={width} mode={mode} changeMode ={changeMode}/>
           <Route exact path="/Cryptopetz-demo-site"><Landing petzArray = {pony}/></Route>
@@ -185,7 +178,6 @@ function App() {
           <Route exact path="/Sound"><Sound/></Route>
           <Footer petzArray = {petzArray[countFooter]} mode={mode}/>
         </div>
-    }
     </>
   );
 }

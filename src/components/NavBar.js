@@ -36,7 +36,7 @@ const NavBar = ({petzArray, width, mode, changeMode}) => {
                 <a><Link to="/Metrics">Metrics</Link></a>
                 <a><Link to="/Updates">Updates</Link></a>
                 <a><Link to="/Team">Team</Link></a>
-                <a href="https://cryptopetz.info/" target ="_blank">Petz</a>
+                <a><Link to ="/Petz">Petz</Link></a>
                 <a><Link to="/StakePool">Stake Pool</Link></a>
             </div>
             <div className = {mode ? "socials-light" : "socials-dark"}>
@@ -52,7 +52,7 @@ const NavBar = ({petzArray, width, mode, changeMode}) => {
         </div>
         }
         </>
-    )
-}
+    );
+};
 
 export default NavBar; 

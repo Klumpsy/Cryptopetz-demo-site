@@ -1009,11 +1009,11 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   position: relative;
   flex-direction: column;
   max-width: 1000px;
-  background: rgba(24, 24, 24, 0.6); 
-  background: linear-gradient(0deg, rgba(20, 20, 20, 0.5) 0%, rgba(54,53,52,0.7223472472555768) 29%);
+  background: rgba(0, 0, 0, 0.8); 
+  background: linear-gradient(0deg, rgba(20, 20, 20, 0.8) 0%, rgba(54,53,52,0.8223472472555768) 29%);
   border-radius: 16px;
   padding: 10px; 
-  color: rgb(207, 195, 195);
+  color: rgb(255, 255, 255);
   margin-bottom: 4rem;
   box-shadow: rgba(224, 221, 221, 0.733) 0px 1px 2px, rgba(189, 185, 185, 0.07) 0px 2px 4px, 
               rgba(238, 234, 234, 0.07) 0px 4px 8px, rgba(235, 231, 231, 0.07) 0px 8px 16px, 
@@ -1082,7 +1082,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   background: linear-gradient(0deg, rgba(20, 20, 20, 0.5) 0%, rgba(54,53,52,0.7223472472555768) 29%);
   border-radius: 16px;
   padding: 10px; 
-  color: rgb(207, 195, 195);
+  color: rgb(255, 255, 255);
   margin-bottom: 1rem;
   box-shadow: rgba(224, 221, 221, 0.733) 0px 1px 2px, rgba(189, 185, 185, 0.07) 0px 2px 4px, 
               rgba(238, 234, 234, 0.07) 0px 4px 8px, rgba(235, 231, 231, 0.07) 0px 8px 16px, 
@@ -1340,7 +1340,7 @@ border: 3px solid rgb(129, 151, 148);
   background: linear-gradient(0deg, rgba(20, 20, 20, 0.5) 0%, rgba(54,53,52,0.7223472472555768) 29%);
   border-radius: 16px;
   padding: 10px; 
-  color: rgb(207, 195, 195);
+  color: rgb(255, 255, 255);
   margin-bottom: 1rem;
   box-shadow: rgba(224, 221, 221, 0.733) 0px 1px 2px, rgba(189, 185, 185, 0.07) 0px 2px 4px,
               rgba(238, 234, 234, 0.07) 0px 4px 8px, rgba(235, 231, 231, 0.07) 0px 8px 16px,
@@ -1379,7 +1379,7 @@ border: 3px solid rgb(129, 151, 148);
 
 /*Footer */ 
 .footer { 
-  position: fixed;
+  position: relative;
   bottom: 0; 
   width: 100%;
   display: flex;
@@ -1409,7 +1409,6 @@ border: 3px solid rgb(129, 151, 148);
 }
 
 /* Loading screen */
-
 .loading-screen { 
   display: flex;
   flex-direction: column;
