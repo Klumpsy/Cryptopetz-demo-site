@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"); /*Poppins*/
 
 * { 
   margin: 0; 
   padding: 0; 
   box-sizing: border-box;
-  font-family: 'Acme', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
 }
 
@@ -76,6 +77,7 @@
 
 .socials-discord { 
   margin-right: 20px;
+  color: black;
 }
 
 .socials-light a { 
@@ -226,7 +228,7 @@ input:checked + .slider:before {
 .landing-page-wrapper { 
   width: 100%;
   min-height: 100vh; 
-  background-color: rgba(187, 175, 175, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -435,7 +437,6 @@ input:checked + .slider:before {
   min-height: 100vh;
   padding-top: 12rem;
   padding-bottom: 8rem;
-  background-color: rgba(17, 16, 16, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -444,7 +445,6 @@ input:checked + .slider:before {
 .book-container { 
   width: 100%;
   height: 100%;
-  background-color: rgba(17, 16, 16, 0.3);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -501,7 +501,7 @@ input:checked + .slider:before {
 }
 
 .book-arrow { 
-  color:rgb(99, 200, 141)
+  color:rgb(10, 10, 10)
 }
 
 .book-arrow:hover { 
@@ -551,7 +551,6 @@ input:checked + .slider:before {
   width: 100vw; 
   padding-top: 12rem;
   padding-bottom: 8rem;
-  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -580,14 +579,14 @@ input:checked + .slider:before {
 .arrow { 
   position: absolute;
   bottom: -60px;
-  color: rgba(214, 138, 16, 0.6);
+  color: rgb(224, 190, 75);
 }
 
 .arrow:hover { 
   cursor: pointer;
   transition: .4s ease-in-out;
   transform: scale(0.95);
-  color: rgba(250, 194, 104, 0.6);
+  color: rgb(224, 197, 121);
 }
 
 .arrow-left { 
@@ -651,7 +650,7 @@ input:checked + .slider:before {
 table { 
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 3px 12px rgba(32,32,32, .3);
+  box-shadow: 0 3px 12px rgba(216, 208, 208, 0.3);
   border-spacing: 0;
   border-collapse: collapse;
 }
@@ -663,39 +662,39 @@ table {
 }
 
 .table-very-common { 
-  background-color: rgba(162, 167, 157, 0.6);
+  background-color: rgba(162, 167, 157);
 }
 .table-common { 
-  background-color: rgba(216, 224, 216, 0.6);
+  background-color: rgba(216, 224, 216);
 }
 .table-uncommon { 
-  background-color: rgba(130, 185, 130, 0.6);
+  background-color: rgba(130, 185, 130);
 }
 .table-scarce { 
-  background-color: rgba(151, 180, 235, 0.6);
+  background-color: rgba(151, 180, 235);
 }
 .table-rare { 
-  background-color: rgba(79, 119, 194, 0.6);
+  background-color: rgba(79, 119, 194);
 }
 .table-epic { 
-  background-color: rgba(130, 22, 192, 0.6);
+  background-color: rgba(130, 22, 192);
 }
 .table-extremely-rare { 
-  background-color: rgba(192, 128, 192, 0.6);
+  background-color: rgba(192, 128, 192);
 }
 .table-ultra-rare { 
-  background-color: rgba(212, 199, 120, 0.6);
+  background-color: rgba(212, 199, 120);
 }
 .table-legendary{ 
-  background-color: rgba(214, 138, 16, 0.6);
+  background-color: rgba(214, 138, 16);
 }
 
 .table-even { 
-  background-color: rgba(94, 144, 156, 0.6);
+  background-color: rgba(94, 144, 156);
 }
 
 .table-odd { 
-  background-color: rgba(91, 223, 172, 0.6);
+  background-color: rgba(91, 223, 172);
 }
 
 td { 
@@ -704,7 +703,7 @@ td {
 }
 
 .petz-row { 
-  box-shadow: -5px -5px 30px 5px rgb(204, 181, 78), 5px 5px 30px 5px rgb(99, 200, 141);
+  box-shadow: -5px -5px 30px 5px rgb(209, 202, 169), 5px 5px 30px 5px rgb(167, 233, 194);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -741,7 +740,6 @@ td {
   min-height: 100vh;
   padding-top: 12rem;
   padding-bottom: 8rem;
-  background-color: rgba(17, 16, 16, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -952,7 +950,6 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   height: 100vh; 
   padding-top: 12rem;
   padding-bottom: 8rem;
-  background-color: rgba(17, 16, 16, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -982,6 +979,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 
 /* Updates page */ 
 .updates-background { 
+  position: relative;
   background-image: url("./images/skyBackground.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -989,11 +987,17 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   background-attachment: fixed;
 }
 
-.update-page-wrapper { 
+#cloud-updates { 
+  position: absolute;
+  top: 900px;
+  left: 0px;
+  width: 400px;
+}
+
+.update-page-wrapper {
   width: 100vw; 
   padding-top: 12rem;
   padding-bottom: 8rem;
-  background-color: rgba(17, 16, 16, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1065,7 +1069,6 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   width: 100vw; 
   padding-top: 12rem;
   padding-bottom: 8rem;
-  background-color: rgba(17, 16, 16, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1092,8 +1095,9 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 
 .intro-text {
   max-width: 600px;
+  font-weight: 800;
   margin: 2rem;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .team-member-text { 
@@ -1305,16 +1309,32 @@ border: 3px solid rgb(129, 151, 148);
   min-height: 100vh;
   padding-top: 12rem;
   padding-bottom: 8rem;
-  background-color: rgba(17, 16, 16, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.stake-pool-info-box { 
+.petz-pool-api-info { 
+
   display: flex;
   flex-direction: column;
+  margin-left: 30px;
+}
+
+.api-items-indicator { 
+  display: flex;
+  color:rgb(90, 159, 199);
+  min-width: 200px;
+  font-weight: 800;
+}
+
+.pool-id { 
+  margin-top: 20px;
+}
+
+.stake-pool-info-box { 
+  display: flex;
   max-width: 1000px;
   background: rgba(24, 24, 24, 0.6); 
   background: linear-gradient(0deg, rgba(20, 20, 20, 0.5) 0%, rgba(54,53,52,0.7223472472555768) 29%);

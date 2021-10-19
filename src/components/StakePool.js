@@ -1,29 +1,59 @@
 import petzBuilder from "../images/petzbuilder.png";
+import {React, useEffect, useState} from "react"; 
+import axios from "axios";
 
 const StakePool = () => { 
+
+    const [pool, setPool] = useState([]); 
+
+    useEffect(() => { 
+        axios.get("https://js.adapools.org/pools/dc6f409d5bd30a59b7b1f0f7969d83b01758e55d3b4e5b7b487532b8/summary.json")
+        .then(res => {
+            setPool(res.data.data); 
+        })
+        .catch(err => { 
+            console.log(err)
+        });
+    }, []);
+   
     return (
         <div className="stake-pool-background">
             <div className="stake-pool-wrapper">
                 <div className ="stake-pool-info-box">
-                    <h2>PETZ Stake Pool</h2>
-                    <p>
-                    The CryptoPetz team is super excited to announce our PETZ stake pool! We are committed to giving our 
-                    delegators the best ADA and in-game rewards possible.<br/><br/>
-
-                    We are actively working on solidifying the tokenomics for the in-game rewards and want to make 
-                    sure a feasible method of distribution is in place before enabling these additional rewards. 
-                    We also want to make sure that all community members have enough time to delegate to the PETZ pool 
-                    before we enable in-game rewards. <br/><br/>
-
-                    The stake pool rewards for in-game use will enable a variety of different actions throughout the game, 
-                    therefore, they are very useful. Early delegators to the PETZ pool will have a substantial head start 
-                    when game actions come to fruition.
-                    </p>
-                    <div className ="stake-pool-metrics">
-                        <h2>PETZ Stake Pool Metrics</h2>
-                        <a href="https://PoolTool.io/PetzPool" target="_blank">PoolTool.io/PetzPool</a>
-                        <a href="https://AdaPool.org/PetzPool" target="_blank">AdaPool.org/PetzPool</a>
-                        <a href="https://Pool.pm/PetzPool" target="_blank">Pool.pm/PetzPool</a>
+                    <div>
+                        <h2>PETZ Stake Pool</h2>
+                        <p>
+                        The CryptoPetz team is super excited to announce our PETZ stake pool! We are committed to giving our
+                        delegators the best ADA and in-game rewards possible.<br/><br/>
+                        We are actively working on solidifying the tokenomics for the in-game rewards and want to make
+                        sure a feasible method of distribution is in place before enabling these additional rewards.
+                        We also want to make sure that all community members have enough time to delegate to the PETZ pool
+                        before we enable in-game rewards. <br/><br/>
+                        The stake pool rewards for in-game use will enable a variety of different actions throughout the game,
+                        therefore, they are very useful. Early delegators to the PETZ pool will have a substantial head start
+                        when game actions come to fruition.
+                        </p>
+                        <div><span className="api-items-indicator pool-id">Pool Id:</span><span> { pool.pool_id}</span></div>
+                    </div>
+                    <div className ="petz-pool-api-info">
+                        <h2>Pool Metrics</h2>
+                        <div className="api-items">
+                            <div><span className="api-items-indicator">Name:</span><span> {pool.db_name}</span></div>
+                            <div><span className="api-items-indicator">Ticker:</span><span> {pool.ticker_orig}</span></div>
+                            <div><span className="api-items-indicator">Rank:</span><span> {pool.rank}</span></div>
+                            <div><span className="api-items-indicator">Active Stake:</span><span> {pool.active_stake} ₳</span></div>
+                            <div><span className="api-items-indicator">Live Stake:</span><span> {pool.total_stake} ₳</span></div>
+                            <div><span className="api-items-indicator">Delegators:</span><span> {pool.delegators}</span></div>
+                            <div><span className="api-items-indicator">Margin:</span><span> {pool.tax_ratio * 100} %</span></div>
+                            <div><span className="api-items-indicator">Delegators:</span><span> {pool.delegators}</span></div>
+                            <div><span className="api-items-indicator">Estimated blocks:</span><span> {pool.blocks_estimated} blocks</span></div>
+                            <div><span className="api-items-indicator">Last Epoch Rewards:</span><span> {pool.rewards_epoch}</span></div>
+                            <div>
+                            <span className="api-items-indicator">Saturation:</span>
+                            <p>{Math.round(pool.saturated * 100)}%</p>
+                            <progress max ="100" value={Math.round(pool.saturated * 100)}></progress>
+                        </div>
+                        </div>
                     </div>
                 </div>
 

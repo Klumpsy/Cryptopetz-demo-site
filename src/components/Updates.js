@@ -1,8 +1,20 @@
+import cloud from "..//images/cloud.png";
+import {useState, useEffect} from "react";
 
 const Updates = ({ allPetzArray }) => { 
+
+    const [offset, setOffset] = useState(); 
+
+    const handleScroll = () => setOffset(window.pageYOffset); 
+
+    window.addEventListener('scroll', handleScroll); 
+
     return (
         <div className = "updates-background">
-            <div className = "update-page-wrapper">
+             <div>
+                <img id="cloud-updates" src={cloud} style={{left: `${0 + offset * 0.02 + "%"}`}}/>
+            </div>
+            <div className = "update-page-wrapper"> 
                 <div className ="update-container">
                     <img className ="update-petz-image" src={allPetzArray[1]}/>
                     <h2>Update 23/09/21</h2>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import {BsDiscord} from "react-icons/bs"; 
 
 const NavBar = ({petzArray, width, mode, changeMode}) => { 
 
@@ -46,7 +47,7 @@ const NavBar = ({petzArray, width, mode, changeMode}) => {
                     </label>
                 </div>
                 <a href="https://twitter.com/CryptoPetz_CNFT" target = "_blank"><i className="socials-twitter fa fab fa-twitter fa-2x"></i></a>
-                <a href="https://discord.com/invite/dM3ug9AQYG" target ="_blank"><i className="socials-discord fa fas fa-unlink fa-2x"></i></a>
+                <a href="https://discord.com/invite/dM3ug9AQYG" target ="_blank"><i className="socials-discord">{BsDiscord}</i></a>
             </div>
         </div>
         }
