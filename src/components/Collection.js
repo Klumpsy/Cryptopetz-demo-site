@@ -1,15 +1,14 @@
 import React, {useState, useEffect} from 'react'; 
 import axios from 'axios';
 
-const Petz = () => { 
+const Collection = ({mode}) => { 
     const [petz, setPetz] = useState([]); 
     const [searchMenu, setSearchMenu] = useState(false);
     
     useEffect(() => { 
-        axios.get("https://cryptopetz.info/api/petz/metadata/all")
+        axios.get("api/petz/metadata/all")
         .then(res => {
-            console.log(res);  
-            setPetz(res); 
+            setPetz(res.data);
         })
         .catch(err => { 
             console.log(err)
@@ -21,6 +20,7 @@ const Petz = () => {
     for (let[key, value] of Object.entries(petz)) { 
             petzArray.push(value);
         }
+
     return (
         
             <div className ="petz-container">  
@@ -41,22 +41,23 @@ const Petz = () => {
                         </div>
                     </div>
                 </div>
-                {/* <div className ="petz-wrapper" >
-                {petzArray.map((pet, index) => ( 
-                    <div className= "pet-card" key={index}>
-                        <h4></h4>
-                        <img src= {`https://cryptopetz.info${pet.thumbnail}`}/>
-                        <div>
-                            <p>Gen:</p>
-                            <p>Type:</p>
-                            <p>Rarity:</p>
-                        </div>
+                <div className = {mode ? "petz-wrapper petz-wrapper-light" : "petz-wrapper petz-wrapper-dark"} >
+                    <div className="petz-inner-wrapper">
+                        {petzArray.map((pet, index) => ( 
+                            <div className= {mode ? "pet-card pet-card-light" : "pet-card pet-card-dark"} key={index}>
+                             <h4></h4>
+                             <img src= {`https://cryptopetz.info${pet.thumbnail}`}/>
+                                <div>
+                                    <p>Gen: </p>
+                                    <p>Type: </p>
+                                    <p>Rarity:</p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
-                ))}
-                </div> */}
+                </div>
             </div>
-               
     )
 }
 
-export default Petz
+export default Collection

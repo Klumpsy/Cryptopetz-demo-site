@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {BsDiscord} from "react-icons/bs"; 
+import ardanoBird from "../images/petzImages/bird.png"
 
 const NavBar = ({petzArray, width, mode, changeMode}) => { 
 
@@ -11,15 +12,15 @@ const NavBar = ({petzArray, width, mode, changeMode}) => {
         <>
         {width < 1200 ?
             <div className = "nav-bar light-mode nav-mobile">
-            <li><Link to="/Cryptopetz-demo-site"><img src={petzArray.img} alt="CryptoPet"/></Link></li>
+            <Link to="/Cryptopetz-demo-site"><img src={ardanoBird} alt="CryptoPet"/></Link>
             <div className = {openMobile ? "mobile-menu mobile-menu-open" : "mobile-menu mobile-menu-close" }>
-                <a><Link to="/StoryTime">Story Time</Link></a>
-                <a><Link to="/GameInfo">Game Info</Link></a>
-                <a><Link to="/Metrics">Metrics</Link></a>
-                <a><Link to="/Updates">Updates</Link></a>
-                <a><Link to="/Team">Team</Link></a>
-                <a><Link to="/Petz">Petz</Link></a>
-                <a><Link to="/StakePool">Stake Pool</Link></a>
+                <Link to="/StoryTime">Story Time</Link>
+                <Link to="/GameInfo">Game Info</Link>
+                <Link to="/Metrics">Metrics</Link>
+                <Link to="/Updates">Updates</Link>
+                <Link to="/Team">Team</Link>
+                <Link to="/Collection">Collection</Link>
+                <Link to="/StakePool">Stake Pool</Link>
             </div>
             <div className = "socials">
                 <a href="https://twitter.com/CryptoPetz_CNFT" target = "_blank"><i className="socials-twitter fa fab fa-twitter fa-2x"></i></a>
@@ -29,15 +30,15 @@ const NavBar = ({petzArray, width, mode, changeMode}) => {
         </div>
         :
         <div className = {mode ? "nav-bar light-mode" : "nav-bar dark-mode"}>
-            <a><Link to="/Cryptopetz-demo-site"><img src={petzArray.img} alt="CryptoPet"/></Link></a>
+            <Link to="/Cryptopetz-demo-site"><img src={ardanoBird} alt="CryptoPet"/></Link>
             <div className = {mode ? "nav-links-light":"nav-links-dark"}>
-                <a><Link to="/StoryTime">Story Time</Link></a>
-                <a><Link to="/GameInfo">Game Info</Link></a>
-                <a><Link to="/Metrics">Metrics</Link></a>
-                <a><Link to="/Updates">Updates</Link></a>
-                <a><Link to="/Team">Team</Link></a>
-                <a><Link to ="/Petz">Petz</Link></a>
-                <a><Link to="/StakePool">Stake Pool</Link></a>
+                <Link to="/StoryTime">Story Time</Link>
+                <Link to="/GameInfo">Game Info</Link>
+                <Link to="/Metrics">Metrics</Link>
+                <Link to="/Updates">Updates</Link>
+                <Link to="/Team">Team</Link>
+                <Link to ="/Collection">Collection</Link>
+                <Link to="/StakePool">Stake Pool</Link>
             </div>
             <div className = {mode ? "socials-light" : "socials-dark"}>
                 <div>

@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react'; 
-import {Route, Link} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 
 //Main site Pages and routing
-import LoadingScreen from './components/LoadingScreen';
 import NavBar from "./components/NavBar";
 import StoryTime from "./components/StoryTime";
 import GameInfo from './components/GameInfo';
 import Metrics from './components/Metrics';
-import Petz from './components/Petz';
+import Collection from './components/Collection';
 import Updates from './components/Updates'
 import Team from './components/Team';
 import Landing from "./components/Landing";
@@ -154,7 +153,7 @@ function App() {
           <Route exact path="/Metrics"><Metrics/></Route>
           <Route exact path="/Updates"><Updates allPetzArray = {allPetzArray}/></Route>
           <Route exact path="/Team"><Team/></Route>
-          <Route exact path="/Petz"><Petz/></Route>
+          <Route exact path="/Collection"><Collection mode={mode}/></Route>
           <Route exact path="/StakePool"><StakePool/></Route>
 
 
