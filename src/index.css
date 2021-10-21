@@ -267,11 +267,12 @@ input:checked + .slider:before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .book-container img { 
-  max-width: 90%;
-  margin-top: 2rem;
+  max-width: 80%;
+  margin-top: 1rem;
 }
 
 .image-border-book { 
@@ -280,6 +281,7 @@ input:checked + .slider:before {
 
 .page-container { 
   justify-content: start;
+  
 }
 
 .page-title { 
@@ -289,6 +291,7 @@ input:checked + .slider:before {
 
 .page-paragraph { 
   margin: 10px;
+  font-size: 16px;
 }
 
 .book-container h1 { 
@@ -1014,6 +1017,122 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   align-items: center;
 }
 
+.petz-modal-active { 
+  position: absolute;
+  display: flex;
+  top: 250px;
+  border: 1px solid white; 
+  width: 80%; 
+  height: 800px;
+  background-color: rgba(37, 36, 36, 0.8);
+  border-radius: 20px;
+  z-index: 1000;
+}
+
+.petz-modal-hidden {
+  display: none;
+}
+
+.modal-info { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+.modal-info-box { 
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+}
+
+.modal-info h2 { 
+  color: white;
+  font-size: 30px;
+}
+
+.info-box-pet { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-box-pet label { 
+  display: block;
+}
+
+.info-box-stats,
+.info-box-about { 
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  height: 80%; 
+  padding: 10px;
+}
+
+.info-box-stats h2,
+.info-box-about h2 { 
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: 2px solid rgb(105, 192, 105);
+}
+
+.about-inner span { 
+  display: block;
+}
+
+.about-inner { 
+  margin: 5px;
+}
+
+.about-span-label { 
+  color: rgb(105, 192, 105);
+}
+
+.stat-info { 
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+meter {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+}
+  
+meter::-webkit-meter-bar {
+    background: rgb(116, 185, 202);
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.9);
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.close-modal { 
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(250, 74, 74);
+  border: 2px solid black;
+}
+
+.close-modal:hover { 
+  background-color: rgb(235, 148, 148);
+  cursor: pointer;
+  border: white;
+  color: white
+}
+
 .petz-wrapper-light { 
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -1037,7 +1156,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.8); 
   width: 250px;
-  height: 300px;
+  height: 350px;
   margin: 5px;
   border-radius: 16px;
   padding: 5px;
@@ -1059,7 +1178,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 }
 
 .pet-card img { 
-  width: 200px;
+  width: 180px;
 }
 
 .Fire { 
