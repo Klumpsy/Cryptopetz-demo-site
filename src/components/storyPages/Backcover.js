@@ -1,6 +1,6 @@
 const Backcover = () => { 
     return (
-        <div className = "book-page book-cover">
+    <div className = "book-page book-cover-back">
         <div className="book-container">
         </div>
     </div>

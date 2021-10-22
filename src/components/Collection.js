@@ -32,7 +32,11 @@ const Collection = ({mode}) => {
 
     return (
         
-            <div className ="petz-container">  
+            <div className ="petz-container"> 
+                <div className ="petz-container-background petz-background-first"></div> 
+                <div className ="petz-container-background petz-background-second"></div> 
+                <div className ="petz-container-background petz-background-third"></div> 
+                <div className ="petz-container-background petz-background-fourth"></div> 
                 <div className="petz-search-container">
                     <button id="petz-search-button" onClick={() => setSearchMenu(!searchMenu)} >Search</button>
                     <div className= {searchMenu ? "search-menu-active" : "search-menu-hidden"}>
