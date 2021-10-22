@@ -23,8 +23,8 @@ const Team = () => {
                 </p>
                 <div className = "team-member-container">
                     <div className = "team-member-image">
-                        <img src ={nick} />
-                        <img className = "team-member-pet" src ={bear}/>
+                        <img src ={nick} alt="Team-member" />
+                        <img className = "team-member-pet" src ={bear} alt="pet"/>
                     </div>
                     <div className ="team-member-text">
                         <h2>Nick (Hemsketsmelvet)</h2>
@@ -46,15 +46,15 @@ const Team = () => {
                            and looking forward to everything we are going to build with, and for, this amazing community.</p>
                     </div>
                     <div className = "team-member-image">
-                        <img src ={dom} />
-                        <img className = "team-member-pet" src ={cactus}/>
+                        <img src ={dom} alt="Team-member" />
+                        <img className = "team-member-pet" src ={cactus} alt="pet"/>
                     </div>
                     
                 </div>
                 <div className = "team-member-container">
                     <div className = "team-member-image">
-                        <img src ={bob} />
-                        <img className = "team-member-pet" src ={combatSheep}/>
+                        <img src ={bob} alt="Team-member"  />
+                        <img className = "team-member-pet" src ={combatSheep} alt="pet"/>
                     </div>
                     <div className ="team-member-text">
                         <h2>Bob (MajikCat)</h2>
@@ -78,14 +78,14 @@ const Team = () => {
                            and Afghanistan as Satellite Communications Team Chief and love to give back to that community.</p>
                     </div>
                     <div className = "team-member-image">
-                        <img src ={justin} />
-                        <img className = "team-member-pet" src ={psychicCow}/>
+                        <img src ={justin} alt="Team-member" />
+                        <img className = "team-member-pet" src ={psychicCow} alt="pet"/>
                     </div>
                 </div>
                 <div className = "team-member-container team-last-container">
                 <div className = "team-member-image ">
-                        <img src ={jake} />
-                        <img className = "team-member-pet" src ={bulb}/>
+                        <img src ={jake} alt="Team-member" />
+                        <img className = "team-member-pet" src ={bulb} alt="pet"/>
                     </div>
                     <div className ="team-member-text">
                         <h2>Jake (jshear)</h2>

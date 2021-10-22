@@ -10,7 +10,7 @@ import crack6 from "../images/crackedEgg/crack6.png"
 import crack7 from "../images/crackedEgg/crack7.png"
 import crackedBottom from "../images/crackedEgg/crackedBottomChick.png"
 
-const LoadingScreen = () => { 
+const LoadingScreen = ({mode}) => { 
 
     const eggCrackArray = [crack1, crack2, crack3, crack4, crack5, crack6, crack7];
 
@@ -24,8 +24,8 @@ const LoadingScreen = () => {
     useEffect(() => { 
         setTimeout(() => {
             changeEggCrack()
-        }, 1500);
-    },[eggcrack])
+        }, 500);
+    })
 
     const changeEggCrack = () => {
         if(eggcrack < 7) {  
@@ -34,11 +34,11 @@ const LoadingScreen = () => {
     }
 
     return (
-        <div className = "loading-screen">
+        <div className = {mode ? "loading-screen loading-screen-light" : "loading-screen loading-screen-dark"}>
             <div className = {!egghatched ? "egg-div egg-wobble" : eggcrack < 7 ? "egg-div egg-wobble": " egg-div egg-hatched"}>
-                <img src={!egghatched? wholeEgg : eggcrack === 7 ? crackedBottom : eggCrackArray[eggcrack]}/>
+                <img src={!egghatched? wholeEgg : eggcrack === 7 ? crackedBottom : eggCrackArray[eggcrack]} alt="egg"/>
             </div>
-            {eggcrack < 7 ? <span className ="loading-span">Loading...</span> : <span className = "welcome-span">Welcome!</span> }    
+            {eggcrack < 7 ? <span className ="loading-span">Loading...</span> : <span className = "welcome-span">Done!</span> }    
         </div> 
     )
 }

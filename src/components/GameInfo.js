@@ -133,13 +133,13 @@ const GameInfo = ({ allPetzArray, eggArray }) => {
                     </div>
                 </div>
                 <div className ="petz-row">
-                    <img src={allPetzArray[8]}/>
-                    <img src={allPetzArray[9]}/>
-                    <img src={allPetzArray[10]}/>
-                    <img src={allPetzArray[11]}/>
-                    <img src={allPetzArray[12]}/>
-                    <img src={allPetzArray[13]}/>
-                    <img src={allPetzArray[14]}/>
+                    <img src={allPetzArray[8]} alt="pet"/>
+                    <img src={allPetzArray[9]} alt="pet"/>
+                    <img src={allPetzArray[10]} alt="pet"/>
+                    <img src={allPetzArray[11]} alt="pet"/>
+                    <img src={allPetzArray[12]} alt="pet"/>
+                    <img src={allPetzArray[13]} alt="pet"/>
+                    <img src={allPetzArray[14]} alt="pet"/>
                 </div>
                 <div className ="game-intro">
                     <h2>CryptoPetz Characteristics</h2>
@@ -162,13 +162,13 @@ const GameInfo = ({ allPetzArray, eggArray }) => {
                     <i className= {"arrow arrow-right fa fas fa-arrow-circle-right fa-4x"} onClick = {nextSlide}></i>
                 </div>
                 <div className ="petz-row">
-                    <img src={allPetzArray[7]}/>
-                    <img src={allPetzArray[6]}/>
-                    <img src={allPetzArray[5]}/>
-                    <img src={allPetzArray[4]}/>
-                    <img src={allPetzArray[3]}/>
-                    <img src={allPetzArray[2]}/>
-                    <img src={allPetzArray[1]}/>
+                    <img src={allPetzArray[7]} alt="pet"/>
+                    <img src={allPetzArray[6]} alt="pet"/>
+                    <img src={allPetzArray[5]} alt="pet"/>
+                    <img src={allPetzArray[4]} alt="pet"/>
+                    <img src={allPetzArray[3]} alt="pet"/>
+                    <img src={allPetzArray[2]} alt="pet"/>
+                    <img src={allPetzArray[1]} alt="pet"/>
                 </div>
                 <div className ="roadmap-layout">
                     <div className="attribute-info attribute-info-roadmap">
@@ -182,7 +182,7 @@ const GameInfo = ({ allPetzArray, eggArray }) => {
                            Note: The Roadmap is subject to change as the scope of work is being researched.</p>
                     </div>
                     <div>
-                        <img src={roadmap}/>
+                        <img src={roadmap} alt="Roadmap"/>
                     </div>
                 </div>
                 <div className ="roadmap-layout">
@@ -199,13 +199,13 @@ const GameInfo = ({ allPetzArray, eggArray }) => {
                            playing matches are all things you can do to increase your chances of getting gold tokens.</p>
                     </div>
                     <div className ="petz-row token-row">
-                    <img src={tokenArray[6]}/>
-                    <img src={tokenArray[5]}/>
-                    <img src={tokenArray[4]}/>
-                    <img src={tokenArray[3]}/>
-                    <img src={tokenArray[2]}/>
-                    <img src={tokenArray[1]}/>
-                    <img src={tokenArray[0]}/>
+                    <img src={tokenArray[6]} alt="pet" />
+                    <img src={tokenArray[5]} alt="pet"/>
+                    <img src={tokenArray[4]} alt="pet"/>
+                    <img src={tokenArray[3]} alt="pet"/>
+                    <img src={tokenArray[2]} alt="pet"/>
+                    <img src={tokenArray[1]} alt="pet"/>
+                    <img src={tokenArray[0]} alt="pet"/>
                     </div>
                 </div>
                 <div className ="roadmap-layout">
@@ -223,9 +223,9 @@ const GameInfo = ({ allPetzArray, eggArray }) => {
                            type otherwise it will be useless.</p>
                     </div>
                     <div className ="petz-row">
-                    <img src={tokenArray[7]}/>
-                    <img src={tokenArray[8]}/>
-                    <img src={tokenArray[9]}/>
+                    <img src={tokenArray[7]} alt="pet"/>
+                    <img src={tokenArray[8]} alt="pet"/>
+                    <img src={tokenArray[9]} alt="pet"/>
                     </div>
                 </div>
                 <div className ="attribute-layout">
@@ -241,21 +241,21 @@ const GameInfo = ({ allPetzArray, eggArray }) => {
                         </p>
                     </div>
                     <div>
-                            <img src={eggArray[5]}/>
+                            <img src={eggArray[5]} alt="egg"/>
                     </div>
                 </div>   
                 <div className ="petz-row egg-row">
-                    <img src={eggArray[0]}/>
-                    <img src={eggArray[1]}/>
-                    <img src={eggArray[2]}/>
-                    <img src={eggArray[3]}/>
-                    <img src={eggArray[4]}/>
-                    <img src={eggArray[6]}/>
-                    <img src={eggArray[7]}/>
-                    <img src={eggArray[8]}/>
-                    <img src={eggArray[9]}/>
-                    <img src={eggArray[10]}/>
-                    <img src={eggArray[11]}/>
+                    <img src={eggArray[0]} alt="egg" />
+                    <img src={eggArray[1]} alt="egg"/>
+                    <img src={eggArray[2]} alt="egg"/>
+                    <img src={eggArray[3]} alt="egg"/>
+                    <img src={eggArray[4]} alt="egg"/>
+                    <img src={eggArray[6]} alt="egg"/>
+                    <img src={eggArray[7]} alt="egg"/>
+                    <img src={eggArray[8]} alt="egg"/>
+                    <img src={eggArray[9]} alt="egg"/>
+                    <img src={eggArray[10]} alt="egg"/>
+                    <img src={eggArray[11]} alt="egg"/>
                 </div>
             </div>
         </div>

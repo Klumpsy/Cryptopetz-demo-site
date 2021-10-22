@@ -9,7 +9,7 @@ const PageOne = () => {
                 is home to approximately 10,000 unique CryptoPetz waiting to be collected. 
                 Up to 150 different species are coexisting in Adano’s diverse ecosystem.
                 </p> 
-                <img src={drakePet}/>
+                <img src={drakePet} alt="pet"/>
             </div>
         </div>
     )

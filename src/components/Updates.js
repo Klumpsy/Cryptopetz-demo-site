@@ -1,5 +1,5 @@
 import cloud from "..//images/cloud.png";
-import {useState, useEffect} from "react";
+import {useState} from "react";
 
 const Updates = ({ allPetzArray }) => { 
 
@@ -12,11 +12,11 @@ const Updates = ({ allPetzArray }) => {
     return (
         <div className = "updates-background">
              <div>
-                <img id="cloud-updates" src={cloud} style={{left: `${0 + offset * 0.02 + "%"}`}}/>
+                <img alt="cloud "id="cloud-updates" src={cloud} style={{left: `${0 + offset * 0.02 + "%"}`}}/>
             </div>
             <div className = "update-page-wrapper"> 
                 <div className ="update-container">
-                    <img className ="update-petz-image" src={allPetzArray[1]}/>
+                    <img alt="pet" className ="update-petz-image" src={allPetzArray[1]}/>
                     <h2>Update 23/09/21</h2>
                     <p>
                     Hello Fellow Explorers! <br/><br/>
@@ -80,7 +80,7 @@ const Updates = ({ allPetzArray }) => {
                     </div>
                 </div>
                 <div className ="update-container">
-                    <img className ="update-petz-image" src={allPetzArray[6]}/>
+                    <img alt="pet" className ="update-petz-image" src={allPetzArray[6]}/>
                     <h2>Update 09/09/21</h2>
                     <p>
                     Hello Fellow Explorers! <br/><br/>
@@ -121,7 +121,7 @@ const Updates = ({ allPetzArray }) => {
                             <ul>
                                 <li>Now Hiring (Indie Game Developer and Front End Developer) Send Resume to <span className="emph">info@cryptopetz.io</span></li>
                                 <li>Roadmap Graphic V2</li>
-                                <li>Main Menu Soundtrack - <a href="https://www.youtube.com/watch?v=LjilPxj4Z4c" target="_blank"> Click here</a></li>
+                                <li>Main Menu Soundtrack - <a href="https://www.youtube.com/watch?v=LjilPxj4Z4c" target="_blank" rel="noreferrer"> Click here</a></li>
                                 <li>Team Builder V1 - https://cryptopetz.info/game/play (We will integrate this into the website in the coming days)</li>
                                 <li>Rarity Calculator and Recently Sold Website Integration</li>
                                 <li>Epoch 1 Names Voting page on Website</li>
@@ -152,7 +152,7 @@ const Updates = ({ allPetzArray }) => {
                     </div>
                 </div>
                 <div className ="update-container">
-                    <img className ="update-petz-image" src={allPetzArray[8]}/>
+                    <img alt="pet" className ="update-petz-image" src={allPetzArray[8]}/>
                     <h2>Update 26/08/21</h2>
                     <p>
                     Hello Fellow Explorers! <br/><br/>
@@ -190,7 +190,7 @@ const Updates = ({ allPetzArray }) => {
                         <h3>Today's Update</h3>
                             <ul>
                                 <li>Origin Explorer Discord Role - Update</li>
-                                <li>Adawgs Petz Collection Page <a href="https://cryptopetz.info/" target="_blank">Click here</a></li>
+                                <li>Adawgs Petz Collection Page <a href="https://cryptopetz.info/" target="_blank" rel="noreferrer">Click here</a></li>
                                 <li>Team and Update Page on Website</li>
                                 <li>Weaknesses and Strengths Charts- Under Metrics)</li>
                                 <li>Justin (Project Timeline Manager) and Jake (Dev) - Onboarded</li>
@@ -222,7 +222,7 @@ const Updates = ({ allPetzArray }) => {
                     </div>
                 </div>
                 <div className ="update-container">
-                    <img className ="update-petz-image" src={allPetzArray[9]}/>
+                    <img alt="pet" className ="update-petz-image" src={allPetzArray[9]}/>
                     <h2>Update 08/12/21</h2>
                     <p>
                     Hello Fellow Explorers! <br/><br/>

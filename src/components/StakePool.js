@@ -75,7 +75,7 @@ const StakePool = () => {
                         </p>
                     </div>
                     <div className ="stake-pool-metrics">
-                        <img src={petzBuilder}/>
+                        <img src={petzBuilder} alt="petzbuilder"/>
                     </div>
                 </div>
             </div>

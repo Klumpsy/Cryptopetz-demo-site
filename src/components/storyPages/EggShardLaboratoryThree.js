@@ -15,7 +15,7 @@ const EggShardLaboratoryThree = () => {
             <br/><br/>
             We will update the logs as we continue to build out the Egg Shard Laboratory and gather more data.
             </p>
-            <img className = "image-border-book" src={eggLab}/>
+            <img className = "image-border-book" src={eggLab} alt="egg lab"/>
         </div>
     </div>
     )   

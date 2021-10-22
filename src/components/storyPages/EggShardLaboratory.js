@@ -11,7 +11,7 @@ const EggShardLaboratory = () => {
             <br/><br/> 
             Ours was one of the first ships that jumped, we arrived here, at Adano…
             </p>
-            <img className = "image-border-book"src={adanoFromSpace}/>
+            <img className = "image-border-book"src={adanoFromSpace} alt="Adano from space"/>
         </div>
     </div>
     )   
