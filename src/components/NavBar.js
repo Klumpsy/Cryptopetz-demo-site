@@ -14,13 +14,13 @@ const NavBar = ({petzArray, width, mode, changeMode}) => {
             <div className = "nav-bar light-mode nav-mobile">
             <Link to="/Cryptopetz-demo-site"><img src={ardanoBird} alt="CryptoPet"/></Link>
             <div className = {openMobile ? "mobile-menu mobile-menu-open" : "mobile-menu mobile-menu-close" }>
-                <Link to="/StoryTime">Story Time</Link>
-                <Link to="/GameInfo">Game Info</Link>
-                <Link to="/Metrics">Metrics</Link>
+                <Link to="/StoryTime">Story</Link>
+                <Link to="/AllMetrics">Metrics</Link>
                 <Link to="/Updates">Updates</Link>
                 <Link to="/Team">Team</Link>
                 <Link to="/Collection">Collection</Link>
                 <Link to="/StakePool">Stake Pool</Link>
+                <Link to="/Sales">Sales</Link>
             </div>
             <div className = "socials">
                 <a href="https://twitter.com/CryptoPetz_CNFT" target = "_blank"><i className="socials-twitter fa fab fa-twitter fa-2x"></i></a>
@@ -32,13 +32,13 @@ const NavBar = ({petzArray, width, mode, changeMode}) => {
         <div className = {mode ? "nav-bar light-mode" : "nav-bar dark-mode"}>
             <Link to="/Cryptopetz-demo-site"><img src={ardanoBird} alt="CryptoPet"/></Link>
             <div className = {mode ? "nav-links-light":"nav-links-dark"}>
-                <Link to="/StoryTime">Story Time</Link>
-                <Link to="/GameInfo">Game Info</Link>
-                <Link to="/Metrics">Metrics</Link>
+                <Link to="/StoryTime">Story</Link>
+                <Link to="/AllMetrics">Metrics</Link>
                 <Link to="/Updates">Updates</Link>
                 <Link to="/Team">Team</Link>
                 <Link to ="/Collection">Collection</Link>
                 <Link to="/StakePool">Stake Pool</Link>
+                <Link to="/Sales">Sales</Link>
             </div>
             <div className = {mode ? "socials-light" : "socials-dark"}>
                 <div>

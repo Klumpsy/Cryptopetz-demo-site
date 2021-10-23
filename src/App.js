@@ -5,12 +5,15 @@ import {Route} from 'react-router-dom';
 import NavBar from "./components/NavBar";
 import StoryTime from "./components/StoryTime";
 import GameInfo from './components/GameInfo';
+import AllMetrics from './components/AllMetrics';
 import Metrics from './components/Metrics';
+import RarityMetrics from './components/RarityMetrics';
 import Collection from './components/Collection';
 import Updates from './components/Updates'
 import Team from './components/Team';
 import Landing from "./components/Landing";
 import StakePool from "./components/StakePool"
+import Sales from "./components/Sales";
 import Footer from "./components/Footer";
 import './index.css';
 
@@ -150,12 +153,15 @@ function App() {
           <Route exact path="/Cryptopetz-demo-site"><Landing petzArray = {pony}/></Route>
           <Route exact path="/StoryTime"><StoryTime/></Route>
           <Route exact path="/GameInfo"><GameInfo allPetzArray = {allPetzArray} eggArray = {eggArray}/></Route>
-          <Route exact path="/Metrics"><Metrics/></Route>
+          <Route exact path="/AllMetrics"><AllMetrics mode={mode}/></Route>
           <Route exact path="/Updates"><Updates allPetzArray = {allPetzArray}/></Route>
           <Route exact path="/Team"><Team/></Route>
           <Route exact path="/Collection"><Collection mode={mode}/></Route>
           <Route exact path="/StakePool"><StakePool/></Route>
+          <Route exact path="/Sales"><Sales/></Route>
 
+          <Route exact path="/Metrics"><Metrics/></Route>
+          <Route exact path="/RarityMetrics"><RarityMetrics/></Route>
 
           <Route exact path="/Fire"><Fire/></Route>
           <Route exact path="/Water"><Water/></Route>
