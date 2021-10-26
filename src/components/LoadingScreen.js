@@ -18,7 +18,11 @@ const LoadingScreen = ({mode}) => {
     const [eggcrack, SetEggCrack] = useState(0)
  
     useEffect(() => { 
-        setTimeout(() => SetEggHatched(true), 4000)
+        let isMounted = true;
+        if(isMounted) { 
+            setTimeout(() => SetEggHatched(true), 4000)
+        }
+        isMounted = false;
     }, []);
 
     useEffect(() => { 
@@ -28,9 +32,11 @@ const LoadingScreen = ({mode}) => {
     })
 
     const changeEggCrack = () => {
-        if(eggcrack < 7) {  
+        let isMounted = true;
+        if(eggcrack < 7 && isMounted) {  
         SetEggCrack(eggcrack + 1)
         }
+        isMounted = false; 
     }
 
     return (

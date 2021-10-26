@@ -7,9 +7,15 @@ const StakePool = () => {
     const [pool, setPool] = useState([]); 
 
     useEffect(() => { 
-        axios.get("https://js.adapools.org/pools/dc6f409d5bd30a59b7b1f0f7969d83b01758e55d3b4e5b7b487532b8/summary.json")
+        fetch("https://js.adapools.org/pools/dc6f409d5bd30a59b7b1f0f7969d83b01758e55d3b4e5b7b487532b8/summary.json")
         .then(res => {
-            setPool(res.data.data); 
+            if(!res.ok) { 
+                throw Error("Could not get the data from the API")
+            }
+            return res.json()
+        })
+        .then(data => {
+            setPool(data.data); 
         })
         .catch(err => { 
             console.log(err)
@@ -33,7 +39,7 @@ const StakePool = () => {
                         therefore, they are very useful. Early delegators to the PETZ pool will have a substantial head start
                         when game actions come to fruition.
                         </p>
-                        <div><span className="api-items-indicator pool-id">Pool Id:</span><span> { pool.pool_id}</span></div>
+                        <div><span className="api-items-indicator pool-id">Pool Id:</span><span> {pool.pool_id}</span></div>
                     </div>
                     <div className ="petz-pool-api-info">
                         <h2>Pool Metrics</h2>

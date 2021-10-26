@@ -1,14 +1,16 @@
 import React, {useState, useEffect} from 'react'; 
-import axios from 'axios';
 import LoadingScreen from './LoadingScreen';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import SearchFilter from '../components/SearchFilter';
+
 
 const Collection = ({mode}) => { 
     //API petz state
     const [petz, setPetz] = useState([]); 
     const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
 
     //Search state
     const [searchMenu, setSearchMenu] = useState(false);
@@ -20,27 +22,38 @@ const Collection = ({mode}) => {
     const [modalPet, setModalPet] = useState();
 
     useEffect(() => { 
-        let isCancelled = false; 
+        let isMounted = true; 
+
         setLoading(true);
-        axios.get("api/petz/metadata/all")
+        fetch("/api/petz/metadata/all")
         .then(res => {
-            if(!isCancelled) {
-            //Convert petz Object retreived from API to Array to map over.
-            const petzArray = [];
-            for (let[key, value] of Object.entries(res.data)) { 
-                petzArray.push(value);
+            if(!res.ok) { 
+                console.log("Could not fetch that data..")
             }
-            setPetz(petzArray);
-            setLoading(false);
+            return res.json(); 
+        })
+        .then(data => { 
+            if(isMounted) { 
+                setPetz(Object.values(data));
+                setLoading(false);
+                setError(null);
             }
-            return () => { 
-                isCancelled = true; 
-            };
         })
         .catch(err => { 
-            console.log(err)
+            if(err.name === "AbortError"){ 
+                console.log("Fetch Aborted")
+            } else { 
+                setLoading(false); 
+                setError(err.message)
+                console.log(err.message)
+            } 
         });
+        return () => {isMounted = false };
     }, []);
+
+    const handleSearch = (e) => { 
+        setFilteredPetz((e) => e.target.value)
+    }
 
     //Rarity filter 
     useEffect(() => { 
@@ -48,8 +61,7 @@ const Collection = ({mode}) => {
             return pet.data.rarity.toLowerCase().includes(search.toLowerCase())
         })
     )
-}, [search, petz])
-
+}, [search])
 
     //Modal function to show pet that user clicked on 
     function showPetInfo(pet) { 
@@ -62,7 +74,7 @@ const Collection = ({mode}) => {
             <div className ="petz-container"> 
                 <div className = {modalActive? "modal-overlay-background-active": "modal-overlay-background-hidden"}></div>
                 <div className = {mode ? "petz-searchbox-container petz-wrapper-light" : "petz-searchbox-container petz-wrapper-dark"}> 
-                    <input className="petz-searchbox" type="text" placeholder="Search on type/rarity" onChange={e => setSearch(e.target.value)}/>
+                    <SearchFilter Onsearch ={handleSearch}/>
                 </div>
                 <div className ="petz-container-background petz-background-first"></div> 
                 <div className ="petz-container-background petz-background-second"></div> 

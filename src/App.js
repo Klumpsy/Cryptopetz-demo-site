@@ -161,7 +161,7 @@ function App() {
           <Route exact path="/Sales"><Sales/></Route>
 
           <Route exact path="/Metrics"><Metrics/></Route>
-          <Route exact path="/RarityMetrics"><RarityMetrics/></Route>
+          <Route exact path="/RarityMetrics"><RarityMetrics eggArray = {eggArray}/></Route>
 
           <Route exact path="/Fire"><Fire/></Route>
           <Route exact path="/Water"><Water/></Route>

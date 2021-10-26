@@ -27,7 +27,7 @@ export const PetRarityData = {
             "rgba(216, 224, 216)",
             "rgb(133, 133, 133)" 
          ], 
-         hoverOffset: 2,
+         hoverOffset: 1,
          borderWidth: 1,
          borderColor: "black",
          hoverBorderColor: "white",

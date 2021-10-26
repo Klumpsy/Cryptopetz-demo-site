@@ -770,21 +770,69 @@ color: white;
 
 .petz-chart-data{ 
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  max-height: 700px;
-  margin-bottom: 20px;
 }
 
 .petz-info-box-right,
 .petz-info-box-left { 
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 100%; 
-  height: 100%; 
-  margin: 20px;
-  padding: 20px;
+  width: 45%;
+  margin: 10px;
   border-radius: 20px;
-  background-color: rgba(23, 24, 24, 0.95); 
+  background-color: rgba(16, 17, 17, 0.80); 
+}
+
+.petz-info-egg-container { 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.petz-info-egg {
+  max-width: 140px; 
+  width: 20%;
+}
+
+.egg-type-list-container { 
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.petz-info-backgrounds { 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.petz-info-background { 
+  max-width: 140px; 
+  width: 20%;
+  margin: 5px;
+}
+
+.petz-info-emblem { 
+  width: 20%;
+}
+
+.egg-type-container { 
+  margin: 10px;
+}
+
+.petz-info-box-center {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: rgba(16, 17, 17, 0.80); 
 }
 
 /* Petz Metrics page */ 
