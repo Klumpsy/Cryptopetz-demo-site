@@ -51,8 +51,10 @@ const Collection = ({mode}) => {
         return () => {isMounted = false };
     }, []);
 
+    //Search callback
     const handleSearch = (e) => { 
-        setFilteredPetz((e) => e.target.value)
+        setSearch(e.target.value);
+        console.log("called") 
     }
 
     //Rarity filter 
@@ -74,7 +76,7 @@ const Collection = ({mode}) => {
             <div className ="petz-container"> 
                 <div className = {modalActive? "modal-overlay-background-active": "modal-overlay-background-hidden"}></div>
                 <div className = {mode ? "petz-searchbox-container petz-wrapper-light" : "petz-searchbox-container petz-wrapper-dark"}> 
-                    <SearchFilter Onsearch ={handleSearch}/>
+                    <SearchFilter data = {petz} placeholder = "Search on type/rarity" handleSearch ={handleSearch}/>
                 </div>
                 <div className ="petz-container-background petz-background-first"></div> 
                 <div className ="petz-container-background petz-background-second"></div> 

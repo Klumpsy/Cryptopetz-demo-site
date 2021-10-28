@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 import fireEmblem from "..//../images/typeEmblems/Fire_Emblem.png";
 import firePet from "..//../images/petzImages/fire.png";
@@ -6,6 +6,7 @@ import fireMetricsAtt from "..//../images/radarCharts/Fire_Att.jpg";
 import fireMetricsDef from "..//../images/radarCharts/Fire_Def.jpg";
 
 const Fire = () => { 
+
     return (
         <div className = "metric-type-page-wrapper fire">
             <div className = "metric-type-overlay">

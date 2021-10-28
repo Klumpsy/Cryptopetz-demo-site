@@ -47,8 +47,8 @@ const StakePool = () => {
                             <div><span className="api-items-indicator">Name:</span><span> {pool.db_name}</span></div>
                             <div><span className="api-items-indicator">Ticker:</span><span> {pool.ticker_orig}</span></div>
                             <div><span className="api-items-indicator">Rank:</span><span> {pool.rank}</span></div>
-                            <div><span className="api-items-indicator">Active Stake:</span><span> {pool.active_stake} ₳</span></div>
-                            <div><span className="api-items-indicator">Live Stake:</span><span> {pool.total_stake} ₳</span></div>
+                            <div><span className="api-items-indicator">Active Stake:</span><span> {String(pool.active_stake).slice(0,3)+"K"} ₳</span></div>
+                            <div><span className="api-items-indicator">Live Stake:</span><span> {String(pool.total_stake).slice(0,3)+"K"} ₳</span></div>
                             <div><span className="api-items-indicator">Delegators:</span><span> {pool.delegators}</span></div>
                             <div><span className="api-items-indicator">Margin:</span><span> {pool.tax_ratio * 100} %</span></div>
                             <div><span className="api-items-indicator">Delegators:</span><span> {pool.delegators}</span></div>

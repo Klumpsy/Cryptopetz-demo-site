@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'; 
-import {Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 //Main site Pages and routing
 import NavBar from "./components/NavBar";
@@ -150,37 +150,57 @@ function App() {
     <>
         <div className="App">
           <NavBar petzArray = {petzArray[count]} width={width} mode={mode} changeMode ={changeMode}/>
-          <Route exact path="/Cryptopetz-demo-site"><Landing petzArray = {pony}/></Route>
-          <Route exact path="/StoryTime"><StoryTime/></Route>
-          <Route exact path="/GameInfo"><GameInfo allPetzArray = {allPetzArray} eggArray = {eggArray}/></Route>
-          <Route exact path="/AllMetrics"><AllMetrics mode={mode}/></Route>
-          <Route exact path="/Updates"><Updates allPetzArray = {allPetzArray}/></Route>
-          <Route exact path="/Team"><Team/></Route>
-          <Route exact path="/Collection"><Collection mode={mode}/></Route>
-          <Route exact path="/StakePool"><StakePool/></Route>
-          <Route exact path="/Sales"><Sales/></Route>
-
-          <Route exact path="/Metrics"><Metrics/></Route>
-          <Route exact path="/RarityMetrics"><RarityMetrics eggArray = {eggArray}/></Route>
-
-          <Route exact path="/Fire"><Fire/></Route>
-          <Route exact path="/Water"><Water/></Route>
-          <Route exact path="/Electric"><Electric/></Route>
-          <Route exact path="/Grass"><Grass/></Route>
-          <Route exact path="/Ice"><Ice/></Route>
-          <Route exact path="/Combat"><Combat/></Route>
-          <Route exact path="/Poison"><Poison/></Route>
-          <Route exact path="/Earth"><Earth/></Route>
-          <Route exact path="/Flying"><Flying/></Route>
-          <Route exact path="/Psychic"><Psychic/></Route>
-          <Route exact path="/Insect"><Insect/></Route>
-          <Route exact path="/Spirit"><Spirit/></Route>
-          <Route exact path="/Drake"><Drake/></Route>
-          <Route exact path="/Shadow"><Shadow/></Route>
-          <Route exact path="/Metal"><Metal/></Route>
-          <Route exact path="/Fae"><Fae/></Route>
-          <Route exact path="/Lava"><Lava/></Route>
-          <Route exact path="/Sound"><Sound/></Route>
+              <Switch>
+                <Route exact path="/Cryptopetz-demo-site">
+                  <Landing petzArray = {pony}/>
+                </Route>
+                <Route exact path="/StoryTime">
+                  <StoryTime/>
+                </Route>
+                <Route exact path="/GameInfo">
+                  <GameInfo allPetzArray = {allPetzArray} eggArray = {eggArray}/>
+                </Route>
+                <Route exact path="/AllMetrics">
+                  <AllMetrics mode={mode}/>
+                </Route>
+                <Route exact path="/Updates">
+                  <Updates allPetzArray = {allPetzArray}/>
+                </Route>
+                <Route exact path="/Team">
+                  <Team/>
+                </Route>
+                <Route exact path="/Collection">
+                  <Collection mode={mode}/>
+                </Route>
+                <Route exact path="/StakePool">
+                  <StakePool/>
+                </Route>
+                <Route exact path="/Sales">
+                  <Sales/>
+                </Route>
+                
+                            <Route exact path="/Metrics"><Metrics/></Route>
+                            <Route exact path="/RarityMetrics"><RarityMetrics eggArray = {eggArray}/></Route>
+                
+                            <Route exact path="/Fire"><Fire/></Route>
+                            <Route exact path="/Water"><Water/></Route>
+                            <Route exact path="/Electric"><Electric/></Route>
+                            <Route exact path="/Grass"><Grass/></Route>
+                            <Route exact path="/Ice"><Ice/></Route>
+                            <Route exact path="/Combat"><Combat/></Route>
+                            <Route exact path="/Poison"><Poison/></Route>
+                            <Route exact path="/Earth"><Earth/></Route>
+                            <Route exact path="/Flying"><Flying/></Route>
+                            <Route exact path="/Psychic"><Psychic/></Route>
+                            <Route exact path="/Insect"><Insect/></Route>
+                            <Route exact path="/Spirit"><Spirit/></Route>
+                            <Route exact path="/Drake"><Drake/></Route>
+                            <Route exact path="/Shadow"><Shadow/></Route>
+                            <Route exact path="/Metal"><Metal/></Route>
+                            <Route exact path="/Fae"><Fae/></Route>
+                            <Route exact path="/Lava"><Lava/></Route>
+                            <Route exact path="/Sound"><Sound/></Route>
+              </Switch>
           <Footer petzArray = {petzArray[countFooter]} mode={mode}/>
         </div>
     </>

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {BsDiscord} from "react-icons/bs"; 
+import {BsDiscord, BsTwitter} from "react-icons/bs"; 
+import {AiOutlineMenu} from "react-icons/ai";
 import ardanoBird from "../images/petzImages/bird.png"
 
-const NavBar = ({petzArray, width, mode, changeMode}) => { 
+
+const NavBar = ({width, mode, changeMode}) => { 
 
     //MobileMenu checker
     const [openMobile, setOpenMobile] = useState(false)
@@ -22,11 +24,15 @@ const NavBar = ({petzArray, width, mode, changeMode}) => {
                 <Link to="/StakePool">Stake Pool</Link>
                 <Link to="/Sales">Sales</Link>
             </div>
-            <div className = "socials">
-                <a href="https://twitter.com/CryptoPetz_CNFT" target = "_blank"><i className="socials-twitter fa fab fa-twitter fa-2x"></i></a>
-                <a href="https://discord.com/invite/dM3ug9AQYG" target ="_blank"><i className="socials-discord fa fas fa-unlink fa-2x"></i></a>
+            <div className = {mode ? "socials-light" : "socials-dark"}>
+                <Link to= {{pathname: "https://twitter.com/CryptoPetz_CNFT"}} target = "_blank">
+                    <BsTwitter className="socials-twitter" size={24}/>
+                </Link>
+                <Link to= {{pathname: "https://discord.com/invite/dM3ug9AQYG"}} target ="_blank">
+                    <BsDiscord className="socials-discord" size={24}/>
+                </Link>
             </div>
-            <button onClick = {()=>setOpenMobile(!openMobile)} className="hamburger-button"><i className="fa fas fa-bars fa-2x"></i></button>
+            <button onClick = {()=>setOpenMobile(!openMobile)} className="hamburger-button"><AiOutlineMenu/></button>
         </div>
         :
         <div className = {mode ? "nav-bar light-mode" : "nav-bar dark-mode"}>
@@ -47,8 +53,12 @@ const NavBar = ({petzArray, width, mode, changeMode}) => {
                     <span className="slider round"></span>
                     </label>
                 </div>
-                <a href="https://twitter.com/CryptoPetz_CNFT" target = "_blank"><i className="socials-twitter fa fab fa-twitter fa-2x"></i></a>
-                <a href="https://discord.com/invite/dM3ug9AQYG" target ="_blank"><i className="socials-discord">{BsDiscord}</i></a>
+                <Link to= {{pathname: "https://twitter.com/CryptoPetz_CNFT"}} target = "_blank">
+                    <BsTwitter className="socials-twitter" size={32}/>
+                </Link>
+                <Link to= {{pathname: "https://discord.com/invite/dM3ug9AQYG"}} target ="_blank">
+                    <BsDiscord className="socials-discord" size={32}/>
+                </Link>
             </div>
         </div>
         }

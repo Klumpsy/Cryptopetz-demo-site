@@ -1,9 +1,9 @@
+import petzBookCover from "../../images/bookCover.jpg"
 
 const Cover = () => { 
     return ( 
         <div className = "book-page book-cover">
-            <div className="book-container">
-            </div>
+             <img src={petzBookCover} style={{width: "100%"}}></img> 
         </div>
     )
 }
