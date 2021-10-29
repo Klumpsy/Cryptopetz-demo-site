@@ -16,13 +16,13 @@ const NavBar = ({width, mode, changeMode}) => {
             <div className = "nav-bar light-mode nav-mobile">
             <Link to="/Cryptopetz-demo-site"><img src={ardanoBird} alt="CryptoPet"/></Link>
             <div className = {openMobile ? "mobile-menu mobile-menu-open" : "mobile-menu mobile-menu-close" }>
-                <Link to="/StoryTime">Story</Link>
-                <Link to="/AllMetrics">Metrics</Link>
-                <Link to="/Updates">Updates</Link>
-                <Link to="/Team">Team</Link>
-                <Link to="/Collection">Collection</Link>
-                <Link to="/StakePool">Stake Pool</Link>
-                <Link to="/Sales">Sales</Link>
+                <Link to="/StoryTime" onClick ={() => setOpenMobile(!openMobile)}>Story</Link>
+                <Link to="/AllMetrics"onClick ={() => setOpenMobile(!openMobile)}>Metrics</Link>
+                <Link to="/Updates"onClick ={() => setOpenMobile(!openMobile)}>Updates</Link>
+                <Link to="/Team"onClick ={() => setOpenMobile(!openMobile)}>Team</Link>
+                <Link to="/Collection"onClick ={() => setOpenMobile(!openMobile)}>Collection</Link>
+                <Link to="/StakePool"onClick ={() => setOpenMobile(!openMobile)}>Stake Pool</Link>
+                <Link to="/Sales"onClick ={() => setOpenMobile(!openMobile)}>Sales</Link>
             </div>
             <div className = {mode ? "socials-light" : "socials-dark"}>
                 <Link to= {{pathname: "https://twitter.com/CryptoPetz_CNFT"}} target = "_blank">
@@ -32,7 +32,9 @@ const NavBar = ({width, mode, changeMode}) => {
                     <BsDiscord className="socials-discord" size={24}/>
                 </Link>
             </div>
-            <button onClick = {()=>setOpenMobile(!openMobile)} className="hamburger-button"><AiOutlineMenu/></button>
+            <button onClick = {()=>setOpenMobile(!openMobile)} className="hamburger-button">
+                <AiOutlineMenu/>
+            </button>
         </div>
         :
         <div className = {mode ? "nav-bar light-mode" : "nav-bar dark-mode"}>

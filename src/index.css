@@ -736,6 +736,61 @@ color: white;
 .metrics-box:nth-child(2) { transform: rotateY(240deg) translateZ(288px);}
 .metrics-box:nth-child(3) { transform: rotateY(360deg) translateZ(288px);}
 
+
+@media only screen and (max-width: 1700px) { 
+  .petz-carousel-background {  
+    width: 800px;
+    height: 800px;
+  }
+
+  .petz-background-carousel-first { 
+    top: -20px;
+    left: -300px;
+  }
+  
+  .petz-background-carousel-second { 
+    bottom: -250px;
+    left: -200px;
+  }
+  
+  .petz-background-carousel-third { 
+    bottom: -300px;
+    right: -200px;
+  }
+  
+  .petz-background-carousel-fourth { 
+    top: -100px;
+    right: -300px;
+  }
+}
+
+@media only screen and (max-width: 900px) { 
+  .petz-carousel-background {  
+    width: 400px;
+    height: 400px;
+  }
+
+  .petz-background-carousel-first { 
+    top: 20px;
+    left: -100px;
+  }
+  
+  .petz-background-carousel-second { 
+    bottom: 0px;
+    left: 0px;
+  }
+  
+  .petz-background-carousel-third { 
+    bottom: -100px;
+    right: -50px;
+  }
+  
+  .petz-background-carousel-fourth { 
+    top: 50px;
+    right: -100px;
+  }
+}
+
 /*Petz metrics carousel page */
 .all-metrics-box { 
   display: flex;
@@ -1123,7 +1178,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 
 .update-page-wrapper {
   width: 100%; 
-  padding-top: 12rem;
+  padding-top: 8rem;
   padding-bottom: 8rem;
   display: flex;
   justify-content: center;
@@ -1183,9 +1238,16 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   color: rgba(246, 219, 39, 0.6);
 }
 
+.updates-title { 
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
 @media only screen and (max-width: 768px) { 
   .update-container { 
     flex-direction: column;
+    width: 90%;
   }
   .list-updates-container { 
     flex-wrap: wrap;
@@ -1193,7 +1255,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   .update-petz-image { 
     position: absolute;
     max-width: 150px;
-    right: -15px;
+    right: -25px;
     top: -70px;
   }
 }
@@ -1767,10 +1829,14 @@ border: 3px solid rgb(129, 151, 148);
 
 .pool-id { 
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .stake-pool-info-box { 
   display: flex;
+  margin: 20px;
+  width: 90%;
   max-width: 1000px;
   background: rgba(24, 24, 24, 0.6); 
   background: linear-gradient(0deg, rgba(20, 20, 20, 0.5) 0%, rgba(54,53,52,0.7223472472555768) 29%);
@@ -1811,6 +1877,30 @@ border: 3px solid rgb(129, 151, 148);
 .staking-percentage { 
   display: flex;
   flex-direction: row;
+}
+
+@media only screen and (max-width: 878px) { 
+  .stake-pool-info-box { 
+    flex-direction: column;
+  }
+  .petz-pool-api-info { 
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+  }
+  .api-items{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 728px) { 
+
+  .api-items-indicator { 
+    width: 100%;
+    min-width: 200px;
+  }
 }
 
 /*Footer */ 

@@ -38,8 +38,9 @@ const StakePool = () => {
                         The stake pool rewards for in-game use will enable a variety of different actions throughout the game,
                         therefore, they are very useful. Early delegators to the PETZ pool will have a substantial head start
                         when game actions come to fruition.
+
                         </p>
-                        <div><span className="api-items-indicator pool-id">Pool Id:</span><span> {pool.pool_id}</span></div>
+                        <div><span className="api-items-indicator pool-id">Pool Id:</span><span className="pool-id-string"> {pool.pool_id}</span></div>
                     </div>
                     <div className ="petz-pool-api-info">
                         <h2>Pool Metrics</h2>

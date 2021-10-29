@@ -22,6 +22,7 @@ const Updates = ({ allPetzArray }) => {
                 <img alt="cloud "id="cloud-updates" src={cloud} style={{left: `${0 + offset * 0.02 + "%"}`}}/>
             </div>
             <div className = "update-page-wrapper"> 
+                <h1 className="updates-title">Updates</h1>
                 <UpdateComponentSix allPetzArray = {allPetzArray}/>
                 <UpdateComponentFive allPetzArray = {allPetzArray}/>
                 <UpdateComponentFour allPetzArray = {allPetzArray}/>
