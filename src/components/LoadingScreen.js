@@ -22,21 +22,21 @@ const LoadingScreen = ({mode}) => {
         if(isMounted) { 
             setTimeout(() => SetEggHatched(true), 4000)
         }
-        isMounted = false;
+        return () => isMounted = false; 
     }, []);
 
     useEffect(() => { 
-        setTimeout(() => {
+        let isMounted = true;
+        if(isMounted)setTimeout(() => {
             changeEggCrack()
         }, 500);
-    })
+        return () => isMounted = false; 
+    },[])
 
     const changeEggCrack = () => {
-        let isMounted = true;
-        if(eggcrack < 7 && isMounted) {  
+        if(eggcrack < 7) {  
         SetEggCrack(eggcrack + 1)
         }
-        isMounted = false; 
     }
 
     return (

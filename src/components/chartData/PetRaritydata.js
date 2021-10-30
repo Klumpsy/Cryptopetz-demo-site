@@ -7,7 +7,7 @@ export const PetRarityData = {
         "Epic",
         "Rare",
         "Scarce",
-        "Uncommen",
+        "Uncommon",
         "Common",
         "Very Common"
     ],

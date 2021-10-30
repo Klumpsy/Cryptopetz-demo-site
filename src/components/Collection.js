@@ -5,6 +5,9 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import SearchFilter from '../components/SearchFilter';
 
+//DataTable react
+//https://www.youtube.com/watch?v=d1r0aK5awWk
+
 
 const Collection = ({mode}) => { 
     //API petz state
@@ -48,8 +51,10 @@ const Collection = ({mode}) => {
                 console.log(err.message)
             } 
         });
-        return () => {isMounted = false };
+        return () => isMounted = false;
     }, []);
+
+    console.log(petz);
 
     //Search callback
     const handleSearch = (e) => { 
@@ -60,10 +65,11 @@ const Collection = ({mode}) => {
     //Rarity filter 
     useEffect(() => { 
         setFilteredPetz(petz.filter(pet => {
-            return pet.data.rarity.toLowerCase().includes(search.toLowerCase())
+            return pet.data.rarity.toLowerCase().startsWith(search.toLowerCase())
         })
     )
 }, [search])
+
 
     //Modal function to show pet that user clicked on 
     function showPetInfo(pet) { 
@@ -90,12 +96,33 @@ const Collection = ({mode}) => {
                             <div className ="type-box"><label>Fire</label><input type="checkbox" /></div>
                             <div className ="type-box"><label>Water</label><input type="checkbox"/></div>
                             <div className ="type-box"><label>Grass</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Flying</label><input type="checkbox" /></div>
+                            <div className ="type-box"><label>Lava</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Sound</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Insect</label><input type="checkbox" /></div>
+                            <div className ="type-box"><label>Combat</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Earth</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Spirit</label><input type="checkbox" /></div>
+                            <div className ="type-box"><label>Electric</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Psychic</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Ice</label><input type="checkbox" /></div>
+                            <div className ="type-box"><label>Drake</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Shadow</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Poison</label><input type="checkbox" /></div>
+                            <div className ="type-box"><label>Metal</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Fae</label><input type="checkbox"/></div>
                         </div>
                         <div className = "check-for-type">
                             <h3>Filter by Rarity</h3>
                             <div className ="type-box"><label>Legendary</label><input type="checkbox"/></div>
                             <div className ="type-box"><label>Ultra Rare</label><input type="checkbox"/></div>
                             <div className ="type-box"><label>Extremely Rare</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Epic</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Rare</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Scarce</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Uncommon</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Common</label><input type="checkbox"/></div>
+                            <div className ="type-box"><label>Very Common</label><input type="checkbox"/></div>
                         </div>
                     </div>
                 </div>
@@ -148,7 +175,7 @@ const Collection = ({mode}) => {
                         </div>
                         <button className ="close-modal" onClick = {() => setModalActive(false)}>X</button>
                     </div>
-                    {loading? <LoadingScreen mode={mode}/> :
+                    {loading? <LoadingScreen mode={mode}/>:
                     <div className="petz-inner-wrapper">
                         {filteredPetz.map((pet, index) => ( 
                             <div className= {mode ? "pet-card pet-card-light" : "pet-card pet-card-dark"} key={pet.assetId} onClick = {() => showPetInfo(pet)}>

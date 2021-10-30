@@ -9,6 +9,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
 
+  /*Rarity colors*/
   --legendary-color: rgba(214, 138, 16);
   --ultrarare-color: rgba(212, 199, 120);
   --extremelyrare-color: rgba(192, 128, 192);
@@ -19,6 +20,7 @@
   --common-color: rgba(216, 224, 216);
   --verycommon-color: rgb(133, 133, 133);
 
+/*Light and darkmode colors */
   --lightmode-color: rgba(255, 255, 255, 0.9);
   --darkmode-color: rgba(20, 20, 20, 0.9);
 }
@@ -511,6 +513,7 @@ input:checked + .slider:before {
 .roadmap-layout img { 
   max-width: 1000px;
   border-radius: 16px;
+  width: 90%;
 }
 
 .attribute-info { 
@@ -593,15 +596,16 @@ td {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 4rem 0  4rem 0;
 }
 
 .petz-row img { 
   max-height: 200px;
+  width: 10%;
 }
 
 .egg-row { 
   margin-bottom: 10rem;
+  width: 100%;
 }
 
 .egg-row img{ 
@@ -609,8 +613,23 @@ td {
 }
 
 .token-row img{
-  max-height: 150px;
+  max-height: 200px;
 }
+
+@media only screen and (max-width: 1194px) { 
+  .attribute-layout { 
+    flex-direction: column; 
+  }
+  .game-info-wrapper h1 { 
+    font-size: 4rem;
+    text-align: center;
+  }
+  .attribute-info h2 { 
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+
 /* Metrics Router page */ 
 .all-metrics-container { 
   position: relative;
