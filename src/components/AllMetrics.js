@@ -6,7 +6,7 @@ import petzMetricPetOne from "../images/petzImages/pony.png";
 import petzMetricPetTwo from "../images/petzImages/owlghost.png";
 import petzMetricPetThree from "../images/petzImages/fishy.png";
 
-const AllMetrics = ({mode}) => { 
+const AllMetrics = ({mode, width}) => { 
 
     let selectedIndex = 0;
 

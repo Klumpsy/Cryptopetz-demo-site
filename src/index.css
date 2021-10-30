@@ -192,11 +192,11 @@ input:checked + .slider:before {
   text-align: center;
   width: 100%;
   height: 100vh;
-  top: 5.2rem;
+  top: 4.5rem;
   display: flex;
   flex-direction: column;
-  background: rgba(24, 24, 24, 0.6); 
-  background: linear-gradient(0deg, rgba(20, 20, 20, 0.7) 0%, rgba(54,53,52,0.9223472472555768) 29%);
+  background: rgba(24, 24, 24, 0.8); 
+  background: linear-gradient(0deg, rgba(20, 20, 20, 0.8) 0%, rgba(54,53,52,0.96) 29%);
 }
 
 .mobile-menu a { 
@@ -213,9 +213,17 @@ input:checked + .slider:before {
   margin: 20px;
   width: 40px;
   height: 40px;
-  background-color: white;
+  background-color: rgb(12, 11, 11);
   border: none;
   color: rgb(84, 99, 105)
+}
+
+.hamburger-button-light { 
+  background-color: black;
+}
+
+.hamburger-button-dark { 
+  background-color: white;
 }
 
 @media only screen and (max-width: 800px) { 
@@ -328,7 +336,7 @@ input:checked + .slider:before {
 }
 
 .book-arrow { 
-  color:rgb(10, 10, 10)
+  color:rgb(10, 10, 10);
 }
 
 .book-arrow:hover { 
@@ -375,23 +383,26 @@ input:checked + .slider:before {
 @media only screen and (max-width: 768px) { 
   .book-page { 
     height: 80%;
-    width: 100%; 
+    width: 90%; 
+    margin: 0 auto;
     border-radius: 16px;
     box-shadow: rgba(243, 240, 240, 0.19) 0px 10px 20px, rgba(219, 214, 214, 0.23) 0px 6px 6px;
   }
 
   .book-arrow-right { 
     position: absolute;
-    right: 10px;
+    right: 40px;
     top: -100px;
-    color: white;
+    color: rgb(0, 0, 0);
+    transition: .5s ease-in-out;
   }
   
   .book-arrow-left { 
     position: absolute;
-    left: 10px;
+    left: 40px;
     top: -100px;
-    color: white;
+    color: rgb(0, 0, 0);
+    transition: .5s ease-in-out;
   }
 }
 
@@ -585,9 +596,9 @@ td {
 /* Metrics Router page */ 
 .all-metrics-container { 
   position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   flex-direction: column;
   width: 100%;
   height: 100vh;
@@ -776,8 +787,8 @@ color: white;
   }
   
   .petz-background-carousel-second { 
-    bottom: 0px;
-    left: 0px;
+    bottom: 120px;
+    left: -80px;
   }
   
   .petz-background-carousel-third { 
@@ -787,7 +798,77 @@ color: white;
   
   .petz-background-carousel-fourth { 
     top: 50px;
-    right: -100px;
+    right: -80px;
+  }
+  .metrics-box { 
+    width: 300px;
+    height: 450px;
+  }
+  .scene {
+    width: 300px;
+    height: 450px;
+    position: relative;
+    perspective: 1000px;
+  }
+  .metrics-box h1 { 
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .metrics-box p { 
+    font-size: 14px;
+    text-align: center;
+  }
+  .metrics-box span { 
+    text-align: center;
+    margin-top: 10px;
+  }
+  .metrics-box img { 
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media only screen and (max-width: 640px) { 
+  .petz-carousel-background {  
+    width: 300px;
+    height: 300px;
+  }
+
+  .petz-background-carousel-first { 
+    top: 20px;
+    left: -100px;
+  }
+  
+  .petz-background-carousel-second { 
+    display: none;
+  }
+  
+  .petz-background-carousel-third { 
+    bottom: -100px;
+    right: -50px;
+  }
+  
+  .petz-background-carousel-fourth { 
+    display: none;
+  }
+
+  .metrics-box { 
+    width: 250px;
+    height: 450px;
+    
+  }
+  .scene {
+    width: 250px;
+    height: 450px;
+    margin-top: 25%;
+  }
+  .metrics-box p { 
+    font-size: 12px;
+  }
+
+  .metrics-box img { 
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -812,6 +893,7 @@ color: white;
 .metric-data-title { 
   color: white;
   font-size: 2rem;
+  text-align: center;
 }
 
 .petz-metric-background {
@@ -835,10 +917,13 @@ color: white;
   margin-top: 5rem;
   width: 80%;
   max-width: 1500px;
-  height: 800px;
+  height: 80%;
   background-color: rgba(0, 0, 0, 0.8); 
   border-radius: 20px;
   color: white;
+}
+.petz-metric-info-box p { 
+  text-align: center;
 }
 
 .petz-chart-data{ 
@@ -854,6 +939,7 @@ color: white;
   flex-direction: column;
   justify-content: center;
   width: 45%;
+  height: 50%;
   margin: 10px;
   border-radius: 20px;
   background-color: rgba(16, 17, 17, 0.80); 
@@ -875,8 +961,13 @@ color: white;
 .egg-type-list-container { 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
+}
+
+.egg-type-list-container ul { 
+  list-style: circle;
 }
 
 .petz-info-backgrounds { 
@@ -906,6 +997,39 @@ color: white;
   margin: 10px;
   border-radius: 20px;
   background-color: rgba(16, 17, 17, 0.80); 
+}
+
+@media only screen and (max-width: 1370px) { 
+  .petz-chart-data{ 
+    flex-direction: column;
+  }
+  .petz-info-box-left,
+  .petz-info-box-right { 
+    width: 90%; 
+  }
+}
+@media only screen and (max-width: 752px) { 
+  .petz-metric-info-box { 
+   width: 95%;
+  }
+  .metric-data-title { 
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 532px) { 
+  .metric-data-title { 
+    font-size: 1.5rem;
+  }
+  .metric-data-title { 
+    font-size: 1.2rem;
+  }
+  .petz-metric-info-box p { 
+    font-size: 14px;
+    margin: 5px;
+  }
+  .egg-type-list-container li { 
+    font-size: 14px;
+  }
 }
 
 /* Petz Metrics page */ 

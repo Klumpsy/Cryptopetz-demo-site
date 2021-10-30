@@ -161,7 +161,7 @@ function App() {
                   <GameInfo allPetzArray = {allPetzArray} eggArray = {eggArray}/>
                 </Route>
                 <Route exact path="/AllMetrics">
-                  <AllMetrics mode={mode}/>
+                  <AllMetrics mode={mode} width={width}/>
                 </Route>
                 <Route exact path="/Updates">
                   <Updates allPetzArray = {allPetzArray}/>
