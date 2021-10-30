@@ -14,8 +14,8 @@ const NavBar = ({width, mode, changeMode}) => {
         <>
         {width < 1200 ?
             <div className = {mode ? "nav-bar nav-mobile light-mode" : "nav-bar nav-mobile dark-mode"}>
-            <Link to="/Cryptopetz-demo-site"><img src={ardanoBird} alt="CryptoPet"/></Link>
-            <div className = {openMobile ? "mobile-menu mobile-menu-open" : "mobile-menu mobile-menu-close" }>
+                <Link to="/Cryptopetz-demo-site"><img src={ardanoBird} alt="CryptoPet"/></Link>
+            <div className = {openMobile ? mode? "mobile-menu-light mobile-menu mobile-menu-open": "mobile-menu-dark mobile-menu mobile-menu-open" : "mobile-menu mobile-menu-close" }>
                 <Link to="/StoryTime" onClick ={() => setOpenMobile(!openMobile)}>Story</Link>
                 <Link to="/AllMetrics"onClick ={() => setOpenMobile(!openMobile)}>Metrics</Link>
                 <Link to="/Updates"onClick ={() => setOpenMobile(!openMobile)}>Updates</Link>
