@@ -1,12 +1,19 @@
 import { BsSearch } from "react-icons/bs"
 
-const SearchFilter = ({placeholder, handleSearch})=> { 
 
- 
+const SearchFilter = ({placeholder, handleSearch})=> { 
+   
     return (
         <div>
             <div className="searchInputs">
-                <input className="petz-searchbox" type="text" placeholder= {placeholder} onChange={handleSearch}/>
+                <input 
+                className="petz-searchbox" 
+                type="text" 
+                name ="search-form"
+                id="search-form"
+                placeholder= {placeholder} 
+                onChange={() => handleSearch}
+                />
                 <BsSearch className="search-icon"/>
             </div>
         </div>
@@ -14,3 +21,5 @@ const SearchFilter = ({placeholder, handleSearch})=> {
 }
 
 export default SearchFilter
+
+

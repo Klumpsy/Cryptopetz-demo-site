@@ -4,9 +4,9 @@ import LoadingScreen from './LoadingScreen';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import SearchFilter from '../components/SearchFilter';
-
-//DataTable react
-//https://www.youtube.com/watch?v=d1r0aK5awWk
+import CheckboxSearchMenu from './CheckboxSearchMenu';
+import { BsSearch } from "react-icons/bs"
+import {rarityCheckboxes} from "./SearchDataOptions/checkboxes";
 
 
 const Collection = ({mode}) => { 
@@ -16,14 +16,18 @@ const Collection = ({mode}) => {
     const [error, setError] = useState(null);
 
     //Search state
-    const [searchMenu, setSearchMenu] = useState(false);
-    const [search, setSearch] = useState("");
     const [filteredPetz, setFilteredPetz] = useState([]);
-
+  
     //Modal state
     const [modalActive, setModalActive] = useState(false);
     const [modalPet, setModalPet] = useState();
 
+     //Toggle Searchbar State
+     const [searchMenu, setSearchMenu] = useState(false);
+
+     //Checkbox State
+     const[isChecked, setIsChecked] = useState(new Array(rarityCheckboxes.length).fill(false));
+ 
     useEffect(() => { 
         let isMounted = true; 
 
@@ -37,7 +41,9 @@ const Collection = ({mode}) => {
         })
         .then(data => { 
             if(isMounted) { 
-                setPetz(Object.values(data));
+                const petzData = Object.values(data)
+                setPetz(petzData);
+                setFilteredPetz(petzData)
                 setLoading(false);
                 setError(null);
             }
@@ -54,78 +60,64 @@ const Collection = ({mode}) => {
         return () => isMounted = false;
     }, []);
 
-    console.log(petz);
-
-    //Search callback
-    const handleSearch = (e) => { 
-        setSearch(e.target.value);
-        console.log("called") 
-    }
-
-    //Rarity filter 
-    useEffect(() => { 
-        setFilteredPetz(petz.filter(pet => {
-            return pet.data.rarity.toLowerCase().startsWith(search.toLowerCase())
-        })
-    )
-}, [search])
-
-
     //Modal function to show pet that user clicked on 
     function showPetInfo(pet) { 
         setModalPet(pet);
         setModalActive(true); 
     }
+   
+    const handleCheckbox = (value, e, position) => { 
+        const updatedCheckedState = isChecked.map((checkbox, index) =>  
+        index === position ? !checkbox : checkbox
+    );
+        setIsChecked(updatedCheckedState); 
+
+        if(e.target.checked) { 
+            let selectedData = petz.filter(pet => pet.data.rarity === value); 
+
+            setFilteredPetz(filteredPetz.length && filteredPetz.length === petz.length ? [...selectedData] : [...filteredPetz, ...selectedData])
+        } else { 
+            let unselected = filteredPetz.filter(pet => { 
+                return pet.data.rarity !== value; 
+            }); 
+            setFilteredPetz(unselected);
+        }
+    }
 
     return (
-        
             <div className ="petz-container"> 
                 <div className = {modalActive? "modal-overlay-background-active": "modal-overlay-background-hidden"}></div>
                 <div className = {mode ? "petz-searchbox-container petz-wrapper-light" : "petz-searchbox-container petz-wrapper-dark"}> 
-                    <SearchFilter data = {petz} placeholder = "Search on type/rarity" handleSearch ={handleSearch}/>
+                <div>
+                 </div>
                 </div>
                 <div className ="petz-container-background petz-background-first"></div> 
                 <div className ="petz-container-background petz-background-second"></div> 
                 <div className ="petz-container-background petz-background-third"></div> 
                 <div className ="petz-container-background petz-background-fourth"></div> 
                 <div className="petz-search-container">
-                    <button id="petz-search-button" onClick={() => setSearchMenu(!searchMenu)} >Search</button>
-                    <div className= {searchMenu ? "search-menu-active" : "search-menu-hidden"}>
-                        <div className = "check-for-type">
-                            <h3>Filter by Type</h3>
-                            <div className ="type-box"><label>Fire</label><input type="checkbox" /></div>
-                            <div className ="type-box"><label>Water</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Grass</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Flying</label><input type="checkbox" /></div>
-                            <div className ="type-box"><label>Lava</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Sound</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Insect</label><input type="checkbox" /></div>
-                            <div className ="type-box"><label>Combat</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Earth</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Spirit</label><input type="checkbox" /></div>
-                            <div className ="type-box"><label>Electric</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Psychic</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Ice</label><input type="checkbox" /></div>
-                            <div className ="type-box"><label>Drake</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Shadow</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Poison</label><input type="checkbox" /></div>
-                            <div className ="type-box"><label>Metal</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Fae</label><input type="checkbox"/></div>
-                        </div>
-                        <div className = "check-for-type">
-                            <h3>Filter by Rarity</h3>
-                            <div className ="type-box"><label>Legendary</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Ultra Rare</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Extremely Rare</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Epic</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Rare</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Scarce</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Uncommon</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Common</label><input type="checkbox"/></div>
-                            <div className ="type-box"><label>Very Common</label><input type="checkbox"/></div>
-                        </div>
-                    </div>
+            <button id="petz-search-button" onClick={() => setSearchMenu(!searchMenu)} >Search</button>
+            <div className= {searchMenu ? "search-menu-active" : "search-menu-hidden"}>
+                <div className = "check-for-type">
+                    <h3>Filter by Rarity</h3>
+                    {rarityCheckboxes.map(({rarity}, index) => { 
+                        return (
+                          <div className ="type-box">
+                          <label>{rarity}</label>
+                          <input 
+                          type="checkbox" 
+                          value= {rarity}
+                          name= {rarity}
+                          id={`${rarity}-checkbox-${index}`}
+                          checked = {isChecked[index]}
+                          onChange ={(e) => handleCheckbox(rarity, e, index)}
+                          /> 
+                      </div> 
+                      )
+                    })}
                 </div>
+            </div>
+         </div>
                 <div className = {mode ? "petz-wrapper petz-wrapper-light" : "petz-wrapper petz-wrapper-dark"} >
                     <div className= {modalActive ? "petz-modal-active":"petz-modal-hidden"}>
                         <div className= {modalActive ? "modal-info":"petz-modal-hidden"}>
@@ -178,7 +170,7 @@ const Collection = ({mode}) => {
                     {loading? <LoadingScreen mode={mode}/>:
                     <div className="petz-inner-wrapper">
                         {filteredPetz.map((pet, index) => ( 
-                            <div className= {mode ? "pet-card pet-card-light" : "pet-card pet-card-dark"} key={pet.assetId} onClick = {() => showPetInfo(pet)}>
+                            <div className= {mode ? "pet-card pet-card-light" : "pet-card pet-card-dark"} key={index} onClick = {() => showPetInfo(pet)}>
                              <h4>{pet.name}</h4>
                              <LazyLoadImage effect= "blur" src= {`https://cryptopetz.info${pet.thumbnail}`} alt={pet.name}/>
                                 <div>
@@ -196,3 +188,4 @@ const Collection = ({mode}) => {
 }
 
 export default Collection
+
