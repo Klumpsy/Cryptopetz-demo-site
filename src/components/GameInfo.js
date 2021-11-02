@@ -181,9 +181,7 @@ const GameInfo = ({ allPetzArray, eggArray }) => {
                            <br/><br/>
                            Note: The Roadmap is subject to change as the scope of work is being researched.</p>
                     </div>
-                    <div>
-                        <img src={roadmap} alt="Roadmap"/>
-                    </div>
+                    <img src={roadmap} alt="Roadmap"/>
                 </div>
                 <div className ="roadmap-layout">
                     <div className="attribute-info attribute-info-roadmap">
@@ -240,9 +238,7 @@ const GameInfo = ({ allPetzArray, eggArray }) => {
                            CryptoPet. 
                         </p>
                     </div>
-                    <div>
-                            <img src={eggArray[5]} alt="egg"/>
-                    </div>
+                    <div><img className = "big-egg-image" src={eggArray[5]} alt="egg"/></div>
                 </div>   
                 <div className ="petz-row egg-row">
                     <img src={eggArray[0]} alt="egg" />
