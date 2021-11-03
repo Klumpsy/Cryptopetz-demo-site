@@ -107,7 +107,7 @@ const Collection = ({mode}) => {
                                         <div className = 'about-inner'><span className ="about-span-label">Epoch:</span><span>{modalPet === undefined ? "" : modalPet.data.epoch}</span></div>
                                         <div className = 'about-inner'><span className ="about-span-label">Types:</span>{modalPet === undefined ? "" : modalPet.data.types.length === 2 ? `${modalPet.data.types[0]} / ${modalPet.data.types[1]}`: modalPet.data.types[0]}<span></span></div>
                                         <div className = 'about-inner'><span className ="about-span-label">Generation:</span><span>{modalPet === undefined ? "" : modalPet.data.generation}</span></div>
-                                        <div className = 'about-inner'><span className ="about-span-label">Asset ID:</span><span>{modalPet === undefined ? "" : modalPet.assetId}</span></div>
+                                        <div className = 'about-inner'><span className ="about-span-label">Asset ID:</span><span className="pool-string">{modalPet === undefined ? "" : modalPet.assetId}</span></div>
                                     </div>
                                 </div>
                             </div>

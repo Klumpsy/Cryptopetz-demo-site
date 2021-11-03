@@ -11,6 +11,8 @@ import {UniqueAmountPetzPerRarity} from "./chartData/UniqueAmountPetzPerRarity";
 import {UniquePetzPerRarity} from "./chartData/UniquePetzPerRarity";
 import {petzObject} from "./PetzData/EmblemData";
 import {petzBackgrounds} from "./PetzData/PetzBackgroundData";
+import {eggShells} from "./PetzData/EggshellData";
+import {cryptoLogos} from "./PetzData/CryptoLogo"; 
 
 
 const RarityMetrics = ({eggArray}) => { 
@@ -126,7 +128,7 @@ const RarityMetrics = ({eggArray}) => {
                 </div>
             </div>
             <div className ="petz-metric-info-box">
-                <h2 className = "metric-data-title">Petz</h2>
+                <h2 className = "metric-data-title">Backgrounds</h2>
                 <div className ="petz-chart-data">
                     <div className="petz-info-box-left">
                         <div>
@@ -141,6 +143,35 @@ const RarityMetrics = ({eggArray}) => {
                             {petzBackgrounds.map(background => {
                                 
                                return <img className ="petz-info-background" src={background.img}></img>
+                            })}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className ="petz-metric-info-box">
+                <h2 className = "metric-data-title">Crypto Logo's</h2>
+                <p style ={{textAlign: "center", margin: "10px"}}>
+                    The crypto logos located on the hatched egg shell means that the CryptoPet is from that crypto’s ecosystem. 
+                    They are equally distributed amongst the 10,000 CryptoPetz.<br/><br/>
+                    The crypto logos are as follows: Vechain, Stellar, Monero, XRP, Polkadot, Litecoin, Tether, Tron, Uniswap, Tezos, Chainlink, Iota, Ethereum, EOS, Cardano, Basic Attention Token, Binance Coin, Doge Coin, Dash and Bitcoin. 
+                    More details on these will be released on a later date.. 
+                </p>
+                <div className ="petz-chart-data">
+                    <div className="petz-info-box-left">
+                    <div className="petz-info-backgrounds">
+                           
+                           {eggShells.map(eggShell => {
+                               
+                              return <img className ="petz-info-background" src={eggShell.img}></img>
+                           })}
+                       </div>
+                    </div>
+                    <div className="petz-info-box-right">
+                        <div className="petz-info-backgrounds">
+                           
+                            {cryptoLogos.map(cryptoLogo => {
+                                
+                               return <div className = "dummy-eggShell"><img className ="petz-info-background" src={cryptoLogo.img}></img></div>
                             })}
                         </div>
                     </div>

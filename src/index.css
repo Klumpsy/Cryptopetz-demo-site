@@ -1019,6 +1019,7 @@ color: white;
   width: 80%;
   max-width: 1500px;
   height: 80%;
+  margin-bottom: 1rem;
   background-color: rgba(0, 0, 0, 0.8); 
   border-radius: 20px;
   color: white;
@@ -1091,6 +1092,21 @@ color: white;
   margin: 10px;
 }
 
+.dummy-eggShell { 
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  width: 116px;
+  height: 170px;
+  margin: 2px;
+}
+
+.dummy-eggShell img { 
+  width: 100%;
+}
+
 .petz-info-box-center {
   display: flex;
   justify-content: center;
@@ -1130,6 +1146,13 @@ color: white;
   }
   .egg-type-list-container li { 
     font-size: 14px;
+  }
+  .dummy-eggShell { 
+    -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    width: 86px;
+    height: 140px;
+    margin: 2px;
   }
 }
 
@@ -1310,6 +1333,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 /* Individual type metric pages */
 .metric-type-page-wrapper { 
   max-height: 100%;
+  min-height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -1824,6 +1848,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
  }
 
 .modal-info-box { 
+  color: white;
   width: 100%;
   height: 80%;
   display: flex;
@@ -2182,10 +2207,25 @@ border: 3px solid rgb(129, 151, 148);
 }
 
 .petz-pool-api-info { 
-
   display: flex;
   flex-direction: column;
   margin-left: 30px;
+}
+
+.pool-id { 
+  margin-top: 20px;
+
+}
+
+.pool-string {
+   overflow-wrap: break-word;
+   word-wrap: break-word;
+   -ms-word-break: break-all;
+   word-break: break-word;
+   -ms-hyphens: auto;
+   -moz-hyphens: auto;
+   -webkit-hyphens: auto;
+   hyphens: auto;
 }
 
 .api-items-indicator { 
@@ -2193,12 +2233,6 @@ border: 3px solid rgb(129, 151, 148);
   color:rgb(90, 159, 199);
   min-width: 200px;
   font-weight: 800;
-}
-
-.pool-id { 
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .stake-pool-info-box { 
@@ -2245,6 +2279,12 @@ border: 3px solid rgb(129, 151, 148);
 .staking-percentage { 
   display: flex;
   flex-direction: row;
+}
+
+.pool-id-string { 
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 @media only screen and (max-width: 878px) { 
