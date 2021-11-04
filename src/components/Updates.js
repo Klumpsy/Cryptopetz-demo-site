@@ -1,3 +1,4 @@
+import UpdateComponentSeven from "./updates/UpdateSeven"
 import UpdateComponentSix from "./updates/UpdateSix";
 import UpdateComponentFive from "./updates/UpdateFive";
 import UpdateComponentFour from "./updates/UpdateFour";
@@ -11,6 +12,7 @@ const Updates = ({ allPetzArray }) => {
         <div className = "updates-background">
             <div className = "update-page-wrapper"> 
                 <h1 className="updates-title">Updates</h1>
+                <UpdateComponentSeven allPetzArray = {allPetzArray}/>
                 <UpdateComponentSix allPetzArray = {allPetzArray}/>
                 <UpdateComponentFive allPetzArray = {allPetzArray}/>
                 <UpdateComponentFour allPetzArray = {allPetzArray}/>

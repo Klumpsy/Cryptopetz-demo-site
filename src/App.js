@@ -8,6 +8,7 @@ import GameInfo from './components/GameInfo';
 import AllMetrics from './components/AllMetrics';
 import Metrics from './components/Metrics';
 import RarityMetrics from './components/RarityMetrics';
+import Petz from "./components/Petz";
 import Collection from './components/Collection';
 import Updates from './components/Updates'
 import Team from './components/Team';
@@ -169,11 +170,14 @@ function App() {
                 <Route exact path="/Team">
                   <Team/>
                 </Route>
+                <Route exact path="/Petz">
+                  <Petz mode={mode}/>
+                </Route>
                 <Route exact path="/Collection">
                   <Collection mode={mode}/>
                 </Route>
                 <Route exact path="/StakePool">
-                  <StakePool/>
+                  <StakePool mode={mode}/>
                 </Route>
                 <Route exact path="/Sales">
                   <Sales/>

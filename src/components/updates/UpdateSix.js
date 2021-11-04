@@ -30,7 +30,7 @@ const UpdateComponent = ({allPetzArray}) => {
         further updates as they come to us. 
         
         <br/><br/>
-        inally, Discord will be receiving a "Quality of Life" Upgrade in the coming days.
+        Finally, Discord will be receiving a "Quality of Life" Upgrade in the coming days.
         The original Discord is feeling clunky, if you feel the Server is in need of something specific 
         please voice your suggestions in... well... our Discord.  Apologies in advance for any new verification 
         methods that may or may not happen haha!

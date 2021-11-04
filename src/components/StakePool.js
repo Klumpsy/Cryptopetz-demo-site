@@ -7,7 +7,7 @@ import petImage2 from "../images/petzImages/bull.png";
 //Eggshard distribution table 
 import EggShardRewards from "./chartData/StakePoolEggShardRewards";
 
-const StakePool = () => { 
+const StakePool = ({mode}) => { 
 
     const [pool, setPool] = useState([]); 
 
@@ -249,10 +249,10 @@ const StakePool = () => {
                     </div>
                 </div>
 
-                <div className ="stake-pool-info-box staking-percentage">
+                <div className ="stake-pool-info-box eggshards-distribution-container">
                     <div>
                         <h2>Tokenomics Graph</h2>
-                        <EggShardRewards/>
+                        <EggShardRewards mode = {mode}/>
                     </div>
                 </div>
             </div>

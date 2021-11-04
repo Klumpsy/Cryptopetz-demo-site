@@ -1,12 +1,12 @@
-import { rewardEpoch } from "./EggShardRewardsTable";
+import data from "./EggShardRewardsTable.json";
 
-const EggShardRewards = () => { 
+const EggShardRewards = ({mode}) => { 
 
     return (
         <div>
-            <table>
+            <table class = "eggshard-table">
                 <thead>
-                    <tr className="table-header">
+                    <tr className="table-header table-header-eggshards">
                         <th>Reward Epoch</th>
                         <th>Remaining Supply</th>  
                         <th>Distributed</th>
@@ -17,15 +17,15 @@ const EggShardRewards = () => {
                 </thead>
                 <tbody>
                     {
-                        rewardEpoch.map(epoch => ( 
+                        data.map(data => ( 
                             
-                        <tr className="table-very-common" styles ={{border: ""}}>
-                            <td>{epoch.epoch}</td>
-                            <td>{epoch.remainingSupply}</td>
-                            <td>{epoch.distributed}</td>
-                            <td>{epoch.epochCardano}</td>
-                            <td>{epoch.snapshotTime}</td>
-                            <td>{epoch.distributionTime}</td>
+                        <tr className="table-very-common-eggshards" style ={mode?{background: "rgba(255, 255, 255, 0.9)", color:"black"}:{background: "rgba(20, 20, 20, 0.7)"}}>
+                            <td style = {{color: "rgba(130, 185, 130)"}}>{data["Reward Epoch"]}</td>
+                            <td>{data["Remaining Supply"]}</td>
+                            <td>{data["Distributed"]}</td>
+                            <td>{data["Cardano Epoch"]}</td>
+                            <td>{data["Snapshot Time (Epoch Start)"]}</td>
+                            <td>{data["Distribution Time (Epoch n + 3)"]}</td>
                        </tr>
                     ), ) 
                     } 

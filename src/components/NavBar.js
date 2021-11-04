@@ -20,7 +20,8 @@ const NavBar = ({width, mode, changeMode}) => {
                 <Link to="/AllMetrics"onClick ={() => setOpenMobile(!openMobile)}>Metrics</Link>
                 <Link to="/Updates"onClick ={() => setOpenMobile(!openMobile)}>Updates</Link>
                 <Link to="/Team"onClick ={() => setOpenMobile(!openMobile)}>Team</Link>
-                <Link to="/Collection"onClick ={() => setOpenMobile(!openMobile)}>Collection</Link>
+                <Link to="/Petz" onClick ={() => setOpenMobile(!openMobile)}>Petz</Link>
+                <Link to="/Collection"onClick ={() => setOpenMobile(!openMobile)}>Full Collection</Link>
                 <Link to="/StakePool"onClick ={() => setOpenMobile(!openMobile)}>Stake Pool</Link>
                 <Link to="/Sales"onClick ={() => setOpenMobile(!openMobile)}>Sales</Link>
                 <div>
@@ -50,7 +51,8 @@ const NavBar = ({width, mode, changeMode}) => {
                 <Link to="/AllMetrics">Metrics</Link>
                 <Link to="/Updates">Updates</Link>
                 <Link to="/Team">Team</Link>
-                <Link to ="/Collection">Collection</Link>
+                <Link to="/Petz">Petz</Link>
+                <Link to ="/Collection">Full Collection</Link>
                 <Link to="/StakePool">Stake Pool</Link>
                 <Link to="/Sales">Sales</Link>
             </div>

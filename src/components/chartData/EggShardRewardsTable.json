@@ -1,0 +1,586 @@
+[
+    {
+        "Reward Epoch": "1",
+        "Remaining Supply": "490000000",
+        "Distributed": "7840000",
+        "Cardano Epoch": "303",
+        "Snapshot Time (Epoch Start)": "November 16, 2021 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "November 26, 2021 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "2",
+        "Remaining Supply": "482160000",
+        "Distributed": "8196720",
+        "Cardano Epoch": "304",
+        "Snapshot Time (Epoch Start)": "November 21, 2021 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "December 1, 2021 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "3",
+        "Remaining Supply": "473963280",
+        "Distributed": "8531339",
+        "Cardano Epoch": "305",
+        "Snapshot Time (Epoch Start)": "November 26, 2021 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "December 6, 2021 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "4",
+        "Remaining Supply": "465431941",
+        "Distributed": "8843207",
+        "Cardano Epoch": "306",
+        "Snapshot Time (Epoch Start)": "December 1, 2021 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "December 11, 2021 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "5",
+        "Remaining Supply": "456588734",
+        "Distributed": "9131775",
+        "Cardano Epoch": "307",
+        "Snapshot Time (Epoch Start)": "December 6, 2021 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "December 16, 2021 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "6",
+        "Remaining Supply": "447456959",
+        "Distributed": "9396596",
+        "Cardano Epoch": "308",
+        "Snapshot Time (Epoch Start)": "December 11, 2021 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "December 21, 2021 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "7",
+        "Remaining Supply": "438060363",
+        "Distributed": "9637328",
+        "Cardano Epoch": "309",
+        "Snapshot Time (Epoch Start)": "December 16, 2021 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "December 26, 2021 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "8",
+        "Remaining Supply": "428423035",
+        "Distributed": "9853730",
+        "Cardano Epoch": "310",
+        "Snapshot Time (Epoch Start)": "December 21, 2021 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "December 31, 2021 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "9",
+        "Remaining Supply": "418569305",
+        "Distributed": "10045663",
+        "Cardano Epoch": "311",
+        "Snapshot Time (Epoch Start)": "December 26, 2021 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "January 5, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "10",
+        "Remaining Supply": "408523642",
+        "Distributed": "10213091",
+        "Cardano Epoch": "312",
+        "Snapshot Time (Epoch Start)": "December 31, 2021 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "January 10, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "11",
+        "Remaining Supply": "398310551",
+        "Distributed": "10356074",
+        "Cardano Epoch": "313",
+        "Snapshot Time (Epoch Start)": "January 5, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "January 15, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "12",
+        "Remaining Supply": "387954477",
+        "Distributed": "10474771",
+        "Cardano Epoch": "314",
+        "Snapshot Time (Epoch Start)": "January 10, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "January 20, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "13",
+        "Remaining Supply": "377479706",
+        "Distributed": "10569432",
+        "Cardano Epoch": "315",
+        "Snapshot Time (Epoch Start)": "January 15, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "January 25, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "14",
+        "Remaining Supply": "366910274",
+        "Distributed": "10640398",
+        "Cardano Epoch": "316",
+        "Snapshot Time (Epoch Start)": "January 20, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "January 30, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "15",
+        "Remaining Supply": "356269876",
+        "Distributed": "10688096",
+        "Cardano Epoch": "317",
+        "Snapshot Time (Epoch Start)": "January 25, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "Febuary 4, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "16",
+        "Remaining Supply": "345581780",
+        "Distributed": "10713035",
+        "Cardano Epoch": "318",
+        "Snapshot Time (Epoch Start)": "January 30, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "Febuary 9, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "17",
+        "Remaining Supply": "334868745",
+        "Distributed": "10715800",
+        "Cardano Epoch": "319",
+        "Snapshot Time (Epoch Start)": "Febuary 4, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "Febuary 14, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "18",
+        "Remaining Supply": "324152945",
+        "Distributed": "10697047",
+        "Cardano Epoch": "320",
+        "Snapshot Time (Epoch Start)": "Febuary 9, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "Febuary 19, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "19",
+        "Remaining Supply": "313455898",
+        "Distributed": "10657501",
+        "Cardano Epoch": "321",
+        "Snapshot Time (Epoch Start)": "Febuary 14, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "Febuary 24, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "20",
+        "Remaining Supply": "302798397",
+        "Distributed": "10597944",
+        "Cardano Epoch": "322",
+        "Snapshot Time (Epoch Start)": "Febuary 19, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "March 1, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "21",
+        "Remaining Supply": "292200453",
+        "Distributed": "10519216",
+        "Cardano Epoch": "323",
+        "Snapshot Time (Epoch Start)": "Febuary 24, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "March 6, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "22",
+        "Remaining Supply": "281681237",
+        "Distributed": "10422206",
+        "Cardano Epoch": "324",
+        "Snapshot Time (Epoch Start)": "March 1, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "March 11, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "23",
+        "Remaining Supply": "271259031",
+        "Distributed": "10307843",
+        "Cardano Epoch": "325",
+        "Snapshot Time (Epoch Start)": "March 6, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "March 16, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "24",
+        "Remaining Supply": "260951188",
+        "Distributed": "10177096",
+        "Cardano Epoch": "326",
+        "Snapshot Time (Epoch Start)": "March 11, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "March 21, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "25",
+        "Remaining Supply": "250774092",
+        "Distributed": "10030964",
+        "Cardano Epoch": "327",
+        "Snapshot Time (Epoch Start)": "March 16, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "March 26, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "26",
+        "Remaining Supply": "240743128",
+        "Distributed": "9870468",
+        "Cardano Epoch": "328",
+        "Snapshot Time (Epoch Start)": "March 21, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "March 31, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "27",
+        "Remaining Supply": "230872660",
+        "Distributed": "9696652",
+        "Cardano Epoch": "329",
+        "Snapshot Time (Epoch Start)": "March 26, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "April 5, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "28",
+        "Remaining Supply": "221176008",
+        "Distributed": "9510568",
+        "Cardano Epoch": "330",
+        "Snapshot Time (Epoch Start)": "March 31, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "April 10, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "29",
+        "Remaining Supply": "211665440",
+        "Distributed": "9313279",
+        "Cardano Epoch": "331",
+        "Snapshot Time (Epoch Start)": "April 5, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "April 15, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "30",
+        "Remaining Supply": "202352161",
+        "Distributed": "9105847",
+        "Cardano Epoch": "332",
+        "Snapshot Time (Epoch Start)": "April 10, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "April 20, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "31",
+        "Remaining Supply": "193246314",
+        "Distributed": "8889330",
+        "Cardano Epoch": "333",
+        "Snapshot Time (Epoch Start)": "April 15, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "April 25, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "32",
+        "Remaining Supply": "184356984",
+        "Distributed": "8664778",
+        "Cardano Epoch": "334",
+        "Snapshot Time (Epoch Start)": "April 20, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "April 30, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "33",
+        "Remaining Supply": "175692206",
+        "Distributed": "8433226",
+        "Cardano Epoch": "335",
+        "Snapshot Time (Epoch Start)": "April 25, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "May 5, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "34",
+        "Remaining Supply": "167258980",
+        "Distributed": "8195690",
+        "Cardano Epoch": "336",
+        "Snapshot Time (Epoch Start)": "April 30, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "May 10, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "35",
+        "Remaining Supply": "159063290",
+        "Distributed": "7953165",
+        "Cardano Epoch": "337",
+        "Snapshot Time (Epoch Start)": "May 5, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "May 15, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "36",
+        "Remaining Supply": "151110125",
+        "Distributed": "7706616",
+        "Cardano Epoch": "338",
+        "Snapshot Time (Epoch Start)": "May 10, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "May 20, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "37",
+        "Remaining Supply": "143403509",
+        "Distributed": "7456982",
+        "Cardano Epoch": "339",
+        "Snapshot Time (Epoch Start)": "May 15, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "May 25, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "38",
+        "Remaining Supply": "135946527",
+        "Distributed": "7205166",
+        "Cardano Epoch": "340",
+        "Snapshot Time (Epoch Start)": "May 20, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "May 30, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "39",
+        "Remaining Supply": "128741361",
+        "Distributed": "6952033",
+        "Cardano Epoch": "341",
+        "Snapshot Time (Epoch Start)": "May 25, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "June 4, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "40",
+        "Remaining Supply": "121789328",
+        "Distributed": "6698413",
+        "Cardano Epoch": "342",
+        "Snapshot Time (Epoch Start)": "May 30, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "June 9, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "41",
+        "Remaining Supply": "115090915",
+        "Distributed": "6445091",
+        "Cardano Epoch": "343",
+        "Snapshot Time (Epoch Start)": "June 4, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "June 14, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "42",
+        "Remaining Supply": "108645824",
+        "Distributed": "6192812",
+        "Cardano Epoch": "344",
+        "Snapshot Time (Epoch Start)": "June 9, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "June 19, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "43",
+        "Remaining Supply": "102453012",
+        "Distributed": "5942275",
+        "Cardano Epoch": "345",
+        "Snapshot Time (Epoch Start)": "June 14, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "June 24, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "44",
+        "Remaining Supply": "96510737",
+        "Distributed": "5694133",
+        "Cardano Epoch": "346",
+        "Snapshot Time (Epoch Start)": "June 19, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "June 29, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "45",
+        "Remaining Supply": "90816604",
+        "Distributed": "5448996",
+        "Cardano Epoch": "347",
+        "Snapshot Time (Epoch Start)": "June 24, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "July 4, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "46",
+        "Remaining Supply": "85367608",
+        "Distributed": "5207424",
+        "Cardano Epoch": "348",
+        "Snapshot Time (Epoch Start)": "June 29, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "July 9, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "47",
+        "Remaining Supply": "80160184",
+        "Distributed": "4969931",
+        "Cardano Epoch": "349",
+        "Snapshot Time (Epoch Start)": "July 4, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "July 14, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "48",
+        "Remaining Supply": "75190253",
+        "Distributed": "4736986",
+        "Cardano Epoch": "350",
+        "Snapshot Time (Epoch Start)": "July 9, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "July 19, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "49",
+        "Remaining Supply": "70453267",
+        "Distributed": "4509009",
+        "Cardano Epoch": "351",
+        "Snapshot Time (Epoch Start)": "July 14, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "July 24, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "50",
+        "Remaining Supply": "65944258",
+        "Distributed": "4286377",
+        "Cardano Epoch": "352",
+        "Snapshot Time (Epoch Start)": "July 19, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "July 29, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "51",
+        "Remaining Supply": "61657881",
+        "Distributed": "4069420",
+        "Cardano Epoch": "353",
+        "Snapshot Time (Epoch Start)": "July 24, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "August 3, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "52",
+        "Remaining Supply": "57588461",
+        "Distributed": "3858427",
+        "Cardano Epoch": "354",
+        "Snapshot Time (Epoch Start)": "July 29, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "August 8, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "53",
+        "Remaining Supply": "53730034",
+        "Distributed": "3653642",
+        "Cardano Epoch": "355",
+        "Snapshot Time (Epoch Start)": "August 3, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "August 13, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "54",
+        "Remaining Supply": "50076392",
+        "Distributed": "3455271",
+        "Cardano Epoch": "356",
+        "Snapshot Time (Epoch Start)": "August 8, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "August 18, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "55",
+        "Remaining Supply": "46621121",
+        "Distributed": "3263478",
+        "Cardano Epoch": "357",
+        "Snapshot Time (Epoch Start)": "August 13, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "August 23, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "56",
+        "Remaining Supply": "43357643",
+        "Distributed": "3078393",
+        "Cardano Epoch": "358",
+        "Snapshot Time (Epoch Start)": "August 18, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "August 28, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "57",
+        "Remaining Supply": "40279250",
+        "Distributed": "3000000",
+        "Cardano Epoch": "359",
+        "Snapshot Time (Epoch Start)": "August 23, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "September 2, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "58",
+        "Remaining Supply": "37279250",
+        "Distributed": "3000000",
+        "Cardano Epoch": "360",
+        "Snapshot Time (Epoch Start)": "August 28, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "September 7, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "59",
+        "Remaining Supply": "34279250",
+        "Distributed": "3000000",
+        "Cardano Epoch": "361",
+        "Snapshot Time (Epoch Start)": "September 2, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "September 12, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "60",
+        "Remaining Supply": "31279250",
+        "Distributed": "3000000",
+        "Cardano Epoch": "362",
+        "Snapshot Time (Epoch Start)": "September 7, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "September 17, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "61",
+        "Remaining Supply": "28279250",
+        "Distributed": "3000000",
+        "Cardano Epoch": "363",
+        "Snapshot Time (Epoch Start)": "September 12, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "September 22, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "62",
+        "Remaining Supply": "25279250",
+        "Distributed": "3000000",
+        "Cardano Epoch": "364",
+        "Snapshot Time (Epoch Start)": "September 17, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "September 27, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "63",
+        "Remaining Supply": "22279250",
+        "Distributed": "3000000",
+        "Cardano Epoch": "365",
+        "Snapshot Time (Epoch Start)": "September 22, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "October 2, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "64",
+        "Remaining Supply": "19279250",
+        "Distributed": "3000000",
+        "Cardano Epoch": "366",
+        "Snapshot Time (Epoch Start)": "September 27, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "October 7, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "65",
+        "Remaining Supply": "16279250",
+        "Distributed": "3000000",
+        "Cardano Epoch": "367",
+        "Snapshot Time (Epoch Start)": "October 2, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "October 12, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "66",
+        "Remaining Supply": "13279250",
+        "Distributed": "3000000",
+        "Cardano Epoch": "368",
+        "Snapshot Time (Epoch Start)": "October 7, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "October 17, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "67",
+        "Remaining Supply": "10279250",
+        "Distributed": "2000000",
+        "Cardano Epoch": "369",
+        "Snapshot Time (Epoch Start)": "October 12, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "October 22, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "68",
+        "Remaining Supply": "8279250",
+        "Distributed": "2000000",
+        "Cardano Epoch": "370",
+        "Snapshot Time (Epoch Start)": "October 17, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "October 27, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "69",
+        "Remaining Supply": "6279250",
+        "Distributed": "2000000",
+        "Cardano Epoch": "371",
+        "Snapshot Time (Epoch Start)": "October 22, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "November 1, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "70",
+        "Remaining Supply": "4279250",
+        "Distributed": "1279250",
+        "Cardano Epoch": "372",
+        "Snapshot Time (Epoch Start)": "October 27, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "November 6, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "71",
+        "Remaining Supply": "3000000",
+        "Distributed": "1000000",
+        "Cardano Epoch": "373",
+        "Snapshot Time (Epoch Start)": "November 1, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "November 11, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "72",
+        "Remaining Supply": "2000000",
+        "Distributed": "1000000",
+        "Cardano Epoch": "374",
+        "Snapshot Time (Epoch Start)": "November 6, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "November 16, 2022 @ 21:44:51 UTC"
+    },
+    {
+        "Reward Epoch": "73",
+        "Remaining Supply": "1000000",
+        "Distributed": "1000000",
+        "Cardano Epoch": "375",
+        "Snapshot Time (Epoch Start)": "November 11, 2022 @ 21:44:51 UTC",
+        "Distribution Time (Epoch n + 3)": "November 21, 2022 @ 21:44:51 UTC"
+    }
+]

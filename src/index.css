@@ -26,7 +26,7 @@
 }
 /*Navigation menu */ 
 .nav-bar { 
-  position: absolute;
+  position:fixed;
   z-index: 1;
   width: 100%;
   max-width: 100%;
@@ -1407,6 +1407,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   border-radius: 30px;
   text-decoration: none;
   color: white;
+  z-index: 100;
 }
 
 @media only screen and (max-width: 1176px) { 
@@ -1478,13 +1479,6 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   background-attachment: fixed;
 }
 
-#cloud-updates { 
-  position: absolute;
-  top: 900px;
-  left: 0px;
-  width: 400px;
-}
-
 .update-page-wrapper {
   width: 100%; 
   padding-top: 8rem;
@@ -1493,6 +1487,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .update-container { 
@@ -1568,6 +1563,14 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
     top: -70px;
   }
 }
+@media only screen and (max-width: 300px) { 
+  .update-petz-image { 
+    position: absolute;
+    max-width: 110px;
+    right: -20px;
+    top: -40px;
+  }
+}
 /* Team page */ 
 .team-info-background { 
   background-image: url("./images/team-background.jpg");
@@ -1589,6 +1592,8 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 
 .team-member-container { 
   display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 1000px;
   background: rgba(24, 24, 24, 0.6); 
   background: linear-gradient(0deg, rgba(20, 20, 20, 0.5) 0%, rgba(54,53,52,0.7223472472555768) 29%);
@@ -1627,7 +1632,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   max-width: 170px;
   position: absolute;
   left: -40px;
-  bottom: 10px;
+  bottom: -10px;
 }
 
 @media only screen and (max-width: 960px) { 
@@ -1803,6 +1808,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   display: flex;
   max-width: 100%; 
   height: 100%;
+  min-height: 100vh;
   padding-top: 2rem;
   justify-content: center;
   align-items: center;
@@ -2134,17 +2140,16 @@ border: 3px solid rgb(129, 151, 148);
 
   .petz-modal-active { 
     width: 90%; 
-    height: 1000px;
+    height: 70%;
     overflow-y: scroll;
   }
   .modal-info { 
-    margin-top: 24rem;
+    margin-top: 33rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
     color: white;
   }
 
@@ -2160,6 +2165,28 @@ border: 3px solid rgb(129, 151, 148);
     width: 95%;
   }
 }
+@media only screen and (max-width: 1500px),(max-height: 1100px) { 
+  
+  .petz-container-background { 
+    width: 700px;
+    height: 700px;
+  }
+    .petz-background-first {
+      top: 0px;
+      left: -200px;
+    }
+    
+    .petz-background-second {
+      bottom: 50px;
+      right: -200px;
+    }
+    .petz-background-third {
+      display: none;
+    }
+    .petz-background-fourth {
+      display: none;
+    }
+  }
 
 @media only screen and (max-width: 1354px) { 
   .search-menu-active { 
@@ -2173,6 +2200,22 @@ border: 3px solid rgb(129, 151, 148);
   }
 }
 
+@media only screen and (max-width: 900px) { 
+  .petz-container-background { 
+    width: 500px;
+    height: 500px;
+  }
+    .petz-background-first {
+      top: 100px;
+      left: -100px;
+    }
+    
+    .petz-background-second {
+      bottom: 100px;
+      right: -100px;
+    }
+}
+
 @media only screen and (max-width: 340px) { 
   .modal-info h2 { 
     color: white;
@@ -2183,6 +2226,18 @@ border: 3px solid rgb(129, 151, 148);
   }
   .petz-inner-wrapper { 
     width: 100%;
+  }
+  .petz-container-background { 
+    width: 300px;
+    height: 300px;
+  }
+  .petz-background-first {
+    top: 150px;
+    left: -100px;
+  }
+  .petz-background-second {
+    bottom: 200px;
+    right: -100px;
   }
 }
 
@@ -2287,7 +2342,7 @@ border: 3px solid rgb(129, 151, 148);
   width: 100%;
 }
 
-@media only screen and (max-width: 878px) { 
+@media only screen and (max-width: 888px) { 
   .stake-pool-info-box { 
     flex-direction: column;
   }
@@ -2301,6 +2356,10 @@ border: 3px solid rgb(129, 151, 148);
     flex-wrap: wrap;
     width: 100%;
   }
+  .eggshard-table th, 
+  .eggshard-table td { 
+    font-size: 11px;
+  }
 }
 
 @media only screen and (max-width: 728px) { 
@@ -2308,6 +2367,24 @@ border: 3px solid rgb(129, 151, 148);
   .api-items-indicator { 
     width: 100%;
     min-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 662px) { 
+  .eggshard-table th, 
+  .eggshard-table td { 
+    font-size: 8px;
+  }
+  .eggshards-distribution-container { 
+    width: 100%;
+    margin: 1px;
+  }
+}
+@media only screen and (max-width: 390px) { 
+  .eggshard-table th, 
+  .eggshard-table td { 
+    font-size: 7px;
+    padding: 1px;
   }
 }
 

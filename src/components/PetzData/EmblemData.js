@@ -20,24 +20,24 @@ import lavaEmblem from "../../images/typeEmblems/Lava_Emblem.png";
 import soundEmblem from "../../images/typeEmblems/Sound_Emblem.png";
 
 //Petz Images 
-import firePet from "../..//images/petzImages/fire.png";
-import waterPet from "../..//images/petzImages/water.png";
-import electricPet from "../..//images/petzImages/electric.png";
-import grassPet from "../..//images/petzImages/grass.png";
-import icePet from "../..//images/petzImages/ice.png";
-import combatPet from "../..//images/petzImages/combat.png";
-import poisonPet from "../..//images/petzImages/poison.png";
-import earthPet from "../..//images/petzImages/earth.png";
-import flyingPet from "../..//images/petzImages/flying.png";
-import psychicPet from "../..//images/petzImages/psychic.png";
-import insectPet from "../..//images/petzImages/insect.png";
-import spiritPet from "../..//images/petzImages/spirit.png";
-import drakePet from "../..//images/petzImages/drake.png";
-import shadowPet from "../..//images/petzImages/shadow.png";
-import metalPet from "../..//images/petzImages/metal.png";
-import faePet from "../..//images/petzImages/fae.png";
-import lavaPet from "../..//images/petzImages/lava.png";
-import soundPet from "../..//images/petzImages/sound.png";
+import firePet from "../..//images/smallPngPetz/Pi7compressed050.png";
+import waterPet from "../..//images/smallPngPetz/Pi7compressed0142.png";
+import electricPet from "../..//images/smallPngPetz/Pi7compressed031.png";
+import grassPet from "../..//images/smallPngPetz/Pi7compressed073.png";
+import icePet from "../..//images/smallPngPetz/Pi7compressed077.png";
+import combatPet from "../..//images/smallPngPetz/Pi7compressed043.png";
+import poisonPet from "../..//images/smallPngPetz/Pi7compressed099.png";
+import earthPet from "../..//images/smallPngPetz/Pi7compressed0120.png";
+import flyingPet from "../..//images/smallPngPetz/Pi7compressed0138.png";
+import psychicPet from "../..//images/smallPngPetz/Pi7compressed0101.png";
+import insectPet from "../..//images/smallPngPetz/Pi7compressed07.png";
+import spiritPet from "../..//images/smallPngPetz/Pi7compressed061.png";
+import drakePet from "../..//images/smallPngPetz/Pi7compressed024.png";
+import shadowPet from "../..//images/smallPngPetz/Pi7compressed012.png";
+import metalPet from "../..//images/smallPngPetz/Pi7compressed0129.png";
+import faePet from "../..//images/smallPngPetz/Pi7compressed036.png";
+import lavaPet from "../..//images/smallPngPetz/Pi7compressed091.png";
+import soundPet from "../..//images/smallPngPetz/Pi7compressed0127.png";
 
 
 export const petzObject = 
