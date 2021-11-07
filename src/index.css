@@ -181,7 +181,7 @@ input:checked + .slider:before {
 
 /*Mobile menu*/ 
 .mobile-menu-close { 
-  transform: translateX(-1200px);
+  transform: translateX(-1268px);
 }
 
 .mobile-menu-open { 
@@ -410,6 +410,11 @@ input:checked + .slider:before {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 16px;
+}
+
+.book-page img { 
+  border-radius: 16px;
 }
 
 .book-cover-back { 
@@ -417,6 +422,7 @@ input:checked + .slider:before {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 16px;
 }
 
 @media only screen and (max-width: 768px) { 
@@ -2300,15 +2306,30 @@ border: 3px solid rgb(129, 151, 148);
   border-radius: 16px;
   padding: 10px; 
   color: rgb(255, 255, 255);
-  margin-bottom: 1rem;
   box-shadow: rgba(224, 221, 221, 0.733) 0px 1px 2px, rgba(189, 185, 185, 0.07) 0px 2px 4px,
               rgba(238, 234, 234, 0.07) 0px 4px 8px, rgba(235, 231, 231, 0.07) 0px 8px 16px,
               rgba(224, 220, 220, 0.07) 0px 16px 32px, rgba(216, 211, 211, 0.07) 0px 32px 64px;
 }
 
+.stakepool-id-image-container { 
+  max-height: 360px;
+}
+
+.stakepool-id-image-container img { 
+  margin: 0 auto;
+}
+
 .stake-pool-info-box h2 { 
   margin-bottom: 2rem;
   color:rgb(99, 200, 141);
+}
+
+.info-plus-petImage { 
+  display: flex;
+  margin-top: 10px;
+}
+.info-plus-petImage p { 
+  width: 60%;
 }
 
 .stake-pool-metrics { 
@@ -2340,6 +2361,27 @@ border: 3px solid rgb(129, 151, 148);
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+
+.eggshards-distribution-container { 
+  display: flex;
+  flex-direction: column;
+  max-height: 700px;
+}
+
+.eggshards-distribution-container div { 
+  overflow-y: scroll;
+  border-radius: 16px;
+}
+
+@media only screen and (max-width: 1008px) { 
+  .info-plus-petImage { 
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-plus-petImage p { 
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 888px) { 

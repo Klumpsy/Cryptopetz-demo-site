@@ -63,7 +63,7 @@ const CheckboxSearchMenu = ({petz, handleUpdate, filteredPetz, searchMenu}) => {
             <h3>Filter by Rarity</h3>
             {rarityCheckboxes.map(({rarity}, index) => { 
                 return (
-                  <div className ="type-box">
+                  <div className ="type-box" key = {index}>
                   <label>{rarity}</label>
                   <input 
                   type="checkbox" 
@@ -81,7 +81,7 @@ const CheckboxSearchMenu = ({petz, handleUpdate, filteredPetz, searchMenu}) => {
             <h3>Filter by Type</h3>
             {typeCheckboxes.map(({type}, index) => { 
                 return (
-                  <div className ="type-box">
+                  <div className ="type-box" key={type}>
                   <label>{type}</label>
                   <input 
                   type="checkbox" 

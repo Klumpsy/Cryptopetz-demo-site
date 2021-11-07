@@ -12,7 +12,7 @@ const NavBar = ({width, mode, changeMode}) => {
 
     return (
         <>
-        {width < 1200 ?
+        {width < 1268 ?
             <div className = {mode ? "nav-bar nav-mobile light-mode" : "nav-bar nav-mobile dark-mode"}>
                 <Link to="/Cryptopetz-demo-site"><img src={ardanoBird} alt="CryptoPet"/></Link>
             <div className = {openMobile ? mode? "mobile-menu-light mobile-menu mobile-menu-open": "mobile-menu-dark mobile-menu mobile-menu-open" : "mobile-menu mobile-menu-close" }>

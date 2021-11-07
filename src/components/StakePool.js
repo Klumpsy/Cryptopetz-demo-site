@@ -45,10 +45,10 @@ const StakePool = ({mode}) => {
                         when game actions come to fruition.
 
                         </p>
-                        <div>
+                        <div className = "stakepool-id-image-container">
                             <span className="api-items-indicator pool-id">Pool Id:</span>
                             <p className="pool-string">{pool.pool_id}</p>
-                            <img style = {{width: "30%"}}src={petImage1}/>
+                            <img style = {{width: "50%"}}src={petImage1}/>
                         </div>
                     </div>
                     <div className ="petz-pool-api-info">
@@ -127,17 +127,19 @@ const StakePool = ({mode}) => {
                             <li>Future community distribution (in-game rewards, additional stake pool distribution, other distribution mechanisms): 2.2 billion</li>
                         </ul>
                         <br/>
-                        <p>
-                        This distribution allows us to provide a significant portion of the total Egg Shard supply 
-                        (~17%) to the delegators that support our stake pool during the initial development of the game. 
-                        The remaining 2.2 billion will not be minted yet, but the team will mint them when needed for 
-                        future distribution. While there may be several different methods of distribution, 
-                        the primary one that we are exploring (other than the stake pool) is 
-                        rewards for winning battles in-game. This will potentially be the first play-to-earn aspect of the game, 
-                        and will allow us to stick to our mission of providing the Egg Shards to the community members 
-                        that support the project in the early stages. 
-                        </p>
-                        <img style = {{width: "30%"}}src={petImage}/>
+                        <div className ="info-plus-petImage">
+                            <p>
+                            This distribution allows us to provide a significant portion of the total Egg Shard supply
+                            (~17%) to the delegators that support our stake pool during the initial development of the game.
+                            The remaining 2.2 billion will not be minted yet, but the team will mint them when needed for
+                            future distribution. While there may be several different methods of distribution,
+                            the primary one that we are exploring (other than the stake pool) is
+                            rewards for winning battles in-game. This will potentially be the first play-to-earn aspect of the game,
+                            and will allow us to stick to our mission of providing the Egg Shards to the community members
+                            that support the project in the early stages.
+                            </p>
+                            <img style = {{width: "50%"}}src={petImage}/>
+                        </div>
                         <p>
                         As mentioned earlier, although unlikely, the maximum supply may need to be increased 
                         down the road if it would make the in-game economy more likely to thrive. 
@@ -179,19 +181,20 @@ const StakePool = ({mode}) => {
                         <p>
                             Now that we got all of that boring tokenomics talk out of the way, time for rewards! 
                         </p>
-                        <img style = {{width: "30%"}}src={petImage2}/>
-                        <p>
-                            First, let's talk about how rewards will be distributed. Whenever a wallet is eligible for 
-                            an airdrop reward, they will be able to claim that reward by sending a claim transaction 
-                            to an address that the team will specify. The transaction will go something like this: 
-                            You send 3 ADA to address ABC, and then a few seconds later you receive ~2.8 ADA with 
-                            all of the Egg Shards available to your address (assuming 0.2 ADA transaction fee). 
-                            Essentially, all you need to pay is the transaction fee, and you can claim all of the 
-                            Egg Shards for your wallet. Keep in mind that Egg Shard rewards will stack, so you do not 
-                            need to claim every epoch! You can wait as long as you like between claiming to minimize your
-                            fees – the Egg Shards aren't going anywhere!  
-                        </p>
-                        <br/>
+                        <div className ="info-plus-petImage">
+                            <p>
+                                First, let's talk about how rewards will be distributed. Whenever a wallet is eligible for
+                                an airdrop reward, they will be able to claim that reward by sending a claim transaction
+                                to an address that the team will specify. The transaction will go something like this:
+                                You send 3 ADA to address ABC, and then a few seconds later you receive ~2.8 ADA with
+                                all of the Egg Shards available to your address (assuming 0.2 ADA transaction fee).
+                                Essentially, all you need to pay is the transaction fee, and you can claim all of the
+                                Egg Shards for your wallet. Keep in mind that Egg Shard rewards will stack, so you do not
+                                need to claim every epoch! You can wait as long as you like between claiming to minimize your
+                                fees – the Egg Shards aren't going anywhere!
+                            </p>
+                            <img style = {{width: "50%"}}src={petImage2}/>
+                        </div>
                         <p>
                             Now, let's go over the rewards for current delegators! 
                             All Cardano wallets that have an active delegation to PETZ pool at the time of this 
@@ -250,8 +253,8 @@ const StakePool = ({mode}) => {
                 </div>
 
                 <div className ="stake-pool-info-box eggshards-distribution-container">
+                <h2>Tokenomics Graph</h2>
                     <div>
-                        <h2>Tokenomics Graph</h2>
                         <EggShardRewards mode = {mode}/>
                     </div>
                 </div>

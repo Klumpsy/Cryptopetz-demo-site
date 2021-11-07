@@ -38,7 +38,6 @@ const RarityMetrics = ({eggArray}) => {
                                return <img className ="petz-info-egg" src={pet.emblem}></img>
                             })}
                         </div>
-                        
                     </div>
                 </div>
             </div>

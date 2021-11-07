@@ -1,8 +1,11 @@
 
+
 const Petz = () => { 
     return (
-        <div>
+        <div className ="all-petz-container">
+            <div className ="legendary-petz">
 
+            </div>
         </div>
     )
 }

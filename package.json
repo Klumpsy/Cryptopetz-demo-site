@@ -1,7 +1,7 @@
 {
   "name": "cryptopetz",
   "version": "0.1.0",
-  "proxy": "https://cryptopetz.info/",
+  "Proxy": "https://www.cryptopetz.info",
   "homepage": "https://klumpsy.github.io/Cryptopetz-demo-site/",
   "private": true,
   "dependencies": {
