@@ -1696,6 +1696,11 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   color: white;
 }
 
+.pet-card-type-container div { 
+  display: flex;
+  max-width: 100px;
+}
+
 /*Collection Page*/ 
 .petz-searchbox-container { 
   display: flex;

@@ -8,10 +8,23 @@ import { EpochOneLegendary,
          EpochOneCommon,
          EpochOneVeryCommon } from "./PetzData/epochOnePetz";
 
+import {petzObject } from "./PetzData/EmblemData"
+
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Petz = ({mode}) => { 
+
+    const petzEmblemChecker = (type) => { 
+        if(type === "fire") { 
+            return petzObject[0].emblem
+        }
+        if(type === "combat") { 
+            return petzObject[17].emblem
+        } else { 
+            return petzObject[1].emblem
+        }
+    }
 
     return (
         <div className = {mode? "all-petz-container light-mode" : "all-petz-container dark-mode"}>
@@ -29,12 +42,18 @@ const Petz = ({mode}) => {
                                 <span style ={{color: "white"}}>Type: </span>
                                 {pet.type.length > 1 ?
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
-                                    <span className ={pet.type[1]}>{pet.type[1]}</span>
-                                </div> 
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[0])}/>
+                                        </div>
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[1])}/>
+                                        </div>
+                                    </div>
                                 :
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
+                                    <div>
+                                        <img src={petzEmblemChecker(pet.type[0])}/>
+                                    </div>
                                 </div>}
                             </div>
                         </div>
