@@ -1541,11 +1541,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 }
 /* Team page */ 
 .team-info-background { 
-  background-image: url("./images/team-background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  overflow: hidden;
 }
 
 .team-wrapper { 
@@ -1559,6 +1555,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 }
 
 .team-member-container { 
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1572,6 +1569,38 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   box-shadow: rgba(224, 221, 221, 0.733) 0px 1px 2px, rgba(189, 185, 185, 0.07) 0px 2px 4px, 
               rgba(238, 234, 234, 0.07) 0px 4px 8px, rgba(235, 231, 231, 0.07) 0px 8px 16px, 
               rgba(224, 220, 220, 0.07) 0px 16px 32px, rgba(216, 211, 211, 0.07) 0px 32px 64px;
+  z-index: 10;
+}
+
+.background-team-pet { 
+  position: absolute;
+  width: 1400px;
+  z-index: 0;
+}
+
+#background-team-pet-one { 
+ left: 5rem;
+ bottom: -30rem;
+}
+
+#background-team-pet-two { 
+ right: 5rem;
+ bottom: 10;
+}
+
+#background-team-pet-three { 
+ left: 7rem;
+ bottom: 15;
+}
+
+#background-team-pet-four{ 
+ right: 8rem;
+ top: 8;
+}
+
+#background-team-pet-five { 
+ left: 7rem;
+ bottom: 15;
 }
 
 .team-member-container img { 
@@ -1592,16 +1621,6 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   flex-direction: column;
 }
 
-.team-member-image { 
-  position: relative;
-}
-
-.team-member-pet { 
-  max-width: 170px;
-  position: absolute;
-  left: -40px;
-  bottom: -10px;
-}
 
 @media only screen and (max-width: 960px) { 
   .team-wrapper h1 { 
@@ -1659,7 +1678,8 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   width: 300px;
   margin: 3px;
   border-radius: 16px;
-  background-color: rgb(44, 44, 44);
+  background: rgb(51,49,49);
+  background: linear-gradient(347deg, rgba(51,49,49,1) 4%, rgba(60,56,56,1) 34%, rgba(0,0,0,1) 87%, rgba(115,115,115,1) 99%); 
   border: 1px solid black;
   box-shadow: rgba(92, 92, 93, 0.25) 0px 50px 100px -20px, rgba(138, 137, 137, 0.3) 0px 30px 60px -30px, rgba(237, 239, 241, 0.35) 0px -2px 6px 0px inset;
 }
@@ -1697,8 +1717,22 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 }
 
 .pet-card-type-container div { 
+  position: relative;
   display: flex;
   max-width: 100px;
+}
+
+.pet-card-type-container div span { 
+  display: none;
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  right: 0;
+  color: #fff;
+}
+
+.pet-card-type-container div:hover span { 
+display: block;
 }
 
 /*Collection Page*/ 

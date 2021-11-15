@@ -13,7 +13,8 @@ import combatSheep from "../images/petzImages/combatSheep.png"
 const Team = () => { 
     return (
         <div className = "team-info-background">
-            <div className = "page-wrapper game-info-wrapper team-wrapper">
+        
+            <div className = "game-info-wrapper team-wrapper">
                 <h1>You, Yeah You!</h1>
                 <p className="intro-text">
                     We are one big community and your feedback is important to us.
@@ -21,10 +22,11 @@ const Team = () => {
                     We would like to thank you and we truly appreciate your patience and help! 
                     Let’s build and grow this piece of Cardano together.
                 </p>
+
                 <div className = "team-member-container">
+                   <img class="background-team-pet" id="background-team-pet-one" src={bear}/>
                     <div className = "team-member-image">
                         <img src ={nick} alt="Team-member" />
-                        <img className = "team-member-pet" src ={bear} alt="pet"/>
                     </div>
                     <div className ="team-member-text">
                         <h2>Nick (Hemsketsmelvet)</h2>
@@ -36,6 +38,7 @@ const Team = () => {
                     </div>
                 </div>
                 <div className = "team-member-container">
+                <img class="background-team-pet" id="background-team-pet-two" src={cactus}/>
                 <div className ="team-member-text">
                         <h2>Dom  (Domenhagen)</h2>
                         <p>Salut! I'm Dom, a French-Canadian engineer. My technical background is in embedded systems and 
@@ -47,14 +50,13 @@ const Team = () => {
                     </div>
                     <div className = "team-member-image">
                         <img src ={dom} alt="Team-member" />
-                        <img className = "team-member-pet" src ={cactus} alt="pet"/>
                     </div>
                     
                 </div>
                 <div className = "team-member-container">
+                <img class="background-team-pet" id="background-team-pet-three" src={combatSheep}/>
                     <div className = "team-member-image">
                         <img src ={bob} alt="Team-member"  />
-                        <img className = "team-member-pet" src ={combatSheep} alt="pet"/>
                     </div>
                     <div className ="team-member-text">
                         <h2>Bob (MajikCat)</h2>
@@ -66,6 +68,7 @@ const Team = () => {
                     </div>
                 </div>
                 <div className = "team-member-container">
+                <img class="background-team-pet" id="background-team-pet-four" src={psychicCow}/>
                     <div className ="team-member-text">
                         <h2>Justin (theVaporMonkey)</h2>
                         <p>By day, I work for one of the three largest tech companies in the world. By night, 
@@ -79,13 +82,12 @@ const Team = () => {
                     </div>
                     <div className = "team-member-image">
                         <img src ={justin} alt="Team-member" />
-                        <img className = "team-member-pet" src ={psychicCow} alt="pet"/>
                     </div>
                 </div>
                 <div className = "team-member-container team-last-container">
+                <img class="background-team-pet" id="background-team-pet-five" src={bulb}/>
                 <div className = "team-member-image ">
                         <img src ={jake} alt="Team-member" />
-                        <img className = "team-member-pet" src ={bulb} alt="pet"/>
                     </div>
                     <div className ="team-member-text">
                         <h2>Jake (jshear)</h2>

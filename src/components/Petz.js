@@ -16,14 +16,46 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 const Petz = ({mode}) => { 
 
     const petzEmblemChecker = (type) => { 
-        if(type === "fire") { 
-            return petzObject[0].emblem
-        }
-        if(type === "combat") { 
-            return petzObject[17].emblem
-        } else { 
-            return petzObject[1].emblem
-        }
+
+      switch(type) { 
+          case "fire": return petzObject[0].emblem
+          break 
+          case "water": return petzObject[1].emblem
+          break
+          case "electric": return petzObject[2].emblem
+          break
+          case "grass": return petzObject[3].emblem
+          break
+          case "ice": return petzObject[4].emblem
+          break
+          case "earth": return petzObject[5].emblem
+          break 
+          case "drake": return petzObject[6].emblem
+          break
+          case "shadow": return petzObject[7].emblem
+          break
+          case "insect": return petzObject[8].emblem
+          break
+          case "metal": return petzObject[9].emblem
+          break
+          case "lava": return petzObject[10].emblem
+          break 
+          case "poison": return petzObject[11].emblem
+          break
+          case "fae": return petzObject[12].emblem
+          break
+          case "psychic": return petzObject[13].emblem
+          break
+          case "flying": return petzObject[14].emblem
+          break
+          case "sound": return petzObject[15].emblem
+          break 
+          case "spirit": return petzObject[16].emblem
+          break
+          case "combat": return petzObject[17].emblem
+         
+          default: return "No emblem"
+      }
     }
 
     return (
@@ -44,15 +76,18 @@ const Petz = ({mode}) => {
                                 <div className = "pet-card-type-container">
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[0])}/>
+                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
                                         </div>
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[1])}/>
+                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
                                         </div>
                                     </div>
                                 :
                                 <div className = "pet-card-type-container">
                                     <div>
                                         <img src={petzEmblemChecker(pet.type[0])}/>
+                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
                                     </div>
                                 </div>}
                             </div>
@@ -73,12 +108,21 @@ const Petz = ({mode}) => {
                                 <span style ={{color: "white"}}>Type: </span>
                                 {pet.type.length > 1 ?
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
-                                    <span className ={pet.type[1]}>{pet.type[1]}</span>
-                                </div> 
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[0])}/>
+                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                        </div>
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[1])}/>
+                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
+                                        </div>
+                                    </div>
                                 :
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
+                                    <div>
+                                        <img src={petzEmblemChecker(pet.type[0])}/>
+                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                    </div>
                                 </div>}
                             </div>
                         </div>
@@ -98,12 +142,21 @@ const Petz = ({mode}) => {
                                 <span style ={{color: "white"}}>Type: </span>
                                 {pet.type.length > 1 ?
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
-                                    <span className ={pet.type[1]}>{pet.type[1]}</span>
-                                </div> 
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[0])}/>
+                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                        </div>
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[1])}/>
+                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
+                                        </div>
+                                    </div>
                                 :
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
+                                    <div>
+                                        <img src={petzEmblemChecker(pet.type[0])}/>
+                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                    </div>
                                 </div>}
                             </div>
                         </div>
@@ -123,12 +176,21 @@ const Petz = ({mode}) => {
                                 <span style ={{color: "white"}}>Type: </span>
                                 {pet.type.length > 1 ?
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
-                                    <span className ={pet.type[1]}>{pet.type[1]}</span>
-                                </div> 
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[0])}/>
+                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                        </div>
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[1])}/>
+                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
+                                        </div>
+                                    </div>
                                 :
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
+                                    <div>
+                                        <img src={petzEmblemChecker(pet.type[0])}/>
+                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                    </div>
                                 </div>}
                             </div>
                         </div>
@@ -148,12 +210,21 @@ const Petz = ({mode}) => {
                                 <span style ={{color: "white"}}>Type: </span>
                                 {pet.type.length > 1 ?
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
-                                    <span className ={pet.type[1]}>{pet.type[1]}</span>
-                                </div> 
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[0])}/>
+                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                        </div>
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[1])}/>
+                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
+                                        </div>
+                                    </div>
                                 :
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
+                                    <div>
+                                        <img src={petzEmblemChecker(pet.type[0])}/>
+                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                    </div>
                                 </div>}
                             </div>
                         </div>
@@ -173,12 +244,21 @@ const Petz = ({mode}) => {
                                 <span style ={{color: "white"}}>Type: </span>
                                 {pet.type.length > 1 ?
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
-                                    <span className ={pet.type[1]}>{pet.type[1]}</span>
-                                </div> 
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[0])}/>
+                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                        </div>
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[1])}/>
+                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
+                                        </div>
+                                    </div>
                                 :
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
+                                    <div>
+                                        <img src={petzEmblemChecker(pet.type[0])}/>
+                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                    </div>
                                 </div>}
                             </div>
                         </div>
@@ -198,12 +278,21 @@ const Petz = ({mode}) => {
                                 <span style ={{color: "white"}}>Type: </span>
                                 {pet.type.length > 1 ?
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
-                                    <span className ={pet.type[1]}>{pet.type[1]}</span>
-                                </div> 
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[0])}/>
+                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                        </div>
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[1])}/>
+                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
+                                        </div>
+                                    </div>
                                 :
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
+                                    <div>
+                                        <img src={petzEmblemChecker(pet.type[0])}/>
+                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                    </div>
                                 </div>}
                             </div>
                         </div>
@@ -223,12 +312,21 @@ const Petz = ({mode}) => {
                                 <span style ={{color: "white"}}>Type: </span>
                                 {pet.type.length > 1 ?
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
-                                    <span className ={pet.type[1]}>{pet.type[1]}</span>
-                                </div> 
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[0])}/>
+                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                        </div>
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[1])}/>
+                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
+                                        </div>
+                                    </div>
                                 :
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
+                                    <div>
+                                        <img src={petzEmblemChecker(pet.type[0])}/>
+                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                    </div>
                                 </div>}
                             </div>
                         </div>
@@ -248,12 +346,21 @@ const Petz = ({mode}) => {
                                 <span style ={{color: "white"}}>Type: </span>
                                 {pet.type.length > 1 ?
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
-                                    <span className ={pet.type[1]}>{pet.type[1]}</span>
-                                </div> 
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[0])}/>
+                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                        </div>
+                                        <div>
+                                            <img src={petzEmblemChecker(pet.type[1])}/>
+                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
+                                        </div>
+                                    </div>
                                 :
                                 <div className = "pet-card-type-container">
-                                    <span className ={pet.type[0]}>{pet.type[0]}</span>
+                                    <div>
+                                        <img src={petzEmblemChecker(pet.type[0])}/>
+                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                    </div>
                                 </div>}
                             </div>
                         </div>
