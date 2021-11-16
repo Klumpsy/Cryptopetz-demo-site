@@ -8,6 +8,7 @@ import UpdateComponentOne from "./updates/UpdateOne";
 
 const Updates = ({ allPetzArray }) => { 
 
+
     return (
         <div className = "updates-background">
             <div className = "update-page-wrapper"> 

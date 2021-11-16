@@ -733,12 +733,12 @@ td {
 
 .metric-box-container { 
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   margin-top: 5rem;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   z-index: 10;
 }
 
@@ -767,7 +767,7 @@ td {
 }
 
 .metrics-box { 
-  width: 600px;
+  width: 700px;
   height: 400px;
   border-radius: 20px;
   margin: 10px;
@@ -1075,6 +1075,10 @@ color: white;
   width: 100%;
 }
 
+.type-link:hover { 
+  transform: scale(1.1);
+}
+
 .petz-info-box-center {
   display: flex;
   justify-content: center;
@@ -1083,6 +1087,12 @@ color: white;
   border-radius: 20px;
   background-color: rgba(16, 17, 17, 0.80); 
 }
+
+.petz-info-rarity-emblems { 
+  display: flex;
+  flex-direction: row;
+}
+
 
 @media only screen and (max-width: 1370px) { 
   .petz-chart-data{ 
@@ -1542,9 +1552,14 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 /* Team page */ 
 .team-info-background { 
   overflow: hidden;
+  position: relative;
 }
 
-.team-wrapper { 
+.team-info-background h1 { 
+  font-size: 4rem;
+}
+
+.team-wrapper {
   width: 100%; 
   padding-top: 12rem;
   padding-bottom: 8rem;
@@ -1555,52 +1570,49 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 }
 
 .team-member-container { 
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 1000px;
-  background: rgba(24, 24, 24, 0.6); 
-  background: linear-gradient(0deg, rgba(20, 20, 20, 0.5) 0%, rgba(54,53,52,0.7223472472555768) 29%);
+  background: rgba(24, 24, 24, 0.1); 
+  background: linear-gradient(347deg, rgba(51,49,49,0.8) 4%, rgba(60,56,56,0.85) 34%, rgba(0,0,0,0.7) 87%, rgba(115,115,115,1) 99%); 
   border-radius: 16px;
   padding: 10px; 
   color: rgb(255, 255, 255);
   margin-bottom: 1rem;
-  box-shadow: rgba(224, 221, 221, 0.733) 0px 1px 2px, rgba(189, 185, 185, 0.07) 0px 2px 4px, 
-              rgba(238, 234, 234, 0.07) 0px 4px 8px, rgba(235, 231, 231, 0.07) 0px 8px 16px, 
-              rgba(224, 220, 220, 0.07) 0px 16px 32px, rgba(216, 211, 211, 0.07) 0px 32px 64px;
   z-index: 10;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(223, 220, 220, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .background-team-pet { 
+  width: 1200px;
   position: absolute;
-  width: 1400px;
   z-index: 0;
 }
 
 #background-team-pet-one { 
- left: 5rem;
- bottom: -30rem;
+ right: 0;
+ top: 5%;
 }
 
 #background-team-pet-two { 
- right: 5rem;
- bottom: 10;
+ left: 0;
+ bottom: 35%;
 }
 
 #background-team-pet-three { 
- left: 7rem;
- bottom: 15;
+ right: 0;
+ bottom: 20%;
 }
 
 #background-team-pet-four{ 
- right: 8rem;
- top: 8;
+ left: 0;
+ bottom: 5%
 }
 
 #background-team-pet-five { 
- left: 7rem;
- bottom: 15;
+ right: 0; 
+ bottom: -10%
 }
 
 .team-member-container img { 
@@ -1611,6 +1623,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   max-width: 600px;
   font-weight: 800;
   margin: 2rem;
+  z-index: 1;
   color: rgb(0, 0, 0);
 }
 
@@ -1619,6 +1632,42 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+@media only screen and (max-width: 1778px) { 
+  .background-team-pet { 
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1434px) { 
+  .background-team-pet { 
+    width: 800px;
+  }
+  #background-team-pet-one { 
+    right: 0;
+    top: 10%;
+   }
+   
+   #background-team-pet-two { 
+    left: 0;
+    bottom: 45%;
+   }
+   
+   #background-team-pet-three { 
+    right: 0;
+    bottom: 30%;
+   }
+   
+   #background-team-pet-four{ 
+    left: 0;
+    bottom: 15%
+   }
+   
+   #background-team-pet-five { 
+    right: 0; 
+    bottom: -5%
+   }
 }
 
 
@@ -1632,6 +1681,30 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
     justify-content: center;
     align-items: center;
   }
+  #background-team-pet-one { 
+    right: -180px;
+    top: 15%;
+   }
+   
+   #background-team-pet-two { 
+    left: -150px;
+    top: 22%;
+   }
+   
+   #background-team-pet-three { 
+    left: -150px;
+    bottom: 35%
+   }
+   
+   #background-team-pet-four{ 
+    left: -200px;
+    bottom: 25%;
+   }
+   
+   #background-team-pet-five { 
+    left: -200px; 
+    bottom: 1%
+   }
 }
 
 @media only screen and (max-width: 320px) { 
@@ -1734,6 +1807,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 .pet-card-type-container div:hover span { 
 display: block;
 }
+
 
 /*Collection Page*/ 
 .petz-searchbox-container { 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'; 
 import {Route, Switch} from 'react-router-dom';
+import {petzObject } from "../src/components/PetzData/EmblemData"
 
 //Main site Pages and routing
 import NavBar from "./components/NavBar";
@@ -168,7 +169,7 @@ function App() {
                   <Updates allPetzArray = {allPetzArray}/>
                 </Route>
                 <Route exact path="/Team">
-                  <Team/>
+                  <Team mode = {mode}/>
                 </Route>
                 <Route exact path="/Petz">
                   <Petz mode={mode}/>

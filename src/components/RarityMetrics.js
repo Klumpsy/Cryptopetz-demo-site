@@ -1,5 +1,7 @@
 import {Doughnut} from "react-chartjs-2";
 import {Bar} from "react-chartjs-2"; 
+import "chartjs-plugin-datalabels"
+import { Link } from "react-router-dom";
 
 //Data
 import {PetRarityData} from "../components/chartData/PetRaritydata";
@@ -35,7 +37,9 @@ const RarityMetrics = ({eggArray}) => {
                             
                             {petzObject.map(pet => {
                                 
-                               return <img className ="petz-info-egg" src={pet.emblem}></img>
+                               return   <Link className ="" to={"/" + pet.type}>
+                                                <img className ="petz-info-egg type-link" src={pet.emblem}></img>
+                                        </Link>
                             })}
                         </div>
                     </div>

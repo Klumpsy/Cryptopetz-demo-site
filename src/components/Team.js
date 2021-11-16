@@ -10,13 +10,17 @@ import psychicCow from "../images/petzImages/psychicCow.png";
 import bulb from "../images/petzImages/bulb.png"
 import combatSheep from "../images/petzImages/combatSheep.png"
 
-const Team = () => { 
+const Team = ({mode}) => { 
     return (
-        <div className = "team-info-background">
-        
-            <div className = "game-info-wrapper team-wrapper">
-                <h1>You, Yeah You!</h1>
-                <p className="intro-text">
+        <div className = {mode ? "team-info-background light-mode" : "team-info-background dark-mode"}>
+            <img className="background-team-pet" id="background-team-pet-one" src={bear}/>
+            <img className="background-team-pet" id="background-team-pet-two" src={cactus}/>
+            <img className="background-team-pet" id="background-team-pet-three" src={combatSheep}/>
+            <img className="background-team-pet" id="background-team-pet-four" src={psychicCow}/>
+            <img className="background-team-pet" id="background-team-pet-five" src={bulb}/>
+            <div className = "team-wrapper">
+                <h1 style ={mode?{color: "black"}:{color:"white"}}>You, Yeah You!</h1>
+                <p className="intro-text" style ={mode?{color: "black"}:{color:"white"}}>
                     We are one big community and your feedback is important to us.
                     So far, you have all participated in giving feedback and making us 100% better already. 
                     We would like to thank you and we truly appreciate your patience and help! 
@@ -24,7 +28,6 @@ const Team = () => {
                 </p>
 
                 <div className = "team-member-container">
-                   <img class="background-team-pet" id="background-team-pet-one" src={bear}/>
                     <div className = "team-member-image">
                         <img src ={nick} alt="Team-member" />
                     </div>
@@ -37,8 +40,8 @@ const Team = () => {
                            Ethereum's Axie Infinity!</p>
                     </div>
                 </div>
+
                 <div className = "team-member-container">
-                <img class="background-team-pet" id="background-team-pet-two" src={cactus}/>
                 <div className ="team-member-text">
                         <h2>Dom  (Domenhagen)</h2>
                         <p>Salut! I'm Dom, a French-Canadian engineer. My technical background is in embedded systems and 
@@ -51,10 +54,10 @@ const Team = () => {
                     <div className = "team-member-image">
                         <img src ={dom} alt="Team-member" />
                     </div>
-                    
                 </div>
+
+                
                 <div className = "team-member-container">
-                <img class="background-team-pet" id="background-team-pet-three" src={combatSheep}/>
                     <div className = "team-member-image">
                         <img src ={bob} alt="Team-member"  />
                     </div>
@@ -67,8 +70,9 @@ const Team = () => {
                             Histories, and Backstories; I'm overjoyed to serve as Story Designer on the CryptoPetz Team.</p>
                     </div>
                 </div>
+
+               
                 <div className = "team-member-container">
-                <img class="background-team-pet" id="background-team-pet-four" src={psychicCow}/>
                     <div className ="team-member-text">
                         <h2>Justin (theVaporMonkey)</h2>
                         <p>By day, I work for one of the three largest tech companies in the world. By night, 
@@ -84,9 +88,10 @@ const Team = () => {
                         <img src ={justin} alt="Team-member" />
                     </div>
                 </div>
+
+               
                 <div className = "team-member-container team-last-container">
-                <img class="background-team-pet" id="background-team-pet-five" src={bulb}/>
-                <div className = "team-member-image ">
+                    <div className = "team-member-image ">
                         <img src ={jake} alt="Team-member" />
                     </div>
                     <div className ="team-member-text">

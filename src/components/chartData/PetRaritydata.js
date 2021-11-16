@@ -33,8 +33,15 @@ export const PetRarityData = {
          hoverBorderColor: "white",
          borderRadius: 5,
          cutout: "50%",
-         radius: "80%",
+         radius: "80%"
         }
     ],
+    options: {
+        pieceLabel: {
+            mode: 'value',
+            position: 'outside',
+            fontColor: '#000',
+        }
+    }
 }
 
