@@ -1,4 +1,4 @@
-const UpdateComponent = ({allPetzArray}) => { 
+const UpdateComponentTwo = ({allPetzArray}) => { 
     return (
         <div className ="update-container">
            <img alt="pet" className ="update-petz-image" src={allPetzArray[8]}/>
@@ -71,7 +71,7 @@ const UpdateComponent = ({allPetzArray}) => {
     )
 }
 
-export default UpdateComponent
+export default UpdateComponentTwo
 
 
 

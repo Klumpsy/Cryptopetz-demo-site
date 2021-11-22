@@ -3,7 +3,7 @@ import data from "./EggShardRewardsTable.json";
 const EggShardRewards = ({mode}) => { 
 
     return (
-        <div>
+        <>
             <table className = "eggshard-table">
                 <thead>
                     <tr className="table-header table-header-eggshards">
@@ -31,7 +31,7 @@ const EggShardRewards = ({mode}) => {
                     } 
                 </tbody>
             </table>
-        </div>
+        </>
     )
 }
 

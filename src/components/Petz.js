@@ -58,6 +58,11 @@ const Petz = ({mode}) => {
       }
     }
 
+    function capitalize(petName) { 
+        const lower = petName.toLowerCase(); 
+        return petName.charAt(0).toUpperCase() + lower.slice(1); 
+    }
+
     return (
         <div className = {mode? "all-petz-container light-mode" : "all-petz-container dark-mode"}>
             <h1 style={mode?{color: "black"}:{color:"white"}}>Epoch 1</h1>
@@ -76,18 +81,18 @@ const Petz = ({mode}) => {
                                 <div className = "pet-card-type-container">
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[0])}/>
-                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                            <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                         </div>
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[1])}/>
-                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
+                                            <span className = {pet.type[1]}>{capitalize(pet.type[1])}</span>
                                         </div>
                                     </div>
                                 :
                                 <div className = "pet-card-type-container">
                                     <div>
                                         <img src={petzEmblemChecker(pet.type[0])}/>
-                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                        <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                     </div>
                                 </div>}
                             </div>
@@ -110,18 +115,18 @@ const Petz = ({mode}) => {
                                 <div className = "pet-card-type-container">
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[0])}/>
-                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                            <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                         </div>
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[1])}/>
-                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
+                                            <span className = {pet.type[1]}>{capitalize(pet.type[1])}</span>
                                         </div>
                                     </div>
                                 :
                                 <div className = "pet-card-type-container">
                                     <div>
                                         <img src={petzEmblemChecker(pet.type[0])}/>
-                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                        <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                     </div>
                                 </div>}
                             </div>
@@ -144,18 +149,18 @@ const Petz = ({mode}) => {
                                 <div className = "pet-card-type-container">
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[0])}/>
-                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                            <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                         </div>
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[1])}/>
-                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
+                                            <span className = {pet.type[1]}>{capitalize(pet.type[1])}</span>
                                         </div>
                                     </div>
                                 :
                                 <div className = "pet-card-type-container">
                                     <div>
                                         <img src={petzEmblemChecker(pet.type[0])}/>
-                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                        <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                     </div>
                                 </div>}
                             </div>
@@ -178,18 +183,18 @@ const Petz = ({mode}) => {
                                 <div className = "pet-card-type-container">
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[0])}/>
-                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                            <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                         </div>
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[1])}/>
-                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
+                                            <span className = {pet.type[1]}>{capitalize(pet.type[1])}</span>
                                         </div>
                                     </div>
                                 :
                                 <div className = "pet-card-type-container">
                                     <div>
                                         <img src={petzEmblemChecker(pet.type[0])}/>
-                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                        <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                     </div>
                                 </div>}
                             </div>
@@ -212,18 +217,18 @@ const Petz = ({mode}) => {
                                 <div className = "pet-card-type-container">
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[0])}/>
-                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                            <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                         </div>
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[1])}/>
-                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
+                                            <span className = {pet.type[1]}>{capitalize(pet.type[1])}</span>
                                         </div>
                                     </div>
                                 :
                                 <div className = "pet-card-type-container">
                                     <div>
                                         <img src={petzEmblemChecker(pet.type[0])}/>
-                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                        <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                     </div>
                                 </div>}
                             </div>
@@ -246,18 +251,18 @@ const Petz = ({mode}) => {
                                 <div className = "pet-card-type-container">
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[0])}/>
-                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                            <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                         </div>
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[1])}/>
-                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
+                                            <span className = {pet.type[1]}>{capitalize(pet.type[1])}</span>
                                         </div>
                                     </div>
                                 :
                                 <div className = "pet-card-type-container">
                                     <div>
                                         <img src={petzEmblemChecker(pet.type[0])}/>
-                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                        <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                     </div>
                                 </div>}
                             </div>
@@ -280,18 +285,18 @@ const Petz = ({mode}) => {
                                 <div className = "pet-card-type-container">
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[0])}/>
-                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                            <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                         </div>
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[1])}/>
-                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
+                                            <span className = {pet.type[1]}>{capitalize(pet.type[1])}</span>
                                         </div>
                                     </div>
                                 :
                                 <div className = "pet-card-type-container">
                                     <div>
                                         <img src={petzEmblemChecker(pet.type[0])}/>
-                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                        <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                     </div>
                                 </div>}
                             </div>
@@ -314,18 +319,18 @@ const Petz = ({mode}) => {
                                 <div className = "pet-card-type-container">
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[0])}/>
-                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                            <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                         </div>
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[1])}/>
-                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
+                                            <span className = {pet.type[1]}>{capitalize(pet.type[1])}</span>
                                         </div>
                                     </div>
                                 :
                                 <div className = "pet-card-type-container">
                                     <div>
                                         <img src={petzEmblemChecker(pet.type[0])}/>
-                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                        <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                     </div>
                                 </div>}
                             </div>
@@ -348,18 +353,18 @@ const Petz = ({mode}) => {
                                 <div className = "pet-card-type-container">
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[0])}/>
-                                            <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                            <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                         </div>
                                         <div>
                                             <img src={petzEmblemChecker(pet.type[1])}/>
-                                            <span className = {pet.type[1]}>{pet.type[1]}</span>
+                                            <span className = {pet.type[1]}>{capitalize(pet.type[1])}</span>
                                         </div>
                                     </div>
                                 :
                                 <div className = "pet-card-type-container">
                                     <div>
                                         <img src={petzEmblemChecker(pet.type[0])}/>
-                                        <span className = {pet.type[0]}>{pet.type[0]}</span>
+                                        <span className = {pet.type[0]}>{capitalize(pet.type[0])}</span>
                                     </div>
                                 </div>}
                             </div>

@@ -28,7 +28,7 @@ const Collection = ({mode}) => {
         let isMounted = true; 
 
         setLoading(true);
-        fetch("/api/petz/metadata/all")
+        fetch("https://www.cryptopetz.info/api/petz/metadata/all")
         .then(res => {
             if(!res.ok) { 
                 console.log("Could not fetch that data..")

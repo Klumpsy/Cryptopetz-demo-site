@@ -1,3 +1,4 @@
+import UpdateComponentEighth from "./updates/UpdateEighth"
 import UpdateComponentSeven from "./updates/UpdateSeven"
 import UpdateComponentSix from "./updates/UpdateSix";
 import UpdateComponentFive from "./updates/UpdateFive";
@@ -12,6 +13,7 @@ const Updates = ({ allPetzArray }) => {
 
     const updates = 
     [
+        <UpdateComponentEighth allPetzArray = {allPetzArray}/>,
         <UpdateComponentSeven allPetzArray = {allPetzArray}/>,
         <UpdateComponentSix allPetzArray = {allPetzArray}/>,
         <UpdateComponentFive allPetzArray = {allPetzArray}/>,
