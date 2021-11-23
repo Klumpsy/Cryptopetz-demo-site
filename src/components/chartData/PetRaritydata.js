@@ -36,12 +36,6 @@ export const PetRarityData = {
          radius: "80%"
         }
     ],
-    options: {
-        pieceLabel: {
-            mode: 'value',
-            position: 'outside',
-            fontColor: '#000',
-        }
-    }
+    
 }
 

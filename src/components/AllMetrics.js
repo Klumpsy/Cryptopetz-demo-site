@@ -45,7 +45,7 @@ const AllMetrics = ({mode, width}) => {
                         <Link to ="/GameInfo" style={{ textDecoration: 'none' }}>
                             <div className="all-metrics-box-background">
                                 <div className="all-metrics-box">
-                                <h1 className ="game-info-title">Game Info</h1>
+                                <h1 className ="game-info-title">Game Metrics</h1>
                                 <p>CryptoPetz The Game - is a tournament-style online role-playing game (RPG)
                                     where you can collect and enhance your own CryptoPet.
                                     Form your own team and battle others. Every CryptoPetz has a number of attribute slots,

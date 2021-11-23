@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {BsDiscord, BsTwitter} from "react-icons/bs"; 
 import {AiOutlineMenu} from "react-icons/ai";
+import {AiOutlineClose} from "react-icons/ai";
 import ardanoBird from "../images/petzImages/bird.png"
 
 
@@ -40,7 +41,11 @@ const NavBar = ({width, mode, changeMode}) => {
                 </Link>
             </div>
             <button onClick = {()=>setOpenMobile(!openMobile)} className= {mode ? "hamburger-button hamburger-button-light":"hamburger-button hamburger-button-dark"}>
+                {openMobile ?
+                <AiOutlineClose style={mode?{color: "white"}:{color:"black"}} size={24}/>
+                :
                 <AiOutlineMenu style={mode?{color: "white"}:{color:"black"}} size={24}/>
+                }
             </button>
         </div>
         :

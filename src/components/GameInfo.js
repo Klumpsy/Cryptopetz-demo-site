@@ -39,7 +39,7 @@ const GameInfo = ({ allPetzArray, eggArray }) => {
     return (
         <div className = "game-info-background">
             <div className = "page-wrapper game-info-wrapper">
-                <h1>The Game</h1>
+                <h1>Game Metrics</h1>
                 <div className ="game-intro">
                     <h2>Tournement-Style Online RPG</h2>
                     <p>CryptoPetz The Game - is a tournament-style online role-playing game (RPG)

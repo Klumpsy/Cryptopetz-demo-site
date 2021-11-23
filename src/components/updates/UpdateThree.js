@@ -3,7 +3,7 @@ const UpdateComponent = ({allPetzArray}) => {
     return (
         <div className ="update-container">
             <img alt="pet" className ="update-petz-image" src={allPetzArray[6]}/>
-            <h2>Update 09/09/21</h2>
+            <h2>Update September 9th 2021</h2>
             <p>
             Hello Fellow Explorers! <br/><br/>
                     
