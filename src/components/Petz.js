@@ -1,3 +1,5 @@
+import {AiFillInfoCircle} from "react-icons/ai"
+
 import { EpochOneLegendary, 
          EpochOneUltraRare, 
          EpochOneExtremelyRare, 
@@ -71,6 +73,7 @@ const Petz = ({mode}) => {
                 { 
                     EpochOneLegendary.map(pet => (
                         <div className =  " epoch-one-pet-card">
+                            <AiFillInfoCircle style ={{color: "white", margin: "5px"}} size={30}/>
                             <LazyLoadImage effect= "blur" src={pet.image} alt={pet.name}/>
                             <div>
                                 <span style ={{color: "white"}}>Rarity: </span><span className={pet.rarity}>{pet.rarity === "legendary" ? " Legendary" : ""}</span>
@@ -105,6 +108,7 @@ const Petz = ({mode}) => {
                 { 
                     EpochOneUltraRare.map(pet => (
                         <div className =  " epoch-one-pet-card">
+                            <AiFillInfoCircle style ={{color: "white", margin: "5px"}} size={30}/>
                             <LazyLoadImage effect= "blur" src={pet.image} alt={pet.name}/>
                             <div>
                                 <span style ={{color: "white"}}>Rarity: </span><span className={pet.rarity}>{pet.rarity === "ultrarare" ? " Ultra Rare" : ""}</span>
@@ -139,6 +143,7 @@ const Petz = ({mode}) => {
                 { 
                     EpochOneExtremelyRare.map(pet => (
                         <div className =  " epoch-one-pet-card">
+                            <AiFillInfoCircle style ={{color: "white", margin: "5px"}} size={30}/>
                             <LazyLoadImage effect= "blur" src={pet.image} alt={pet.name}/>
                             <div>
                                 <span style ={{color: "white"}}>Rarity: </span><span className={pet.rarity}>{pet.rarity === "extremelyrare" ? " Extremely Rare" : ""}</span>
@@ -173,6 +178,7 @@ const Petz = ({mode}) => {
                 { 
                     EpochOneEpic.map(pet => (
                         <div className =  " epoch-one-pet-card">
+                            <AiFillInfoCircle style ={{color: "white", margin: "5px"}} size={30}/>
                             <LazyLoadImage effect= "blur" src={pet.image} alt={pet.name}/>
                             <div>
                                 <span style ={{color: "white"}}>Rarity: </span><span className={pet.rarity}>{pet.rarity === "epic" ? " Epic" : ""}</span>
@@ -207,6 +213,7 @@ const Petz = ({mode}) => {
                 { 
                     EpochOneRare.map(pet => (
                         <div className =  " epoch-one-pet-card">
+                            <AiFillInfoCircle style ={{color: "white", margin: "5px"}} size={30}/>
                             <LazyLoadImage effect= "blur" src={pet.image} alt={pet.name}/>
                             <div>
                                 <span style ={{color: "white"}}>Rarity: </span><span className={pet.rarity}>{pet.rarity === "rare" ? " Rare" : ""}</span>
@@ -241,6 +248,7 @@ const Petz = ({mode}) => {
                 { 
                     EpochOneScarce.map(pet => (
                         <div className =  " epoch-one-pet-card">
+                            <AiFillInfoCircle style ={{color: "white", margin: "5px"}} size={30}/>
                             <LazyLoadImage effect= "blur" src={pet.image} alt={pet.name}/>
                             <div>
                                 <span style ={{color: "white"}}>Rarity: </span><span className={pet.rarity}>{pet.rarity === "scarce" ? " Scarce" : ""}</span>
@@ -275,6 +283,7 @@ const Petz = ({mode}) => {
                 { 
                     EpochOneUncommon.map(pet => (
                         <div className =  " epoch-one-pet-card">
+                            <AiFillInfoCircle style ={{color: "white", margin: "5px"}} size={30}/>
                             <LazyLoadImage effect= "blur" src={pet.image} alt={pet.name}/>
                             <div>
                                 <span style ={{color: "white"}}>Rarity: </span><span className={pet.rarity}>{pet.rarity === "uncommon" ? " Uncommon" : ""}</span>
@@ -309,6 +318,7 @@ const Petz = ({mode}) => {
                 { 
                     EpochOneCommon.map(pet => (
                         <div className =  " epoch-one-pet-card">
+                            <AiFillInfoCircle style ={{color: "white", margin: "5px"}} size={30}/>
                             <LazyLoadImage effect= "blur" src={pet.image} alt={pet.name}/>
                             <div>
                                 <span style ={{color: "white"}}>Rarity: </span><span className={pet.rarity}>{pet.rarity === "common" ? " Common" : ""}</span>
@@ -343,6 +353,7 @@ const Petz = ({mode}) => {
                 { 
                     EpochOneVeryCommon.map(pet => (
                         <div className =  " epoch-one-pet-card">
+                            <AiFillInfoCircle style ={{color: "white", margin: "5px"}} size={30}/>
                             <LazyLoadImage effect= "blur" src={pet.image} alt={pet.name}/>
                             <div>
                                 <span style ={{color: "white"}}>Rarity: </span><span className={pet.rarity}>{pet.rarity === "verycommon" ? " Very Common" : ""}</span>

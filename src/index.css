@@ -471,7 +471,7 @@ input:checked + .slider:before {
   background-image: url("./images/MainMenu.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-attachment: fixed;
 }
 
@@ -1879,7 +1879,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 7px;
 }
 
 .epoch-one-pet-card span { 
@@ -1926,6 +1926,13 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 
 .pet-card-type-container div:hover span { 
 display: block;
+}
+
+.epoch-one-pet-card:hover { 
+  transform: scale(1.07);
+  transition: .4s ease-in-out;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px 2px rgb(121, 218, 197);
 }
 
 
