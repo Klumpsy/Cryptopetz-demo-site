@@ -60,7 +60,6 @@ const Collection = ({mode}) => {
     function showPetInfo(pet) { 
         setModalPet(pet);
         setModalActive(true); 
-        console.log(modalPet)
     }
 
     const handleUpdate = (update) => { 
@@ -83,7 +82,6 @@ const Collection = ({mode}) => {
             <button id="petz-search-button" onClick={() => setSearchMenu(!searchMenu)} >Search</button>
             <CheckboxSearchMenu 
                 petz={petz} 
-                filteredPetz ={filteredPetz} 
                 handleUpdate = {handleUpdate} 
                 searchMenu ={searchMenu}
                 />
@@ -93,7 +91,7 @@ const Collection = ({mode}) => {
                         <div className= {modalActive ? "modal-info":"petz-modal-hidden"}>
                             <div className ="modal-info-box">
                             <h2>{modalPet === undefined ? "" : modalPet.name}</h2>
-                                <img className = "modal-image" src={modalPet.thumbnail} alt= {modalPet.name}/>
+                                <img className = "modal-image" src={modalPet === undefined ? "" : modalPet.thumbnail} alt= {modalPet === undefined ? "" : modalPet.name}/>
                                 <div className = "info-box-pet">
                                     <div><h3 className={modalPet === undefined ? "" : modalPet.data.rarity.toLowerCase().replace(/\s/g, '')}>{modalPet === undefined ? "" : modalPet.data.rarity}</h3></div>
                                     <div><label>Rarity score: {modalPet === undefined ? "" : modalPet.rarityScore.toFixed(2)}</label><meter className="rarity-meter "min = '0' max= "100" value ={modalPet === undefined ? 0 : parseInt(modalPet.rarityScore)}></meter></div>

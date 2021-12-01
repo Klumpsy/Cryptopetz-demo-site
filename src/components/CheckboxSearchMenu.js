@@ -2,101 +2,106 @@
 import {useState, useEffect } from "react";
 import {rarityCheckboxes} from "./SearchDataOptions/Raritycheckboxes";
 import {typeCheckboxes} from "./SearchDataOptions/Typecheckboxes"; 
+import {categoryCheckboxes} from "./SearchDataOptions/Categorycheckboxes"; 
+import {backgroundCheckboxes} from "./SearchDataOptions/Backgroundcheckboxes";
 
-const CheckboxSearchMenu = ({petz, handleUpdate, filteredPetz, searchMenu}) => { 
+const CheckboxSearchMenu = ({petz, handleUpdate, searchMenu}) => { 
   
-   //Checkbox State
-   const[isRarityChecked, setIsRarityChecked] = useState(new Array(rarityCheckboxes.length).fill(false));
-   const[isTypeChecked, setIsTypeChecked] = useState(new Array(typeCheckboxes.length).fill(false));
-
-    useEffect(() => { 
-        if(!filteredPetz.length) { 
-            handleUpdate(petz);
-        }
-    }, [isRarityChecked, isTypeChecked])
+    const [rarity, setRarity] = useState([]);
+    const [type, setType] = useState([]);
+    const [category, setCategory] = useState([]);
+    const [backgrounds, setBackground] = useState([]);
 
 
-    //Rarity checkbox 
-    const handleRarityCheckbox = (value, e, position) => { 
-        const updatedCheckedState = isRarityChecked.map((checkbox, index) =>  
-        index === position ? !checkbox : checkbox
-    );
-        setIsRarityChecked(updatedCheckedState); 
-
-        if(e.target.checked) { 
-            let selectedData = petz.filter(pet => pet.data.rarity === value); 
-
-            handleUpdate(filteredPetz.length && filteredPetz.length === petz.length ? [...selectedData] : [...selectedData, ...filteredPetz])
-        } else { 
-            let unselected = filteredPetz.filter(pet => { 
-                return pet.data.rarity !== value; 
-            }); 
-            handleUpdate(unselected);
-        }
-    }
-
-    //Type Checkbox
-    const handleTypeCheckbox = (value, e, position) => { 
-        const updatedCheckedState = isTypeChecked.map((checkbox, index) =>  
-        index === position ? !checkbox : checkbox
-    );
-        setIsTypeChecked(updatedCheckedState); 
-
-        if(e.target.checked) { 
-            let selectedData = petz.filter(pet => pet.data.types === 2 ? pet.data.types[0, 1].toLowerCase() === value.toLowerCase() : pet.data.types[0].toLowerCase() === value.toLowerCase());
-
-            handleUpdate(filteredPetz.length && filteredPetz.length === petz.length ? [...selectedData] : [...selectedData, ...filteredPetz])
-        } else { 
-            let unselected = filteredPetz.filter(pet => { 
-                return pet.data.types === 2 ? 
-                pet.data.types[0].toLowerCase() !== value.toLowerCase() && 
-                pet.data.types[1].toLowerCase() !== value.toLowerCase() : 
-                pet.data.types[0].toLowerCase() !== value.toLowerCase();
-            }); 
-            handleUpdate(unselected);
-        }
-    }
+      const filteredUnits =
+        rarity.length || type.length || category.length
+          ? petz.filter((pet) => {
+              return (
+                (!rarity.length || rarity.includes(pet.data.rarity)) &&
+                (!backgrounds.length || backgrounds.includes(pet.data.traits.background)) &&
+                (!type.length || type.includes(pet.data.types.length > 0 ? pet.data.types[0] : pet.data.types[0] || pet.data.types[1])) &&
+                (!category.length || category.includes(pet.category)) 
+              );
+            })
+          : petz;
+        
+        useEffect(() => { 
+            handleUpdate(filteredUnits)
+        }, [rarity, type, category, backgrounds])
 
     return (
         <div className= {searchMenu ? "search-menu-active" : "search-menu-hidden"}>
-        <div className = "check-for-type">
-            <h3>Filter by Rarity</h3>
-            {rarityCheckboxes.map(({rarity}, index) => { 
-                return (
-                  <div className ="type-box" key = {index}>
-                  <label>{rarity}</label>
-                  <input 
-                  type="checkbox" 
-                  value= {rarity}
-                  name= {rarity}
-                  id={`${rarity}-checkbox-${index}`}
-                  checked = {isRarityChecked[index]}
-                  onChange ={(e) => handleRarityCheckbox(rarity, e, index)}
-                  /> 
-              </div> 
-              )
-            })}
+             <div className="check-for-type">
+                <h3>Filter by category</h3>
+                {categoryCheckboxes.map((categoryCheckbox, i) => ( 
+                    <div className ="type-box" key = {i}>
+                    <label>{categoryCheckbox.category}</label>
+                    <input 
+                    type ="checkbox"
+                    onChange = {(event) => setCategory((prev) => event.target.checked ? 
+                        [...prev, categoryCheckbox.category] 
+                        : 
+                        []
+                    )}
+                    ></input>
+                    </div>
+                ))}
+            </div>
+
+            <div className="check-for-type">
+                <h3>Filter by rarity</h3>
+                {rarityCheckboxes.map((rarityCheckbox, i) => ( 
+                    <div className ="type-box" key = {i}>
+                    <label>{rarityCheckbox.rarity}</label>
+                    <input 
+                    type ="checkbox"
+                    onChange = {(event) => setRarity((prev) => event.target.checked ? 
+                        [...prev, rarityCheckbox.rarity] 
+                        : 
+                        []
+                    )}
+                    ></input>
+                    </div>
+                ))}
+            </div>
+
+            <div className="check-for-type">
+                <h3>Filter by background</h3>
+                {backgroundCheckboxes.map((backgroundCheckbox, i) => ( 
+                    <div className ="type-box" key = {i}>
+                    <label>{backgroundCheckbox.background}</label>
+                    <input 
+                    type ="checkbox"
+                    value = {backgroundCheckbox.background}
+                    onChange = {(event) =>  setBackground((prev) => event.target.checked ? 
+                        [...prev, backgroundCheckbox.background] 
+                        : 
+                        []
+                    )}
+                    ></input>
+                    </div>
+                ))}
+            </div>
+            
+            <div className="check-for-type">
+            <h3>Filter by type</h3>
+                {typeCheckboxes.map((typeCheckbox, i) => ( 
+                    <div className ="type-box" key = {i}>
+                    <label>{typeCheckbox.type}</label>
+                    <input 
+                    type ="checkbox"
+                    onChange = {(event) => setType((prev) => event.target.checked ? 
+                        [...prev, typeCheckbox.type] 
+                        : 
+                        []
+                    )}
+                    ></input>
+                    </div>
+                ))}
+            </div>
         </div>
-        <div className = "check-for-type">
-            <h3>Filter by Type</h3>
-            {typeCheckboxes.map(({type}, index) => { 
-                return (
-                  <div className ="type-box" key={type}>
-                  <label>{type}</label>
-                  <input 
-                  type="checkbox" 
-                  value= {type}
-                  name= {type}
-                  id={`${type}-checkbox-${index}`}
-                  checked = {isTypeChecked[index]}
-                  onChange ={(e) => handleTypeCheckbox(type, e, index)}
-                  /> 
-              </div> 
-              )
-            })}
-        </div>
-    </div>
     )
 }
+
 
 export default CheckboxSearchMenu;
