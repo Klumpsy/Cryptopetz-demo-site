@@ -60,12 +60,12 @@ const Collection = ({mode}) => {
     function showPetInfo(pet) { 
         setModalPet(pet);
         setModalActive(true); 
+        console.log(modalPet)
     }
 
     const handleUpdate = (update) => { 
         setFilteredPetz(update)
     }
-   
 
     return (
             <div className ="petz-container"> 
@@ -93,7 +93,7 @@ const Collection = ({mode}) => {
                         <div className= {modalActive ? "modal-info":"petz-modal-hidden"}>
                             <div className ="modal-info-box">
                             <h2>{modalPet === undefined ? "" : modalPet.name}</h2>
-                                <img className = "modal-image" src={modalPet === undefined ? "" : modalPet.thumbnail} alt= {modalPet === undefined? "": modalPet.name}></img>
+                                <img className = "modal-image" src={modalPet.thumbnail} alt= {modalPet.name}/>
                                 <div className = "info-box-pet">
                                     <div><h3 className={modalPet === undefined ? "" : modalPet.data.rarity.toLowerCase().replace(/\s/g, '')}>{modalPet === undefined ? "" : modalPet.data.rarity}</h3></div>
                                     <div><label>Rarity score: {modalPet === undefined ? "" : modalPet.rarityScore.toFixed(2)}</label><meter className="rarity-meter "min = '0' max= "100" value ={modalPet === undefined ? 0 : parseInt(modalPet.rarityScore)}></meter></div>
@@ -146,7 +146,7 @@ const Collection = ({mode}) => {
                                 <div>
                                     <p>Epoch: {pet.data.epoch}</p>
                                     <p>Type: {pet.data.types.length === 2 ? `${pet.data.types[0]} / ${pet.data.types[1]}`: pet.data.types[0]}</p>
-                                    <p>Rarity: {pet.data.rarity}</p>
+                                    <p className = {pet.data.rarity.toLowerCase().replace(/\s/g, '')}>{pet.data.rarity}</p>
                                 </div>
                             </div>
                         ))}
