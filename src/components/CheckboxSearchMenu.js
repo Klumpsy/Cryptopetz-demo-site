@@ -5,6 +5,8 @@ import {typeCheckboxes} from "./SearchDataOptions/Typecheckboxes";
 import {categoryCheckboxes} from "./SearchDataOptions/Categorycheckboxes"; 
 import {backgroundCheckboxes} from "./SearchDataOptions/Backgroundcheckboxes";
 
+//https://codesandbox.io/s/magical-yalow-wndg8?file=/src/App.js
+
 const CheckboxSearchMenu = ({petz, handleUpdate, searchMenu}) => { 
   
     const [rarity, setRarity] = useState([]);
@@ -12,13 +14,15 @@ const CheckboxSearchMenu = ({petz, handleUpdate, searchMenu}) => {
     const [category, setCategory] = useState([]);
     const [backgrounds, setBackground] = useState([]);
 
+    console.log(backgrounds, category, type, rarity)
+
 
       const filteredUnits =
         rarity.length || type.length || category.length
           ? petz.filter((pet) => {
               return (
-                (!rarity.length || rarity.includes(pet.data.rarity)) &&
                 (!backgrounds.length || backgrounds.includes(pet.data.traits.background)) &&
+                (!rarity.length || rarity.includes(pet.data.rarity)) &&
                 (!type.length || type.includes(pet.data.types.length > 0 ? pet.data.types[0] : pet.data.types[0] || pet.data.types[1])) &&
                 (!category.length || category.includes(pet.category)) 
               );
@@ -72,7 +76,6 @@ const CheckboxSearchMenu = ({petz, handleUpdate, searchMenu}) => {
                     <label>{backgroundCheckbox.background}</label>
                     <input 
                     type ="checkbox"
-                    value = {backgroundCheckbox.background}
                     onChange = {(event) =>  setBackground((prev) => event.target.checked ? 
                         [...prev, backgroundCheckbox.background] 
                         : 

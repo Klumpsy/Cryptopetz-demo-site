@@ -71,7 +71,6 @@ const Collection = ({mode}) => {
                 <div className = {modalActive? "modal-overlay-background-active": "modal-overlay-background-hidden"}></div>
                 <div className = {mode ? "petz-searchbox-container petz-wrapper-light" : "petz-searchbox-container petz-wrapper-dark"}> 
                 <div>
-    
                  </div>
                 </div>
                 <div className ="petz-container-background petz-background-first"></div> 
