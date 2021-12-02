@@ -815,11 +815,7 @@ td {
   border-radius: 20px;
 }
 
-.metrics-box { 
-  background-image: url("images/petzImages/bird.png"); 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.metrics-box {  
   width: 700px;
   height: 400px;
   border-radius: 20px;
@@ -828,21 +824,43 @@ td {
 }
 
 .metrics-box:hover { 
-  background-image: url("images/gifadano.gif");
   transform: scale(1.02);
   transition: .3s ease-in-out;
   border: none;
 }
 
+.metrics-box-game-info { 
+  background-image: url("images/smallPngPetz/Pi7compressed027.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.metrics-box-petz{ 
+  background-image: url("images/smallPngPetz/Pi7compressed089.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.metrics-box-rarity { 
+  background-image: url("images/smallPngPetz/Pi7compressed0141.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .metrics-box-game-info:hover { 
+  background-image: url("images/gifs/elecealgif.gif");
   border: 2px solid var(--ultrarare-color);
   box-shadow: 1px 1px 10px 2px var(--ultrarare-color);
 }
 .metrics-box-petz:hover { 
+  background-image: url("images/gifs/lavagif.gif");
   border: 2px solid var(--legendary-color);
   box-shadow: 1px 1px 10px 2px var(--legendary-color);
 }
 .metrics-box-rarity:hover { 
+  background-image: url("images/gifs/waterfishgif.gif");
   border: 2px solid var(--extremelyrare-color);
   box-shadow: 1px 1px 10px 2px var(--extremelyrare-color);
 }
@@ -850,12 +868,6 @@ td {
 .metrics-box h1 { 
   font-size: 3.2rem;
   margin-bottom: 1rem;
-}
-
-.metrics-box  p { 
-color: white;
-font-weight: 500;
-font-size: 20px;
 }
 
 
