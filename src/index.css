@@ -468,27 +468,74 @@ input:checked + .slider:before {
 
 /*Game Info Page*/
 .game-info-background { 
-  background-image: url("./images/MainMenu.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-}
-
-.game-info-wrapper { 
-  width: 100%; 
-  padding-top: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment:fixed;
+  width: 100%; 
+  height: 100vh;
 }
 
-.game-info-wrapper h1 { 
-  font-size: 7rem;
-  color: rgb(0, 0, 0);
+.building-card-container { 
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 10%;
+  bottom: 0px;
+  width: 80%; 
+  height: 80px; 
+  background-color: rgba(0, 0, 0, 0.4);
 }
+
+.building-card { 
+  width: 160px;
+  text-align: center;
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  color: rgb(238, 235, 235);
+}
+
+.building-card h2 {
+  padding: 5px;
+  text-shadow: 1px 2px 2px rgb(8, 8, 8);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.building-card:hover { 
+  color: var(--rare-color);
+  border: 2px solid var(--rare-color);
+  cursor: pointer;
+}
+
+.building-modal { 
+  width: 1000px; 
+  height: 600px; 
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+}
+
+.building-modal h1 { 
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
+
+.building-modal-active { 
+ display: block;
+}
+
+.building-modal-hidden { 
+  display: none; 
+ }
+
+/*Game Info Page*/
 
 .game-info-wrapper p { 
   margin: 1rem;
@@ -1029,9 +1076,10 @@ td {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-image: url("./images/bookCover.jpg");
+  background-image: url("./images/builderbackground.jpeg");
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed; 
   background-size: cover;
 }
 
@@ -1069,7 +1117,8 @@ td {
   height: 50%;
   margin: 10px;
   border-radius: 20px;
-  background-color: rgba(16, 17, 17, 0.80); 
+  background-color: rgba(16, 17, 17, 0.55); 
+  border: 2px solid black;
 }
 
 .petz-info-egg-container { 
@@ -2037,7 +2086,7 @@ display: block;
   background-color: black;
   border: 2px solid white;
   border-left: none;
-  padding: 20px 50px;
+  padding: 20px 140px;
   padding-left: 100px;
   border-radius: 0px 30px 30px 0px;
   text-decoration: none;
@@ -2053,26 +2102,52 @@ display: block;
 .search-menu-active { 
   position: absolute;
   left: 0;
-  top: 6rem;
-  width: 220px; 
-  height: 70rem; /*This needs to be changed*/
-  background-color: rgb(0, 0, 0);
-  transition: .5s ease-in-out;
+  top: 5.5rem;
+  width: 300px; 
+  height: 800px; /*This needs to be changed*/
+  background-color: rgba(0, 0, 0, 0.85);
+  transition: .2s ease-in-out;
   color: white;
-  border-radius: 20px;
   padding: 10px;
+  overflow-y: scroll;
 }
 
 .search-menu-hidden { 
-  transform: translateX(-200px);
+  transform: translateX(-120px);
   position: absolute;
-  left: 0;
-  top: 5rem;
+  left: 0px;
+  top: 2rem;
   width: 0px; 
   height: 0vh;
-  background-color: rgb(0, 0, 0);
-  transition: .5s ease-in-out;
+  transition: .2s ease-in-out;
 } 
+
+.colaps-menu-container { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-hidden { 
+  height: 0px;
+  transition: .3s ease-in-out;
+}
+
+.filter-hidden { 
+  display: none;
+  transition: .3s ease-in-out;
+}
+
+.collapse-button { 
+  margin-top: 17px;
+  margin-left: 10px;
+  color: rgb(121, 113, 113);
+}
+
+.collapse-button:hover { 
+  cursor: pointer;
+  color: white;
+}
 
 .check-for-type { 
   display: flex;
@@ -2246,7 +2321,6 @@ meter {
     /* Reset the default appearance */
     -webkit-appearance: none;
     -moz-appearance: none;
-    
 }
   
 meter::-webkit-meter-bar {
@@ -2254,7 +2328,6 @@ meter::-webkit-meter-bar {
     box-shadow: 0 2px 3px rgba(255, 255, 255, 0.9);
     border: 1px solid white;
     border-radius: 10px;
- 
 }
 
 .rarity-meter { 

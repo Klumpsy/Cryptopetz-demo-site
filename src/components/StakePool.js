@@ -1,8 +1,8 @@
 import petzBuilder from "../images/petzbuilder.png";
 import {React, useEffect, useState} from "react"; 
-import petImage from "../images/petzImages/light.png";
-import petImage1 from "../images/petzImages/chick.png";
-import petImage2 from "../images/petzImages/bull.png";
+import petImage from "../images/smallMarginLight.png";
+import petImage1 from "../images/smallMarginCamel.png";
+import petImage2 from "../images/smallMarginBull.png";
 
 //Eggshard distribution table 
 import EggShardRewards from "./chartData/StakePoolEggShardRewards";
@@ -48,7 +48,7 @@ const StakePool = ({mode}) => {
                         <div className = "stakepool-id-image-container">
                             <span className="api-items-indicator pool-id">Pool Id:</span>
                             <p className="pool-string">{pool.pool_id}</p>
-                            <img style = {{width: "50%"}}src={petImage1}/>
+                            <img style = {{width: "40%", marginLeft: "30%"}}src={petImage1}/>
                         </div>
                     </div>
                     <div className ="petz-pool-api-info">
@@ -138,7 +138,7 @@ const StakePool = ({mode}) => {
                             and will allow us to stick to our mission of providing the Egg Shards to the community members
                             that support the project in the early stages.
                             </p>
-                            <img style = {{width: "50%"}}src={petImage}/>
+                            <img style = {{width: "40%", marginLeft: "-5%"}}src={petImage}/>
                         </div>
                         <p>
                         As mentioned earlier, although unlikely, the maximum supply may need to be increased 
@@ -193,7 +193,7 @@ const StakePool = ({mode}) => {
                                 need to claim every epoch! You can wait as long as you like between claiming to minimize your
                                 fees – the Egg Shards aren't going anywhere!
                             </p>
-                            <img style = {{width: "50%"}}src={petImage2}/>
+                            <img style = {{width: "40%"}}src={petImage2}/>
                         </div>
                         <p>
                             Now, let's go over the rewards for current delegators! 

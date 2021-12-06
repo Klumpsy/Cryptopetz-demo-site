@@ -1,12 +1,7 @@
 
 import {Link} from "react-router-dom";
 
-//images imports
-import petzMetricPetOne from "../images/petzImages/pony.png";
-import petzMetricPetTwo from "../images/petzImages/owlghost.png";
-import petzMetricPetThree from "../images/petzImages/fishy.png";
-
-const AllMetrics = ({mode, width}) => { 
+const AllMetrics = ({mode}) => { 
 
     return (
         <div className= {mode? "all-metrics-container all-metrics-container-lightmode" : "all-metrics-container all-metrics-container-darkmode"}>
@@ -34,7 +29,7 @@ const AllMetrics = ({mode, width}) => {
                         </Link>
                     </div>
                     <div className= "metrics-box metrics-box-game-info">
-                        <Link to ="/GameInfo" style={{ textDecoration: 'none' }}>
+                        <Link to ="/GameMetrics" style={{ textDecoration: 'none' }}>
                             <div className="all-metrics-box-background">
                                 <div className="all-metrics-box metrics-box-game-info">
                                 <h1 className ="game-info-title">Game Metrics</h1>

@@ -6,6 +6,7 @@ import {petzObject } from "../src/components/PetzData/EmblemData"
 import NavBar from "./components/NavBar";
 import StoryTime from "./components/StoryTime";
 import GameInfo from './components/GameInfo';
+import GameMetrics from './components/GameMetrics';
 import AllMetrics from './components/AllMetrics';
 import Metrics from './components/Metrics';
 import RarityMetrics from './components/RarityMetrics';
@@ -159,8 +160,8 @@ function App() {
                 <Route exact path="/StoryTime">
                   <StoryTime/>
                 </Route>
-                <Route exact path="/GameInfo">
-                  <GameInfo allPetzArray = {allPetzArray} eggArray = {eggArray}/>
+                <Route exact path="/GameMetrics">
+                  <GameMetrics allPetzArray = {allPetzArray} eggArray = {eggArray}/>
                 </Route>
                 <Route exact path="/AllMetrics">
                   <AllMetrics mode={mode} width={width}/>
