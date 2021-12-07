@@ -1,7 +1,14 @@
-
+import { useState } from "react";
 import {Link} from "react-router-dom";
 
+//rarity background 
+import lightmodeRarity from "../images/gifs/waterfishgif.gif"; 
+import darkmodeRarity from "../images/gifs/darkmodewaterfishgif.gif"; 
+import rarityBackgroundMain from "../images/smallPngPetz/Pi7compressed0141.png"
+
 const AllMetrics = ({mode}) => { 
+    const [rarityBackground, setRarityBackground] = useState(rarityBackgroundMain); 
+
 
     return (
         <div className= {mode? "all-metrics-container all-metrics-container-lightmode" : "all-metrics-container all-metrics-container-darkmode"}>
@@ -13,7 +20,7 @@ const AllMetrics = ({mode}) => {
                     <div className= "metrics-box">
                         <Link to ="/RarityMetrics" style={{ textDecoration: 'none' }}>
                             <div className="all-metrics-box-background">
-                                <div className="all-metrics-box metrics-box-rarity">
+                                <div className= "all-metrics-box metrics-box-rarity">
                                 <h1 className ="rarity-metrics-title">Rarity Metrics</h1>
                                 </div>
                             </div>

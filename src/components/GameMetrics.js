@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import {AiOutlineCloseCircle} from "react-icons/ai";
 
 import menuImage from "../images/mapImages/MainMenu.png"
 import arenaTargetBackground from "../images/mapImages/arena.png"
@@ -10,7 +11,7 @@ function GameMetrics() {
 
     const [arenaBackground, setArenaBackground] = useState(menuImage);
     const [buildingModalActive, setbuildingModalActive] = useState(false); 
-    const [activebuilding, setActivebuilding] = useState(); 
+    const [activeBuilding, setActivebuilding] = useState(null); 
 
     function showBuildingInfo(building) { 
         setActivebuilding(building);
@@ -21,7 +22,11 @@ function GameMetrics() {
         <div className = "game-info-background" 
              style = {{backgroundImage: `url("${arenaBackground}")`}}>
                  <div className= {buildingModalActive ? "building-modal building-modal-active" : "building-modal-hidden"}>
-                     <h1>{activebuilding.name}</h1>
+                     <h1>{activeBuilding ? activeBuilding.name : ""}</h1>
+                     <AiOutlineCloseCircle 
+                     className="modal-building-close" 
+                     onClick = {() => setbuildingModalActive(false)}
+                     size={30}/>
                  </div>
                  <div className = "building-card-container">
                  {buildings.map(building => (

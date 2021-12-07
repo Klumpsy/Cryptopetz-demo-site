@@ -515,10 +515,23 @@ input:checked + .slider:before {
 }
 
 .building-modal { 
+  position: relative;
   width: 1000px; 
   height: 600px; 
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
+}
+
+.modal-building-close { 
+  position: absolute; 
+  right: 10px; 
+  top: 10px; 
+  color: red;
+}
+
+.modal-building-close:hover { 
+  color: rgb(230, 120, 120); 
+  cursor: pointer;
 }
 
 .building-modal h1 { 
@@ -877,11 +890,10 @@ td {
 }
 
 .metrics-box-game-info { 
-  background-image: url("images/smallPngPetz/Pi7compressed027.png");
+  background-image: url("images/smallPngPetz/Pi7compressed066.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- 
 }
 .metrics-box-petz{ 
   background-image: url("images/smallPngPetz/Pi7compressed089.png");
@@ -890,31 +902,31 @@ td {
   background-size: cover;
 }
 .metrics-box-rarity { 
-  background-image: url("images/smallPngPetz/Pi7compressed0141.png");
+  background-image: url("images/smallPngPetz/Pi7compressed014.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .metrics-box-game-info:hover { 
-  background-image: url("images/gifs/elecealgif.gif");
+  background-image: url("images/gifs/darkmodecactus.gif");
   border: 2px solid var(--ultrarare-color);
   box-shadow: 1px 1px 10px 2px var(--ultrarare-color);
 }
 .metrics-box-petz:hover { 
-  background-image: url("images/gifs/lavagif.gif");
+  background-image: url("images/gifs/darkmodelava.gif");
   border: 2px solid var(--legendary-color);
   box-shadow: 1px 1px 10px 2px var(--legendary-color);
 }
+
 .metrics-box-rarity:hover { 
-  background-image: url("images/gifs/waterfishgif.gif");
+  background-image: url("images/gifs/darkmodepoison.gif");
   border: 2px solid var(--extremelyrare-color);
   box-shadow: 1px 1px 10px 2px var(--extremelyrare-color);
 }
 
 .metrics-box h1 { 
-  font-size: 3.2rem;
-  margin-bottom: 1rem;
+  font-size: 4rem;
 }
 
 
