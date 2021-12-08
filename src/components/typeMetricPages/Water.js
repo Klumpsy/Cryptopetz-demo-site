@@ -5,11 +5,12 @@ import waterPet from "..//../images/petzImages/water.png";
 import waterMetricsAtt from "..//../images/radarCharts/Water_Att.jpg"
 import waterMetricsDef from "..//../images/radarCharts/Water_Def.jpg"
 
+import BackButton from '../buttons/BackButton';
 const Water = () => { 
     return (
         <div className = "metric-type-page-wrapper water">
             <div className = "metric-type-overlay">
-                <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
+            <BackButton target="Metrics"/>
                 <h1>Water</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={waterEmblem}/>

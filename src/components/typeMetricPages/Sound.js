@@ -6,12 +6,12 @@ import soundEmblem from "..//..//images/typeEmblems/Sound_Emblem.png";
 import soundMetricsAtt from "..//../images/radarCharts/Sound_Att.jpg";
 import soundMetricsDef from "..//../images/radarCharts/Sound_Def.jpg";
 
-
+import BackButton from '../buttons/BackButton';
 const Sound = () => { 
     return (
         <div className = "metric-type-page-wrapper sound">
             <div className = "metric-type-overlay">
-                <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
+            <BackButton target="Metrics"/>
                 <h1>Sound</h1>
                 <div className="metric-container">
                 <img className = "background-emblem" src={soundEmblem}/>

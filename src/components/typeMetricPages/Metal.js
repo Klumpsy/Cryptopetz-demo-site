@@ -5,12 +5,13 @@ import metalPet from "..//../images/petzImages/metal.png";
 import metalMetricsAtt from "..//../images/radarCharts/Metal_Att.jpg";
 import metalMetricsDef from "..//../images/radarCharts/Metal_Def.jpg";
 
+import BackButton from '../buttons/BackButton';
 
 const Metal = () => { 
     return (
         <div className = "metric-type-page-wrapper metal">
             <div className = "metric-type-overlay">
-                <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
+            <BackButton target="Metrics"/>
                 <h1>Metal</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={metalEmblem}/>

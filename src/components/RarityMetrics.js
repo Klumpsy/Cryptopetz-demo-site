@@ -16,12 +16,14 @@ import {petzBackgrounds} from "./PetzData/PetzBackgroundData";
 import {eggShells} from "./PetzData/EggshellData";
 import {cryptoLogos} from "./PetzData/CryptoLogo"; 
 
+import BackButton from "./buttons/BackButton"
 
 const RarityMetrics = ({eggArray}) => { 
 
     
     return (
         <div className = 'petz-metric-background'>
+            <BackButton target="AllMetrics"/>
             <div className ="petz-metric-info-box">
                 <h2 className = "metric-data-title">Petz</h2>
                 <div className ="petz-chart-data">

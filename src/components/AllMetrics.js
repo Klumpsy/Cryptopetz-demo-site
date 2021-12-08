@@ -2,14 +2,10 @@ import { useState } from "react";
 import {Link} from "react-router-dom";
 
 //rarity background 
-import lightmodeRarity from "../images/gifs/waterfishgif.gif"; 
-import darkmodeRarity from "../images/gifs/darkmodewaterfishgif.gif"; 
 import rarityBackgroundMain from "../images/smallPngPetz/Pi7compressed0141.png"
 
 const AllMetrics = ({mode}) => { 
-    const [rarityBackground, setRarityBackground] = useState(rarityBackgroundMain); 
-
-
+   
     return (
         <div className= {mode? "all-metrics-container all-metrics-container-lightmode" : "all-metrics-container all-metrics-container-darkmode"}>
               <div className ="petz-carousel-background petz-background-carousel-first"></div> 

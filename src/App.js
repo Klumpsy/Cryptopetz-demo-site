@@ -57,6 +57,7 @@ import shark from './images/petzImages/shark.png';
 import squid from './images/petzImages/squid.png'; 
 import light from './images/petzImages/light.png'; 
 import owl from './images/petzImages/owl.png';
+import fish from './images/smallPngPetz/Pi7compressed027.png'
 
 //Egg images 
 import fireEgg from "./images/eggs/Fire_Egg_REV1.png";
@@ -77,7 +78,7 @@ const eggArray = [fireEgg, fairyEgg, electricEgg, grassEgg, iceEgg, lavaEgg, leg
                   soundEgg, waterEgg];
 
 const allPetzArray = [mouse, icebird, dragon, bear, stormApe, seal, firebear, ninja, bull, racoon, chick, pony, shark, 
-                      squid, light, owl];
+                      squid, light, owl,fish];
 const petzArray = 
 
 [

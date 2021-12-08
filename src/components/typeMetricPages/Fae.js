@@ -5,12 +5,13 @@ import faePet from "..//../images/petzImages/fae.png";
 import faeMetricsAtt from "..//../images/radarCharts/Fae_Att.jpg";
 import faeMetricsDef from "..//../images/radarCharts/Fae_Defense.jpg";
 
+import BackButton from '../buttons/BackButton';
 
 const Fae = () => { 
     return (
         <div className = "metric-type-page-wrapper fae">
             <div className = "metric-type-overlay">
-                <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
+            <BackButton target="Metrics"/>
                 <h1>Fae</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={faeEmblem}/>

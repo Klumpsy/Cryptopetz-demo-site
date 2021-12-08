@@ -5,12 +5,13 @@ import icePet from "..//../images/petzImages/ice.png";
 import iceMetricsAtt from "..//../images/radarCharts/Ice_Att.jpg"
 import iceMetricsDef from "..//../images/radarCharts/Ice_Def.jpg"
 
+import BackButton from '../buttons/BackButton';
 
 const Ice = () => { 
     return (
         <div className = "metric-type-page-wrapper ice">
             <div className = "metric-type-overlay">
-                <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
+            <BackButton target="Metrics"/>
                 <h1>Ice</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={iceEmblem}/>

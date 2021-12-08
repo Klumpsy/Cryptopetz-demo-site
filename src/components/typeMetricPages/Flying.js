@@ -5,12 +5,13 @@ import flyingPet from "..//../images/petzImages/flying.png";
 import flyingMetricsAtt from "..//../images/radarCharts/Flying_Att.jpg"
 import flyingMetricsDef from "..//../images/radarCharts/Flying_Def.jpg"
 
+import BackButton from '../buttons/BackButton';
 
 const Flying = () => { 
     return (
         <div className = "metric-type-page-wrapper flying">
             <div className = "metric-type-overlay">
-                <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
+            <BackButton target="Metrics"/>
                 <h1>Flying</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={flyingEmblem}/>

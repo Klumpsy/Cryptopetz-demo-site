@@ -5,12 +5,13 @@ import poisonPet from "..//../images/petzImages/poison.png";
 import poisonMetricsAtt from "..//../images/radarCharts/Poison_Att.jpg"
 import poisonMetricsDef from "..//../images/radarCharts/Poison_Def.jpg"
 
+import BackButton from '../buttons/BackButton';
 
 const Poison = () => { 
     return (
         <div className = "metric-type-page-wrapper poison">
             <div className = "metric-type-overlay">
-                <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
+            <BackButton target="Metrics"/>
                 <h1>Poison</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={poisonEmblem}/>

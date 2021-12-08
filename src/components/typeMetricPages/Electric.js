@@ -5,12 +5,13 @@ import electricPet from "..//../images/petzImages/electric.png";
 import electricMetricsAtt from "..//../images/radarCharts/Electric_Att.jpg";
 import electricMetricsDef from "..//../images/radarCharts/Electric_Def.jpg";
 
+import BackButton from '../buttons/BackButton';
 
 const Electric = () => { 
     return (
         <div className = "metric-type-page-wrapper electric">
             <div className = "metric-type-overlay">
-                <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
+            <BackButton target="Metrics"/>
                 <h1>Electric</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={electricEmblem}/>

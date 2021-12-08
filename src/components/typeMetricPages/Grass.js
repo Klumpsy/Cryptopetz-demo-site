@@ -5,11 +5,13 @@ import grassPet from "..//../images/petzImages/grass.png";
 import grassMetricsAtt from "..//../images/radarCharts/Grass_Att.jpg"
 import grassMetricsDef from "..//../images/radarCharts/Grass_Def.jpg"
 
+import BackButton from '../buttons/BackButton';
+
 const Grass = () => { 
     return (
         <div className = "metric-type-page-wrapper grass">
             <div className = "metric-type-overlay">
-                <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
+            <BackButton target="Metrics"/>
                 <h1>Grass</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={grassEmblem}/>

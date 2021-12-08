@@ -1,19 +1,28 @@
 export const buildings = 
 [
     {
+        name: "Home"
+    },
+    {
         name: "Arena"
     },
     {
-        name: "Builder"
+        name: "Lab"
     },
     {
-        name: "Battle"
+        name: "Ship"
     },
     {
-        name: "Training"
+        name: "Playground"
     },
     {
-        name: "Customize"
+        name: "Market"
+    },
+    {
+        name: "Explorer"
+    },
+    {
+        name: "Events"
     },
 
 ]

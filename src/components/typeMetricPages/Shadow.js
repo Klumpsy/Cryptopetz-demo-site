@@ -5,12 +5,12 @@ import shadowPet from "..//../images/petzImages/shadow.png";
 import shadowMetricsAtt from "..//../images/radarCharts/Shadow_Att.jpg";
 import shadowMetricsDef from "..//../images/radarCharts/Shadow_Def.jpg";
 
-
+import BackButton from '../buttons/BackButton';
 const Shadow = () => { 
     return (
         <div className = "metric-type-page-wrapper shadow">
             <div className = "metric-type-overlay">
-                <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
+            <BackButton target="Metrics"/>
                 <h1>Shadow</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={shadowEmblem}/>

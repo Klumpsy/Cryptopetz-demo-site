@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom';
 import {petzObject} from './PetzData/EmblemData'
 
+import BackButton from "./buttons/BackButton"
+
 const Metrics = () => { 
 
     return (
         <div className ="metrics-background">
+            <BackButton target="AllMetrics"/>
             <div className="metrics-wrapper">
                 <div className = "petz-type-container">
                     {petzObject.map((pet, index)=> ( 

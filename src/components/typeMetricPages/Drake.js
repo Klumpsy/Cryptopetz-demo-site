@@ -5,12 +5,14 @@ import drakePet from "..//../images/petzImages/drake.png";
 import drakeMetricsAtt from "..//../images/radarCharts/Drake_Att.jpg";
 import drakeMetricsDef from "..//../images/radarCharts/Drake_Def.jpg";
 
+import BackButton from '../buttons/BackButton';
+
 
 const Drake = () => { 
     return (
         <div className = "metric-type-page-wrapper drake">
             <div className = "metric-type-overlay">
-                <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
+            <BackButton target="Metrics"/>
                 <h1>Drake</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={drakeEmblem}/>

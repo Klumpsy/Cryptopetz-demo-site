@@ -5,12 +5,13 @@ import insectPet from "..//../images/petzImages/insect.png";
 import insectMetricsAtt from "..//../images/radarCharts/Insect_Att.jpg"
 import insectMetricsDef from "..//../images/radarCharts/Insect_Def.jpg"
 
+import BackButton from '../buttons/BackButton';
 
 const Insect = () => { 
     return (
         <div className = "metric-type-page-wrapper insect">
             <div className = "metric-type-overlay">
-                <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
+            <BackButton target="Metrics"/>
                 <h1>Insect</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={insectEmblem}/>

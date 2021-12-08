@@ -21,7 +21,7 @@ const Collection = ({mode}) => {
   
     //Modal state
     const [modalActive, setModalActive] = useState(false);
-    const [modalPet, setModalPet] = useState();
+    const [modalPet, setModalPet] = useState(undefined);
 
   
     useEffect(() => { 
@@ -90,7 +90,7 @@ const Collection = ({mode}) => {
                         <div className= {modalActive ? "modal-info":"petz-modal-hidden"}>
                             <div className ="modal-info-box">
                             <h2>{modalPet === undefined ? "" : modalPet.name}</h2>
-                                <img className = "modal-image" src={modalPet === undefined ? "" : modalPet.thumbnail} alt= {modalPet === undefined ? "" : modalPet.name}/>
+                                <img className = "modal-image" src={modalPet === undefined ? "" : `https://cryptopetz.info${modalPet.thumbnail}`} alt= {modalPet === undefined ? "" : modalPet.name}/>
                                 <div className = "info-box-pet">
                                     <div><h3 className={modalPet === undefined ? "" : modalPet.data.rarity.toLowerCase().replace(/\s/g, '')}>{modalPet === undefined ? "" : modalPet.data.rarity}</h3></div>
                                     <div><label>Rarity score: {modalPet === undefined ? "" : modalPet.rarityScore.toFixed(2)}</label><meter className="rarity-meter "min = '0' max= "100" value ={modalPet === undefined ? 0 : parseInt(modalPet.rarityScore)}></meter></div>

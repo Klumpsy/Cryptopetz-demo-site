@@ -5,12 +5,14 @@ import combatPet from "..//../images/petzImages/combat.png";
 import combatMetricsAtt from "..//../images/radarCharts/Combat_Att.jpg";
 import combatMetricsDef from "..//../images/radarCharts/Combat_Def.jpg";
 
+import BackButton from "../buttons/BackButton"
+
 
 const Combat = () => { 
     return (
         <div className = "metric-type-page-wrapper combat">
             <div className = "metric-type-overlay">
-                <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
+                <BackButton target="Metrics"/>
                 <h1>Combat</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={combatEmblem}/>

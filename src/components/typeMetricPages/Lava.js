@@ -5,12 +5,13 @@ import lavaPet from "..//../images/petzImages/lava.png";
 import lavaMetricsAtt from "..//../images/radarCharts/Lava_Att.jpg";
 import lavaMetricsDef from "..//../images/radarCharts/Lava_Defense.jpg";
 
+import BackButton from '../buttons/BackButton';
 
 const Lava = () => { 
     return (
         <div className = "metric-type-page-wrapper lava">
             <div className = "metric-type-overlay">
-                <Link className="metric-back-button" to="/Metrics">Back to all types</Link>
+            <BackButton target="Metrics"/>
                 <h1>Lava</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={lavaEmblem}/>

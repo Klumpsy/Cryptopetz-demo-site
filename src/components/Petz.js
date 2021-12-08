@@ -71,8 +71,8 @@ const Petz = ({mode}) => {
             <h2 className = "legendary">Legendary</h2>
             <div className ="legendary-petz">
                 { 
-                    EpochOneLegendary.map(pet => (
-                        <div className =  " epoch-one-pet-card">
+                    EpochOneLegendary.map((pet,index) => (
+                        <div className =  " epoch-one-pet-card" key={pet.name+index}>
                             <AiFillInfoCircle style ={{color: "white", margin: "5px"}} size={30}/>
                             <LazyLoadImage effect= "blur" src={pet.image} alt={pet.name}/>
                             <div>
