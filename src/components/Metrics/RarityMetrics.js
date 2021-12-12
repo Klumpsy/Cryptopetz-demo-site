@@ -4,23 +4,22 @@ import "chartjs-plugin-datalabels"
 import { Link } from "react-router-dom";
 
 //Data
-import {PetRarityData} from "../components/chartData/PetRaritydata";
-import {PetDistributionData} from "../components/chartData/PetDistributionData";
-import {TypesAmount} from "../components/chartData/TypesAmount";
-import {BackgroundRarity} from "../components/chartData/BackgroundRarity";
-import {EggRarityData} from "../components/chartData/EggRarityData";
-import {UniqueAmountPetzPerRarity} from "./chartData/UniqueAmountPetzPerRarity";
-import {UniquePetzPerRarity} from "./chartData/UniquePetzPerRarity";
-import {petzObject} from "./PetzData/EmblemData";
-import {petzBackgrounds} from "./PetzData/PetzBackgroundData";
-import {eggShells} from "./PetzData/EggshellData";
-import {cryptoLogos} from "./PetzData/CryptoLogo"; 
+import {PetRarityData} from "../chartData/PetRaritydata";
+import {PetDistributionData} from "../chartData/PetDistributionData";
+import {TypesAmount} from "../chartData/TypesAmount";
+import {BackgroundRarity} from "../chartData/BackgroundRarity";
+import {EggRarityData} from "../chartData/EggRarityData";
+import {UniqueAmountPetzPerRarity} from "../chartData/UniqueAmountPetzPerRarity";
+import {UniquePetzPerRarity} from "../chartData/UniquePetzPerRarity";
+import {petzObject} from "../PetzData/EmblemData";
+import {petzBackgrounds} from "../PetzData/PetzBackgroundData";
+import {eggShells} from "../PetzData/EggshellData";
+import {cryptoLogos} from "../PetzData/CryptoLogo"; 
 
-import BackButton from "./buttons/BackButton"
+import BackButton from "../buttons/BackButton"
 
 const RarityMetrics = ({eggArray}) => { 
 
-    
     return (
         <div className = 'petz-metric-background'>
             <BackButton target="AllMetrics"/>

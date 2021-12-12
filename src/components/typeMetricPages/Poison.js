@@ -11,7 +11,7 @@ const Poison = () => {
     return (
         <div className = "metric-type-page-wrapper poison">
             <div className = "metric-type-overlay">
-            <BackButton target="Metrics"/>
+            <BackButton target="PetzMetrics"/>
                 <h1>Poison</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={poisonEmblem}/>

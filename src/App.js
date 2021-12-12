@@ -6,12 +6,12 @@ import {petzObject } from "../src/components/PetzData/EmblemData"
 import NavBar from "./components/NavBar";
 import StoryTime from "./components/StoryTime";
 import GameInfo from './components/GameInfo';
-import GameMetrics from './components/GameMetrics';
-import AllMetrics from './components/AllMetrics';
-import Metrics from './components/Metrics';
-import RarityMetrics from './components/RarityMetrics';
+import GameMetrics from './components/Metrics/GameMetrics';
+import AllMetrics from './components/Metrics/AllMetrics';
+import PetzMetrics from './components/Metrics/PetzMetrics';
+import RarityMetrics from './components/Metrics/RarityMetrics';
 import Petz from "./components/Petz";
-import Collection from './components/Collection';
+import Collection from './components/fullCollection/Collection';
 import Updates from './components/Updates'
 import Team from './components/Team';
 import Landing from "./components/Landing";
@@ -186,7 +186,7 @@ function App() {
                   <Sales/>
                 </Route>
                 
-                            <Route exact path="/Metrics"><Metrics/></Route>
+                            <Route exact path="/PetzMetrics"><PetzMetrics/></Route>
                             <Route exact path="/RarityMetrics"><RarityMetrics eggArray = {eggArray}/></Route>
                 
                             <Route exact path="/Fire"><Fire/></Route>

@@ -1,4 +1,4 @@
-import background1 from "../../images/Backgrounds/Background1.png";
+import background1 from "../../images/Backgrounds/background1.png";
 import background2 from "../../images/Backgrounds/BG_2.png";
 import background3 from "../../images/Backgrounds/BG_3.png";
 import background4 from "../../images/Backgrounds/BG_4.png";

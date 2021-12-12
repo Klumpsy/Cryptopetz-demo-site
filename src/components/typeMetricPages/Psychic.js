@@ -11,7 +11,7 @@ const Psychic = () => {
     return (
         <div className = "metric-type-page-wrapper psychic">
             <div className = "metric-type-overlay">
-            <BackButton target="Metrics"/>
+            <BackButton target="PetzMetrics"/>
                 <h1>Psychic</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={psychicEmblem}/>

@@ -10,7 +10,7 @@ const Shadow = () => {
     return (
         <div className = "metric-type-page-wrapper shadow">
             <div className = "metric-type-overlay">
-            <BackButton target="Metrics"/>
+            <BackButton target="PetzMetrics"/>
                 <h1>Shadow</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={shadowEmblem}/>

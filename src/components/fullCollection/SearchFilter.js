@@ -1,6 +1,5 @@
 import { BsSearch } from "react-icons/bs"
 
-
 const SearchFilter = ({placeholder, handleSearch})=> { 
    
     return (

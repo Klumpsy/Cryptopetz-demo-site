@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import {petzObject} from './PetzData/EmblemData'
+import {petzObject} from '../PetzData/EmblemData'
 
-import BackButton from "./buttons/BackButton"
+import BackButton from "../buttons/BackButton"
 
-const Metrics = () => { 
+const PetzMetrics = () => { 
 
     return (
         <div className ="metrics-background">
@@ -26,4 +26,4 @@ const Metrics = () => {
     )
 }
 
-export default Metrics
+export default PetzMetrics

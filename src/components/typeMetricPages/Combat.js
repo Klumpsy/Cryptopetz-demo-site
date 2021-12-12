@@ -12,7 +12,7 @@ const Combat = () => {
     return (
         <div className = "metric-type-page-wrapper combat">
             <div className = "metric-type-overlay">
-                <BackButton target="Metrics"/>
+                <BackButton target="PetzMetrics"/>
                 <h1>Combat</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={combatEmblem}/>

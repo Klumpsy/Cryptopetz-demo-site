@@ -11,7 +11,7 @@ const Sound = () => {
     return (
         <div className = "metric-type-page-wrapper sound">
             <div className = "metric-type-overlay">
-            <BackButton target="Metrics"/>
+            <BackButton target="PetzMetrics"/>
                 <h1>Sound</h1>
                 <div className="metric-container">
                 <img className = "background-emblem" src={soundEmblem}/>

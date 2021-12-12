@@ -1,9 +1,10 @@
-
 import {useState, useEffect } from "react";
-import {rarityCheckboxes} from "./SearchDataOptions/Raritycheckboxes";
-import {typeCheckboxes} from "./SearchDataOptions/Typecheckboxes"; 
-import {categoryCheckboxes} from "./SearchDataOptions/Categorycheckboxes"; 
-import {backgroundCheckboxes} from "./SearchDataOptions/Backgroundcheckboxes";
+
+//Import checkboxes for searchfilters 
+import {rarityCheckboxes} from "../SearchDataOptions/Raritycheckboxes";
+import {typeCheckboxes} from "../SearchDataOptions/Typecheckboxes"; 
+import {categoryCheckboxes} from "../SearchDataOptions/Categorycheckboxes"; 
+import {backgroundCheckboxes} from "../SearchDataOptions/Backgroundcheckboxes";
 
 //import react icons 
 import {IoMdArrowDropdownCircle, IoMdArrowDropupCircle} from "react-icons/io"; 
@@ -12,20 +13,21 @@ import {IoMdArrowDropdownCircle, IoMdArrowDropupCircle} from "react-icons/io";
 //https://codesandbox.io/s/magical-yalow-wndg8?file=/src/App.js
 
 const CheckboxSearchMenu = ({petz, handleUpdate, searchMenu}) => { 
-  
+
+//Checkbox type state 
     const [rarity, setRarity] = useState([]);
     const [type, setType] = useState([]);
     const [category, setCategory] = useState([]);
     const [backgrounds, setBackground] = useState([]);
 
-    //Colaps menu state
+//Colaps menu state
     const [colapseCategory, setColapseCategory] = useState(false); 
     const [colapseRarity, setcolapseRarity] = useState(false); 
     const [colapseBackground, setcolapseBackground] = useState(false); 
     const [colapseType, setcolapseType] = useState(false); 
 
-
-      const filteredUnits =
+//Filtered units 
+    const filteredUnits =
         rarity.length || type.length || category.length || backgrounds.length
           ? petz.filter((pet) => {
               return (
@@ -35,11 +37,12 @@ const CheckboxSearchMenu = ({petz, handleUpdate, searchMenu}) => {
                 (!backgrounds.length || backgrounds.includes(pet.data.traits.background)) 
               );
             })
-          : petz;
-        
-        useEffect(() => { 
-            handleUpdate(filteredUnits)
-        }, [rarity, type, category, backgrounds])
+          : 
+          petz;
+//Check if checkboxes changed => callback to parent for updated view of petz      
+    useEffect(() => { 
+        handleUpdate(filteredUnits)
+    }, [rarity, type, category, backgrounds])
 
     return (
         <div className= {searchMenu ? "search-menu-active" : "search-menu-hidden"}>
@@ -181,6 +184,5 @@ const CheckboxSearchMenu = ({petz, handleUpdate, searchMenu}) => {
         </div>
     )
 }
-
 
 export default CheckboxSearchMenu;

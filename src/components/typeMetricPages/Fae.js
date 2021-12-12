@@ -11,7 +11,7 @@ const Fae = () => {
     return (
         <div className = "metric-type-page-wrapper fae">
             <div className = "metric-type-overlay">
-            <BackButton target="Metrics"/>
+            <BackButton target="PetzMetrics"/>
                 <h1>Fae</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={faeEmblem}/>

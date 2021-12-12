@@ -10,7 +10,7 @@ const Water = () => {
     return (
         <div className = "metric-type-page-wrapper water">
             <div className = "metric-type-overlay">
-            <BackButton target="Metrics"/>
+            <BackButton target="PetzMetrics"/>
                 <h1>Water</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={waterEmblem}/>

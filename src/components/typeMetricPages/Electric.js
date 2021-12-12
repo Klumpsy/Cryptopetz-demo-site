@@ -11,7 +11,7 @@ const Electric = () => {
     return (
         <div className = "metric-type-page-wrapper electric">
             <div className = "metric-type-overlay">
-            <BackButton target="Metrics"/>
+            <BackButton target="PetzMetrics"/>
                 <h1>Electric</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={electricEmblem}/>

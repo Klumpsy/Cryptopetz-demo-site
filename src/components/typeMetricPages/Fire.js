@@ -12,7 +12,7 @@ const Fire = () => {
     return (
         <div className = "metric-type-page-wrapper fire">
             <div className = "metric-type-overlay">
-            <BackButton target="Metrics"/>
+            <BackButton target="PetzMetrics"/>
                 <h1>Fire</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={fireEmblem}/>

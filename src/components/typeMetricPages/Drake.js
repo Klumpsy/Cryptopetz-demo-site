@@ -12,7 +12,7 @@ const Drake = () => {
     return (
         <div className = "metric-type-page-wrapper drake">
             <div className = "metric-type-overlay">
-            <BackButton target="Metrics"/>
+            <BackButton target="PetzMetrics"/>
                 <h1>Drake</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={drakeEmblem}/>

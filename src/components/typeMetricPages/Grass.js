@@ -11,7 +11,7 @@ const Grass = () => {
     return (
         <div className = "metric-type-page-wrapper grass">
             <div className = "metric-type-overlay">
-            <BackButton target="Metrics"/>
+            <BackButton target="PetzMetrics"/>
                 <h1>Grass</h1>
                 <div className="metric-container">
                     <img className = "background-emblem" src={grassEmblem}/>
