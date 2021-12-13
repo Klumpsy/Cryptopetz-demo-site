@@ -1,6 +1,18 @@
 import { BsSearch } from "react-icons/bs"
+import { useState } from "react"
 
-const SearchFilter = ({placeholder, handleSearch})=> { 
+const SearchFilter = ({petz, placeholder})=> { 
+
+    const [input, setInput] = useState("")
+
+    function handleSearch() { 
+        petz.filter((pet) => { 
+            console.log("clicked")
+            return (
+                input.includes(pet.assetId)
+            )
+        })
+    }
    
     return (
         <div>
@@ -11,9 +23,10 @@ const SearchFilter = ({placeholder, handleSearch})=> {
                 name ="search-form"
                 id="search-form"
                 placeholder= {placeholder} 
-                onChange={() => handleSearch}
+                value = {input}
+                onChange={(event) => setInput(event.target.value)}
                 />
-                <BsSearch className="search-icon"/>
+                <button onClick = {handleSearch}><BsSearch className="search-icon"/></button>
             </div>
         </div>
     )

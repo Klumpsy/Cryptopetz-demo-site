@@ -2086,16 +2086,25 @@ display: block;
   font-size: 19px;
   padding: 10px;
   height: 40px;
+  width: 240px;
   color: white;
 }
 
-.search-icon { 
-  position: absolute;
-  right: 5px;
+.searchInputs button { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(10, 10, 10);
+  width: 30px;
   height: 40px;
-  width: 35px;
-  padding-right: 10px;
+  padding: 3px;
   color: white;
+}
+
+.searchInputs button:hover { 
+  color: rgb(111, 214, 137); 
+  cursor: pointer;
+  background-color: rgb(66, 65, 65);
 }
 
 .petz-search-container {

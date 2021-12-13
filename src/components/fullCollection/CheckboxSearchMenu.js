@@ -58,8 +58,8 @@ const CheckboxSearchMenu = ({petz, handleUpdate, searchMenu}) => {
 //Check if checkboxes changed => callback to parent for updated view of petz      
     useEffect(() => { 
         handleUpdate(filteredUnits)
-        console.log(petz)
     }, [rarity, type, category, backgrounds, cryptoLogo, eggshell, stand])
+
 
     return (
         <div className= {searchMenu ? "search-menu-active" : "search-menu-hidden"}>
