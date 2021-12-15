@@ -1929,6 +1929,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 /*Petz page*/
 .petz-page-wrapper { 
   position: relative;
+  width: 100%;
 }
 
 .all-petz-container { 
@@ -2069,6 +2070,7 @@ display: block;
   font-size: 40px;
   margin-right: 100px;
 }
+
 
 /*Collection Page*/ 
 .petz-searchbox-container { 
