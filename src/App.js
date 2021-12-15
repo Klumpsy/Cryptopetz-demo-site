@@ -10,7 +10,7 @@ import GameMetrics from './components/Metrics/GameMetrics';
 import AllMetrics from './components/Metrics/AllMetrics';
 import PetzMetrics from './components/Metrics/PetzMetrics';
 import RarityMetrics from './components/Metrics/RarityMetrics';
-import Petz from "./components/Petz";
+import Petz from "./components/Petz/Petz";
 import Collection from './components/fullCollection/Collection';
 import Updates from './components/Updates'
 import Team from './components/Team';

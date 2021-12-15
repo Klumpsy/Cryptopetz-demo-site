@@ -14,8 +14,10 @@ const NavBar = ({width, mode, changeMode}) => {
     return (
         <>
         {width < 1268 ?
-            <div className = {mode ? "nav-bar nav-mobile light-mode" : "nav-bar nav-mobile dark-mode"}>
-                <Link to="/Cryptopetz-demo-site"><img src={ardanoBird} alt="CryptoPet"/></Link>
+        <div className = {mode ? "nav-bar nav-mobile light-mode" : "nav-bar nav-mobile dark-mode"}>
+                <Link to="/Cryptopetz-demo-site">
+                    <img src={ardanoBird} alt="CryptoPet"/>
+                </Link>
             <div className = {openMobile ? mode? "mobile-menu-light mobile-menu mobile-menu-open": "mobile-menu-dark mobile-menu mobile-menu-open" : "mobile-menu mobile-menu-close" }>
                 <Link to="/StoryTime" onClick ={() => setOpenMobile(!openMobile)}>Story</Link>
                 <Link to="/AllMetrics"onClick ={() => setOpenMobile(!openMobile)}>Metrics</Link>
@@ -50,7 +52,9 @@ const NavBar = ({width, mode, changeMode}) => {
         </div>
         :
         <div className = {mode ? "nav-bar light-mode" : "nav-bar dark-mode"}>
-            <Link to="/Cryptopetz-demo-site"><img src={ardanoBird} alt="CryptoPet"/></Link>
+            <Link to="/Cryptopetz-demo-site">
+                <img src={ardanoBird} alt="CryptoPet"/>
+            </Link>
             <div className = {mode ? "nav-links-light":"nav-links-dark"}>
                 <Link to="/StoryTime">Story</Link>
                 <Link to="/AllMetrics">Metrics</Link>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {AiOutlineCloseCircle} from "react-icons/ai";
 
 import menuImage from "../../images/mapImages/mainScreen.jpg"
@@ -17,10 +17,25 @@ import {buildings} from "../buildings/buildingData"
 
 import BackButton from '../buttons/BackButton';
 
+const imageBackgroundArray = [
+    arenaTargetBackground, homeTargetBackground, 
+    labTargetBackground, shipTargetBackground,
+    playgroundTargetBackground, marketTargetBackground,
+    eventsTargetBackground, explorerTargetBackground
+]
+
 const GameMetrics = () => {
     const [arenaBackground, setArenaBackground] = useState(menuImage);
     const [buildingModalActive, setbuildingModalActive] = useState(false); 
     const [activeBuilding, setActivebuilding] = useState(null); 
+
+useEffect(() => {
+    //preloading image
+    imageBackgroundArray.map((background) => {
+        const img = new Image();
+        img.src = background;
+    });
+}, []);
 
 //Show information on selected building
 function showBuildingInfo(building) { 
