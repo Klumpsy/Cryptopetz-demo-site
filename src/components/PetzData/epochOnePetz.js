@@ -175,34 +175,58 @@ export const EpochOneLegendary =
         type: ["flying", "grass"], 
         kingdom: "Elemental", 
         size: "2'10'",
-        weight: 28, 
+        weight: "28 lb", 
         biome: "Temperate Forest", 
         bodyType: "Bird",
         diuNoc: "Diurnal"
     },
     { 
         image: cryptoPet2,
-        name: "CryptoPet2",
+        name: "Nakamooto",
         rarity: "legendary",
-        type: ["combat"]
+        type: ["combat"],
+        kingdom: "Material", 
+        size: "3'10'",
+        weight: "175 lb", 
+        biome: "Seasonal Forest", 
+        bodyType: "Bull",
+        diuNoc: "Diurnal"
     },
     { 
         image: cryptoPet3,
-        name: "CryptoPet3",
+        name: "Etherclaw",
         rarity: "legendary",
-        type: ["spirit", "ice"]
+        type: ["spirit", "ice"],
+        kingdom: "Dual", 
+        size: "2'08'",
+        weight: "???", 
+        biome: "Polar Ice Cap", 
+        bodyType: "Cat",
+        diuNoc: "Diurnal"
     },
     { 
         image: cryptoPet4,
-        name: "CryptoPet4",
+        name: "Metamoth",
         rarity: "legendary",
-        type: ["flying", "insect"]
+        type: ["flying", "insect"],
+        kingdom: "Dual", 
+        size: "2'04'",
+        weight: "22 lb", 
+        biome: "Tropical Marsh", 
+        bodyType: "Insect",
+        diuNoc: "Nocturnal"
     },
     { 
         image: cryptoPet5,
-        name: "CryptoPet5",
+        name: "Terratote",
         rarity: "legendary",
-        type: ["earth"]
+        type: ["earth"],
+        kingdom: "Elemental", 
+        size: "5'11'",
+        weight: "240 lb", 
+        biome: "Highland Mountain", 
+        bodyType: "Totem",
+        diuNoc: "Diurnal"
     }
 ]
 //Ultra rare Petz

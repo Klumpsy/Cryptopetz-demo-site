@@ -1926,6 +1926,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
     bottom: 10px;
   }
 }
+
 /*Petz page*/
 .petz-page-wrapper { 
   position: relative;
@@ -2046,6 +2047,7 @@ display: block;
   width: 90%;
   max-width: 1400px;
   height: 800px; 
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 20px;
   z-index: 10;
@@ -2092,6 +2094,22 @@ display: block;
 
 .pet-modal-type img { 
   width: 100px;
+}
+
+.pet-modal-info,
+.pet-modal-rarity { 
+  width: 300px; 
+  text-align: center;
+  margin-left: 3px;
+  margin-top: 5px;
+  border-radius: 16px;
+  padding: 3px;
+  border: 1px solid var(--lightmode-color);
+  color: white;
+}
+
+.pet-modal-rarity { 
+  margin-top: 3rem;
 }
 
 /*Collection Page*/ 
