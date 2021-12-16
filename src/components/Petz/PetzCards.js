@@ -7,7 +7,7 @@ import {AiFillInfoCircle} from "react-icons/ai"
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-function PetzCards({petzEmblemChecker, showPetInfo, cards}) {
+function PetzCards({petzEmblemChecker, showPetInfo, cards, rarity}) {
 
     function capitalize(petName) { 
           const lower = petName.toLowerCase(); 
@@ -27,7 +27,7 @@ function PetzCards({petzEmblemChecker, showPetInfo, cards}) {
                     <AiFillInfoCircle style ={{color: "white", margin: "5px"}} size={30}/>
                     <LazyLoadImage effect= "blur" src={pet.image} alt={pet.name}/>
                     <div>
-                        <span style ={{color: "white"}}>Rarity: </span><span className={pet.rarity}>{pet.rarity === "legendary" ? " Legendary" : ""}</span>
+                        <span style ={{color: "white"}}>Rarity: </span><span className={pet.rarity}>{pet.rarity === rarity ? rarity : ""}</span>
                     </div>
                     <div style ={{flexDirection: "column"}}>
                         <span style ={{color: "white"}}>Type: </span>

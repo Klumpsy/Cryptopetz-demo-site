@@ -2060,17 +2060,39 @@ display: block;
  }
 
  .pet-modal-top-layer { 
+   position: relative; 
    display: flex;
    justify-content: space-between;
+ }
+
+ .pet-modal-image { 
+   width: 300px; 
+   height: 300px; 
+ }
+
+ .pet-modal-image img { 
+   width: 100%; 
  }
 
  .pet-modal h1 { 
   text-align: center;
   color: white;
-  font-size: 40px;
+  font-size: 70px;
   margin-right: 100px;
 }
 
+.pet-modal-type { 
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -50px;
+  width: 300px;
+}
+
+.pet-modal-type img { 
+  width: 100px;
+}
 
 /*Collection Page*/ 
 .petz-searchbox-container { 

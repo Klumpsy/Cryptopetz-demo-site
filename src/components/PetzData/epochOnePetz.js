@@ -170,9 +170,15 @@ export const EpochOneLegendary =
 [
     { 
         image: cryptoPet1,
-        name: "CryptoPet1",
+        name: "Ardano",
         rarity: "legendary",
-        type: ["flying", "grass"]
+        type: ["flying", "grass"], 
+        kingdom: "Elemental", 
+        size: "2'10'",
+        weight: 28, 
+        biome: "Temperate Forest", 
+        bodyType: "Bird",
+        diuNoc: "Diurnal"
     },
     { 
         image: cryptoPet2,

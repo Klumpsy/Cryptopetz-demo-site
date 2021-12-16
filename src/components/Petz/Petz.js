@@ -19,7 +19,7 @@ import {AiOutlineCloseCircle} from 'react-icons/ai';
 
 const Petz = ({mode}) => { 
 
-    const [activePet, setActivePet] = useState(""); 
+    const [activePet, setActivePet] = useState(null); 
     const [petModalActive, setPetModalActive] = useState(false); 
 
     function showPetInfo(pet) { 
@@ -74,7 +74,24 @@ const Petz = ({mode}) => {
             <div className = "all-petz-container">
                 <div className= {petModalActive ? "pet-modal pet-modal-active" : "pet-modal-hidden"}>
                 <div className = "pet-modal-top-layer">
-                    <img src={activePet.image}/>
+                    {
+                        activePet ?
+                        activePet.type.length > 1 ? 
+                        <div className = "pet-modal-type">
+                            <img src={petzEmblemChecker(activePet.type[0])}/>
+                            <img src={petzEmblemChecker(activePet.type[1])}/>
+                        </div>
+                        :
+                        <div className = "pet-modal-type">
+                            <img src={petzEmblemChecker(activePet.type[0])}/>
+                            <span>{activePet.rarity}</span>
+                        </div>
+                        : 
+                        <span>Nothing here</span>
+                    }
+                    <div className= "pet-modal-image">
+                        <img src={activePet ? activePet.image : ""}/>
+                    </div>
                     <h1>{activePet ? activePet.name : ""}</h1>
                 </div>
                     <AiOutlineCloseCircle
@@ -89,47 +106,63 @@ const Petz = ({mode}) => {
                     <h2 className = "legendary">Legendary</h2>
                     <PetzCards
                     cards = {EpochOneLegendary}
+                    rarity = "legendary"
                     showPetInfo = {showPetInfo}
                     petzEmblemChecker={petzEmblemChecker}
                     />
                     <h2 className = "ultrarare">Ultra Rare</h2>
-                    <PetzCards cards = {EpochOneUltraRare}
+                    <PetzCards 
+                    cards = {EpochOneUltraRare}
+                    rarity = "ultrarare"
                     showPetInfo = {showPetInfo}
                     petzEmblemChecker={petzEmblemChecker}
                     />
                     <h2 className = "extremelyrare">Extremely Rare</h2>
                     <PetzCards
                     cards = {EpochOneExtremelyRare}
+                    rarity = "extremelyrare"
                     showPetInfo = {showPetInfo}
                     petzEmblemChecker={petzEmblemChecker}
                     />
                     <h2 className = "epic">Epic</h2>
-                    <PetzCards cards = {EpochOneEpic}
+                    <PetzCards 
+                    cards = {EpochOneEpic}
+                    rarity = "epic"
                     showPetInfo = {showPetInfo}
                     petzEmblemChecker={petzEmblemChecker}
                     />
                     <h2 className = "rare">Rare</h2>
-                    <PetzCards cards = {EpochOneRare}
+                    <PetzCards 
+                    cards = {EpochOneRare}
+                    rarity = "rare"
                     showPetInfo = {showPetInfo}
                     petzEmblemChecker={petzEmblemChecker}
                     />
                     <h2 className = "scarce">Scarce</h2>
-                    <PetzCards cards = {EpochOneScarce}
+                    <PetzCards 
+                    cards = {EpochOneScarce}
+                    rarity = "scarce"
                     showPetInfo = {showPetInfo}
                     petzEmblemChecker={petzEmblemChecker}
                     />
                     <h2 className = "uncommon">Uncommon</h2>
-                    <PetzCards cards = {EpochOneUncommon}
+                    <PetzCards 
+                    cards = {EpochOneUncommon}
+                    rarity = "uncommon"
                     showPetInfo = {showPetInfo}
                     petzEmblemChecker={petzEmblemChecker}
                     />
                     <h2 className = "common">Common</h2>
-                    <PetzCards cards = {EpochOneCommon}
+                    <PetzCards 
+                    cards = {EpochOneCommon}
+                    rarity = "common"
                     showPetInfo = {showPetInfo}
                     petzEmblemChecker={petzEmblemChecker}
                     />
                     <h2 className = "verycommon">Very Common</h2>
-                    <PetzCards cards = {EpochOneVeryCommon}
+                    <PetzCards 
+                    cards = {EpochOneVeryCommon}
+                    rarity = "verycommon"
                     showPetInfo = {showPetInfo}
                     petzEmblemChecker={petzEmblemChecker}
                     />
