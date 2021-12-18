@@ -2041,6 +2041,8 @@ display: block;
 
 /*Pet modal on click*/ 
 .pet-modal { 
+  display: flex;
+  justify-content: space-around; 
   position: absolute; 
   margin: 0 auto;
   top: 200px; 
@@ -2048,47 +2050,42 @@ display: block;
   max-width: 1400px;
   height: 800px; 
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   border-radius: 20px;
   z-index: 10;
+  box-shadow: rgba(85, 204, 155, 0.25) 0px 30px 60px -12px inset, 
+  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .pet-modal-active { 
- display: block; 
+ display: flex;  
 }
 
 .pet-modal-hidden { 
   display: none; 
  }
 
- .pet-modal-top-layer { 
-   position: relative; 
+ .pet-modal-left-box { 
+   width: 100%; 
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
  }
 
  .pet-modal-image { 
-   width: 300px; 
-   height: 300px; 
- }
+  width: 380px; 
+  height: 380px; 
+}
 
- .pet-modal-image img { 
-   width: 100%; 
- }
-
- .pet-modal h1 { 
-  text-align: center;
-  color: white;
-  font-size: 70px;
-  margin-right: 100px;
+.pet-modal-image img { 
+  width: 100%; 
 }
 
 .pet-modal-type { 
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: -50px;
   width: 300px;
 }
 
@@ -2108,8 +2105,35 @@ display: block;
   color: white;
 }
 
-.pet-modal-rarity { 
-  margin-top: 3rem;
+.pet-modal-right-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pet-modal-right-box div { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+ .pet-modal h1 { 
+  color: white;
+  font-size: 7rem;
+}
+
+.modal-cafe-icon { 
+  color: rgb(83, 80, 79); 
+}
+
+.modal-day-icon { 
+  color: rgb(231, 220, 118); 
+}
+
+.modal-night-icon { 
+  color: rgb(79, 79, 119);
 }
 
 /*Collection Page*/ 

@@ -178,7 +178,8 @@ export const EpochOneLegendary =
         weight: "28 lb", 
         biome: "Temperate Forest", 
         bodyType: "Bird",
-        diuNoc: "Diurnal"
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet2,
@@ -190,7 +191,8 @@ export const EpochOneLegendary =
         weight: "175 lb", 
         biome: "Seasonal Forest", 
         bodyType: "Bull",
-        diuNoc: "Diurnal"
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet3,
@@ -202,7 +204,8 @@ export const EpochOneLegendary =
         weight: "???", 
         biome: "Polar Ice Cap", 
         bodyType: "Cat",
-        diuNoc: "Diurnal"
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet4,
@@ -214,7 +217,8 @@ export const EpochOneLegendary =
         weight: "22 lb", 
         biome: "Tropical Marsh", 
         bodyType: "Insect",
-        diuNoc: "Nocturnal"
+        activity: "Nocturnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet5,
@@ -226,7 +230,8 @@ export const EpochOneLegendary =
         weight: "240 lb", 
         biome: "Highland Mountain", 
         bodyType: "Totem",
-        diuNoc: "Diurnal"
+        activity: "Diurnal",
+        evolutions: "none"
     }
 ]
 //Ultra rare Petz
@@ -234,105 +239,224 @@ export const EpochOneUltraRare =
 [
     { 
         image: cryptoPet6,
-        name: "CryptoPet6",
+        name: "Dilusaur",
         rarity: "ultrarare",
-        type: ["psychic", "drake"]
+        type: ["psychic", "drake"],
+        kingdom: "Dual", 
+        size: "4'02'",
+        weight: "100 lb", 
+        biome: "Temerate Subterrain", 
+        bodyType: "Mental Dragon",
+        activity: "Cavurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet7,
-        name: "CryptoPet7",
+        name: "Solaren",
         rarity: "ultrarare",
-        type: ["fire", "drake"]
+        type: ["fire", "drake"],
+        kingdom: "Dual", 
+        size: "4'00'",
+        weight: "105 lb", 
+        biome: "Dry Volcano", 
+        bodyType: "Icon Dragon",
+        activity: "Diurnal",
+        evolutions: "2"
     },
     { 
         image: cryptoPet8,
-        name: "CryptoPet8",
+        name: "Wattz",
         rarity: "ultrarare",
-        type: ["electric", "drake"]
+        type: ["electric", "drake"],
+        kingdom: "Dual", 
+        size: "3'08'",
+        weight: "75 lb", 
+        biome: "Highland Forest", 
+        bodyType: "Legged Electric Dragon",
+        activity: "Diurnal",
+        evolutions: "2"
     },
     { 
         image: cryptoPet9,
-        name: "CryptoPet9",
+        name: "Ceraptera",
         rarity: "ultrarare",
-        type: ["insect"]
+        type: ["insect"],
+        kingdom: "Material", 
+        size: "1'10'",
+        weight: "16 lb", 
+        biome: "Temperate Tall Meadow", 
+        bodyType: "Pincer insect with tail",
+        activity: "Diurnal",
+        evolutions: "2"
     },
     { 
         image: cryptoPet10,
-        name: "CryptoPet10",
+        name: "Laguna",
         rarity: "ultrarare",
-        type: ["fae", "water"]
+        type: ["fae", "water"],
+        kingdom: "Dual", 
+        size: "1'04'",
+        weight: "8 lb", 
+        biome: "Marine Anomaly", 
+        bodyType: "Aqua Fae",
+        activity: "Diurnal",
+        evolutions: "1"
     },
     { 
         image: cryptoPet11,
-        name: "CryptoPet11",
+        name: "Claygard",
         rarity: "ultrarare",
-        type: ["combat", "earth"]
+        type: ["combat", "earth"],
+        kingdom: "Dual", 
+        size: "4'06'",
+        weight: "150 lb", 
+        biome: "Dry Mountain", 
+        bodyType: "Garudo Fighter",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet12,
-        name: "CryptoPet12",
+        name: "Roaminrai",
         rarity: "ultrarare",
-        type: ["combat", "metal"]
+        type: ["combat", "metal"],
+        kingdom: "Dual", 
+        size: "3'04'",
+        weight: "65 lb", 
+        biome: "Highland Anomaly", 
+        bodyType: "Hat/Stick Steel Fighter",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet13,
-        name: "CryptoPet13",
+        name: "Eruptile",
         rarity: "ultrarare",
-        type: ["fire"]
+        type: ["fire"],
+        kingdom: "Elemental", 
+        size: "3'00'",
+        weight: "55 lb", 
+        biome: "Highland Mountain", 
+        bodyType: "Fire Walker",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet14,
-        name: "CryptoPet14",
+        name: "Glyff",
         rarity: "ultrarare",
-        type: ["sound", "spirit"]
+        type: ["sound", "spirit"],
+        kingdom: "Dual", 
+        size: "4'10'",
+        weight: "???", 
+        biome: "Polar Subterrain", 
+        bodyType: "Resonance Statue",
+        activity: "Cavurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet15,
-        name: "CryptoPet15",
+        name: "Arctavian",
         rarity: "ultrarare",
-        type: ["ice", "flying"]
+        type: ["ice", "flying"],
+        kingdom: "Dual", 
+        size: "3'08'",
+        weight: "30 lb", 
+        biome: "Polar Coastal", 
+        bodyType: "Ice Dodo bird",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet16,
-        name: "CryptoPet16",
+        name: "Salamagma",
         rarity: "ultrarare",
-        type: ["shadow", "lava"]
+        type: ["shadow", "lava"],
+        kingdom: "Dual", 
+        size: "5'00'",
+        weight: "180 lb", 
+        biome: "Tropical Volcano", 
+        bodyType: "Salamagma",
+        activity: "Nocturnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet17,
-        name: "CryptoPet17",
+        name: "Scorchion",
         rarity: "ultrarare",
-        type: ["lava", "poison"]
+        type: ["lava", "poison"],
+        kingdom: "Dual", 
+        size: "2'10'",
+        weight: "55 lb", 
+        biome: "Tropical Volcano", 
+        bodyType: "Searing Scorpion",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet18,
-        name: "CryptoPet18",
+        name: "Pyrodon",
         rarity: "ultrarare",
-        type: ["lava", "drake"]
+        type: ["lava", "drake"],
+        kingdom: "Dual", 
+        size: "8'00'",
+        weight: "300 lb", 
+        biome: "Tropical Volcano", 
+        bodyType: "Fire Hydra",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet19,
-        name: "CryptoPet19",
+        name: "Geistra",
         rarity: "ultrarare",
-        type: ["psychic", "drake"]
+        type: ["psychic", "drake"],
+        kingdom: "Dual", 
+        size: "3'00'",
+        weight: "50 lb", 
+        biome: "Dry Subterrain", 
+        bodyType: "Mind Dragon",
+        activity: "Cavurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet20,
-        name: "CryptoPet20",
+        name: "Celestorca",
         rarity: "ultrarare",
-        type: ["psychic", "drake"]
+        type: ["psychic", "drake"],
+        kingdom: "Dual", 
+        size: "6'02'",
+        weight: "280 lb", 
+        biome: "Tropical Subterrain", 
+        bodyType: "Celestiorca",
+        activity: "Cavurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet21,
-        name: "CryptoPet21",
+        name: "Skeleroo",
         rarity: "ultrarare",
-        type: ["earth", "spirit"]
+        type: ["earth", "spirit"],
+        kingdom: "Dual", 
+        size: "2'10'",
+        weight: "???", 
+        biome: "Dry Savanna", 
+        bodyType: "Skeleroo",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet22,
-        name: "CryptoPet22",
+        name: "Tobongo",
         rarity: "ultrarare",
-        type: ["sound"]
+        type: ["sound"],
+        kingdom: "Material", 
+        size: "3'04'",
+        weight: "56 lb", 
+        biome: "Dry Volcano", 
+        bodyType: "Tobongo",
+        activity: "Diurnal",
+        evolutions: "none"
     }
 ]
 

@@ -16,6 +16,9 @@ import PetzCards from "./PetzCards";
 import {petzObject } from "../PetzData/EmblemData"
 
 import {AiOutlineCloseCircle} from 'react-icons/ai';
+import {BsFillCloudSunFill} from "react-icons/bs";
+import {BsFillCloudMoonFill} from "react-icons/bs"; 
+import {GiCaveEntrance} from "react-icons/gi"; 
 
 const Petz = ({mode}) => { 
 
@@ -25,6 +28,18 @@ const Petz = ({mode}) => {
     function showPetInfo(pet) { 
         setActivePet(pet);
         setPetModalActive(true); 
+    }
+
+    function setActivityIcon(pet) { 
+        switch(pet) { 
+            case "Diurnal": return <BsFillCloudSunFill className = "modal-day-icon" size={100}/>
+            break 
+            case "Nocturnal": return <BsFillCloudMoonFill className = "modal-night-icon" size={100}/>
+            break
+            case "Cavurnal": return <GiCaveEntrance className = "modal-cafe-icon" size={100}/>
+            break
+            default: return "Could not load image"
+        }
     }
 
     const petzEmblemChecker = (type) => { 
@@ -97,28 +112,40 @@ const Petz = ({mode}) => {
         <div className = {mode? "petz-page-wrapper light-mode" : "petz-page-wrapper dark-mode"}>
             <div className = "all-petz-container">
                 <div className= {petModalActive ? "pet-modal pet-modal-active" : "pet-modal-hidden"}>
-                <div className = "pet-modal-top-layer">
-                    {
-                        activePet ?
-                        activePet.type.length > 1 ? 
-                        <div className = "pet-modal-type">
-                            <img src={petzEmblemChecker(activePet.type[0])}/>
-                            <img src={petzEmblemChecker(activePet.type[1])}/>
+                <div>
+                    <div className = "pet-modal-left-box">
+                        <div className= "pet-modal-image">
+                            <img src={activePet ? activePet.image : ""}/>
                         </div>
-                        :
-                        <div className = "pet-modal-type">
-                            <img src={petzEmblemChecker(activePet.type[0])}/>
-                        </div>
-                        : 
-                        <span>Nothing here</span>
-                    }
-                    <div className= "pet-modal-image">
-                        <img src={activePet ? activePet.image : ""}/>
+                        {
+                            activePet ?
+                            activePet.type.length > 1 ?
+                            <div className = "pet-modal-type">
+                                <img src={petzEmblemChecker(activePet.type[0])}/>
+                                <img src={petzEmblemChecker(activePet.type[1])}/>
+                            </div>
+                            :
+                            <div className = "pet-modal-type">
+                                <img src={petzEmblemChecker(activePet.type[0])}/>
+                            </div>
+                            :
+                            <span>Nothing here</span>
+                        }
+                       
+                        <div>
                         <div className = "pet-modal-rarity">
                             <span style ={{color: "white"}}>Rarity: </span><span className={activePet ? activePet.rarity : ""}>{activePet ? checkRarity(activePet.rarity):""}</span>
                         </div>
                         <div className = "pet-modal-info">
                             <span>Kingdom: {activePet? activePet.kingdom : ""}</span>
+                        </div>
+                        <div className = "pet-modal-info">
+                            {
+                                activePet && activePet.type.length > 1 ? 
+                                <span>Types: {activePet? activePet.type[0] + " & " + activePet.type[1]: ""}</span>
+                                :
+                                <span>Type: {activePet ? activePet.type[0] : ""}</span>
+                            }
                         </div>
                         <div className = "pet-modal-info">
                             <span>Size: {activePet? activePet.size: ""}</span>
@@ -130,7 +157,22 @@ const Petz = ({mode}) => {
                             <span>Body Type: {activePet? activePet.bodyType: ""}</span>
                         </div>
                     </div>
+                    </div>
+                    
+                </div>
+                <div className = "pet-modal-right-box">
                     <h1>{activePet ? activePet.name : ""}</h1>
+                    <div>
+                        {
+                            activePet ? setActivityIcon(activePet.activity) : ""
+                        }
+                        <div className = "pet-modal-info">
+                            <span>Activity: {activePet ? activePet.activity: ""}</span>
+                        </div>
+                        <div className = "pet-modal-info">
+                            <span>Biome: {activePet ? activePet.biome : ""}</span>
+                        </div>
+                    </div>
                 </div>
                     <AiOutlineCloseCircle
                     className="modal-building-close"
