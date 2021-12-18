@@ -110,153 +110,153 @@ const Petz = ({mode}) => {
 
     return (
         <div className = {mode? "petz-page-wrapper light-mode" : "petz-page-wrapper dark-mode"}>
-            <div className = "all-petz-container">
-                <div className= {petModalActive ? "pet-modal pet-modal-active" : "pet-modal-hidden"}>
-                <div>
-                    <div className = "pet-modal-left-box">
-                        <div className= "pet-modal-image">
-                            <img src={activePet ? activePet.image : ""}/>
-                        </div>
-                        {
-                            activePet ?
-                            activePet.type.length > 1 ?
-                            <div className = "pet-modal-type">
-                                <img src={petzEmblemChecker(activePet.type[0])}/>
-                                <img src={petzEmblemChecker(activePet.type[1])}/>
-                            </div>
-                            :
-                            <div className = "pet-modal-type">
-                                <img src={petzEmblemChecker(activePet.type[0])}/>
-                            </div>
-                            :
-                            <span>Nothing here</span>
-                        }
-                       
-                        <div>
-                        <div className = "pet-modal-rarity">
-                            <span style ={{color: "white"}}>Rarity: </span><span className={activePet ? activePet.rarity : ""}>{activePet ? checkRarity(activePet.rarity):""}</span>
-                        </div>
-                        <div className = "pet-modal-info">
-                            <span>Kingdom: {activePet? activePet.kingdom : ""}</span>
-                        </div>
-                        <div className = "pet-modal-info">
-                            {
-                                activePet && activePet.type.length > 1 ? 
-                                <span>Types: {activePet? activePet.type[0] + " & " + activePet.type[1]: ""}</span>
-                                :
-                                <span>Type: {activePet ? activePet.type[0] : ""}</span>
-                            }
-                        </div>
-                        <div className = "pet-modal-info">
-                            <span>Size: {activePet? activePet.size: ""}</span>
-                        </div>
-                        <div className = "pet-modal-info">
-                            <span>Weight: {activePet? activePet.weight: ""}</span>
-                        </div>
-                        <div className = "pet-modal-info">
-                            <span>Body Type: {activePet? activePet.bodyType: ""}</span>
-                        </div>
-                    </div>
-                    </div>
-                    
-                </div>
-                <div className = "pet-modal-right-box">
-                    <h1>{activePet ? activePet.name : ""}</h1>
+            <div className = {petModalActive ? "modal-background-active" : "modal-background-hidden"}> </div>
+                <div className = "all-petz-container">
+                    <div className= {petModalActive ? "pet-modal pet-modal-active" : "pet-modal-hidden"}>
                     <div>
-                        {
-                            activePet ? setActivityIcon(activePet.activity) : ""
-                        }
-                        <div className = "pet-modal-info">
-                            <span>Activity: {activePet ? activePet.activity: ""}</span>
+                        <div className = "pet-modal-left-box">
+                            <div className= "pet-modal-image">
+                                <img src={activePet ? activePet.image : ""}/>
+                            </div>
+                            {
+                                activePet ?
+                                activePet.type.length > 1 ?
+                                <div className = "pet-modal-type">
+                                    <img src={petzEmblemChecker(activePet.type[0])}/>
+                                    <img src={petzEmblemChecker(activePet.type[1])}/>
+                                </div>
+                                :
+                                <div className = "pet-modal-type">
+                                    <img src={petzEmblemChecker(activePet.type[0])}/>
+                                </div>
+                                :
+                                <span>Nothing here</span>
+                            }
+                
+                            <div>
+                            <div className = "pet-modal-rarity">
+                                <span style ={{color: "white"}}>Rarity: </span><span className={activePet ? activePet.rarity : ""}>{activePet ? checkRarity(activePet.rarity):""}</span>
+                            </div>
+                            <div className = "pet-modal-info">
+                                <span>Kingdom: {activePet? activePet.kingdom : ""}</span>
+                            </div>
+                            <div className = "pet-modal-info">
+                                {
+                                    activePet && activePet.type.length > 1 ?
+                                    <span>Types: {activePet? activePet.type[0] + " & " + activePet.type[1]: ""}</span>
+                                    :
+                                    <span>Type: {activePet ? activePet.type[0] : ""}</span>
+                                }
+                            </div>
+                            <div className = "pet-modal-info">
+                                <span>Size: {activePet? activePet.size: ""}</span>
+                            </div>
+                            <div className = "pet-modal-info">
+                                <span>Weight: {activePet? activePet.weight: ""}</span>
+                            </div>
+                            <div className = "pet-modal-info">
+                                <span>Body Type: {activePet? activePet.bodyType: ""}</span>
+                            </div>
                         </div>
-                        <div className = "pet-modal-info">
-                            <span>Biome: {activePet ? activePet.biome : ""}</span>
+                        </div>
+                
+                    </div>
+                    <div className = "pet-modal-right-box">
+                        <h1>{activePet ? activePet.name : ""}</h1>
+                        <div>
+                            {
+                                activePet ? setActivityIcon(activePet.activity) : ""
+                            }
+                            <div className = "pet-modal-info">
+                                <span>Activity: {activePet ? activePet.activity: ""}</span>
+                            </div>
+                            <div className = "pet-modal-info">
+                                <span>Biome: {activePet ? activePet.biome : ""}</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                    <AiOutlineCloseCircle
-                    className="modal-building-close"
-                    onClick = {() => setPetModalActive(false)}
-                    size={30}/>
-                </div>
+                        <AiOutlineCloseCircle
+                        className="modal-building-close"
+                        onClick = {() => setPetModalActive(false)}
+                        size={30}/>
+                    </div>
                 
-                <h1 style={mode?{color: "black"}:{color:"white"}}>Epoch 1</h1>
-
-                <div className = "petz-cards-container">
-                    <h2 className = "legendary">Legendary</h2>
-                    <PetzCards
-                    cards = {EpochOneLegendary}
-                    rarity = "legendary"
-                    showPetInfo = {showPetInfo}
-                    petzEmblemChecker={petzEmblemChecker}
-                    checkRarity={checkRarity}
-                    />
-                    <h2 className = "ultrarare">Ultra Rare</h2>
-                    <PetzCards 
-                    cards = {EpochOneUltraRare}
-                    rarity = "ultrarare"
-                    showPetInfo = {showPetInfo}
-                    petzEmblemChecker={petzEmblemChecker}
-                    checkRarity={checkRarity}
-                    />
-                    <h2 className = "extremelyrare">Extremely Rare</h2>
-                    <PetzCards
-                    cards = {EpochOneExtremelyRare}
-                    rarity = "extremelyrare"
-                    showPetInfo = {showPetInfo}
-                    petzEmblemChecker={petzEmblemChecker}
-                    checkRarity={checkRarity}
-                    />
-                    <h2 className = "epic">Epic</h2>
-                    <PetzCards 
-                    cards = {EpochOneEpic}
-                    rarity = "epic"
-                    showPetInfo = {showPetInfo}
-                    petzEmblemChecker={petzEmblemChecker}
-                    checkRarity={checkRarity}
-                    />
-                    <h2 className = "rare">Rare</h2>
-                    <PetzCards 
-                    cards = {EpochOneRare}
-                    rarity = "rare"
-                    showPetInfo = {showPetInfo}
-                    petzEmblemChecker={petzEmblemChecker}
-                    checkRarity={checkRarity}
-                    />
-                    <h2 className = "scarce">Scarce</h2>
-                    <PetzCards 
-                    cards = {EpochOneScarce}
-                    rarity = "scarce"
-                    showPetInfo = {showPetInfo}
-                    petzEmblemChecker={petzEmblemChecker}
-                    checkRarity={checkRarity}
-                    />
-                    <h2 className = "uncommon">Uncommon</h2>
-                    <PetzCards 
-                    cards = {EpochOneUncommon}
-                    rarity = "uncommon"
-                    showPetInfo = {showPetInfo}
-                    petzEmblemChecker={petzEmblemChecker}
-                    checkRarity={checkRarity}
-                    />
-                    <h2 className = "common">Common</h2>
-                    <PetzCards 
-                    cards = {EpochOneCommon}
-                    rarity = "common"
-                    showPetInfo = {showPetInfo}
-                    petzEmblemChecker={petzEmblemChecker}
-                    checkRarity={checkRarity}
-                    />
-                    <h2 className = "verycommon">Very Common</h2>
-                    <PetzCards 
-                    cards = {EpochOneVeryCommon}
-                    rarity = "verycommon"
-                    showPetInfo = {showPetInfo}
-                    petzEmblemChecker={petzEmblemChecker}
-                    checkRarity={checkRarity}
-                    />
+                    <h1 style={mode?{color: "black"}:{color:"white"}}>Epoch 1</h1>
+                    <div className = "petz-cards-container">
+                        <h2 className = "legendary">Legendary</h2>
+                        <PetzCards
+                        cards = {EpochOneLegendary}
+                        rarity = "legendary"
+                        showPetInfo = {showPetInfo}
+                        petzEmblemChecker={petzEmblemChecker}
+                        checkRarity={checkRarity}
+                        />
+                        <h2 className = "ultrarare">Ultra Rare</h2>
+                        <PetzCards
+                        cards = {EpochOneUltraRare}
+                        rarity = "ultrarare"
+                        showPetInfo = {showPetInfo}
+                        petzEmblemChecker={petzEmblemChecker}
+                        checkRarity={checkRarity}
+                        />
+                        <h2 className = "extremelyrare">Extremely Rare</h2>
+                        <PetzCards
+                        cards = {EpochOneExtremelyRare}
+                        rarity = "extremelyrare"
+                        showPetInfo = {showPetInfo}
+                        petzEmblemChecker={petzEmblemChecker}
+                        checkRarity={checkRarity}
+                        />
+                        <h2 className = "epic">Epic</h2>
+                        <PetzCards
+                        cards = {EpochOneEpic}
+                        rarity = "epic"
+                        showPetInfo = {showPetInfo}
+                        petzEmblemChecker={petzEmblemChecker}
+                        checkRarity={checkRarity}
+                        />
+                        <h2 className = "rare">Rare</h2>
+                        <PetzCards
+                        cards = {EpochOneRare}
+                        rarity = "rare"
+                        showPetInfo = {showPetInfo}
+                        petzEmblemChecker={petzEmblemChecker}
+                        checkRarity={checkRarity}
+                        />
+                        <h2 className = "scarce">Scarce</h2>
+                        <PetzCards
+                        cards = {EpochOneScarce}
+                        rarity = "scarce"
+                        showPetInfo = {showPetInfo}
+                        petzEmblemChecker={petzEmblemChecker}
+                        checkRarity={checkRarity}
+                        />
+                        <h2 className = "uncommon">Uncommon</h2>
+                        <PetzCards
+                        cards = {EpochOneUncommon}
+                        rarity = "uncommon"
+                        showPetInfo = {showPetInfo}
+                        petzEmblemChecker={petzEmblemChecker}
+                        checkRarity={checkRarity}
+                        />
+                        <h2 className = "common">Common</h2>
+                        <PetzCards
+                        cards = {EpochOneCommon}
+                        rarity = "common"
+                        showPetInfo = {showPetInfo}
+                        petzEmblemChecker={petzEmblemChecker}
+                        checkRarity={checkRarity}
+                        />
+                        <h2 className = "verycommon">Very Common</h2>
+                        <PetzCards
+                        cards = {EpochOneVeryCommon}
+                        rarity = "verycommon"
+                        showPetInfo = {showPetInfo}
+                        petzEmblemChecker={petzEmblemChecker}
+                        checkRarity={checkRarity}
+                        />
+                    </div>
                 </div>
-            </div>
         </div>
     )
 }
