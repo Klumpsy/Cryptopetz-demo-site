@@ -2050,6 +2050,7 @@ display: block;
   max-width: 1400px;
   height: 800px; 
   padding: 20px;
+  border: 2px solid rgba(85, 204, 155, 0.25);
   background-color: rgba(0, 0, 0, 0.95);
   border-radius: 20px;
   z-index: 100;
@@ -2065,13 +2066,13 @@ display: block;
   display: none; 
  }
 
- .modal-background-active,
- .modal-background-hidden { 
-   width: 100%;
-   height: 100%; 
- }
+.modal-background-active,
+.modal-background-hidden { 
+  width: 100%;
+  height: 100%; 
+}
 
- .modal-background-active { 
+.modal-background-active { 
   position: absolute; 
   background-color: rgba(10, 10, 10, 0.85);
   width: 100%; 
@@ -2080,15 +2081,15 @@ display: block;
   transition: 0.5s ease-in-out;
  }
 
- .pet-modal-left-box { 
-   width: 100%; 
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
- }
+.pet-modal-left-box { 
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
- .pet-modal-image { 
+.pet-modal-image { 
   width: 380px; 
   height: 380px; 
 }
@@ -2149,6 +2150,60 @@ display: block;
 
 .modal-night-icon { 
   color: rgb(79, 79, 119);
+}
+
+@media only screen and (max-width: 1500px ) {
+  .pet-modal h1 { 
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 1200px ) {
+  .pet-modal h1 { 
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 840px ) {
+  .pet-modal h1 { 
+    font-size: 3rem;
+  }
+  .pet-modal { 
+    flex-direction: column-reverse;
+    overflow-y: scroll;
+    justify-content: flex-start;
+  }
+  .modal-building-close { 
+    top: -330px;
+    right: 20px;
+  }
+}
+@media only screen and (max-width: 450px) { 
+  .rarity-title{ 
+    font-size: 2rem !important; 
+  }
+  .epoch-title{ 
+    font-size: 3rem !important;
+  }
+  .pet-modal h1 { 
+    font-size: 2rem; 
+  }
+  .pet-modal {
+    width: 100%; 
+  }
+  .pet-modal-image { 
+    width: 100%; 
+    height: 230px;
+  }
+  .pet-modal-type {
+    width: 220px;
+  }
+  .pet-modal-info,
+  .pet-modal-rarity { 
+    width: 220px; 
+  }
+  .modal-building-close { 
+    top: -170px;
+    right: 20px;
+  }
 }
 
 /*Collection Page*/ 
@@ -2734,7 +2789,7 @@ border: 3px solid rgb(129, 151, 148);
     }
     
     .petz-background-second {
-      bottom: 100px;
+      bottom: -50px;
       right: -100px;
     }
 }
@@ -2954,6 +3009,108 @@ border: 3px solid rgb(129, 151, 148);
   }
 }
 
+/*Sales page*/
+.sales-page-wrapper { 
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  min-height: 100vh; 
+}
+
+.sales-current-sales-box,
+.sales-past-sales-box { 
+  width: 100%; 
+  display: flex;
+}
+
+.sales-current-sales-box { 
+  height: 70%; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-sale-background { 
+  text-align: center;
+  min-height: 300px; 
+  width: 300px;   
+  background-image: url(./images/PetzImagesSmall/Pi7compressedseal.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.no-sale-background h2 { 
+  color: var(--legendary-color)
+}
+
+.sales-past-sales-box div { 
+  width: 30%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 250px;
+  border-radius: 16px;
+  color: white; 
+  padding: 10px;
+  margin: 10px;
+}
+
+.sales-past-sales-box {
+  justify-content: space-evenly; 
+}
+
+.sales-current-sales-box h1 { 
+  font-size: 3rem;
+  text-align: center;
+}
+
+.sales-past-sales-box h2 { 
+  font-size: 2rem;
+  color: var(--uncommon-color)
+}
+
+.past-sales-box { 
+  overflow-y: scroll;
+}
+
+.past-sales-box h2 { 
+  color: var(--ultrarare-color)
+}
+
+.important-span-styling { 
+  color: rgb(230, 55, 55); 
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+.warning-message-container { 
+  text-align: center;
+  width: 60%;
+  background: rgba(0, 0, 0, 0.8); 
+  background: linear-gradient(0deg, rgba(20, 20, 20, 0.8) 0%, rgba(54,53,52,0.8223472472555768) 29%);
+  padding: 10px;
+  color: white;
+  border-radius: 16px;
+  margin-top: 100px;
+  border: 2px solid rgb(230, 55, 55); 
+}
+
+@media only screen and (max-width: 1330px) { 
+  .warning-message-container{ 
+    width: 90%; 
+  }
+  .sales-past-sales-box { 
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sales-past-sales-box div { 
+    text-align: center;
+    width: 90%; 
+  }
+}
+
 /*Footer */ 
 .footer { 
   position: relative;
@@ -2989,7 +3146,7 @@ border: 3px solid rgb(129, 151, 148);
 @media only screen and (max-width: 400px) { 
  
   .credits p{ 
-    font-size: 10px;
+    font-size: 8px;
   }
   .footer img { 
     height: 60px;

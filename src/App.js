@@ -16,7 +16,7 @@ import Updates from './components/Updates'
 import Team from './components/Team';
 import Landing from "./components/Landing";
 import StakePool from "./components/StakePool"
-import Sales from "./components/Sales";
+import Sales from "./components/Sales/Sales";
 import Footer from "./components/Footer";
 import './index.css';
 
@@ -183,7 +183,7 @@ function App() {
                   <StakePool mode={mode}/>
                 </Route>
                 <Route exact path="/Sales">
-                  <Sales/>
+                  <Sales mode={mode}/>
                 </Route>
                 
                             <Route exact path="/PetzMetrics"><PetzMetrics/></Route>

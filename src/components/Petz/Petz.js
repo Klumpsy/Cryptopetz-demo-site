@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+//Pet Objects by rarity 
 import { EpochOneLegendary, 
          EpochOneUltraRare, 
          EpochOneExtremelyRare, 
@@ -10,11 +11,13 @@ import { EpochOneLegendary,
          EpochOneCommon,
          EpochOneVeryCommon } from "../PetzData/epochOnePetz";
 
+//PetzCard Component 
 import PetzCards from "./PetzCards";
 
 //Emblem Data
 import {petzObject } from "../PetzData/EmblemData"
 
+//React Icons 
 import {AiOutlineCloseCircle} from 'react-icons/ai';
 import {BsFillCloudSunFill} from "react-icons/bs";
 import {BsFillCloudMoonFill} from "react-icons/bs"; 
@@ -25,11 +28,12 @@ const Petz = ({mode}) => {
     const [activePet, setActivePet] = useState(null); 
     const [petModalActive, setPetModalActive] = useState(false); 
 
+//Function for adding clicked pet to petzModal state 
     function showPetInfo(pet) { 
         setActivePet(pet);
         setPetModalActive(true); 
     }
-
+//Function for adding the right React icon to activity state 
     function setActivityIcon(pet) { 
         switch(pet) { 
             case "Diurnal": return <BsFillCloudSunFill className = "modal-day-icon" size={100}/>
@@ -41,7 +45,7 @@ const Petz = ({mode}) => {
             default: return "Could not load image"
         }
     }
-
+//Function for adding the right Emblem(s) to a pet by type(s)
     const petzEmblemChecker = (type) => { 
         switch(type) { 
             case "fire": return petzObject[0].emblem
@@ -84,6 +88,8 @@ const Petz = ({mode}) => {
         }
       }
 
+/*function to change type to Type with capital (the type in the object is used as CSS class as well 
+so it needs to change like this */
       function checkRarity(rarity) { 
         switch(rarity) { 
             case "legendary": return "Legendary"
@@ -181,9 +187,9 @@ const Petz = ({mode}) => {
                         size={30}/>
                     </div>
                 
-                    <h1 style={mode?{color: "black"}:{color:"white"}}>Epoch 1</h1>
+                    <h1 className = "epoch-title" style={mode?{color: "black"}:{color:"white"}}>Epoch 1</h1>
                     <div className = "petz-cards-container">
-                        <h2 className = "legendary">Legendary</h2>
+                        <h2 className = "rarity-title legendary">Legendary</h2>
                         <PetzCards
                         cards = {EpochOneLegendary}
                         rarity = "legendary"
@@ -191,7 +197,7 @@ const Petz = ({mode}) => {
                         petzEmblemChecker={petzEmblemChecker}
                         checkRarity={checkRarity}
                         />
-                        <h2 className = "ultrarare">Ultra Rare</h2>
+                        <h2 className = "rarity-title ultrarare">Ultra Rare</h2>
                         <PetzCards
                         cards = {EpochOneUltraRare}
                         rarity = "ultrarare"
@@ -199,7 +205,7 @@ const Petz = ({mode}) => {
                         petzEmblemChecker={petzEmblemChecker}
                         checkRarity={checkRarity}
                         />
-                        <h2 className = "extremelyrare">Extremely Rare</h2>
+                        <h2 className = "rarity-title extremelyrare">Extremely Rare</h2>
                         <PetzCards
                         cards = {EpochOneExtremelyRare}
                         rarity = "extremelyrare"
@@ -207,7 +213,7 @@ const Petz = ({mode}) => {
                         petzEmblemChecker={petzEmblemChecker}
                         checkRarity={checkRarity}
                         />
-                        <h2 className = "epic">Epic</h2>
+                        <h2 className = "rarity-title epic">Epic</h2>
                         <PetzCards
                         cards = {EpochOneEpic}
                         rarity = "epic"
@@ -215,7 +221,7 @@ const Petz = ({mode}) => {
                         petzEmblemChecker={petzEmblemChecker}
                         checkRarity={checkRarity}
                         />
-                        <h2 className = "rare">Rare</h2>
+                        <h2 className = "rarity-title rare">Rare</h2>
                         <PetzCards
                         cards = {EpochOneRare}
                         rarity = "rare"
@@ -223,7 +229,7 @@ const Petz = ({mode}) => {
                         petzEmblemChecker={petzEmblemChecker}
                         checkRarity={checkRarity}
                         />
-                        <h2 className = "scarce">Scarce</h2>
+                        <h2 className = "rarity-title scarce">Scarce</h2>
                         <PetzCards
                         cards = {EpochOneScarce}
                         rarity = "scarce"
@@ -231,7 +237,7 @@ const Petz = ({mode}) => {
                         petzEmblemChecker={petzEmblemChecker}
                         checkRarity={checkRarity}
                         />
-                        <h2 className = "uncommon">Uncommon</h2>
+                        <h2 className = "rarity-title uncommon">Uncommon</h2>
                         <PetzCards
                         cards = {EpochOneUncommon}
                         rarity = "uncommon"
@@ -239,7 +245,7 @@ const Petz = ({mode}) => {
                         petzEmblemChecker={petzEmblemChecker}
                         checkRarity={checkRarity}
                         />
-                        <h2 className = "common">Common</h2>
+                        <h2 className = "rarity-title common">Common</h2>
                         <PetzCards
                         cards = {EpochOneCommon}
                         rarity = "common"
@@ -247,7 +253,7 @@ const Petz = ({mode}) => {
                         petzEmblemChecker={petzEmblemChecker}
                         checkRarity={checkRarity}
                         />
-                        <h2 className = "verycommon">Very Common</h2>
+                        <h2 className = "rarity-title verycommon">Very Common</h2>
                         <PetzCards
                         cards = {EpochOneVeryCommon}
                         rarity = "verycommon"
