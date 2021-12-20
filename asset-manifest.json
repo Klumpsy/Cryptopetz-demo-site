@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Cryptopetz-demo-site/static/css/main.b4e0fe60.chunk.css",
-    "main.js": "/Cryptopetz-demo-site/static/js/main.c6defb16.chunk.js",
-    "main.js.map": "/Cryptopetz-demo-site/static/js/main.c6defb16.chunk.js.map",
+    "main.css": "/Cryptopetz-demo-site/static/css/main.10942ffd.chunk.css",
+    "main.js": "/Cryptopetz-demo-site/static/js/main.5950a445.chunk.js",
+    "main.js.map": "/Cryptopetz-demo-site/static/js/main.5950a445.chunk.js.map",
     "runtime-main.js": "/Cryptopetz-demo-site/static/js/runtime-main.e6bba3a7.js",
     "runtime-main.js.map": "/Cryptopetz-demo-site/static/js/runtime-main.e6bba3a7.js.map",
     "static/css/2.f988f6eb.chunk.css": "/Cryptopetz-demo-site/static/css/2.f988f6eb.chunk.css",
-    "static/js/2.ec15b514.chunk.js": "/Cryptopetz-demo-site/static/js/2.ec15b514.chunk.js",
-    "static/js/2.ec15b514.chunk.js.map": "/Cryptopetz-demo-site/static/js/2.ec15b514.chunk.js.map",
+    "static/js/2.435c44e1.chunk.js": "/Cryptopetz-demo-site/static/js/2.435c44e1.chunk.js",
+    "static/js/2.435c44e1.chunk.js.map": "/Cryptopetz-demo-site/static/js/2.435c44e1.chunk.js.map",
     "index.html": "/Cryptopetz-demo-site/index.html",
     "static/css/2.f988f6eb.chunk.css.map": "/Cryptopetz-demo-site/static/css/2.f988f6eb.chunk.css.map",
-    "static/css/main.b4e0fe60.chunk.css.map": "/Cryptopetz-demo-site/static/css/main.b4e0fe60.chunk.css.map",
-    "static/js/2.ec15b514.chunk.js.LICENSE.txt": "/Cryptopetz-demo-site/static/js/2.ec15b514.chunk.js.LICENSE.txt",
+    "static/css/main.10942ffd.chunk.css.map": "/Cryptopetz-demo-site/static/css/main.10942ffd.chunk.css.map",
+    "static/js/2.435c44e1.chunk.js.LICENSE.txt": "/Cryptopetz-demo-site/static/js/2.435c44e1.chunk.js.LICENSE.txt",
     "static/media/01.b752fa7f.png": "/Cryptopetz-demo-site/static/media/01.b752fa7f.png",
     "static/media/01.c5342745.png": "/Cryptopetz-demo-site/static/media/01.c5342745.png",
     "static/media/02.83b8333d.png": "/Cryptopetz-demo-site/static/media/02.83b8333d.png",
@@ -214,6 +214,7 @@
     "static/media/Pi7compressed050.b2c67f9d.png": "/Cryptopetz-demo-site/static/media/Pi7compressed050.b2c67f9d.png",
     "static/media/Pi7compressed051.9dcc0905.png": "/Cryptopetz-demo-site/static/media/Pi7compressed051.9dcc0905.png",
     "static/media/Pi7compressed052.b667c8c0.png": "/Cryptopetz-demo-site/static/media/Pi7compressed052.b667c8c0.png",
+    "static/media/Pi7compressed053.9b7816d2.png": "/Cryptopetz-demo-site/static/media/Pi7compressed053.9b7816d2.png",
     "static/media/Pi7compressed054.79e3c788.png": "/Cryptopetz-demo-site/static/media/Pi7compressed054.79e3c788.png",
     "static/media/Pi7compressed055.0eb035be.png": "/Cryptopetz-demo-site/static/media/Pi7compressed055.0eb035be.png",
     "static/media/Pi7compressed056.d3bdce7e.png": "/Cryptopetz-demo-site/static/media/Pi7compressed056.d3bdce7e.png",
@@ -358,8 +359,8 @@
   "entrypoints": [
     "static/js/runtime-main.e6bba3a7.js",
     "static/css/2.f988f6eb.chunk.css",
-    "static/js/2.ec15b514.chunk.js",
-    "static/css/main.b4e0fe60.chunk.css",
-    "static/js/main.c6defb16.chunk.js"
+    "static/js/2.435c44e1.chunk.js",
+    "static/css/main.10942ffd.chunk.css",
+    "static/js/main.5950a445.chunk.js"
   ]
 }
