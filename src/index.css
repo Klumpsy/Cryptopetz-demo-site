@@ -25,6 +25,9 @@
 /*Light and darkmode colors */
   --lightmode-color: rgba(255, 255, 255, 0.9);
   --darkmode-color: rgba(20, 20, 20, 0.9);
+
+/*Box colors*/
+--background-info-box: linear-gradient(0deg, rgba(20, 20, 20, 0.9) 0%, rgba(0, 0, 0, 0.722) 29%);
 }
 /*Navigation menu */ 
 .nav-bar { 
@@ -41,12 +44,12 @@
 
 .light-mode { 
   background: rgba(255, 255, 255, 0.6); 
-  background: linear-gradient(0deg, rgba(236, 236, 236, 0.9) 0%, rgba(255, 255, 255, 0.922) 29%); 
+  background: linear-gradient(0deg, rgba(180, 177, 177, 0.9) 0%, rgba(255, 255, 255, 0.922) 29%); 
 }
 
 .dark-mode { 
-  background: rgba(27, 27, 27, 0.6); 
-  background: linear-gradient(0deg, rgba(10, 10, 10, 0.7) 0%, rgba(39, 37, 37, 0.922) 29%); 
+  background: rgba(27, 27, 27, 0.7); 
+  background: linear-gradient(0deg, rgba(10, 10, 10, 0.9) 0%, rgba(39, 37, 37, 0.952) 29%); 
 }
 
 .nav-bar img { 
@@ -309,7 +312,7 @@ input:checked + .slider:before {
 
 /*Story Page*/ 
 .story-background { 
-  background-image: url("./images/egglab.jpg");
+  background-image: url("./images/mapImages/home.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -466,92 +469,32 @@ input:checked + .slider:before {
   }
 }
 
-/*Game Info Page*/
+/*Game Metrics Page*/
 .game-info-background { 
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: url("./images/mapImages/mainScreen.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment:fixed;
-  width: 100%; 
-  height: 100vh;
-  transition: ease-in-out;
+  background-size: cover;
+  background-attachment:fixed
 }
 
-.building-card-container { 
-  position: absolute;
+.game-info-wrapper { 
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  bottom: 0px;
-  width: 80%; 
-  max-width: 1500px;
-  margin: 0 auto;
-  height: 80px; 
-  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%; 
+  height: 100%;
 }
 
-.building-card { 
-  width: 200px;
-  text-align: center;
-  background-color: rgb(0, 0, 0, 0.6);
-  border-radius: 20px;
-  margin: 10px;
-  padding: 10px;
-  color: rgb(238, 235, 235);
-}
-
-.building-card h2 {
-  padding: 5px;
-  text-shadow: 1px 2px 2px rgb(8, 8, 8);
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
-.building-card:hover { 
-  color: var(--rare-color);
-  border: 2px solid var(--rare-color);
-  cursor: pointer;
-}
-
-.building-modal { 
-  position: relative;
-  width: 1000px; 
-  height: 600px; 
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 20px;
-}
-
-.modal-building-close { 
-  position: absolute; 
-  right: 10px; 
-  top: 10px; 
-  color: red;
-}
-
-.modal-building-close:hover { 
-  color: rgb(230, 120, 120); 
-  cursor: pointer;
-}
-
-.building-modal h1 { 
-  text-align: center;
+.game-info-wrapper h1 { 
+  margin-top: 8rem;
+  font-size: 4rem;
   color: white;
-  font-size: 60px;
+  width: 100%; 
+  text-align: center;
+  background: var(--background-info-box);
 }
 
-.building-modal-active { 
- display: block;
-}
-
-.building-modal-hidden { 
-  display: none; 
- }
-
-/*Game Metrics Page*/
 .game-info-wrapper p { 
   margin: 1rem;
 }
@@ -600,17 +543,18 @@ input:checked + .slider:before {
   max-width: 800px;
   color: rgb(245, 244, 244);
   font-weight: 800;
-  background-color: rgb(0, 0, 0, 0.6);
+  background: var(--background-info-box);
   border-radius: 16px;
+  padding: 10px;
 }
 
 .attribute-layout{ 
   display: flex;
   justify-content: center;
-  margin:4rem;
   width: 100%;
+  margin-bottom: 2rem; 
   max-width: 1500px;
-  background-color: rgb(0, 0, 0, 0.6);
+  background: var(--background-info-box);
   border-radius: 16px;
 }
 
@@ -625,8 +569,9 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
+  margin-bottom: 3rem;
   max-width: 1500px;
-  background-color: rgb(0, 0, 0, 0.6);
+  background: var(--background-info-box);
   border-radius: 16px;
 }
 
@@ -652,6 +597,7 @@ input:checked + .slider:before {
   color: rgb(231, 154, 30);
   font-size: 2.5rem;
   margin: 1rem auto;
+  text-align: center;
 }
 
 .attribute-layout div { 
@@ -723,10 +669,17 @@ td {
 }
 
 .petz-row { 
-  box-shadow: -5px -5px 30px 5px rgb(209, 202, 169), 5px 5px 30px 5px rgb(167, 233, 194);
+  box-shadow: -5px -5px 30px 5px rgb(212, 195, 106), 5px 5px 30px 5px rgb(93, 165, 123);
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
+  background: var(--background-info-box)
+}
+
+.token-row { 
+  margin-top: 2rem;
+  border-radius: 16px;
 }
 
 .petz-row img { 
@@ -751,6 +704,7 @@ td {
 @media only screen and (max-width: 1194px) { 
   .attribute-layout { 
     flex-direction: column; 
+    align-items: center;
   }
   .game-info-wrapper h1 { 
     font-size: 4rem;
@@ -765,10 +719,11 @@ td {
   }
   .petz-row img { 
     max-height: 200px;
-    width: 10%;
+    width: 20%;
   }
   .egg-row img{ 
-    max-height: 100px;
+    max-height: 200px;
+    width: 20%;
   }
 }
 
@@ -790,6 +745,16 @@ td {
   }
   .attribute-layout img { 
     width: 250px;
+  }
+}
+
+@media only screen and (max-width: 400px) { 
+  .game-info-wrapper h1 { 
+    font-size: 2.5rem;
+  }
+  .attribute-info h2,  
+  .game-intro h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -1929,17 +1894,18 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 
 /*Petz page*/
 .petz-page-wrapper { 
-  position: relative;
   width: 100%;
+  height: 100%;
 }
 
 .all-petz-container { 
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 90%;
   margin: 0 auto;
-  height: 100vh;
+  height: 100vh; 
 } 
 
 .petz-cards-container { 
@@ -2341,6 +2307,24 @@ display: block;
   transition: .2s ease-in-out;
 } 
 
+.type-box input[type="checkbox"]{ 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: 18px; 
+  height: 18px; 
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.type-box input[type="checkbox"]:checked{ 
+  background-color: var(--legendary-color);
+}
+
 .colaps-menu-container { 
   display: flex;
   align-items: center;
@@ -2536,6 +2520,11 @@ display: block;
   flex-wrap: wrap;
 }
 
+.modal-image { 
+  width: 90%; 
+  max-width: 400px; 
+}
+
 meter {
     /* Reset the default appearance */
     -webkit-appearance: none;
@@ -2557,17 +2546,12 @@ meter::-webkit-meter-bar {
   position: absolute;
   right: 10px;
   top: 10px;
-  height: 40px;
-  width: 40px;
-  background-color: rgb(250, 74, 74);
-  border: 2px solid black;
+  color: rgb(243, 47, 47);
 }
 
 .close-modal:hover { 
-  background-color: rgb(235, 148, 148);
   cursor: pointer;
-  border: white;
-  color: white
+  color: rgb(230, 144, 144);
 }
 
 .petz-wrapper-light { 
@@ -2824,7 +2808,7 @@ border: 3px solid rgb(129, 151, 148);
 
 /*Stake Pool*/ 
 .stake-pool-background { 
-  background-image: url("./images/stakepoolbackground.jpg");
+  background-image: url("./images/egglab.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2876,8 +2860,8 @@ border: 3px solid rgb(129, 151, 148);
   margin: 20px;
   width: 90%;
   max-width: 1000px;
-  background: rgba(24, 24, 24, 0.6); 
-  background: linear-gradient(0deg, rgba(20, 20, 20, 0.5) 0%, rgba(54,53,52,0.7223472472555768) 29%);
+  background: rgba(24, 24, 24, 0.7); 
+  background: linear-gradient(0deg, rgba(20, 20, 20, 0.9) 0%, rgba(0, 0, 0, 0.722) 29%);
   border-radius: 16px;
   padding: 10px; 
   color: rgb(255, 255, 255);

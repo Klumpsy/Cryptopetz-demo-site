@@ -88,6 +88,11 @@ const Petz = ({mode}) => {
         }
       }
 
+      function capitalize(filterName) { 
+        const lower = filterName.toLowerCase(); 
+        return filterName.charAt(0).toUpperCase() + lower.slice(1); 
+    }
+
 /*function to change type to Type with capital (the type in the object is used as CSS class as well 
 so it needs to change like this */
       function checkRarity(rarity) { 
@@ -148,10 +153,10 @@ so it needs to change like this */
                             </div>
                             <div className = "pet-modal-info">
                                 {
-                                    activePet && activePet.type.length > 1 ?
-                                    <span>Types: {activePet? activePet.type[0] + " & " + activePet.type[1]: ""}</span>
-                                    :
-                                    <span>Type: {activePet ? activePet.type[0] : ""}</span>
+                                     activePet && activePet.type.length > 1 ?
+                                     <span>Types: {activePet? capitalize(activePet.type[0]) + " & " + capitalize(activePet.type[1]) : ""}</span>
+                                     :
+                                     <span>Type: {activePet ? capitalize(activePet.type[0]) : ""}</span>
                                 }
                             </div>
                             <div className = "pet-modal-info">
@@ -182,7 +187,7 @@ so it needs to change like this */
                         </div>
                     </div>
                         <AiOutlineCloseCircle
-                        className="modal-building-close"
+                        className="close-modal"
                         onClick = {() => setPetModalActive(false)}
                         size={30}/>
                     </div>

@@ -161,8 +161,8 @@ function App() {
                 <Route exact path="/StoryTime">
                   <StoryTime/>
                 </Route>
-                <Route exact path="/GameMetrics">
-                  <GameMetrics allPetzArray = {allPetzArray} eggArray = {eggArray}/>
+                <Route exact path="/GameInfo">
+                  <GameInfo allPetzArray = {allPetzArray} eggArray = {eggArray}/>
                 </Route>
                 <Route exact path="/AllMetrics">
                   <AllMetrics mode={mode} width={width}/>

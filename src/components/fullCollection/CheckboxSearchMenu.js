@@ -60,6 +60,12 @@ const CheckboxSearchMenu = ({petz, handleUpdate, searchMenu}) => {
         handleUpdate(filteredUnits)
     }, [rarity, type, category, backgrounds, cryptoLogo, eggshell, stand])
 
+    function capitalize(filterName) { 
+        const lower = filterName.toLowerCase(); 
+        return filterName.charAt(0).toUpperCase() + lower.slice(1); 
+  }
+
+
 
     return (
         <div className= {searchMenu ? "search-menu-active" : "search-menu-hidden"}>
@@ -83,7 +89,7 @@ const CheckboxSearchMenu = ({petz, handleUpdate, searchMenu}) => {
                 <div className = {colapseCategory ? "filter-active" : "filter-hidden"}>
                     {categoryCheckboxes.map((categoryCheckbox, i) => (
                         <div className ="type-box" key = {i}>
-                        <label>{categoryCheckbox.category}</label>
+                        <label>{capitalize(categoryCheckbox.category)}</label>
                         <input
                         type ="checkbox"
                         onChange = {(event) => 

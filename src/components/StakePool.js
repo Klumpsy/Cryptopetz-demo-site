@@ -20,7 +20,7 @@ const StakePool = ({mode}) => {
             return res.json()
         })
         .then(data => {
-            setPool(data.data); 
+            setPool(data.data);
         })
         .catch(err => { 
             console.log(err)
@@ -61,8 +61,8 @@ const StakePool = ({mode}) => {
                             <div><span className="api-items-indicator">Live Stake:</span><span> {String(pool.total_stake).slice(0,3)+"K"} ₳</span></div>
                             <div><span className="api-items-indicator">Delegators:</span><span> {pool.delegators}</span></div>
                             <div><span className="api-items-indicator">Margin:</span><span> {pool.tax_ratio * 100} %</span></div>
-                            <div><span className="api-items-indicator">Delegators:</span><span> {pool.delegators}</span></div>
-                            <div><span className="api-items-indicator">Estimated blocks:</span><span> {pool.blocks_estimated} blocks</span></div>
+                            <div><span className="api-items-indicator">Blocks Epoch:</span><span> {pool.blocks_epoch}</span></div>
+                            <div><span className="api-items-indicator">Total blocks:</span><span> {pool.blocks_lifetime}</span></div>
                             <div><span className="api-items-indicator">Last Epoch Rewards:</span><span> {pool.rewards_epoch}</span></div>
                             <div>
                             <span className="api-items-indicator">Saturation:</span>

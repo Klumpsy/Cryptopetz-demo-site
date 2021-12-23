@@ -79,7 +79,7 @@ import cryptoPet70 from "../../images/smallPngPetz/Pi7compressed083.png"
 import cryptoPet71 from "../../images/smallPngPetz/Pi7compressed088.png"
 import cryptoPet72 from "../../images/smallPngPetz/Pi7compressed090.png"
 import cryptoPet73 from "../../images/smallPngPetz/Pi7compressed099.png"
-import cryptoPet74 from "../../images/smallPngPetz/Pi7compressed0101.png"
+import cryptoPet74 from "../../images/smallPngPetz/Pi7compressed0110.png"
 import cryptoPet75 from "../../images/smallPngPetz/Pi7compressed0112.png"
 import cryptoPet76 from "../../images/smallPngPetz/Pi7compressed0114.png"
 import cryptoPet77 from "../../images/smallPngPetz/Pi7compressed0118.png"
@@ -1099,88 +1099,172 @@ export const EpochOneRare =
     },
     { 
         image: cryptoPet71,
-        name: "",
-        rarity: "rare",
+        name: "Avalbug",
+        rarity:"rare",
         type: ["lava"],
-        kingdom: "Dual", 
-        size: "5'03'",
-        weight: "???", 
-        biome: "Tropical Coastal", 
-        bodyType: "Poison Manta Ray",
+        kingdom: "Eelemental", 
+        size: "1'11'",
+        weight: "38 lb", 
+        biome: "Dry Volcano", 
+        bodyType: "Lava Beetle",
+        activity: "Diurnal",
+        evolutions: "2"
+    },
+    { 
+        image: cryptoPet72,
+        name: "Magmit",
+        rarity:"rare",
+        type: ["lava"],
+        kingdom: "Eelemental", 
+        size: "1'06'",
+        weight: "20 lb", 
+        biome: "Dry Volcano", 
+        bodyType: "Lava Lamp",
+        activity: "Diurnal",
+        evolutions: "1"
+    },
+    { 
+        image: cryptoPet73,
+        name: "Venamard",
+        rarity: "rare",
+        type: ["poison"],
+        kingdom: "Material", 
+        size: "2'04'",
+        weight: "28 lb", 
+        biome: "Tropical Marsh", 
+        bodyType: "Venom Lizard",
         activity: "Diurnal",
         evolutions: "none"
     },
     { 
-        image: cryptoPet72,
-        name: "CryptoPet72",
-        rarity:"rare",
-        type: ["lava"]
-    },
-    { 
-        image: cryptoPet73,
-        name: "CryptoPet73",
-        rarity: "rare",
-        type: ["poison"]
-    },
-    { 
         image: cryptoPet74,
-        name: "CryptoPet74",
+        name: "Permabull",
         rarity: "rare",
-        type: ["psychic"]
+        type: ["psychic"],
+        kingdom: "Ethereal", 
+        size: "2'08'",
+        weight: "42 lb", 
+        biome: "Seasonal Forest", 
+        bodyType: "Mind Bull",
+        activity: "Nocturnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet75,
-        name: "CryptoPet75",
+        name: "Oozeel",
         rarity: "rare",
-        type: ["psychic"]
+        type: ["psychic"],
+        kingdom: "Ethereal", 
+        size: "3'06'",
+        weight: "60 lb", 
+        biome: "Temperate Coastal", 
+        bodyType: "Plasmaworm",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet76,
-        name: "CryptoPet76",
+        name: "Landove",
         rarity: "rare",
-        type: ["earth"]
+        type: ["earth"],
+        kingdom: "Elemental", 
+        size: "1'10'",
+        weight: "66 lb", 
+        biome: "Tropical Coastal", 
+        bodyType: "Limestone Avian",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet77,
-        name: "CryptoPet77",
+        name: "Koneast",
         rarity: "rare",
-        type: ["earth"]
+        type: ["earth"],
+        kingdom: "Eelemental", 
+        size: "6'02'",
+        weight: "450 lb", 
+        biome: "Tropical Coastal", 
+        bodyType: "Kon Tiki",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet78,
-        name: "CryptoPet78",
+        name: "Jibbajab",
         rarity: "rare",
-        type: ["sound"]
+        type: ["sound"],
+        kingdom: "Material", 
+        size: "2'08'",
+        weight: "42 lb", 
+        biome: "Dry Savanna", 
+        bodyType: "Screaching Ostrich",
+        activity: "Diurnal",
+        evolutions: "1"
     },
     { 
         image: cryptoPet79,
-        name: "CryptoPet79",
+        name: "Echidig",
         rarity: "rare",
-        type: ["metal"]
+        type: ["metal"],
+        kingdom: "Elemental", 
+        size: "1'02'",
+        weight: "28 lb", 
+        biome: "Dry Mountain", 
+        bodyType: "Knuckles the Echidna",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet80,
-        name: "CryptoPet80",
+        name: "Magnis",
         rarity: "rare",
-        type: ["metal"]
+        type: ["metal"],
+        kingdom: "Eelemental", 
+        size: "6'06'",
+        weight: "320 lb", 
+        biome: "Highland Pasture", 
+        bodyType: "Iron Horse",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet81,
-        name: "CryptoPet81",
+        name: "Monkog",
         rarity: "rare",
-        type: ["water"]
+        type: ["water"],
+        kingdom: "Eelemental", 
+        size: "1'10'",
+        weight: "22 lb", 
+        biome: "Seasonal Freshwater", 
+        bodyType: "Mud Grundle",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet82,
-        name: "CryptoPet82",
+        name: "Seelze",
         rarity: "rare",
-        type: ["water", "ice"]
+        type: ["water", "ice"],
+        kingdom: "Dual", 
+        size: "2'02'",
+        weight: "30 lb", 
+        biome: "Temperate Coastal", 
+        bodyType: "Seelze",
+        activity: "Diurnal",
+        evolutions: "1"
     },
     { 
         image: cryptoPet83,
-        name: "CryptoPet83",
+        name: "Metamite",
         rarity: "rare",
-        type: ["metal"]
+        type: ["metal"],
+        kingdom: "Eelemental", 
+        size: "1'10'",
+        weight: "44 lb", 
+        biome: "Temperate Forest", 
+        bodyType: "Metal Mite",
+        activity: "Diurnal",
+        evolutions: "none"
     }
 ]
 
@@ -1189,105 +1273,224 @@ export const EpochOneScarce =
 [
     { 
         image: cryptoPet84,
-        name: "CryptoPet84",
+        name: "Shermit",
         rarity: "scarce",
-        type: ["insect"]
+        type: ["insect"],
+        kingdom: "Material", 
+        size: "2'02'",
+        weight: "28 lb", 
+        biome: "Tropical Forest", 
+        bodyType: "???",
+        activity: "Diurnal",
+        evolutions: "1"
     },
     { 
         image: cryptoPet85,
-        name: "CryptoPet85",
+        name: "Elderworm",
         rarity: "scarce",
-        type: ["insect"]
+        type: ["insect"],
+        kingdom: "Material", 
+        size: "0'10'",
+        weight: "5 lb", 
+        biome: "Highland Pasture", 
+        bodyType: "Bearded worm",
+        activity: "Diurnal",
+        evolutions: "2"
     },
     { 
         image: cryptoPet86,
-        name: "CryptoPet86",
+        name: "Somabeetle",
         rarity: "scarce",
-        type: ["insect"]
+        type: ["insect"],
+        kingdom: "Material", 
+        size: "0'11'",
+        weight: "6 lb", 
+        biome: "Tropical Forest", 
+        bodyType: "Third Eye Beetle",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet87,
-        name: "CryptoPet87",
+        name: "Radlecute",
         rarity:"scarce",
-        type: ["electric", "poison"]
+        type: ["electric", "poison"],
+        kingdom: "Dual", 
+        size: "1'06'",
+        weight: "8 lb", 
+        biome: "Dry Desert", 
+        bodyType: "Electric Sting Snake",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet88,
-        name: "CryptoPet88",
+        name: "Diokin",
         rarity: "scarce",
-        type: ["electric"]
+        type: ["electric"],
+        kingdom: "Elemental", 
+        size: "1'00'",
+        weight: "5 lb", 
+        biome: "Tropical Volcano", 
+        bodyType: "Proton Baby",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet89,
-        name: "CryptoPet89",
+        name: "Bunndon",
         rarity: "scarce",
-        type: ["fae"]
+        type: ["fae"],
+        kingdom: "Ethereal", 
+        size: "1'06'",
+        weight: "12 lb", 
+        biome: "Tropical Tall Meadow", 
+        bodyType: "Dress Cape Fae",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet90,
-        name: "CryptoPet90",
+        name: "Needella",
         rarity: "scarce",
-        type: ["fae", "poison"]
+        type: ["fae", "poison"],
+        kingdom: "Dual", 
+        size: "2'01'",
+        weight: "22 lb", 
+        biome: "Tropical Forest", 
+        bodyType: "Venom Fae",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet91,
-        name: "CryptoPet91",
+        name: "Searshell",
         rarity:"scarce",
-        type: ["fire"]
+        type: ["fire"],
+        kingdom: "Elemental", 
+        size: "2'00'",
+        weight: "26 lb", 
+        biome: "Dry Subterrain", 
+        bodyType: "Fire Snail",
+        activity: "Cavurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet92,
-        name: "CryptoPet92",
+        name: "Cyrotite",
         rarity: "scarce",
-        type: ["spirit"]
+        type: ["spirit"],
+        kingdom: "Ethereal", 
+        size: "5'06'",
+        weight: "???", 
+        biome: "Tropical Subterrain", 
+        bodyType: "Cyclops Cave Spirit",
+        activity: "Cavurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet93,
-        name: "CryptoPet93",
+        name: "Canoclast",
         rarity: "scarce",
-        type: ["lava"]
+        type: ["lava"],
+        kingdom: "Elemental", 
+        size: "4'06'",
+        weight: "135 lb", 
+        biome: "Tropical Volcano", 
+        bodyType: "Lava Muk",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet94,
-        name: "CryptoPet94",
+        name: "Phonosis",
         rarity: "scarce",
-        type: ["psychic"]
+        type: ["psychic"],
+        kingdom: "Ethereal", 
+        size: "4'10'",
+        weight: "45 lb", 
+        biome: "Tropical Marsh", 
+        bodyType: "Flamingosis",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet95,
-        name: "CryptoPet95",
+        name: "Cochllusk",
         rarity: "scarce",
-        type: ["sound"]
+        type: ["sound"],
+        kingdom: "Material", 
+        size: "0'08'",
+        weight: "6 lb", 
+        biome: "Tropical Forest", 
+        bodyType: "Drum Snail",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet96,
-        name: "CryptoPet96",
+        name: "Pawnite",
         rarity: "scarce",
-        type: ["metal"]
+        type: ["metal"],
+        kingdom: "Elemental", 
+        size: "2'00'",
+        weight: "60 lb", 
+        biome: "Highland Mountain", 
+        bodyType: "Chess Knight Steel",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet97,
-        name: "CryptoPet97",
+        name: "Bitmer",
         rarity: "scarce",
-        type: ["metal"]
+        type: ["metal"],
+        kingdom: "Elemental", 
+        size: "3'04'",
+        weight: "120 lb", 
+        biome: "Dry Subterrain", 
+        bodyType: "Drill Miner",
+        activity: "Cavurnal",
+        evolutions: "1"
     },
     { 
         image: cryptoPet98,
-        name: "CryptoPet98",
+        name: "Obsiggy",
         rarity: "scarce",
-        type: ["metal", "flying"]
+        type: ["metal", "flying"],
+        kingdom: "Dual", 
+        size: "0'10'",
+        weight: "12 lb", 
+        biome: "Temperate Forest", 
+        bodyType: "Iron Finch",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet99,
-        name: "CryptoPet99",
+        name: "Seaver",
         rarity: "scarce",
-        type: ["water"]
+        type: ["water"],
+        kingdom: "Elemental", 
+        size: "2'04'",
+        weight: "18 lb", 
+        biome: "Seasonal Freshwater", 
+        bodyType: "Sans the Psy-Duck",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet100,
-        name: "CryptoPet100",
+        name: "Dwelnes",
         rarity: "scarce",
-        type: ["water"]
+        type: ["water"],
+        kingdom: "Elemental", 
+        size: "1'00'",
+        weight: "16 lb", 
+        biome: "Temperate Coastal", 
+        bodyType: "Water filled Conch",
+        activity: "Diurnal",
+        evolutions: "none"
     }
 ]
 //Uncommmon Petz

@@ -60,7 +60,7 @@ const NavBar = ({width, mode, changeMode}) => {
                 <Link to="/AllMetrics">Metrics</Link>
                 <Link to="/Updates">Updates</Link>
                 <Link to="/Team">Team</Link>
-                <Link to="/Petz">Petz</Link>
+                <Link to="/Petz">PetzPedia</Link>
                 <Link to ="/Collection">Full Collection</Link>
                 <Link to="/StakePool">Stake Pool</Link>
                 <Link to="/Sales">Sales</Link>

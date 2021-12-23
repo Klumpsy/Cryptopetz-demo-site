@@ -1,5 +1,8 @@
 import React from 'react'
 
+//Icons
+import {AiOutlineCloseCircle} from "react-icons/ai"
+
 function FullCollectionModal(props) {
 
     return (
@@ -104,7 +107,12 @@ function FullCollectionModal(props) {
                     </div>
                 </div>
             </div>
-            <button className ="close-modal" onClick = {() => props.changeModalInactive()}>X</button>
+            <AiOutlineCloseCircle
+            className ="close-modal" 
+            style ={{margin: "5px"}} 
+            size={30}
+            onClick = {() => props.changeModalInactive()}
+            />
         </div>
     )
 }

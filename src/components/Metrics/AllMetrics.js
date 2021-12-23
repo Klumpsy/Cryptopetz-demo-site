@@ -26,7 +26,7 @@ const AllMetrics = ({mode}) => {
                 metricType = "metrics-box-game-info" 
                 title="game-metrics-title"
                 metricClass = "metrics-box-game-info"
-                linkTo = "GameMetrics"/>      
+                linkTo = "GameInfo"/>      
               </div>
         </div>
     )

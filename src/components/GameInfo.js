@@ -19,6 +19,8 @@ import specialAttackGold from '../images/tokens/Special_Attack_Gold.png';
 import specialAttackSilver from '../images/tokens/Special_Attack_Silver.png';
 import specialAttackBronze from '../images/tokens/Special_Attack_Bronze.png';
 
+import BackButton from "./buttons/BackButton";
+
 const GameInfo = ({ allPetzArray, eggArray }) => { 
 
     const attributes = [<Health/>, <Attack/>, <Defense/>, <AttackvsDefense/>, <Stamina/>, <SpeedAndDexterity/>];
@@ -38,6 +40,7 @@ const GameInfo = ({ allPetzArray, eggArray }) => {
 
     return (
         <div className = "game-info-background">
+            <BackButton target="AllMetrics"/>
             <div className = "page-wrapper game-info-wrapper">
                 <h1>Game Metrics</h1>
                 <div className ="game-intro">
@@ -45,8 +48,7 @@ const GameInfo = ({ allPetzArray, eggArray }) => {
                     <p>CryptoPetz The Game - is a tournament-style online role-playing game (RPG)
                         where you can collect and enhance your own CryptoPet.
                         Form your own team and battle others. Every CryptoPetz has a number of attribute slots,
-                        ability slots and special attack slots that can be used by their respective tokens purchased
-                        through the store (coming soon).</p>
+                        ability slots and special attack slots that can be used by their respective tokens.</p>
                 </div>
                 <div className ="attribute-layout">
                     <div className="attribute-info">
