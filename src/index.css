@@ -28,7 +28,25 @@
 
 /*Box colors*/
 --background-info-box: linear-gradient(0deg, rgba(20, 20, 20, 0.9) 0%, rgba(0, 0, 0, 0.722) 29%);
+
+/* Webkit Sliders */ 
 }
+
+body::-webkit-scrollbar { 
+  width: 16px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-track { 
+  background-color: black;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7); 
+}
+
+body::-webkit-scrollbar-thumb { 
+  background-color: rgb(43, 44, 44);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
 /*Navigation menu */ 
 .nav-bar { 
   position:fixed;
@@ -674,12 +692,14 @@ td {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  background: var(--background-info-box)
+  background: var(--background-info-box);
+  overflow: hidden;
 }
 
 .token-row { 
   margin-top: 2rem;
-  border-radius: 16px;
+  max-width: 100%; 
+  overflow: hidden;
 }
 
 .petz-row img { 
@@ -691,6 +711,8 @@ td {
 .egg-row { 
   margin-bottom: 10rem;
   width: 100%;
+  max-width: 100%; 
+  overflow: hidden;
 }
 
 .egg-row img{ 
@@ -884,7 +906,6 @@ td {
   border: 2px solid var(--legendary-color);
   box-shadow: 1px 1px 10px 2px var(--legendary-color);
 }
-
 .metrics-box-rarity:hover { 
   background-image: url("images/gifs/darkmodepoison.gif");
   border: 2px solid var(--extremelyrare-color);
@@ -894,7 +915,6 @@ td {
 .metrics-box h1 { 
   font-size: 4rem;
 }
-
 
 .click-carousel-instructions-light{ 
   color: var(--rare-color);
@@ -1892,28 +1912,41 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   }
 }
 
-/*Petz page*/
-.petz-page-wrapper { 
-  width: 100%;
-  height: 100%;
-}
-
+/*PetzPedia page*/
 .all-petz-container { 
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   height: 100vh; 
+  overflow: hidden;
 } 
 
 .petz-cards-container { 
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 90%;
   overflow-y: scroll;
+}
+
+/* Webkit Safari & Chrome */
+.petz-cards-container::-webkit-scrollbar { 
+  width: 16px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px; 
+}
+
+.petz-cards-container::-webkit-scrollbar-track { 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.); 
+  border-radius: 10px;
+}
+
+.petz-cards-container::-webkit-scrollbar-thumb { 
+  background-color: var(--uncommon-color);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
 .legendary-petz { 
@@ -2009,19 +2042,38 @@ display: block;
 .pet-modal { 
   display: flex;
   justify-content: space-around; 
-  position: absolute; 
-  margin: 0 auto;
-  top: 200px; 
+  align-items: flex-start;
+  position: absolute;  
+  margin: auto auto;
+  padding-bottom: 150px; 
+  top: 150px; 
   width: 90%;
   max-width: 1400px;
-  height: 800px; 
-  padding: 20px;
+  max-height: 80%; 
   border: 2px solid rgba(85, 204, 155, 0.25);
   background-color: rgba(0, 0, 0, 0.95);
   border-radius: 20px;
   z-index: 100;
   box-shadow: rgba(85, 204, 155, 0.25) 0px 30px 60px -12px inset, 
   rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  overflow-y: scroll;
+}
+
+.pet-modal::-webkit-scrollbar { 
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+.pet-modal::-webkit-scrollbar-track { 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.); 
+  border-radius: 10px;
+}
+
+.pet-modal::-webkit-scrollbar-thumb { 
+  background-color: var(--uncommon-color);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
 .pet-modal-active { 
@@ -2048,7 +2100,8 @@ display: block;
  }
 
 .pet-modal-left-box { 
-  width: 100%; 
+  width: 100%;
+  height: 100%;  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2087,10 +2140,12 @@ display: block;
   color: white;
 }
 
-.pet-modal-right-box {
+.pet-modal-right-box { 
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%; 
 }
 
 .pet-modal-right-box div { 
@@ -2108,14 +2163,17 @@ display: block;
 
 .modal-cafe-icon { 
   color: rgb(83, 80, 79); 
+  margin-bottom: 15px;
 }
 
 .modal-day-icon { 
   color: rgb(231, 220, 118); 
+  margin-bottom: 15px;
 }
 
 .modal-night-icon { 
   color: rgb(79, 79, 119);
+  margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 1500px ) {
@@ -2123,24 +2181,21 @@ display: block;
     font-size: 5rem;
   }
 }
-@media only screen and (max-width: 1200px ) {
+@media only screen and (max-width: 1250px ) {
   .pet-modal h1 { 
     font-size: 3rem;
   }
 }
-@media only screen and (max-width: 840px ) {
+@media only screen and (max-width: 890px ) {
   .pet-modal h1 { 
     font-size: 3rem;
   }
   .pet-modal { 
     flex-direction: column-reverse;
-    overflow-y: scroll;
+    align-items: center; 
     justify-content: flex-start;
-  }
-  .modal-building-close { 
-    top: -330px;
-    right: 20px;
-  }
+    top: 110px; 
+   }
 }
 @media only screen and (max-width: 450px) { 
   .rarity-title{ 
@@ -2156,8 +2211,9 @@ display: block;
     width: 100%; 
   }
   .pet-modal-image { 
-    width: 100%; 
+    margin-bottom: 3rem; 
     height: 230px;
+    width: 100%; 
   }
   .pet-modal-type {
     width: 220px;
@@ -2165,10 +2221,6 @@ display: block;
   .pet-modal-info,
   .pet-modal-rarity { 
     width: 220px; 
-  }
-  .modal-building-close { 
-    top: -170px;
-    right: 20px;
   }
 }
 
@@ -2527,15 +2579,32 @@ display: block;
 
 meter {
     /* Reset the default appearance */
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    -webkit-appearance: meter; 
+    -moz-appearance: meter;
 }
-  
+
+meter{
+  height: 18px; 
+  background: rgb(242, 244, 245);
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+meter::-moz-meter-bar {
+  background: var(--uncommon-color); 
+  border-radius: 10px; 
+}
+
 meter::-webkit-meter-bar {
-    background: rgb(116, 185, 202);
-    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.9);
+    height: 18px; 
+    background: rgb(242, 244, 245);
     border: 1px solid white;
     border-radius: 10px;
+}
+
+meter::-webkit-meter-optimum-value { 
+  background: var(--uncommon-color); 
+  border-radius: 10px; 
 }
 
 .rarity-meter { 
@@ -2573,6 +2642,22 @@ meter::-webkit-meter-bar {
   align-items: center;
   overflow-y: scroll;
   z-index: 10;
+}
+
+.petz-inner-wrapper::-webkit-scrollbar { 
+  width: 16px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+.petz-inner-wrapper::-webkit-scrollbar-track { 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.); 
+  border-radius: 10px;
+}
+
+.petz-inner-wrapper::-webkit-scrollbar-thumb { 
+  background-color: var(--uncommon-color);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
 .pet-card{ 
@@ -2935,7 +3020,22 @@ border: 3px solid rgb(129, 151, 148);
   scrollbar-shadow-color: rgb(0, 0, 0);
 }
 
+/*Chrome, Safari Webkit */ 
 
+.eggshards-distribution-container div::-webkit-scrollbar { 
+  width: 16px;
+}
+
+.eggshards-distribution-container div::-webkit-scrollbar-track { 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7); 
+  border-radius: 10px;
+}
+
+.eggshards-distribution-container div::-webkit-scrollbar-thumb { 
+  background-color: var(--uncommon-color); 
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
 
 @media only screen and (max-width: 1008px) { 
   .info-plus-petImage { 
@@ -3127,10 +3227,21 @@ border: 3px solid rgb(129, 151, 148);
   color: white; 
 }
 
-@media only screen and (max-width: 400px) { 
+@media only screen and (max-width: 800px) { 
  
   .credits p{ 
-    font-size: 8px;
+    font-size: 14px;
+  }
+  .footer img { 
+    height: 70px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) { 
+ 
+  .credits p{ 
+    font-size: 10px;
   }
   .footer img { 
     height: 60px;

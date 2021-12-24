@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 import {BsDiscord, BsTwitter} from "react-icons/bs"; 
 import {AiOutlineMenu} from "react-icons/ai";
 import {AiOutlineClose} from "react-icons/ai";
-import ardanoBird from "../images/petzImages/bird.png"
+import ardanoBird from "../images/ardano-nav-logo.png"
+
+//Dark/Light icons 
+import {MdDarkMode, MdLightMode} from "react-icons/md"
 
 
 const NavBar = ({width, mode, changeMode}) => { 
@@ -13,7 +16,7 @@ const NavBar = ({width, mode, changeMode}) => {
 
     return (
         <>
-        {width < 1268 ?
+        {width < 1370 ?
         <div className = {mode ? "nav-bar nav-mobile light-mode" : "nav-bar nav-mobile dark-mode"}>
                 <Link to="/Cryptopetz-demo-site">
                     <img src={ardanoBird} alt="CryptoPet"/>
@@ -28,10 +31,12 @@ const NavBar = ({width, mode, changeMode}) => {
                 <Link to="/StakePool"onClick ={() => setOpenMobile(!openMobile)}>Stake Pool</Link>
                 <Link to="/Sales"onClick ={() => setOpenMobile(!openMobile)}>Sales</Link>
                 <div>
+                    <MdLightMode style={mode?{color: "black", marginRight: "3px"}: {color: "white", marginRight: "3px"}}/>
                     <label className="switch">
                     <input type="checkbox" onChange= {() => changeMode()} />
                     <span className="slider round"></span>
                     </label>
+                    <MdDarkMode style={mode?{color: "black", marginLeft: "3px"}: {color: "white",marginLeft: "3px"}} />
                 </div>
             </div>
             <div className = {mode ? "socials-light" : "socials-dark"}>
@@ -67,10 +72,12 @@ const NavBar = ({width, mode, changeMode}) => {
             </div>
             <div className = {mode ? "socials-light" : "socials-dark"}>
                 <div>
+                    <MdLightMode style={mode?{color: "black", marginRight: "3px"}: {color: "white", marginRight: "3px"}}/>
                     <label className="switch">
                     <input type="checkbox" onChange= {() => changeMode()} />
                     <span className="slider round"></span>
                     </label>
+                    <MdDarkMode style={mode?{color: "black", marginLeft: "3px"}: {color: "white",marginLeft: "3px"}} />
                 </div>
                 <Link to= {{pathname: "https://twitter.com/CryptoPetz_CNFT"}} target = "_blank">
                     <BsTwitter className="socials-twitter" size={32}/>
