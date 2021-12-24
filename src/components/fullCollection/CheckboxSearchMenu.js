@@ -65,10 +65,37 @@ const CheckboxSearchMenu = ({petz, handleUpdate, searchMenu}) => {
         return filterName.charAt(0).toUpperCase() + lower.slice(1); 
   }
 
+    function removeAllFilters(){ 
+        const allCheckboxes = document.getElementsByTagName("input")
+        for(let i = 0; i < allCheckboxes.length; i++){ 
+            allCheckboxes[i].checked = false
+        } 
+        setCategory([]);
+        setType([]);
+        setRarity([]);
+        setCryptoLogo([]);
+        setBackground([]);
+        setEggshell([]);
+        setStand([]);
 
+        setColapseCategory(false);
+        setcolapseRarity(false);
+        setcolapseBackground(false);
+        setcolapseType(false);
+        setcolapseCryptoLogo(false);
+        setcolapseEggshell(false);
+        setcolapseStand(false); 
+    }
 
     return (
         <div className= {searchMenu ? "search-menu-active" : "search-menu-hidden"}>
+            <div>
+                <button 
+                className = "remove-all-filters-button"
+                onClick ={removeAllFilters}
+                >Remove all filters
+                </button>
+            </div>
              <div className="check-for-type">
                 <div className="colaps-menu-container">
                     <h3>Filter by Category</h3>

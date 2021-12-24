@@ -188,6 +188,9 @@ so it needs to change like this */
                             <div className = "pet-modal-info">
                                 <span>Biome: {activePet ? activePet.biome : ""}</span>
                             </div>
+                            <div className = "pet-modal-info">
+                                <span>Evolutions: {activePet ? activePet.evolutions : ""}</span>
+                            </div>
                         </div>
                     </div>
                        

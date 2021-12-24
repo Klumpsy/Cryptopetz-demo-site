@@ -1498,105 +1498,224 @@ export const EpochOneUncommon =
 [
     { 
         image: cryptoPet101,
-        name: "CryptoPet101",
+        name: "Daymar",
         rarity: "uncommon",
-        type: ["shadow"]
+        type: ["shadow"],
+        kingdom: "Ethereal", 
+        size: "2'06'",
+        weight: "32 lb", 
+        biome: "Polar Boreal Woods", 
+        bodyType: "Sleepy Dark Gremlin",
+        activity: "Nocturnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet102,
-        name: "CryptoPet102",
+        name: "Feymache",
         rarity: "uncommon",
-        type: ["fae", "flying"]
+        type: ["fae", "flying"],
+        kingdom: "Dual", 
+        size: "2'02'",
+        weight: "28 lb", 
+        biome: "Temperate Tall Meadow", 
+        bodyType: "Flying Marshmellow Fae",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet103,
-        name: "CryptoPet103",
+        name: "Feymache",
         rarity: "uncommon",
-        type: ["fae"]
+        type: ["fae"],
+        kingdom: "Ethereal", 
+        size: "2'04'",
+        weight: "40 lb", 
+        biome: "Dry Savanna", 
+        bodyType: "Fae Pinata",
+        activity: "Diurnal",
+        evolutions: "1"
     },
     { 
         image: cryptoPet104,
-        name: "CryptoPet104",
+        name: "Blockum",
         rarity:"uncommon",
-        type: ["combat"]
+        type: ["combat"],
+        kingdom: "Material", 
+        size: "1'10'",
+        weight: "15 lb", 
+        biome: "Dry Mountain", 
+        bodyType: "Sleepy Glove",
+        activity: "Nocturnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet105,
-        name: "CryptoPet105",
+        name: "Vigilente",
         rarity: "uncommon",
-        type: ["combat"]
+        type: ["combat"],
+        kingdom: "Material", 
+        size: "3'02'",
+        weight: "68 lb", 
+        biome: "Temperate Forest", 
+        bodyType: "Masked Fighter",
+        activity: "Nocturnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet106,
-        name: "CryptoPet106",
+        name: "Torchkin",
         rarity: "uncommon",
-        type: ["fire"]
+        type: ["fire"],
+        kingdom: "Elemental", 
+        size: "1'10'",
+        weight: "12 lb", 
+        biome: "Dry Volcano", 
+        bodyType: "Flameling",
+        activity: "Nocturnal",
+        evolutions: "2"
     },
     { 
         image: cryptoPet107,
-        name: "CryptoPet107",
+        name: "Propapot",
         rarity: "uncommon",
-        type: ["grass"]
+        type: ["grass"],
+        kingdom: "Elemental", 
+        size: "1'08'",
+        weight: "14 lb", 
+        biome: "Seasonal Pasture", 
+        bodyType: "Potted Plant",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet108,
-        name: "CryptoPet108",
+        name: "Chortover",
         rarity:"uncommon",
-        type: ["grass"]
+        type: ["grass"],
+        kingdom: "Elemental", 
+        size: "0'009'",
+        weight: "06 lb", 
+        biome: "Highland Pasture", 
+        bodyType: "Laughs at their own joke",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet109,
-        name: "CryptoPet109",
+        name: "Snodin",
         rarity: "uncommon",
-        type: ["ice"]
+        type: ["ice"],
+        kingdom: "Elemental", 
+        size: "2'04'",
+        weight: "38 lb", 
+        biome: "Polar Boreal Woods", 
+        bodyType: "Snow Man Teddy Bear",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet110,
-        name: "CryptoPet110",
+        name: "Felicks",
         rarity: "uncommon",
-        type: ["ice"]
+        type: ["ice"], 
+        kingdom: "Elemental", 
+        size: "2'10'",
+        weight: "30 lb", 
+        biome: "Polar Subterrain", 
+        bodyType: "Kitty Pop",
+        activity: "Cavurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet111,
-        name: "CryptoPet11",
+        name: "Plaigum",
         rarity: "uncommon",
-        type: ["poison"]
+        type: ["poison"], 
+        kingdom: "Material", 
+        size: "0'08'",
+        weight: "6 lb", 
+        biome: "Tropical Marsh", 
+        bodyType: "Poison Cloud Mouse",
+        activity: "Nocturnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet112,
-        name: "CryptoPet112",
+        name: "Myrizan",
         rarity: "uncommon",
-        type: ["psychic"]
+        type: ["psychic"],
+        kingdom: "Ethereal", 
+        size: "1'06'",
+        weight: "30 lb", 
+        biome: "Highland Mountain", 
+        bodyType: "Mayan Disc",
+        activity: "Nocturnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet113,
-        name: "CryptoPet113",
+        name: "Psymow",
         rarity: "uncommon",
-        type: ["psychic"]
+        type: ["psychic"],
+        kingdom: "Ethereal", 
+        size: "1'02'",
+        weight: "10 lb", 
+        biome: "Seasonal Pasture", 
+        bodyType: "Pschyc Mouse",
+        activity: "Diurnal",
+        evolutions: "2"
     },
     { 
         image: cryptoPet114,
-        name: "CryptoPet114",
+        name: "Gazenus",
         rarity: "uncommon",
-        type: ["psychic"]
+        type: ["psychic"],
+        kingdom: "Ethereal", 
+        size: "0'10'",
+        weight: "5 lb", 
+        biome: "Dry Subterrain", 
+        bodyType: "Crystal ball Buddy",
+        activity: "Cavurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet115,
-        name: "CryptoPet115",
+        name: "Rekord",
         rarity: "uncommon",
-        type: ["earth"]
+        type: ["earth"],
+        kingdom: "Elemental", 
+        size: "5'06'",
+        weight: "310 lb", 
+        biome: "Dry Desert", 
+        bodyType: "Steele",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet116,
-        name: "CryptoPet116",
+        name: "Aurumer",
         rarity: "uncommon",
-        type: ["metal"]
+        type: ["metal"],
+        kingdom: "Elemental", 
+        size: "1'06'",
+        weight: "30 lb", 
+        biome: "Dry Anomaly", 
+        bodyType: "Ice Tadpole",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet117,
-        name: "CryptoPet117",
+        name: "Wunbur",
         rarity: "uncommon",
-        type: ["water", "ice"]
+        type: ["water", "ice"],
+        kingdom: "Dual", 
+        size: "2'08'",
+        weight: "20 lb", 
+        biome: "Marine Ocean", 
+        bodyType: "Ice Tadpole",
+        activity: "Diurnal",
+        evolutions: "2"
     }
 ]
 
@@ -1606,105 +1725,225 @@ export const EpochOneCommon =
 [
     { 
         image: cryptoPet118,
-        name: "CryptoPet118",
+        name: "Lampurn",
         rarity: "common",
-        type: ["insect", "fire"]
+        type: ["insect", "fire"],
+        kingdom: "Dual", 
+        size: "1'02'",
+        weight: "10 lb", 
+        biome: "Dry Subterrain", 
+        bodyType: "Lantern",
+        activity: "Cavurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet119,
-        name: "CryptoPet119",
+        name: "Serpixx",
         rarity: "common",
-        type: ["poison", "shadow"]
+        type: ["poison", "shadow"],
+        kingdom: "Dual", 
+        size: "5'06'",
+        weight: "25 lb", 
+        biome: "Tropical Marsh", 
+        bodyType: "Toxic Snake",
+        activity: "Diurnal",
+        evolutions: "1"
     },
     { 
         image: cryptoPet120,
-        name: "CryptoPet120",
+        name: "Nighting",
         rarity: "common",
-        type: ["shadow", "flying"]
+        type: ["shadow", "flying"],
+        kingdom: "Dual", 
+        size: "0'10'",
+        weight: "5 lb", 
+        biome: "Temperate Forest", 
+        bodyType: "Shadow Pigeon",
+        activity: "Nocturnal",
+        evolutions: "2"
     },
     { 
         image: cryptoPet121,
-        name: "CryptoPet121",
+        name: "Murenwood",
         rarity:"common",
-        type: ["combat"]
+        type: ["combat"],
+        kingdom: "Material", 
+        size: "4'08'",
+        weight: "180 lb", 
+        biome: "Seasonal Forest", 
+        bodyType: "Kung Fu Trainer",
+        activity: "Diurnal",
+        evolutions: "1"
     },
     { 
         image: cryptoPet122,
-        name: "CryptoPet122",
+        name: "Gorunt",
         rarity: "common",
-        type: ["combat"]
+        type: ["combat"],
+        kingdom: "Material", 
+        size: "2'00'",
+        weight: "35 lb", 
+        biome: "Seasonal Forest", 
+        bodyType: "Battle Hog",
+        activity: "Doiurnal",
+        evolutions: "1"
     },
     { 
         image: cryptoPet123,
-        name: "CryptoPet123",
+        name: "Pikatea",
         rarity: "common",
-        type: ["grass"]
+        type: ["grass"],
+        kingdom: "Elemental", 
+        size: "1'03'",
+        weight: "12 lb", 
+        biome: "Tropical Tall Meadow", 
+        bodyType: "Grassattat",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet124,
-        name: "CryptoPet124",
+        name: "Gordlin",
         rarity: "common",
-        type: ["grass"]
+        type: ["grass"],
+        kingdom: "Elemental", 
+        size: "2'00'",
+        weight: "22 lb", 
+        biome: "Highland Pasture", 
+        bodyType: "Termite",
+        activity: "Diurnal",
+        evolutions: "1"
     },
     { 
         image: cryptoPet125,
-        name: "CryptoPet125",
+        name: "Pricklup",
         rarity:"common",
-        type: ["grass"]
+        type: ["grass"],
+        kingdom: "Elemental", 
+        size: "2'10'",
+        weight: "35 lb", 
+        biome: "Tropical Tall Meadow", 
+        bodyType: "PassionPup",
+        activity: "Diurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet126,
-        name: "CryptoPet126",
+        name: "Lambice",
         rarity: "common",
-        type: ["ice"]
+        type: ["ice"],
+        kingdom: "Elemental", 
+        size: "1'08'",
+        weight: "16 lb", 
+        biome: "Polar Coastal", 
+        bodyType: "Lambis Shell",
+        activity: "Diurnal",
+        evolutions: "2"
     },
     { 
         image: cryptoPet127,
-        name: "CryptoPet127",
+        name: "Slagit",
         rarity: "common",
-        type: ["lava"]
+        type: ["lava"],
+        kingdom: "Elemental", 
+        size: "1'10'",
+        weight: "36 lb", 
+        biome: "Tropical Volcano", 
+        bodyType: "Igneous Buddy",
+        activity: "Diurnal",
+        evolutions: "1"
     },
     { 
         image: cryptoPet128,
-        name: "CryptoPet128",
+        name: "Tentaneon",
         rarity: "common",
-        type: ["psychic","grass"]
+        type: ["psychic","grass"], 
+        kingdom: "Dual", 
+        size: "2'06'",
+        weight: "25 lb", 
+        biome: "Tropical Coastal", 
+        bodyType: "Land Coral Neon Mind",
+        activity: "Diurnal",
+        evolutions: "1"
     },
     { 
         image: cryptoPet129,
-        name: "CryptoPet129",
+        name: "Amunruf",
         rarity: "common",
-        type: ["psychic"]
+        type: ["psychic"],
+        kingdom: "Ethereal", 
+        size: "2'00'",
+        weight: "28 lb", 
+        biome: "Tropical Forest", 
+        bodyType: "Egypt Pup",
+        activity: "Diurnal",
+        evolutions: "1"
     },
     { 
         image: cryptoPet130,
-        name: "CryptoPet130",
+        name: "Quather",
         rarity: "common",
-        type: ["sound"]
+        type: ["sound"],
+        kingdom: "Material", 
+        size: "1'02'",
+        weight: "10 lb", 
+        biome: "Seasonal Forest", 
+        bodyType: "Musical Node",
+        activity: "Diurnal",
+        evolutions: "1"
     },
     { 
         image: cryptoPet131,
-        name: "CryptoPet131",
+        name: "Snipit",
         rarity: "common",
-        type: ["metal"]
+        type: ["metal"],
+        kingdom: "Elemental", 
+        size: "0'10'",
+        weight: "18 lb", 
+        biome: "Tropical Forest", 
+        bodyType: "Termite",
+        activity: "Diurnal",
+        evolutions: "2"
+
     },
     { 
         image: cryptoPet132,
-        name: "CryptoPet132",
+        name: "Nitrina",
         rarity: "common",
-        type: ["metal"]
+        type: ["metal"],
+        kingdom: "Elemental", 
+        size: "1'00'",
+        weight: "26 lb", 
+        biome: "Tropical Subterrain", 
+        bodyType: "Cave Flower",
+        activity: "Cavurnal",
+        evolutions: "none"
     },
     { 
         image: cryptoPet133,
-        name: "CryptoPet133",
+        name: "Seflown",
         rarity: "common",
-        type: ["water", "flying"]
+        type: ["water", "flying"], 
+        kingdom: "Dual", 
+        size: "1'02'",
+        weight: "6 lb", 
+        biome: "Marine Ocean", 
+        bodyType: "Cold Mist Wings",
+        activity: "Diurnal",
+        evolutions: "1"
     },
     { 
         image: cryptoPet134,
-        name: "CryptoPet134",
+        name: "Clammper",
         rarity: "common",
-        type: ["water"]
+        type: ["water"],
+        kingdom: "Elemental", 
+        size: "0'10'",
+        weight: "10 lb", 
+        biome: "Temperate Freshwater", 
+        bodyType: "Clammper",
+        activity: "Diurnal",
+        evolutions: "none"
     }
 ]
 //Very Common Petz
