@@ -240,7 +240,7 @@ input:checked + .slider:before {
   text-decoration: none;
   color: white;
   margin: 10px;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .mobile-menu-dark a { 
@@ -1186,9 +1186,9 @@ td {
   display: flex;
   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  width: 96px;
-  height: 150px;
-  margin: 2px;
+  width: 86px;
+  height: 110px;
+  margin: 3px;
 }
 
 .dummy-eggShell img { 
@@ -1248,8 +1248,8 @@ td {
   .dummy-eggShell { 
     -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    width: 86px;
-    height: 140px;
+    width: 66px;
+    height: 90px;
     margin: 2px;
   }
 }
@@ -1598,6 +1598,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
   background: linear-gradient(0deg, rgba(20, 20, 20, 0.8) 0%, rgba(54,53,52,0.8223472472555768) 29%);
   border-radius: 16px;
   padding: 10px; 
+  margin: 10px; 
   color: rgb(255, 255, 255);
   margin-bottom: 4rem;
   box-shadow: rgba(224, 221, 221, 0.733) 0px 1px 2px, rgba(189, 185, 185, 0.07) 0px 2px 4px, 
@@ -1703,7 +1704,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 @media only screen and (max-width: 768px) { 
   .update-container { 
     flex-direction: column;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
   }
   .list-updates-container { 
@@ -1961,7 +1962,7 @@ background: radial-gradient(circle, rgba(223,15,254,1) 0%, rgba(236,29,204,1) 17
 
 .all-petz-container h1 { 
   font-size: 70px;
-  margin-top: 5rem;
+  margin-top: 3.5rem;
 }
 
 .all-petz-container h2 { 
@@ -2196,6 +2197,10 @@ display: block;
   }
 }
 @media only screen and (max-width: 890px ) {
+  .all-petz-container h1 { 
+    font-size: 60px;
+    margin-top: 3 rem;
+  }
   .pet-modal h1 { 
     font-size: 3rem;
   }
@@ -2207,6 +2212,10 @@ display: block;
    }
 }
 @media only screen and (max-width: 450px) { 
+  .all-petz-container h1 { 
+    font-size: 50px;
+    margin-top: 3rem;
+  }
   .rarity-title{ 
     font-size: 2rem !important; 
   }
@@ -2990,6 +2999,7 @@ border: 3px solid rgb(129, 151, 148);
 }
 
 .stake-pool-info-box h2 { 
+  font-size: 1.3rem;
   margin-bottom: 2rem;
   color:rgb(99, 200, 141);
 }
@@ -3079,6 +3089,11 @@ border: 3px solid rgb(129, 151, 148);
   .stake-pool-info-box { 
     flex-direction: column;
   }
+
+  .stake-pool-info-box h2 { 
+    text-align: center;
+  }
+
   .petz-pool-api-info { 
    justify-content: center;
    align-items: center;
@@ -3281,27 +3296,22 @@ border: 3px solid rgb(129, 151, 148);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 400px;
-  height: 400px; 
+  align-items: center; 
+  width: 100%;  
+  height: 100vh;  
+  margin-top: 0px;
   z-index: 20; 
   transition: 6s ease-in-out;
+  background-color: rgb(0, 0, 0, 0.9);
+  color: white; 
 }
 
-.loading-screen-light { 
-  color: black;
-}
-
-.loading-screen-dark {
-  color: white
-}
-
-.egg-div img {
+.egg-div img{
   max-width: 200px;
 }
 
-.egg-hatched img { 
-  max-width: 200px;
+.egg-hatched img{ 
+  max-width: 120px;
 }
 
 .loading-span { 
@@ -3330,7 +3340,7 @@ border: 3px solid rgb(129, 151, 148);
 }
 
 .egg-wobble { 
-  animation: shake 7s ease-in-out;
+  animation: shake 5s ease-in-out;
 }
 
 /*Buttons*/
@@ -3338,7 +3348,7 @@ border: 3px solid rgb(129, 151, 148);
 .back-button { 
   display: flex;
   color: rgb(10, 10, 10);
-  position: absolute;
+  position: absolute; 
   background-color: rgba(231, 224, 224, 0.4);
   top: 85px;
   left: 5px;

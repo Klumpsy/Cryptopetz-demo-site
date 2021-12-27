@@ -9,7 +9,7 @@ function CurrentSale() {
         {
             currentSale ? 
             <div>
-                
+        
             </div>
             :
             <div className = "no-sale-background">

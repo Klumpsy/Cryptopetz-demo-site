@@ -3,9 +3,7 @@ import LoadingScreen from '../LoadingScreen';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import SearchFilter from './SearchFilter'
 import CheckboxSearchMenu from './CheckboxSearchMenu';
-import { BsSearch } from "react-icons/bs"
 import FullCollectionModal from './FullCollectionModal';
 
 const Collection = ({mode}) => { 
@@ -73,6 +71,9 @@ const Collection = ({mode}) => {
     }
 
     return (
+        <>
+        {loading ? <LoadingScreen/>
+            :
             <div className ="petz-container"> 
                 <div className = {modalActive? "modal-overlay-background-active": "modal-overlay-background-hidden"}></div>
                 <div className = {mode ? "petz-searchbox-container petz-wrapper-light" : "petz-searchbox-container petz-wrapper-dark"}> 
@@ -97,8 +98,6 @@ const Collection = ({mode}) => {
                     changeModalInactive ={changeModalInactive} 
                     modalActive={modalActive}/>
 
-                    {loading ? <LoadingScreen mode={mode}/>
-                    :
                     <div className="petz-inner-wrapper">
                         {filteredPetz.map((pet, index) => ( 
                             <div className= {mode ? "pet-card pet-card-light" : "pet-card pet-card-dark"} key={index} onClick = {() => showPetInfo(pet)}>
@@ -112,9 +111,10 @@ const Collection = ({mode}) => {
                             </div>
                         ))}
                     </div>
-                    }
                 </div>
             </div>
+        }
+        </>
     )
 }
 
