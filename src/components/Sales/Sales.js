@@ -23,7 +23,7 @@ const Sales = ({mode}) => {
             <div className = "sales-past-sales-box">
                 <div
                 style={mode?{backgroundColor:"rgba(0, 0, 0, 0.9)"}:{backgroundColor:"rgba(0, 0, 0, 0.6)"}}>
-                    <h2>Upcomming Sales</h2>
+                    <h2>Upcoming Sales</h2>
                     <ul>
                         <li>Epoch Two Petz</li>
                     </ul>
