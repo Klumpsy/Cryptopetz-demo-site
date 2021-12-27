@@ -15,7 +15,7 @@ function BackButton(props) {
   
     return (
         <>
-            <Link className="back-button" to={`/${props.target}`}><IoArrowBackCircleSharp size= {width > 700 ? 70 : 45}/></Link>
+            <Link id='data-testid' className="back-button" to={`/${props.target}`}><IoArrowBackCircleSharp size= {width > 700 ? 70 : 45}/></Link>
         </>
     )
 }

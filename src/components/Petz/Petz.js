@@ -166,7 +166,7 @@ so it needs to change like this */
                                 <span>Weight: {activePet? activePet.weight: ""}</span>
                             </div>
                             <div className = "pet-modal-info">
-                                <span>Body Type: {activePet? activePet.bodyType: ""}</span>
+                                <span>Body Type: TBA</span>
                             </div>
                         </div>
                     </div>
@@ -189,7 +189,7 @@ so it needs to change like this */
                                 <span>Biome: {activePet ? activePet.biome : ""}</span>
                             </div>
                             <div className = "pet-modal-info">
-                                <span>Evolutions: {activePet ? activePet.evolutions : ""}</span>
+                                <span>Evolutions: TBA</span>
                             </div>
                         </div>
                     </div>
