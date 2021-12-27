@@ -40,6 +40,9 @@ import Fae from "./components/typeMetricPages/Fae";
 import Lava from "./components/typeMetricPages/Lava"; 
 import Sound from "./components/typeMetricPages/Sound"; 
 
+import { EpochOneLegendary } from './components/PetzData/epochOnePetz';
+import { EpochOneRare } from './components/PetzData/epochOnePetz';
+
 //Import images for main page and Home logo
 import mouse from './images/petzImages/mouse.png';
 import icebird from './images/petzImages/icebird.png';
@@ -57,7 +60,8 @@ import shark from './images/petzImages/shark.png';
 import squid from './images/petzImages/squid.png'; 
 import light from './images/petzImages/light.png'; 
 import owl from './images/petzImages/owl.png';
-import fish from './images/smallPngPetz/Pi7compressed027.png'
+import fish from './images/smallPngPetz/Pi7compressed027.png';
+import updateTenImage from "./images/smallPngPetz/Pi7compressed065.png"; 
 
 //Egg images 
 import fireEgg from "./images/eggs/Fire_Egg_REV1.png";
@@ -78,7 +82,7 @@ const eggArray = [fireEgg, fairyEgg, electricEgg, grassEgg, iceEgg, lavaEgg, leg
                   soundEgg, waterEgg];
 
 const allPetzArray = [mouse, icebird, dragon, bear, stormApe, seal, firebear, ninja, bull, racoon, chick, pony, shark, 
-                      squid, light, owl,fish];
+                      squid, light, owl,fish, updateTenImage];
 const petzArray = 
 
 [
